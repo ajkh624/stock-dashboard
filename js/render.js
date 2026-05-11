@@ -1,6 +1,25 @@
 // Stock dashboard renderer
 let STATE = { stocks: [], updated_at: null };
 
+const TOOLTIPS = {
+  PER: 'PER = 주가 ÷ 주당순이익(EPS) · 이익 1원 사기 위해 주가 몇 배 내는가 · 10↓ 저평가 / 20↑ 고평가',
+  PBR: 'PBR = 주가 ÷ 주당순자산(BPS) · 청산가치 대비 주가 · 1배↓ 장부가 이하 · 자산 부실 시 함정 주의',
+  ROE: 'ROE = 당기순이익 ÷ 자기자본 · 주주 돈으로 얼마 벌었나 · 15%+ 5년 유지 = 우량 (버핏 핵심지표)',
+  배당: '배당수익률 = 주당배당금 ÷ 주가 · 5%+ 매력 · 배당성향 80%+ 무리한 배당은 지속 불가능',
+  CFO: 'CFO = 영업현금흐름 · 본업으로 실제 들어온 현금 · 순익보다 일관되게 커야 정상 · 마이너스면 분식 의심',
+  FCF: 'FCF = CFO − CAPEX · 주주에게 돌려줄 수 있는 현금 · 꾸준히 (+)여야 진짜 우량',
+  현재가: '직전 거래일 종가 (출처: 네이버페이 증권)',
+  분석일시: '본 카드 작성·갱신 일시 (KST)',
+  FY: 'Fiscal Year — 참고한 사업보고서 회계연도',
+  체크리스트: 'Part 1 위험(/18): 회피 신호 · Part 2 우량(/12): 매수 신호 · 위험 3↑ 회피 / 우량 9↑ 매수 후보',
+};
+
+function tip(key) {
+  if (!TOOLTIPS[key]) return '';
+  const v = TOOLTIPS[key].replace(/"/g,'&quot;');
+  return ` title="${v}" data-tip="${v}"`;
+}
+
 const opinionClassMap = {
   '강매수': 'buy_strong', '매수': 'buy', '중립': 'neutral',
   '회피': 'avoid', '매도': 'sell',
@@ -52,17 +71,17 @@ function renderCard(s) {
       </div>
       <span class="opinion ${opCls}">${s.opinion}</span>
     </div>
-    <div class="card-price">${fmt(s.price, '원')}</div>
+    <div class="card-price"${tip('현재가')}>${fmt(s.price, '원')}</div>
     <div class="card-metrics">
-      <div class="metric"><span class="metric-label">PER</span><span class="metric-value">${fmtX(s.per)}</span></div>
-      <div class="metric"><span class="metric-label">PBR</span><span class="metric-value">${fmtX(s.pbr)}</span></div>
-      <div class="metric"><span class="metric-label">ROE</span><span class="metric-value">${fmtPct(s.roe)}</span></div>
-      <div class="metric"><span class="metric-label">배당</span><span class="metric-value">${fmtPct(s.dividend_yield)}</span></div>
+      <div class="metric"${tip('PER')}><span class="metric-label">PER</span><span class="metric-value">${fmtX(s.per)}</span></div>
+      <div class="metric"${tip('PBR')}><span class="metric-label">PBR</span><span class="metric-value">${fmtX(s.pbr)}</span></div>
+      <div class="metric"${tip('ROE')}><span class="metric-label">ROE</span><span class="metric-value">${fmtPct(s.roe)}</span></div>
+      <div class="metric"${tip('배당')}><span class="metric-label">배당</span><span class="metric-value">${fmtPct(s.dividend_yield)}</span></div>
     </div>
     <div class="card-cf">
-      <div>CFO <strong>${fmt(s.cfo_eok)}억</strong></div>
-      <div>FCF <strong>${fmt(s.fcf_eok)}억</strong></div>
-      <div class="card-date">${shortDate(s.analyzed_at)}${s.source_year?` · ${s.source_year} 사업보고서`:''}</div>
+      <div${tip('CFO')}>CFO <strong>${fmt(s.cfo_eok)}억</strong></div>
+      <div${tip('FCF')}>FCF <strong>${fmt(s.fcf_eok)}억</strong></div>
+      <div class="card-date"${tip('분석일시')}>${shortDate(s.analyzed_at)}${s.source_year?` · ${s.source_year} 사업보고서`:''}</div>
     </div>
     ${renderChecklist(s)}
     <p class="card-thesis">${s.thesis||''}</p>
@@ -128,6 +147,10 @@ async function load() {
   STATE.stocks = data.stocks || [];
   STATE.updated_at = data.updated_at;
   render();
+  // Mirror title -> data-tip for static HTML table headers
+  document.querySelectorAll('th[title]:not([data-tip])').forEach(el => {
+    el.setAttribute('data-tip', el.getAttribute('title'));
+  });
 }
 
 ['searchInput','opinionFilter','sortBy'].forEach(id =>
