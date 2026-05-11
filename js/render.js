@@ -62,7 +62,7 @@ function renderCard(s) {
     <div class="card-cf">
       <div>CFO <strong>${fmt(s.cfo_eok)}억</strong></div>
       <div>FCF <strong>${fmt(s.fcf_eok)}억</strong></div>
-      <div class="card-date">${shortDate(s.analyzed_at)}</div>
+      <div class="card-date">${shortDate(s.analyzed_at)}${s.source_year?` · ${s.source_year} 사업보고서`:''}</div>
     </div>
     ${renderChecklist(s)}
     <p class="card-thesis">${s.thesis||''}</p>
@@ -74,6 +74,7 @@ function renderRow(s) {
   const opCls = opinionClassMap[s.opinion] || 'neutral';
   return `<tr>
     <td>${shortDate(s.analyzed_at)}</td>
+    <td><small style="color:var(--text-dim)">${s.source_year||'-'}</small></td>
     <td><strong>${s.name}</strong><br><small style="color:var(--text-dim)">${s.code}</small></td>
     <td class="num">${fmt(s.price)}</td>
     <td class="num">${fmtX(s.per)}</td>
