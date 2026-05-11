@@ -62,6 +62,16 @@ th[title] { cursor: help; text-decoration: underline dotted var(--text-dim); tex
 }
 @media (hover: none) { [data-tip]:hover::after { display: none; } }
 .card-thesis { font-size: 13px; color: var(--text-dim); line-height: 1.55; }
+
+/* Income (revenue/op/net/debt) */
+.income { margin: 10px 0; padding: 10px; background: rgba(255,255,255,0.02);
+  border-radius: 8px; border: 1px solid var(--border); }
+.income-head { font-size: 11px; color: var(--text-dim); margin-bottom: 6px; }
+.income-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.income-grid > div { display: flex; flex-direction: column; align-items: center; }
+.ilabel { font-size: 10px; color: var(--text-dim); }
+.ival { font-size: 13px; font-weight: 600; }
+.income-note { margin-top: 6px; font-size: 11px; color: var(--avoid); }
 .card-tags { margin-top: 8px; display: flex; gap: 4px; flex-wrap: wrap; }
 .tag { background: rgba(74,222,128,0.12); color: var(--accent); padding: 2px 8px; border-radius: 12px; font-size: 11px; }
 

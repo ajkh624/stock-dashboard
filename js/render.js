@@ -35,9 +35,24 @@ function shortDate(iso) {
   return `${d.getMonth()+1}/${d.getDate()} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
 }
 
+function renderIncome(s) {
+  if (s.revenue_eok == null && s.op_income_eok == null && s.net_income_eok == null) return '';
+  const fy = s.source_year ? `${s.source_year}` : '';
+  return `
+  <div class="income">
+    <div class="income-head">📊 ${fy} 손익 (억원)</div>
+    <div class="income-grid">
+      <div><span class="ilabel">매출</span><span class="ival">${fmt(s.revenue_eok)}</span></div>
+      <div><span class="ilabel">영업이익</span><span class="ival">${fmt(s.op_income_eok)}</span></div>
+      <div><span class="ilabel">순이익</span><span class="ival">${fmt(s.net_income_eok)}</span></div>
+      <div><span class="ilabel">부채비율</span><span class="ival">${s.debt_ratio==null?'-':s.debt_ratio+'%'}</span></div>
+    </div>
+    ${s.financial_note?`<div class="income-note">ℹ️ ${s.financial_note}</div>`:''}
+  </div>`;
+}
+
 function renderChecklist(s) {
   const p1 = s.checklist_part1_risk, p1t = s.checklist_part1_total || 18;
-  const p2 = s.checklist_part2_quality, p2t = s.checklist_part2_total || 12;
   if (p1 == null && p2 == null) return '';
   const d = s.checklist_detail || {};
   const risks = (d.part1_risks_hit||[]).map(x=>`<li class="hit">⚠️ ${x}</li>`).join('');
@@ -83,6 +98,7 @@ function renderCard(s) {
       <div${tip('FCF')}>FCF <strong>${fmt(s.fcf_eok)}억</strong></div>
       <div class="card-date"${tip('분석일시')}>${shortDate(s.analyzed_at)}${s.source_year?` · ${s.source_year} 사업보고서`:''}</div>
     </div>
+    ${renderIncome(s)}
     ${renderChecklist(s)}
     <p class="card-thesis">${s.thesis||''}</p>
     ${tags ? `<div class="card-tags">${tags}</div>` : ''}
