@@ -55,6 +55,34 @@ function renderChecklist(s) {
   const p1 = s.checklist_part1_risk, p1t = s.checklist_part1_total || 18;
   const p2 = s.checklist_part2_quality, p2t = s.checklist_part2_total || 12;
   if (p1 == null && p2 == null) return '';
+  const p1na = s.checklist_part1_na || 0, p2na = s.checklist_part2_na || 0;
+  const full = s.checklist_detail_full;
+  if (full) {
+    const renderItems = (list) => list.map((it, i) => {
+      const cls = it.status; // hit/ok/ng/na
+      const icon = {hit:'⚠️', ok:'✓', ng:'✗', na:'—'}[cls] || '•';
+      return `<li class="${cls}"><span class="ico">${icon}</span><span class="lbl">${i+1}. ${it.label}</span><span class="ev">${it.evidence}</span></li>`;
+    }).join('');
+    return `
+  <details class="checklist">
+    <summary>
+      <span class="chk-badge risk">⚠️ 위험 ${p1}/${p1t}${p1na?` (NA ${p1na})`:''}</span>
+      <span class="chk-badge quality">⭐ 우량 ${p2}/${p2t}${p2na?` (NA ${p2na})`:''}</span>
+      <span class="chk-toggle">▼</span>
+    </summary>
+    <div class="chk-body">
+      <div class="chk-section">
+        <h4>🚨 Part 1. 위험 시그널 (18개)</h4>
+        <ul class="chk-list">${renderItems(full.part1)}</ul>
+      </div>
+      <div class="chk-section">
+        <h4>✅ Part 2. 우량 시그널 (12개)</h4>
+        <ul class="chk-list">${renderItems(full.part2)}</ul>
+      </div>
+    </div>
+  </details>`;
+  }
+  // fallback (이전 간단 형식)
   const d = s.checklist_detail || {};
   const risks = (d.part1_risks_hit||[]).map(x=>`<li class="hit">⚠️ ${x}</li>`).join('');
   const passed = (d.part2_passed||[]).map(x=>`<li class="ok">✓ ${x}</li>`).join('');
@@ -68,7 +96,7 @@ function renderChecklist(s) {
       ${hasDetail ? '<span class="chk-toggle">▼</span>' : ''}
     </summary>
     ${hasDetail ? `<div class="chk-body">
-      ${risks ? `<div class="chk-section"><h4>Part 1 위험 신호 ON</h4><ul>${risks}</ul></div>` : ''}
+      ${risks ? `<div class="chk-section"><h4>Part 1 위험 ON</h4><ul>${risks}</ul></div>` : ''}
       ${passed ? `<div class="chk-section"><h4>Part 2 통과</h4><ul>${passed}</ul></div>` : ''}
       ${failed ? `<div class="chk-section"><h4>Part 2 미통과</h4><ul>${failed}</ul></div>` : ''}
     </div>` : ''}

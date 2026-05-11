@@ -102,6 +102,20 @@ th[title] { cursor: help; text-decoration: underline dotted var(--text-dim); tex
 .chk-section li.hit { color: #fbbf24; }
 .chk-section li.ok { color: var(--accent); }
 .chk-section li.ng { color: var(--text-dim); }
+.chk-section li.na { color: #6b7280; font-style: italic; }
+
+/* Full 30-item list */
+.chk-list { display: grid; gap: 4px; }
+.chk-list li { display: grid; grid-template-columns: 20px 1fr; gap: 6px; padding: 6px 8px;
+  background: rgba(255,255,255,0.02); border-radius: 6px; font-size: 12px; line-height: 1.45; }
+.chk-list li .ico { font-weight: 600; }
+.chk-list li .lbl { font-weight: 500; color: var(--text); grid-column: 2; }
+.chk-list li .ev { font-size: 11px; color: var(--text-dim); grid-column: 2; }
+.chk-list li.hit { background: rgba(245,158,11,0.08); }
+.chk-list li.ok { background: rgba(74,222,128,0.06); }
+.chk-list li.hit .lbl { color: #fbbf24; }
+.chk-list li.ok .lbl { color: var(--accent); }
+.chk-list li.na .lbl { color: #6b7280; }
 .chk-cell { white-space: nowrap; }
 .chk-cell .chk-badge { font-size: 10px; padding: 2px 5px; }
 
