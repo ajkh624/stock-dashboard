@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-12T02:11:16+09:00",
+  "updated_at": "2026-05-12T02:13:40+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -249,8 +249,8 @@
       "roe": 15.0,
       "dividend_yield": 3.5,
       "debt_ratio": 103,
-      "cfo_eok": null,
-      "fcf_eok": null,
+      "cfo_eok": 555,
+      "fcf_eok": 466,
       "revenue_eok": 2538,
       "op_income_eok": 316,
       "net_income_eok": 256,
@@ -259,7 +259,7 @@
       "thesis": "2025 매출 2,538억(+17%) 성장, ROE 15%·PER 8.7 저평가. 의대 정원·N수생 수혜. 부채비율 47→103% 급증 모니터링 필요.",
       "checklist_part1_risk": 2,
       "checklist_part1_total": 18,
-      "checklist_part2_quality": 5,
+      "checklist_part2_quality": 8,
       "checklist_part2_total": 12,
       "checklist_detail": {
         "part1_risks_hit": [
@@ -288,8 +288,8 @@
         "성장",
         "저평가"
       ],
-      "checklist_part1_na": 3,
-      "checklist_part2_na": 3,
+      "checklist_part1_na": 1,
+      "checklist_part2_na": 0,
       "checklist_detail_full": {
         "part1": [
           {
@@ -373,14 +373,14 @@
           {
             "key": "p1_profit_cash_gap",
             "label": "흑자 + CFO 마이너스",
-            "status": "na",
-            "evidence": "CFO 데이터 미수집"
+            "status": "ok",
+            "evidence": "CFO 555억 > NI 256억 정상"
           },
           {
             "key": "p1_cf_pattern_bad",
             "label": "CF패턴 영업(-)/투자(+)/재무(+) (자산팔고 빌려 연명)",
-            "status": "na",
-            "evidence": "CFO 데이터 미수집"
+            "status": "ok",
+            "evidence": "건전한 패턴"
           },
           {
             "key": "p1_turnover_drop",
@@ -429,20 +429,20 @@
           {
             "key": "p2_cfo_gt_ni",
             "label": "CFO > 당기순이익",
-            "status": "na",
-            "evidence": "CFO 데이터 미수집"
+            "status": "ok",
+            "evidence": "CFO 555억 > NI 256억 ✓"
           },
           {
             "key": "p2_fcf_positive",
             "label": "FCF 플러스",
-            "status": "na",
-            "evidence": "FCF 데이터 미수집"
+            "status": "ok",
+            "evidence": "FCF +466억 ✓"
           },
           {
             "key": "p2_cf_pattern_good",
             "label": "CF패턴 영업(+)/투자(-)/재무(-)",
-            "status": "na",
-            "evidence": "CF 데이터 미수집"
+            "status": "ok",
+            "evidence": "영(+555)/투(-198)/재(-282) 정상"
           },
           {
             "key": "p2_total_yield",
@@ -487,8 +487,8 @@
       "roe": 13.0,
       "dividend_yield": 2.5,
       "debt_ratio": 151,
-      "cfo_eok": null,
-      "fcf_eok": null,
+      "cfo_eok": 927,
+      "fcf_eok": 52,
       "revenue_eok": 18969,
       "op_income_eok": 854,
       "net_income_eok": 687,
@@ -497,7 +497,7 @@
       "thesis": "매출 1.9조·영업이익 854억 턴어라운드. PER 3.35/PBR 0.42 극단적 저평가. 자동차 부품 사이클 회복. 부채비율 151% 부담.",
       "checklist_part1_risk": 2,
       "checklist_part1_total": 18,
-      "checklist_part2_quality": 4,
+      "checklist_part2_quality": 7,
       "checklist_part2_total": 12,
       "checklist_detail": {
         "part1_risks_hit": [
@@ -529,8 +529,8 @@
         "턴어라운드",
         "저PBR"
       ],
-      "checklist_part1_na": 3,
-      "checklist_part2_na": 3,
+      "checklist_part1_na": 1,
+      "checklist_part2_na": 0,
       "checklist_detail_full": {
         "part1": [
           {
@@ -614,14 +614,14 @@
           {
             "key": "p1_profit_cash_gap",
             "label": "흑자 + CFO 마이너스",
-            "status": "na",
-            "evidence": "CFO 데이터 미수집"
+            "status": "ok",
+            "evidence": "CFO 927억 충분"
           },
           {
             "key": "p1_cf_pattern_bad",
             "label": "CF패턴 영업(-)/투자(+)/재무(+) (자산팔고 빌려 연명)",
-            "status": "na",
-            "evidence": "CF 데이터 미수집"
+            "status": "ok",
+            "evidence": "건전"
           },
           {
             "key": "p1_turnover_drop",
@@ -670,20 +670,20 @@
           {
             "key": "p2_cfo_gt_ni",
             "label": "CFO > 당기순이익",
-            "status": "na",
-            "evidence": "CFO 데이터 미수집"
+            "status": "ok",
+            "evidence": "CFO 927억 > NI 687억 ✓"
           },
           {
             "key": "p2_fcf_positive",
             "label": "FCF 플러스",
-            "status": "na",
-            "evidence": "FCF 데이터 미수집"
+            "status": "ok",
+            "evidence": "FCF +52억 (약하나 + 유지)"
           },
           {
             "key": "p2_cf_pattern_good",
             "label": "CF패턴 영업(+)/투자(-)/재무(-)",
-            "status": "na",
-            "evidence": "CF 데이터 미수집"
+            "status": "ok",
+            "evidence": "영(+927)/투(-626)/재(+96) — 신규 사이클 CapEx"
           },
           {
             "key": "p2_total_yield",
@@ -728,8 +728,8 @@
       "roe": 0.8,
       "dividend_yield": 2.0,
       "debt_ratio": 69,
-      "cfo_eok": null,
-      "fcf_eok": null,
+      "cfo_eok": 45719,
+      "fcf_eok": -16692,
       "revenue_eok": 690949,
       "op_income_eok": 18271,
       "net_income_eok": 5044,
@@ -738,7 +738,7 @@
       "thesis": "철강 사이클 바닥. ROE 0.8% 부진, FCF -1.67조 우려. PBR 0.70 저평가지만 회복 시점 불확실. 사이클 베팅 조건부.",
       "checklist_part1_risk": 3,
       "checklist_part1_total": 18,
-      "checklist_part2_quality": 3,
+      "checklist_part2_quality": 4,
       "checklist_part2_total": 12,
       "checklist_detail": {
         "part1_risks_hit": [
@@ -771,8 +771,8 @@
         "사이클",
         "대형주"
       ],
-      "checklist_part1_na": 2,
-      "checklist_part2_na": 1,
+      "checklist_part1_na": 1,
+      "checklist_part2_na": 0,
       "checklist_detail_full": {
         "part1": [
           {
@@ -857,13 +857,13 @@
             "key": "p1_profit_cash_gap",
             "label": "흑자 + CFO 마이너스",
             "status": "ok",
-            "evidence": "흑자 유지"
+            "evidence": "CFO 4.57조 충분"
           },
           {
             "key": "p1_cf_pattern_bad",
             "label": "CF패턴 영업(-)/투자(+)/재무(+) (자산팔고 빌려 연명)",
-            "status": "na",
-            "evidence": "확인 필요 (대형 CapEx 진행)"
+            "status": "ok",
+            "evidence": "사이클 CapEx, 분식 아님"
           },
           {
             "key": "p1_turnover_drop",
@@ -912,20 +912,20 @@
           {
             "key": "p2_cfo_gt_ni",
             "label": "CFO > 당기순이익",
-            "status": "na",
-            "evidence": "CFO 데이터 미수집 (FCF -1.67조 보유)"
+            "status": "ok",
+            "evidence": "CFO 4.57조 > NI 0.50조 ✓ (CFO 양호)"
           },
           {
             "key": "p2_fcf_positive",
             "label": "FCF 플러스",
             "status": "ng",
-            "evidence": "FCF -1.67조 마이너스"
+            "evidence": "FCF -1.67조 (CapEx 6.24조 집중)"
           },
           {
             "key": "p2_cf_pattern_good",
             "label": "CF패턴 영업(+)/투자(-)/재무(-)",
             "status": "ng",
-            "evidence": "투자 집중기"
+            "evidence": "투자 집중기 — 미래 회수 가정"
           },
           {
             "key": "p2_total_yield",
@@ -1209,7 +1209,7 @@
       "roe": 15.95,
       "dividend_yield": 3.79,
       "debt_ratio": 69,
-      "cfo_eok": null,
+      "cfo_eok": -65338,
       "fcf_eok": null,
       "revenue_eok": 174950,
       "op_income_eok": 15593,
@@ -1436,7 +1436,8 @@
             "evidence": "PBR 0.60 ✓"
           }
         ]
-      }
+      },
+      "financial_note": "키움증권 연결 — 환매조건부매도/대출채권 등 운전자본 변동이 영업CF에 잡혀 일반 제조업 기준 적용 불가. 모회사 별도 기준 또는 PPOP·자기자본비율 사용 권장."
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
