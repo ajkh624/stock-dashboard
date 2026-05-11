@@ -53,6 +53,7 @@ function renderIncome(s) {
 
 function renderChecklist(s) {
   const p1 = s.checklist_part1_risk, p1t = s.checklist_part1_total || 18;
+  const p2 = s.checklist_part2_quality, p2t = s.checklist_part2_total || 12;
   if (p1 == null && p2 == null) return '';
   const d = s.checklist_detail || {};
   const risks = (d.part1_risks_hit||[]).map(x=>`<li class="hit">⚠️ ${x}</li>`).join('');
