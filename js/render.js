@@ -205,6 +205,8 @@ const CHART_SPECS = [
 ];
 
 let CHART_INSTANCES = [];
+let CURRENT_STOCK = null;
+let CURRENT_PERIOD = 'annual';
 
 function fmtVal(v, unit) {
   if (v == null) return '-';
@@ -214,91 +216,144 @@ function fmtVal(v, unit) {
   return n.toLocaleString() + (unit==='억' ? '억' : '');
 }
 
-function openChartModal(stock) {
+function getPeriodData(stock, period) {
   const ts = stock.timeseries;
-  const modal = document.getElementById('chartModal');
-  document.getElementById('modalTitle').textContent = `${stock.name} (${stock.code})`;
-  document.getElementById('modalSub').textContent = ts && ts.source
-    ? `${ts.years[0]}~${ts.years[ts.years.length-1]} 시계열 · ${ts.source}`
-    : '시계열 데이터 없음';
+  if (!ts) return null;
+  if (period === 'quarterly') {
+    if (!ts.quarterly || !ts.quarterly.labels || !ts.quarterly.labels.length) return null;
+    return { labels: ts.quarterly.labels, data: ts.quarterly, source: ts.quarterly.source };
+  }
+  if (!ts.years || !ts.years.length) return null;
+  return { labels: ts.years.map(String), data: ts, source: ts.source };
+}
+
+function renderCharts() {
   const body = document.getElementById('modalBody');
+  const pd = getPeriodData(CURRENT_STOCK, CURRENT_PERIOD);
 
   // destroy previous charts
   CHART_INSTANCES.forEach(c => { try { c.destroy(); } catch(e){} });
   CHART_INSTANCES = [];
 
-  if (!ts || !ts.years || !ts.years.length) {
-    body.innerHTML = `<div class="chart-empty">📊 이 종목은 아직 시계열 데이터가 등록되지 않았습니다.<br><small>(다음 분석 회차에 추가 예정)</small></div>`;
-  } else {
-    const specs = CHART_SPECS.filter(sp => ts[sp.key] && ts[sp.key].some(v => v != null));
-    body.innerHTML = `<div class="chart-grid">${specs.map((sp, i) => {
-      const arr = ts[sp.key];
-      const latest = arr[arr.length-1];
-      return `<div class="chart-box">
-        <h3><span>${sp.label}</span><span class="latest">최근 ${fmtVal(latest, sp.unit)}</span></h3>
-        <div class="chart-canvas-wrap"><canvas id="chart_${i}"></canvas></div>
-      </div>`;
-    }).join('')}</div>`;
+  if (!pd) {
+    body.innerHTML = `<div class="chart-empty">📊 ${CURRENT_PERIOD==='quarterly'?'분기별':'연간'} 시계열 데이터가 없습니다.<br><small>(다음 분석 회차에 추가 예정)</small></div>`;
+    return;
+  }
 
-    // Common chart options
-    const chartFontColor = '#9099a8';
-    const gridColor = 'rgba(255,255,255,0.06)';
+  const subEl = document.getElementById('modalSub');
+  subEl.textContent = `${pd.labels[0]} ~ ${pd.labels[pd.labels.length-1]} · ${pd.source || ''}`;
 
-    specs.forEach((sp, i) => {
-      const ctx = document.getElementById(`chart_${i}`);
-      if (!ctx) return;
-      const arr = ts[sp.key];
-      const labels = ts.years.map(String);
-      const inst = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels,
-          datasets: [{
-            label: sp.label,
-            data: arr,
-            borderColor: sp.color,
-            backgroundColor: sp.color + '22',
-            tension: 0.25,
-            spanGaps: true,
-            pointRadius: 4,
-            pointHoverRadius: 6,
-            pointBackgroundColor: sp.color,
-            fill: true,
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: { display: false },
-            tooltip: {
-              backgroundColor: '#0f1115',
-              borderColor: '#2a2f3a', borderWidth: 1,
-              titleColor: '#e6e8ec', bodyColor: '#e6e8ec',
-              callbacks: {
-                label: (ctx) => `${sp.label}: ${fmtVal(ctx.parsed.y, sp.unit)}`
-              }
-            }
-          },
-          scales: {
-            x: {
-              ticks: { color: chartFontColor, font: { size: 11 } },
-              grid: { color: gridColor }
-            },
-            y: {
-              ticks: {
-                color: chartFontColor, font: { size: 11 },
-                callback: v => sp.unit === '%' ? v + '%'
-                                : sp.unit === '배' ? v
-                                : v.toLocaleString()
-              },
-              grid: { color: gridColor }
+  const specs = CHART_SPECS.filter(sp => pd.data[sp.key] && pd.data[sp.key].some(v => v != null));
+  if (!specs.length) {
+    body.innerHTML = `<div class="chart-empty">📊 표시할 지표가 없습니다.</div>`;
+    return;
+  }
+
+  body.innerHTML = `<div class="chart-grid">${specs.map((sp, i) => {
+    const arr = pd.data[sp.key];
+    const latest = arr[arr.length-1];
+    return `<div class="chart-box">
+      <h3><span>${sp.label}</span><span class="latest">최근 ${fmtVal(latest, sp.unit)}</span></h3>
+      <div class="chart-canvas-wrap"><canvas id="chart_${i}"></canvas></div>
+    </div>`;
+  }).join('')}</div>`;
+
+  const chartFontColor = '#9099a8';
+  const gridColor = 'rgba(255,255,255,0.06)';
+
+  specs.forEach((sp, i) => {
+    const ctx = document.getElementById(`chart_${i}`);
+    if (!ctx) return;
+    const arr = pd.data[sp.key];
+    const inst = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: pd.labels,
+        datasets: [{
+          label: sp.label,
+          data: arr,
+          borderColor: sp.color,
+          backgroundColor: sp.color + '22',
+          tension: 0.25,
+          spanGaps: true,
+          pointRadius: 4,
+          pointHoverRadius: 6,
+          pointBackgroundColor: sp.color,
+          fill: true,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: '#0f1115',
+            borderColor: '#2a2f3a', borderWidth: 1,
+            titleColor: '#e6e8ec', bodyColor: '#e6e8ec',
+            callbacks: {
+              label: (c) => `${sp.label}: ${fmtVal(c.parsed.y, sp.unit)}`
             }
           }
+        },
+        scales: {
+          x: {
+            ticks: { color: chartFontColor, font: { size: 11 } },
+            grid: { color: gridColor }
+          },
+          y: {
+            ticks: {
+              color: chartFontColor, font: { size: 11 },
+              callback: v => sp.unit === '%' ? v + '%'
+                              : sp.unit === '배' ? v
+                              : v.toLocaleString()
+            },
+            grid: { color: gridColor }
+          }
         }
-      });
-      CHART_INSTANCES.push(inst);
+      }
     });
+    CHART_INSTANCES.push(inst);
+  });
+}
+
+function updateToggleAvailability() {
+  const toggle = document.getElementById('modalToggle');
+  const ts = CURRENT_STOCK?.timeseries;
+  const hasAnnual = !!(ts && ts.years && ts.years.length);
+  const hasQuarterly = !!(ts && ts.quarterly && ts.quarterly.labels && ts.quarterly.labels.length);
+  toggle.querySelector('[data-period="annual"]').disabled = !hasAnnual;
+  toggle.querySelector('[data-period="quarterly"]').disabled = !hasQuarterly;
+}
+
+function setPeriod(period) {
+  CURRENT_PERIOD = period;
+  document.querySelectorAll('#modalToggle .seg').forEach(b => {
+    b.classList.toggle('active', b.dataset.period === period);
+  });
+  renderCharts();
+}
+
+function openChartModal(stock) {
+  CURRENT_STOCK = stock;
+  const ts = stock.timeseries;
+  const modal = document.getElementById('chartModal');
+  document.getElementById('modalTitle').textContent = `${stock.name} (${stock.code})`;
+
+  updateToggleAvailability();
+  // default: annual if available else quarterly
+  const hasAnnual = !!(ts && ts.years && ts.years.length);
+  CURRENT_PERIOD = hasAnnual ? 'annual' : (ts && ts.quarterly ? 'quarterly' : 'annual');
+  document.querySelectorAll('#modalToggle .seg').forEach(b => {
+    b.classList.toggle('active', b.dataset.period === CURRENT_PERIOD);
+  });
+
+  if (!ts) {
+    document.getElementById('modalSub').textContent = '시계열 데이터 없음';
+    document.getElementById('modalBody').innerHTML =
+      `<div class="chart-empty">📊 이 종목은 아직 시계열 데이터가 등록되지 않았습니다.<br><small>(다음 분석 회차에 추가 예정)</small></div>`;
+  } else {
+    renderCharts();
   }
 
   modal.classList.add('open');
@@ -313,10 +368,17 @@ function closeChartModal() {
   document.body.style.overflow = '';
   CHART_INSTANCES.forEach(c => { try { c.destroy(); } catch(e){} });
   CHART_INSTANCES = [];
+  CURRENT_STOCK = null;
 }
 
 // Click delegation
 document.addEventListener('click', (e) => {
+  // Period toggle
+  const seg = e.target.closest('#modalToggle .seg');
+  if (seg && !seg.disabled) {
+    setPeriod(seg.dataset.period);
+    return;
+  }
   // Modal close
   if (e.target.closest('[data-close="1"]')) {
     closeChartModal();
