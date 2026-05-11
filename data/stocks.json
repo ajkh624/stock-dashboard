@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-12T01:30:00+09:00",
+  "updated_at": "2026-05-12T01:45:40+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -45,7 +45,327 @@
       },
       "dart_rcept": "20260318000849",
       "source_year": 2025,
-      "tags": ["교육", "저평가", "고배당"]
+      "tags": [
+        "교육",
+        "저평가",
+        "고배당"
+      ]
+    },
+    {
+      "analyzed_at": "2026-05-12T01:45:40+09:00",
+      "name": "디지털대성",
+      "code": "068930",
+      "price": 8760.0,
+      "per": 8.7,
+      "pbr": 1.44,
+      "roe": 15.0,
+      "dividend_yield": 3.5,
+      "debt_ratio": 103.0,
+      "cfo_eok": null,
+      "fcf_eok": null,
+      "revenue_eok": null,
+      "op_income_eok": null,
+      "net_income_eok": null,
+      "opinion": "매수",
+      "opinion_color": "buy",
+      "thesis": "2025 매출 2,538억(+17%) 성장, ROE 15%·PER 8.7 저평가. 의대 정원·N수생 수혜. 부채비율 47→103% 급증 모니터링 필요.",
+      "checklist_part1_risk": 2,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 8,
+      "checklist_part2_total": 12,
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "부채비율 급증(47→103%)",
+          "업황 둔화 우려"
+        ],
+        "part2_passed": [
+          "ROE 15% 유지",
+          "매출 성장",
+          "영업이익률 개선",
+          "FCF +",
+          "이해 가능 사업",
+          "배당 지속",
+          "본업 집중",
+          "경쟁사 대비 저평가"
+        ],
+        "part2_failed": [
+          "독점·해자 없음",
+          "장기 인구 감소"
+        ]
+      },
+      "dart_rcept": "20260318000608",
+      "source_year": 2025,
+      "tags": [
+        "교육",
+        "성장",
+        "저평가"
+      ]
+    },
+    {
+      "analyzed_at": "2026-05-12T01:45:40+09:00",
+      "name": "SJG세종",
+      "code": "033530",
+      "price": 8170.0,
+      "per": 3.35,
+      "pbr": 0.42,
+      "roe": 13.0,
+      "dividend_yield": 2.5,
+      "debt_ratio": 151.0,
+      "cfo_eok": null,
+      "fcf_eok": null,
+      "revenue_eok": 189690.0,
+      "op_income_eok": 854.0,
+      "net_income_eok": null,
+      "opinion": "매수",
+      "opinion_color": "buy",
+      "thesis": "매출 1.9조·영업이익 854억 턴어라운드. PER 3.35/PBR 0.42 극단적 저평가. 자동차 부품 사이클 회복. 부채비율 151% 부담.",
+      "checklist_part1_risk": 3,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 7,
+      "checklist_part2_total": 12,
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "부채비율 151%",
+          "자동차 사이클 의존",
+          "환율 노출"
+        ],
+        "part2_passed": [
+          "PBR 0.42 자산가치 이하",
+          "매출 회복",
+          "영업이익 흑전",
+          "업황 턴어라운드",
+          "이해 가능 사업",
+          "본업 집중",
+          "경쟁사 대비 저평가"
+        ],
+        "part2_failed": [
+          "ROE 변동 큼",
+          "FCF 불안정",
+          "배당 미흡",
+          "독점·해자 없음",
+          "장기 성장성"
+        ]
+      },
+      "dart_rcept": "20260316000994",
+      "source_year": 2025,
+      "tags": [
+        "자동차부품",
+        "턴어라운드",
+        "저PBR"
+      ]
+    },
+    {
+      "analyzed_at": "2026-05-12T01:45:40+09:00",
+      "name": "POSCO홀딩스",
+      "code": "005490",
+      "price": 512000.0,
+      "per": 22.22,
+      "pbr": 0.7,
+      "roe": 0.8,
+      "dividend_yield": 2.0,
+      "debt_ratio": null,
+      "cfo_eok": null,
+      "fcf_eok": null,
+      "revenue_eok": null,
+      "op_income_eok": null,
+      "net_income_eok": null,
+      "opinion": "중립",
+      "opinion_color": "neutral",
+      "thesis": "철강 사이클 바닥. ROE 0.8% 부진, FCF -1.67조 우려. PBR 0.70 저평가지만 회복 시점 불확실. 사이클 베팅 조건부.",
+      "checklist_part1_risk": 4,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 5,
+      "checklist_part2_total": 12,
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "ROE 0.8% 부진",
+          "FCF -1.67조 적자",
+          "철강 사이클 침체",
+          "중국 감산 불확실"
+        ],
+        "part2_passed": [
+          "PBR 0.7 저평가",
+          "대형주 안전성",
+          "이해 가능 사업",
+          "배당 지속",
+          "본업 집중"
+        ],
+        "part2_failed": [
+          "ROE 부진",
+          "FCF 마이너스",
+          "영업이익률 낮음",
+          "장기 성장성",
+          "독점·해자 약화",
+          "업황 침체",
+          "중국 공급과잉"
+        ]
+      },
+      "dart_rcept": "20260311004517",
+      "source_year": 2025,
+      "tags": [
+        "철강",
+        "사이클",
+        "대형주"
+      ]
+    },
+    {
+      "analyzed_at": "2026-05-12T01:45:40+09:00",
+      "name": "JB금융지주",
+      "code": "175330",
+      "price": 26100.0,
+      "per": 6.96,
+      "pbr": 0.82,
+      "roe": 12.36,
+      "dividend_yield": 4.44,
+      "debt_ratio": null,
+      "cfo_eok": null,
+      "fcf_eok": null,
+      "revenue_eok": null,
+      "op_income_eok": null,
+      "net_income_eok": null,
+      "opinion": "매수",
+      "opinion_color": "buy",
+      "thesis": "ROE 12.36% 4대금융 최상위, PER 6.96·PBR 0.82 저평가, 배당 4.44%. 목표가 38,200원(현재 +46%). 지방은행 리스크 잔존.",
+      "checklist_part1_risk": 1,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 9,
+      "checklist_part2_total": 12,
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "지방 부동산 PF 노출"
+        ],
+        "part2_passed": [
+          "ROE 12%+ 안정",
+          "PBR 0.82 저평가",
+          "배당 4.44%",
+          "4대금융 최상위 ROE",
+          "자사주 정책 우호",
+          "본업 집중",
+          "이해 가능 사업",
+          "경쟁사 대비 저평가",
+          "장기 안정성"
+        ],
+        "part2_failed": [
+          "지방은행 성장 한계",
+          "독점·해자 약"
+        ]
+      },
+      "dart_rcept": "20260311004517",
+      "source_year": 2025,
+      "tags": [
+        "금융",
+        "저평가",
+        "고배당"
+      ]
+    },
+    {
+      "analyzed_at": "2026-05-12T01:45:40+09:00",
+      "name": "다우기술",
+      "code": "023590",
+      "price": 47550.0,
+      "per": 4.22,
+      "pbr": 0.6,
+      "roe": 15.95,
+      "dividend_yield": 3.79,
+      "debt_ratio": null,
+      "cfo_eok": null,
+      "fcf_eok": null,
+      "revenue_eok": 175000.0,
+      "op_income_eok": 15600.0,
+      "net_income_eok": null,
+      "opinion": "매수",
+      "opinion_color": "buy",
+      "thesis": "매출 17.5조·영업이익 1.56조·ROE 15.95% 우량. PER 4.22/PBR 0.60 극단적 저평가. 키움증권 지주 성격. 52주 22,800~62,300 변동성.",
+      "checklist_part1_risk": 1,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 10,
+      "checklist_part2_total": 12,
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "증권 시황 의존"
+        ],
+        "part2_passed": [
+          "ROE 15%+ 안정",
+          "PER 4.22 저평가",
+          "PBR 0.60 저평가",
+          "영업이익률 두 자리",
+          "배당 3.79%",
+          "자회사 키움증권 우량",
+          "본업 집중",
+          "이해 가능 사업",
+          "경쟁사 대비 저평가",
+          "재무 안정"
+        ],
+        "part2_failed": [
+          "독점·해자 약",
+          "장기 성장성"
+        ]
+      },
+      "dart_rcept": "20260318001606",
+      "source_year": 2025,
+      "tags": [
+        "IT",
+        "지주사",
+        "저평가"
+      ]
+    },
+    {
+      "analyzed_at": "2026-05-12T01:45:40+09:00",
+      "name": "데이타솔루션",
+      "code": "263800",
+      "price": 5220.0,
+      "per": 23.7,
+      "pbr": 2.4,
+      "roe": 3.0,
+      "dividend_yield": 0.0,
+      "debt_ratio": null,
+      "cfo_eok": -17.0,
+      "fcf_eok": -44.0,
+      "revenue_eok": 1038.0,
+      "op_income_eok": null,
+      "net_income_eok": 10.0,
+      "opinion": "매도",
+      "opinion_color": "sell",
+      "thesis": "ROE 3% 부진, CFO -17억·FCF -44억 트랩 신호 ON. PER 23.7/PBR 2.40 고평가. 매출 1,038억 성장 둔화. 보유 시 매도 권고.",
+      "checklist_part1_risk": 8,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 2,
+      "checklist_part2_total": 12,
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "CFO -17억 적자",
+          "FCF -44억 적자",
+          "ROE 3% 저조",
+          "PER 23.7 고평가",
+          "PBR 2.40 고평가",
+          "매출 성장 둔화",
+          "수익성 악화",
+          "경쟁 격화"
+        ],
+        "part2_passed": [
+          "이해 가능 사업",
+          "본업 집중"
+        ],
+        "part2_failed": [
+          "ROE 낮음",
+          "영업이익률 낮음",
+          "FCF 적자",
+          "CFO 약화",
+          "부채 증가",
+          "배당 없음",
+          "독점·해자 없음",
+          "경쟁사 대비 고평가",
+          "장기 성장성 불확실",
+          "자사주 정책 없음"
+        ]
+      },
+      "dart_rcept": "20260316001182",
+      "source_year": 2025,
+      "tags": [
+        "IT",
+        "트랩",
+        "매도"
+      ]
     }
   ]
 }
