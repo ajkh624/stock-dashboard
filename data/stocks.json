@@ -21,7 +21,28 @@
       "opinion_color": "buy_strong",
       "thesis": "5년 평균 ROE 17%대 안정, CFO 1,539억/FCF 1,096억 강한 현금창출력, PER 5.6 PBR 0.85 멀티플 저평가, 배당수익률 6.6% 매력. 사교육 둔화 리스크는 있으나 의대 정원 확대 수혜·자사주 소각 정책 긍정.",
       "checklist_part1_risk": 0,
+      "checklist_part1_total": 18,
       "checklist_part2_quality": 10,
+      "checklist_part2_total": 12,
+      "checklist_detail": {
+        "part1_risks_hit": [],
+        "part2_passed": [
+          "5년 ROE 15%+ 안정",
+          "영업이익률 두 자리",
+          "강한 FCF",
+          "낮은 부채비율",
+          "배당 지속·성장",
+          "자사주 소각 정책",
+          "본업 집중",
+          "이해 가능한 사업",
+          "이자보상배율 충분",
+          "유동비율 양호"
+        ],
+        "part2_failed": [
+          "독점·해자 (사교육 경쟁 존재)",
+          "장기 성장성 (저출산 우려)"
+        ]
+      },
       "dart_rcept": "20260318000849",
       "source_year": 2025,
       "tags": ["교육", "저평가", "고배당"]

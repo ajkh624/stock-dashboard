@@ -35,7 +35,12 @@ def main():
     p.add_argument("--opinion", required=True, choices=list(OPINION_COLOR))
     p.add_argument("--thesis", required=True)
     p.add_argument("--part1-risk", type=int, default=None)
+    p.add_argument("--part1-total", type=int, default=18)
     p.add_argument("--part2-quality", type=int, default=None)
+    p.add_argument("--part2-total", type=int, default=12)
+    p.add_argument("--risks-hit", default="", help="comma-separated")
+    p.add_argument("--passed", default="", help="comma-separated")
+    p.add_argument("--failed", default="", help="comma-separated")
     p.add_argument("--rcept", default=None)
     p.add_argument("--source-year", type=int, default=None)
     p.add_argument("--tags", default="")
@@ -62,7 +67,14 @@ def main():
         "opinion_color": OPINION_COLOR[args.opinion],
         "thesis": args.thesis,
         "checklist_part1_risk": args.part1_risk,
+        "checklist_part1_total": args.part1_total,
         "checklist_part2_quality": args.part2_quality,
+        "checklist_part2_total": args.part2_total,
+        "checklist_detail": {
+            "part1_risks_hit": [x.strip() for x in args.risks_hit.split(",") if x.strip()],
+            "part2_passed":   [x.strip() for x in args.passed.split(",") if x.strip()],
+            "part2_failed":   [x.strip() for x in args.failed.split(",") if x.strip()],
+        },
         "dart_rcept": args.rcept,
         "source_year": args.source_year,
         "tags": [t.strip() for t in args.tags.split(",") if t.strip()],

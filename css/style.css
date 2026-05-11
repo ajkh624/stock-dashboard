@@ -49,6 +49,36 @@ main { padding: 16px; max-width: 1200px; margin: 0 auto; }
 .card-tags { margin-top: 8px; display: flex; gap: 4px; flex-wrap: wrap; }
 .tag { background: rgba(74,222,128,0.12); color: var(--accent); padding: 2px 8px; border-radius: 12px; font-size: 11px; }
 
+/* Checklist */
+.checklist { margin: 10px 0; }
+.checklist summary {
+  display: flex; align-items: center; gap: 6px; cursor: pointer;
+  list-style: none; padding: 6px 0;
+}
+.checklist summary::-webkit-details-marker { display: none; }
+.chk-badge {
+  display: inline-flex; align-items: center; gap: 3px;
+  padding: 3px 8px; border-radius: 6px; font-size: 11px; font-weight: 600;
+}
+.chk-badge.risk { background: rgba(245,158,11,0.15); color: #fbbf24; }
+.chk-badge.quality { background: rgba(74,222,128,0.15); color: var(--accent); }
+.chk-toggle { margin-left: auto; color: var(--text-dim); font-size: 10px; transition: transform .2s; }
+.checklist[open] .chk-toggle { transform: rotate(180deg); }
+.chk-body {
+  margin-top: 8px; padding: 10px; background: rgba(255,255,255,0.02);
+  border-radius: 8px; border: 1px solid var(--border);
+}
+.chk-section { margin-bottom: 8px; }
+.chk-section:last-child { margin-bottom: 0; }
+.chk-section h4 { margin: 0 0 4px; font-size: 11px; color: var(--text-dim); font-weight: 500; }
+.chk-section ul { margin: 0; padding-left: 0; list-style: none; }
+.chk-section li { padding: 2px 0; font-size: 12px; }
+.chk-section li.hit { color: #fbbf24; }
+.chk-section li.ok { color: var(--accent); }
+.chk-section li.ng { color: var(--text-dim); }
+.chk-cell { white-space: nowrap; }
+.chk-cell .chk-badge { font-size: 10px; padding: 2px 5px; }
+
 .opinion {
   display: inline-block; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 600;
 }

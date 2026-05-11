@@ -16,6 +16,30 @@ function shortDate(iso) {
   return `${d.getMonth()+1}/${d.getDate()} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
 }
 
+function renderChecklist(s) {
+  const p1 = s.checklist_part1_risk, p1t = s.checklist_part1_total || 18;
+  const p2 = s.checklist_part2_quality, p2t = s.checklist_part2_total || 12;
+  if (p1 == null && p2 == null) return '';
+  const d = s.checklist_detail || {};
+  const risks = (d.part1_risks_hit||[]).map(x=>`<li class="hit">⚠️ ${x}</li>`).join('');
+  const passed = (d.part2_passed||[]).map(x=>`<li class="ok">✓ ${x}</li>`).join('');
+  const failed = (d.part2_failed||[]).map(x=>`<li class="ng">✗ ${x}</li>`).join('');
+  const hasDetail = risks || passed || failed;
+  return `
+  <details class="checklist">
+    <summary>
+      <span class="chk-badge risk">⚠️ 위험 ${p1??'-'}/${p1t}</span>
+      <span class="chk-badge quality">⭐ 우량 ${p2??'-'}/${p2t}</span>
+      ${hasDetail ? '<span class="chk-toggle">▼</span>' : ''}
+    </summary>
+    ${hasDetail ? `<div class="chk-body">
+      ${risks ? `<div class="chk-section"><h4>Part 1 위험 신호 ON</h4><ul>${risks}</ul></div>` : ''}
+      ${passed ? `<div class="chk-section"><h4>Part 2 통과</h4><ul>${passed}</ul></div>` : ''}
+      ${failed ? `<div class="chk-section"><h4>Part 2 미통과</h4><ul>${failed}</ul></div>` : ''}
+    </div>` : ''}
+  </details>`;
+}
+
 function renderCard(s) {
   const opCls = opinionClassMap[s.opinion] || 'neutral';
   const tags = (s.tags||[]).map(t=>`<span class="tag">${t}</span>`).join('');
@@ -40,6 +64,7 @@ function renderCard(s) {
       <div>FCF <strong>${fmt(s.fcf_eok)}억</strong></div>
       <div class="card-date">${shortDate(s.analyzed_at)}</div>
     </div>
+    ${renderChecklist(s)}
     <p class="card-thesis">${s.thesis||''}</p>
     ${tags ? `<div class="card-tags">${tags}</div>` : ''}
   </article>`;
@@ -57,6 +82,10 @@ function renderRow(s) {
     <td class="num">${fmtPct(s.dividend_yield)}</td>
     <td class="num">${fmt(s.cfo_eok)}</td>
     <td class="num">${fmt(s.fcf_eok)}</td>
+    <td class="chk-cell">
+      <span class="chk-badge risk">⚠️${s.checklist_part1_risk??'-'}/${s.checklist_part1_total||18}</span>
+      <span class="chk-badge quality">⭐${s.checklist_part2_quality??'-'}/${s.checklist_part2_total||12}</span>
+    </td>
     <td><span class="opinion ${opCls}">${s.opinion}</span></td>
     <td style="max-width:360px;font-size:12px;color:var(--text-dim)">${s.thesis||''}</td>
   </tr>`;
