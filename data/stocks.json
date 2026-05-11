@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-12T02:13:40+09:00",
+  "updated_at": "2026-05-12T07:10:16+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -1684,6 +1684,61 @@
           }
         ]
       }
+    },
+    {
+      "analyzed_at": "2026-05-12T07:10:16+09:00",
+      "name": "KG스틸",
+      "code": "016380",
+      "price": 6750.0,
+      "per": 5.0,
+      "pbr": 0.32,
+      "roe": 6.73,
+      "dividend_yield": 5.61,
+      "debt_ratio": 50.85,
+      "cfo_eok": 2493.0,
+      "fcf_eok": 1801.0,
+      "revenue_eok": 31934.0,
+      "op_income_eok": 1507.0,
+      "net_income_eok": 1355.0,
+      "opinion": "중립",
+      "opinion_color": "neutral",
+      "thesis": "철강 사이클 둔화로 매출·영익 4년 연속 감소(영익률 8.9→4.7%, 25.12 단일 분기 OP -52억 적자전환). 그러나 부채비율 140→51%로 개선, PBR 0.32·PER 5.0·배당 5.6%로 동종업종 최저 밸류에이션. 자사주 매입(143억) 첫 등장. 사이클 바닥 확인 후 5천원대 진입 권장. 컨센서스 목표가 7,850원(+16%).",
+      "checklist_part1_risk": 3,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 6,
+      "checklist_part2_total": 12,
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "25.12 분기 영업적자 전환",
+          "정정공시 22.8%(44/193)",
+          "영업이익 4년 연속 감소"
+        ],
+        "part2_passed": [
+          "부채비율 개선",
+          "CFO>NI",
+          "FCF 흑자",
+          "PBR<0.5",
+          "PER<10",
+          "배당 5%+자사주"
+        ],
+        "part2_failed": [
+          "매출 성장",
+          "영업이익 성장",
+          "OPM 두자릿수",
+          "ROE 15%+",
+          "컨센 상향",
+          "OPM 추세"
+        ]
+      },
+      "dart_rcept": "20250318001327",
+      "source_year": 2025,
+      "tags": [
+        "철강",
+        "사이클",
+        "저PBR",
+        "고배당",
+        "자사주"
+      ]
     }
   ]
 }
