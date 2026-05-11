@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>📈 안박사 주식 재무제표 분석 대시보드</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>📈 주식 재무제표 분석 대시보드</h1>
+  <p class="sub">안박사의 경제공학연구소 · 종목 분석 누적 기록</p>
+  <div class="meta">
+    <span id="stockCount">- 종목</span>
+    <span id="updatedAt">갱신: -</span>
+  </div>
+</header>
+
+<main>
+  <section class="filters">
+    <input type="search" id="searchInput" placeholder="🔍 종목명·코드·태그 검색">
+    <select id="opinionFilter">
+      <option value="">전체 의견</option>
+      <option value="강매수">강매수</option>
+      <option value="매수">매수</option>
+      <option value="중립">중립</option>
+      <option value="회피">회피</option>
+      <option value="매도">매도</option>
+    </select>
+    <select id="sortBy">
+      <option value="analyzed_at_desc">분석일 최신순</option>
+      <option value="per_asc">PER 낮은순</option>
+      <option value="pbr_asc">PBR 낮은순</option>
+      <option value="roe_desc">ROE 높은순</option>
+      <option value="dividend_desc">배당 높은순</option>
+    </select>
+  </section>
+
+  <section class="cards" id="cards"></section>
+
+  <section class="table-wrap">
+    <table id="stockTable">
+      <thead>
+        <tr>
+          <th>분석일시</th>
+          <th>종목</th>
+          <th class="num">현재가</th>
+          <th class="num">PER</th>
+          <th class="num">PBR</th>
+          <th class="num">ROE</th>
+          <th class="num">배당</th>
+          <th class="num">CFO(억)</th>
+          <th class="num">FCF(억)</th>
+          <th>의견</th>
+          <th>핵심근거</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </section>
+</main>
+
+<footer>
+  <p>데이터 소스: 금융감독원 DART, 네이버페이 증권 / 매수·매도 의견은 개인 분석이며 투자 권유 아님</p>
+</footer>
+
+<script src="js/render.js"></script>
+</body>
+</html>

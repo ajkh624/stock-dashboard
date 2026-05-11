@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "updated_at": "2026-05-12T01:30:00+09:00",
+  "stocks": [
+    {
+      "analyzed_at": "2026-05-12T01:30:00+09:00",
+      "name": "메가스터디교육",
+      "code": "215200",
+      "price": 45600,
+      "per": 5.6,
+      "pbr": 0.85,
+      "roe": 17.9,
+      "dividend_yield": 6.6,
+      "debt_ratio": null,
+      "cfo_eok": 1539,
+      "fcf_eok": 1096,
+      "revenue_eok": null,
+      "op_income_eok": null,
+      "net_income_eok": null,
+      "opinion": "강매수",
+      "opinion_color": "buy_strong",
+      "thesis": "5년 평균 ROE 17%대 안정, CFO 1,539억/FCF 1,096억 강한 현금창출력, PER 5.6 PBR 0.85 멀티플 저평가, 배당수익률 6.6% 매력. 사교육 둔화 리스크는 있으나 의대 정원 확대 수혜·자사주 소각 정책 긍정.",
+      "checklist_part1_risk": 0,
+      "checklist_part2_quality": 10,
+      "dart_rcept": "20260318000849",
+      "source_year": 2025,
+      "tags": ["교육", "저평가", "고배당"]
+    }
+  ]
+}
