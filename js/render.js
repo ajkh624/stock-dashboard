@@ -106,8 +106,9 @@ function renderChecklist(s) {
 function renderCard(s) {
   const opCls = opinionClassMap[s.opinion] || 'neutral';
   const tags = (s.tags||[]).map(t=>`<span class="tag">${t}</span>`).join('');
+  const hasTs = !!(s.timeseries && s.timeseries.years && s.timeseries.years.length);
   return `
-  <article class="card">
+  <article class="card${hasTs?' has-ts':''}" data-code="${s.code}" data-idx="${s._idx}" role="button" tabindex="0">
     <div class="card-head">
       <div>
         <span class="card-name">${s.name}</span>
@@ -179,12 +180,170 @@ function applyFilters(list) {
 }
 
 function render() {
+  // assign stable index for modal lookup
+  STATE.stocks.forEach((s, i) => s._idx = i);
   const list = applyFilters(STATE.stocks);
   document.getElementById('cards').innerHTML = list.map(renderCard).join('');
   document.getElementById('tbody').innerHTML = list.map(renderRow).join('');
   document.getElementById('stockCount').textContent = `${list.length} 종목`;
   document.getElementById('updatedAt').textContent = `갱신: ${shortDate(STATE.updated_at)}`;
 }
+
+// ========== Time-series Chart Modal ==========
+const CHART_SPECS = [
+  { key: 'revenue_eok',    label: '매출 (억원)',         color: '#4ade80', unit: '억' },
+  { key: 'op_income_eok',  label: '영업이익 (억원)',     color: '#60a5fa', unit: '억' },
+  { key: 'net_income_eok', label: '순이익 (억원)',       color: '#a78bfa', unit: '억' },
+  { key: 'op_margin_pct',  label: '영업이익률 (%)',      color: '#fbbf24', unit: '%'  },
+  { key: 'roe_pct',        label: 'ROE (%)',             color: '#fb7185', unit: '%'  },
+  { key: 'debt_ratio',     label: '부채비율 (%)',        color: '#f97316', unit: '%'  },
+  { key: 'cfo_eok',        label: 'CFO (억원)',          color: '#22d3ee', unit: '억' },
+  { key: 'fcf_eok',        label: 'FCF (억원)',          color: '#10b981', unit: '억' },
+  { key: 'per',            label: 'PER (배)',            color: '#e879f9', unit: '배' },
+  { key: 'pbr',            label: 'PBR (배)',            color: '#f472b6', unit: '배' },
+  { key: 'dividend_yield', label: '배당수익률 (%)',      color: '#facc15', unit: '%'  },
+];
+
+let CHART_INSTANCES = [];
+
+function fmtVal(v, unit) {
+  if (v == null) return '-';
+  const n = Number(v);
+  if (unit === '%') return n.toFixed(2) + '%';
+  if (unit === '배') return n.toFixed(2);
+  return n.toLocaleString() + (unit==='억' ? '억' : '');
+}
+
+function openChartModal(stock) {
+  const ts = stock.timeseries;
+  const modal = document.getElementById('chartModal');
+  document.getElementById('modalTitle').textContent = `${stock.name} (${stock.code})`;
+  document.getElementById('modalSub').textContent = ts && ts.source
+    ? `${ts.years[0]}~${ts.years[ts.years.length-1]} 시계열 · ${ts.source}`
+    : '시계열 데이터 없음';
+  const body = document.getElementById('modalBody');
+
+  // destroy previous charts
+  CHART_INSTANCES.forEach(c => { try { c.destroy(); } catch(e){} });
+  CHART_INSTANCES = [];
+
+  if (!ts || !ts.years || !ts.years.length) {
+    body.innerHTML = `<div class="chart-empty">📊 이 종목은 아직 시계열 데이터가 등록되지 않았습니다.<br><small>(다음 분석 회차에 추가 예정)</small></div>`;
+  } else {
+    const specs = CHART_SPECS.filter(sp => ts[sp.key] && ts[sp.key].some(v => v != null));
+    body.innerHTML = `<div class="chart-grid">${specs.map((sp, i) => {
+      const arr = ts[sp.key];
+      const latest = arr[arr.length-1];
+      return `<div class="chart-box">
+        <h3><span>${sp.label}</span><span class="latest">최근 ${fmtVal(latest, sp.unit)}</span></h3>
+        <div class="chart-canvas-wrap"><canvas id="chart_${i}"></canvas></div>
+      </div>`;
+    }).join('')}</div>`;
+
+    // Common chart options
+    const chartFontColor = '#9099a8';
+    const gridColor = 'rgba(255,255,255,0.06)';
+
+    specs.forEach((sp, i) => {
+      const ctx = document.getElementById(`chart_${i}`);
+      if (!ctx) return;
+      const arr = ts[sp.key];
+      const labels = ts.years.map(String);
+      const inst = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels,
+          datasets: [{
+            label: sp.label,
+            data: arr,
+            borderColor: sp.color,
+            backgroundColor: sp.color + '22',
+            tension: 0.25,
+            spanGaps: true,
+            pointRadius: 4,
+            pointHoverRadius: 6,
+            pointBackgroundColor: sp.color,
+            fill: true,
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              backgroundColor: '#0f1115',
+              borderColor: '#2a2f3a', borderWidth: 1,
+              titleColor: '#e6e8ec', bodyColor: '#e6e8ec',
+              callbacks: {
+                label: (ctx) => `${sp.label}: ${fmtVal(ctx.parsed.y, sp.unit)}`
+              }
+            }
+          },
+          scales: {
+            x: {
+              ticks: { color: chartFontColor, font: { size: 11 } },
+              grid: { color: gridColor }
+            },
+            y: {
+              ticks: {
+                color: chartFontColor, font: { size: 11 },
+                callback: v => sp.unit === '%' ? v + '%'
+                                : sp.unit === '배' ? v
+                                : v.toLocaleString()
+              },
+              grid: { color: gridColor }
+            }
+          }
+        }
+      });
+      CHART_INSTANCES.push(inst);
+    });
+  }
+
+  modal.classList.add('open');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeChartModal() {
+  const modal = document.getElementById('chartModal');
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+  CHART_INSTANCES.forEach(c => { try { c.destroy(); } catch(e){} });
+  CHART_INSTANCES = [];
+}
+
+// Click delegation
+document.addEventListener('click', (e) => {
+  // Modal close
+  if (e.target.closest('[data-close="1"]')) {
+    closeChartModal();
+    return;
+  }
+  // Card click — but ignore clicks on inner interactive elements
+  const card = e.target.closest('.card');
+  if (!card) return;
+  if (e.target.closest('details, summary, a, button, input')) return;
+  const idx = Number(card.dataset.idx);
+  const stock = STATE.stocks[idx];
+  if (stock) openChartModal(stock);
+});
+
+// ESC to close
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeChartModal();
+  // Keyboard accessibility: Enter on focused card
+  if (e.key === 'Enter') {
+    const card = document.activeElement?.closest?.('.card');
+    if (card) {
+      const idx = Number(card.dataset.idx);
+      const stock = STATE.stocks[idx];
+      if (stock) openChartModal(stock);
+    }
+  }
+});
 
 async function load() {
   const res = await fetch('data/stocks.json?ts=' + Date.now());

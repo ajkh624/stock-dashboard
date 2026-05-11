@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>📈 안박사 주식 재무제표 분석 대시보드</title>
-<link rel="stylesheet" href="css/style.css?v=5">
+<link rel="stylesheet" href="css/style.css?v=6">
 </head>
 <body>
 <header>
@@ -107,6 +107,24 @@
   <p>데이터 소스: 금융감독원 DART, 네이버페이 증권 / 매수·매도 의견은 개인 분석이며 투자 권유 아님</p>
 </footer>
 
-<script src="js/render.js?v=5"></script>
+<!-- 시계열 차트 모달 -->
+<div class="modal" id="chartModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close="1"></div>
+  <div class="modal-panel">
+    <button class="modal-close" data-close="1" aria-label="닫기">✕</button>
+    <header class="modal-head">
+      <div>
+        <h2 id="modalTitle">-</h2>
+        <p id="modalSub" class="modal-sub">-</p>
+      </div>
+    </header>
+    <div class="modal-body" id="modalBody">
+      <!-- charts inserted here -->
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="js/render.js?v=6"></script>
 </body>
 </html>

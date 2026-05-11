@@ -33,6 +33,16 @@ main { padding: 16px; max-width: 1200px; margin: 0 auto; }
 .cards { display: grid; gap: 12px; grid-template-columns: 1fr; }
 .card {
   background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px;
+  cursor: pointer; transition: transform 0.12s ease, border-color 0.12s ease, box-shadow 0.12s ease;
+  position: relative;
+}
+.card:hover { border-color: var(--accent); box-shadow: 0 4px 16px rgba(74,222,128,0.08); }
+.card:active { transform: scale(0.995); }
+.card.has-ts::after {
+  content: "📈 차트";
+  position: absolute; top: 12px; right: 90px;
+  font-size: 10px; color: var(--accent); background: rgba(74,222,128,0.1);
+  padding: 3px 7px; border-radius: 10px; pointer-events: none;
 }
 .card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; margin-bottom: 10px; }
 .card-name { font-size: 16px; font-weight: 600; }
@@ -183,3 +193,54 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 }
 
 footer { padding: 24px 16px; text-align: center; color: var(--text-dim); font-size: 11px; border-top: 1px solid var(--border); margin-top: 24px; }
+
+/* ========== Time-series Chart Modal ========== */
+.modal { position: fixed; inset: 0; z-index: 1000; display: none; }
+.modal.open { display: block; }
+.modal-backdrop {
+  position: absolute; inset: 0; background: rgba(0,0,0,0.7); backdrop-filter: blur(4px);
+}
+.modal-panel {
+  position: absolute; inset: 0;
+  background: var(--bg); overflow-y: auto;
+  display: flex; flex-direction: column;
+}
+.modal-head {
+  position: sticky; top: 0; z-index: 2;
+  background: var(--bg); border-bottom: 1px solid var(--border);
+  padding: 14px 16px 12px;
+  display: flex; justify-content: space-between; align-items: flex-start; gap: 12px;
+}
+.modal-head h2 { margin: 0 0 4px; font-size: 18px; }
+.modal-sub { margin: 0; color: var(--text-dim); font-size: 12px; }
+.modal-close {
+  position: absolute; top: 12px; right: 12px;
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--card); border: 1px solid var(--border); color: var(--text);
+  font-size: 16px; cursor: pointer; line-height: 1;
+}
+.modal-close:hover { border-color: var(--accent); }
+.modal-body { padding: 16px; padding-bottom: 80px; }
+.chart-grid { display: grid; gap: 14px; grid-template-columns: 1fr; }
+.chart-box {
+  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+  padding: 12px;
+}
+.chart-box h3 {
+  margin: 0 0 8px; font-size: 13px; color: var(--text-dim); font-weight: 500;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.chart-box h3 .latest { color: var(--text); font-weight: 600; font-size: 13px; }
+.chart-canvas-wrap { position: relative; height: 200px; }
+.chart-empty {
+  padding: 24px; text-align: center; color: var(--text-dim); font-size: 13px;
+  background: var(--card); border: 1px dashed var(--border); border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .modal-panel { inset: 32px; border-radius: 14px; border: 1px solid var(--border); }
+  .chart-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 1200px) {
+  .chart-grid { grid-template-columns: repeat(3, 1fr); }
+}
