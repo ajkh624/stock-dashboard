@@ -227,6 +227,60 @@ function getPeriodData(stock, period) {
   return { labels: ts.years.map(String), data: ts, source: ts.source };
 }
 
+function renderModalChecklist(stock) {
+  const p1 = stock.checklist_part1_risk, p1t = stock.checklist_part1_total || 18;
+  const p2 = stock.checklist_part2_quality, p2t = stock.checklist_part2_total || 12;
+  if (p1 == null && p2 == null) return '';
+  const p1na = stock.checklist_part1_na || 0, p2na = stock.checklist_part2_na || 0;
+  const opCls = opinionClassMap[stock.opinion] || 'neutral';
+  const head = `
+    <div class="mc-head">
+      <span class="opinion ${opCls}">${stock.opinion || '-'}</span>
+      <span class="chk-badge risk">⚠️ 위험 ${p1 ?? '-'}/${p1t}${p1na?` (NA ${p1na})`:''}</span>
+      <span class="chk-badge quality">⭐ 우량 ${p2 ?? '-'}/${p2t}${p2na?` (NA ${p2na})`:''}</span>
+      ${stock.thesis ? `<p class="mc-thesis">${stock.thesis}</p>` : ''}
+    </div>`;
+
+  const full = stock.checklist_detail_full;
+  let cols = '';
+  if (full && full.part1 && full.part2) {
+    const renderItems = (list) => list.map((it, i) => {
+      const cls = it.status;
+      const icon = {hit:'⚠️', ok:'✓', ng:'✗', na:'—'}[cls] || '•';
+      return `<li class="${cls}"><span class="ico">${icon}</span><span class="lbl">${i+1}. ${it.label}</span><span class="ev">${it.evidence||''}</span></li>`;
+    }).join('');
+    cols = `
+      <div class="mc-cols">
+        <div class="mc-section">
+          <h4><span>🚨 위험 시그널</span><span>(${p1}/${p1t})</span></h4>
+          <ul>${renderItems(full.part1)}</ul>
+        </div>
+        <div class="mc-section">
+          <h4><span>✅ 우량 시그널</span><span>(${p2}/${p2t})</span></h4>
+          <ul>${renderItems(full.part2)}</ul>
+        </div>
+      </div>`;
+  } else {
+    const d = stock.checklist_detail || {};
+    const risks = (d.part1_risks_hit||[]).map(x=>`<li class="hit"><span class="ico">⚠️</span><span class="lbl">${x}</span></li>`).join('');
+    const passed = (d.part2_passed||[]).map(x=>`<li class="ok"><span class="ico">✓</span><span class="lbl">${x}</span></li>`).join('');
+    const failed = (d.part2_failed||[]).map(x=>`<li class="ng"><span class="ico">✗</span><span class="lbl">${x}</span></li>`).join('');
+    if (!risks && !passed && !failed) return `<section class="modal-checklist">${head}</section>`;
+    cols = `
+      <div class="mc-cols">
+        <div class="mc-section">
+          <h4><span>🚨 위험 ON</span><span>(${p1 ?? '-'}/${p1t})</span></h4>
+          <ul>${risks || '<li class="na"><span class="ico">—</span><span class="lbl">위험 시그널 없음</span></li>'}</ul>
+        </div>
+        <div class="mc-section">
+          <h4><span>✅ 우량주 체크 (${p2 ?? '-'}/${p2t})</span></h4>
+          <ul>${passed}${failed}</ul>
+        </div>
+      </div>`;
+  }
+  return `<section class="modal-checklist">${head}${cols}</section>`;
+}
+
 function renderCharts() {
   const body = document.getElementById('modalBody');
   const pd = getPeriodData(CURRENT_STOCK, CURRENT_PERIOD);
@@ -235,8 +289,10 @@ function renderCharts() {
   CHART_INSTANCES.forEach(c => { try { c.destroy(); } catch(e){} });
   CHART_INSTANCES = [];
 
+  const checklistHTML = renderModalChecklist(CURRENT_STOCK);
+
   if (!pd) {
-    body.innerHTML = `<div class="chart-empty">📊 ${CURRENT_PERIOD==='quarterly'?'분기별':'연간'} 시계열 데이터가 없습니다.<br><small>(다음 분석 회차에 추가 예정)</small></div>`;
+    body.innerHTML = `${checklistHTML}<div class="chart-empty">📊 ${CURRENT_PERIOD==='quarterly'?'분기별':'연간'} 시계열 데이터가 없습니다.<br><small>(다음 분석 회차에 추가 예정)</small></div>`;
     return;
   }
 
@@ -245,11 +301,11 @@ function renderCharts() {
 
   const specs = CHART_SPECS.filter(sp => pd.data[sp.key] && pd.data[sp.key].some(v => v != null));
   if (!specs.length) {
-    body.innerHTML = `<div class="chart-empty">📊 표시할 지표가 없습니다.</div>`;
+    body.innerHTML = `${checklistHTML}<div class="chart-empty">📊 표시할 지표가 없습니다.</div>`;
     return;
   }
 
-  body.innerHTML = `<div class="chart-grid">${specs.map((sp, i) => {
+  body.innerHTML = `${checklistHTML}<div class="chart-grid">${specs.map((sp, i) => {
     const arr = pd.data[sp.key];
     const latest = arr[arr.length-1];
     return `<div class="chart-box">
@@ -351,6 +407,7 @@ function openChartModal(stock) {
   if (!ts) {
     document.getElementById('modalSub').textContent = '시계열 데이터 없음';
     document.getElementById('modalBody').innerHTML =
+      renderModalChecklist(stock) +
       `<div class="chart-empty">📊 이 종목은 아직 시계열 데이터가 등록되지 않았습니다.<br><small>(다음 분석 회차에 추가 예정)</small></div>`;
   } else {
     renderCharts();
