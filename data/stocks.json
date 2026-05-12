@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-13T02:59:30+09:00",
+  "updated_at": "2026-05-13T03:11:03+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -7829,6 +7829,1489 @@
           "자사주",
           "배당 증가",
           "PBR < 1"
+        ]
+      }
+    },
+    {
+      "name": "아시아종묘",
+      "code": "154030",
+      "market": "KQ",
+      "price": 1895,
+      "per": null,
+      "pbr": 0.95,
+      "roe": 7.0,
+      "dividend_yield": null,
+      "revenue_eok": 278,
+      "op_income_eok": 9,
+      "net_income_eok": 19,
+      "debt_ratio": 72.19,
+      "cfo_eok": null,
+      "fcf_eok": null,
+      "opinion": "중립",
+      "thesis": "채소 종자 1위 종묘업체. 결산기 9월→12월 변경(2025.12는 3개월 단기 결산)로 시계열 비교 어려움. 2024.9~2025.9 회계연도 기준 매출 278억·영익 +9억 흑전·순익 +19억 회복 성공, ROE 7.90%로 정상화. 그러나 2025.12 단기 결산에서 영익 -10억으로 다시 적자 신호. PBR 0.95·BPS 1,998 자산 가치 균형. 부채 72%, DART anomaly watch 15. 시총 228억 마이크로캡(코스닥 1648위). 결산기 정상화 후 2026.3 분기 실적 확인 필요. 종묘 본업은 회복 추세이나 변동성 큼.",
+      "tags": [
+        "종묘",
+        "코스닥",
+        "마이크로캡",
+        "결산기변경",
+        "턴어라운드"
+      ],
+      "analyzed_at": "2026-05-13T03:11:03+09:00",
+      "analysis_date": "2026-05-13",
+      "source_year": 2025,
+      "rcept_no": "-",
+      "checklist_part1_risk": 2,
+      "checklist_part1_total": 18,
+      "checklist_part1_na": 6,
+      "checklist_part2_quality": 2,
+      "checklist_part2_total": 12,
+      "checklist_part2_na": 3,
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_0",
+            "label": "감사의견",
+            "status": "ok",
+            "evidence": "2024·2025 적정"
+          },
+          {
+            "key": "p1_1",
+            "label": "강조사항",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_2",
+            "label": "감사인 교체",
+            "status": "ok",
+            "evidence": "교체 0"
+          },
+          {
+            "key": "p1_3",
+            "label": "영업적자",
+            "status": "hit",
+            "evidence": "⚠️ 2025.12 결산 3개월 단기에 영익 -10억 (결산기 9월→12월 변경)"
+          },
+          {
+            "key": "p1_4",
+            "label": "이자보상<1",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_5",
+            "label": "유동성",
+            "status": "ok",
+            "evidence": "부채 72%, 양호"
+          },
+          {
+            "key": "p1_6",
+            "label": "손상차손",
+            "status": "ok",
+            "evidence": "없음"
+          },
+          {
+            "key": "p1_7",
+            "label": "CB·BW",
+            "status": "ok",
+            "evidence": "자본스트레스 2건 적음"
+          },
+          {
+            "key": "p1_8",
+            "label": "자산매각",
+            "status": "ok",
+            "evidence": "없음"
+          },
+          {
+            "key": "p1_9",
+            "label": "특수관계자",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_10",
+            "label": "사명교체",
+            "status": "ok",
+            "evidence": "안정"
+          },
+          {
+            "key": "p1_11",
+            "label": "자본잠식",
+            "status": "ok",
+            "evidence": "자기자본 241억"
+          },
+          {
+            "key": "p1_12",
+            "label": "제2금융권",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_13",
+            "label": "이익↔CFO",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_14",
+            "label": "CF패턴",
+            "status": "ok",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_15",
+            "label": "회전율",
+            "status": "ok",
+            "evidence": "결산기 변경 정상화 진행"
+          },
+          {
+            "key": "p1_16",
+            "label": "개발비",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_17",
+            "label": "기타",
+            "status": "hit",
+            "evidence": "⚠️ 결산기 9월→12월 변경 (회계 비교 어려움), 매출 -38% CAGR은 결산기 단축 영향"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_0",
+            "label": "매출CAGR",
+            "status": "ng",
+            "evidence": "-38% (결산기 변경 영향)"
+          },
+          {
+            "key": "p2_1",
+            "label": "영익 우상향",
+            "status": "ng",
+            "evidence": "2024.9 흑전 후 단기 결산 적자"
+          },
+          {
+            "key": "p2_2",
+            "label": "OPM 5%+",
+            "status": "ng",
+            "evidence": "2024.9~2025.9 3.32%"
+          },
+          {
+            "key": "p2_3",
+            "label": "ROE 15%+",
+            "status": "ng",
+            "evidence": "5년 평균 -0.68%"
+          },
+          {
+            "key": "p2_4",
+            "label": "CFO+",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p2_5",
+            "label": "FCF+",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p2_6",
+            "label": "CF패턴",
+            "status": "ok",
+            "evidence": "부채 양호"
+          },
+          {
+            "key": "p2_7",
+            "label": "주주환원율",
+            "status": "ng",
+            "evidence": "배당 0"
+          },
+          {
+            "key": "p2_8",
+            "label": "자사주",
+            "status": "ng",
+            "evidence": "없음"
+          },
+          {
+            "key": "p2_9",
+            "label": "배당증가",
+            "status": "ng",
+            "evidence": "배당 0"
+          },
+          {
+            "key": "p2_10",
+            "label": "PER 저평가",
+            "status": "na",
+            "evidence": "적자"
+          },
+          {
+            "key": "p2_11",
+            "label": "PBR<1",
+            "status": "ok",
+            "evidence": "PBR 0.95, BPS 1,998"
+          }
+        ]
+      },
+      "timeseries": {
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "source": "DART 연결 (결산기 9월→12월 변경, 2025는 3개월 단기 결산)",
+        "revenue_eok": [
+          244,
+          240,
+          246,
+          278,
+          35
+        ],
+        "op_income_eok": [
+          22,
+          -16,
+          -11,
+          9,
+          -10
+        ],
+        "net_income_eok": [
+          0,
+          -6,
+          -6,
+          19,
+          -14
+        ],
+        "op_margin_pct": [
+          9.08,
+          -6.64,
+          -4.57,
+          3.32,
+          -28.12
+        ],
+        "roe_pct": [
+          0.03,
+          -2.44,
+          -2.79,
+          7.46,
+          -5.67
+        ],
+        "debt_ratio": [
+          94.31,
+          75.77,
+          80.79,
+          65.48,
+          72.19
+        ]
+      },
+      "financial_note": "결산기 9월→12월 변경. 2025.12는 3개월 단기 결산. 2024.9~2025.9가 정식 연간 비교 시점.",
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "영업적자",
+          "기타"
+        ],
+        "part2_passed": [
+          "CF패턴",
+          "PBR<1"
+        ],
+        "part2_failed": [
+          "매출CAGR",
+          "영익 우상향",
+          "OPM 5%+",
+          "ROE 15%+",
+          "주주환원율",
+          "자사주",
+          "배당증가"
+        ]
+      }
+    },
+    {
+      "name": "한탑",
+      "code": "002680",
+      "market": "KQ",
+      "price": 632,
+      "per": 9.72,
+      "pbr": 0.41,
+      "roe": 4.41,
+      "dividend_yield": null,
+      "revenue_eok": 824,
+      "op_income_eok": 29,
+      "net_income_eok": 21,
+      "debt_ratio": 192.29,
+      "cfo_eok": null,
+      "fcf_eok": null,
+      "opinion": "회피",
+      "thesis": "제분·식품 마이크로캡(매출 824억). 5년 4년 순익 적자(누적 -232억), 2025 ROE +4.41% 첫 흑전이나 평균 -9.64%. ⚠️ 부채비율 192% (5년 최악, 자기자본 473억 vs 부채 910억), DART anomaly warning 40/100, 정정공시 28.3%(26/92), 자본스트레스 5건(CB·유증 2024.01 클러스터). 영풍제지→한탑 사명교체 이력. PER 9.72·PBR 0.41 저평가 매력은 있으나 만성 적자 + 고부채 + 자본조달 의존으로 회복 신호 불확실. 시총 204억 코스닥 1677위 마이크로캡. 회피.",
+      "tags": [
+        "제분",
+        "식품",
+        "코스닥",
+        "마이크로캡",
+        "고부채",
+        "CB유증",
+        "사명변경",
+        "회피"
+      ],
+      "analyzed_at": "2026-05-13T03:11:03+09:00",
+      "analysis_date": "2026-05-13",
+      "source_year": 2025,
+      "rcept_no": "-",
+      "checklist_part1_risk": 5,
+      "checklist_part1_total": 18,
+      "checklist_part1_na": 6,
+      "checklist_part2_quality": 2,
+      "checklist_part2_total": 12,
+      "checklist_part2_na": 2,
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_0",
+            "label": "감사의견",
+            "status": "ok",
+            "evidence": "2024·2025 적정"
+          },
+          {
+            "key": "p1_1",
+            "label": "강조사항",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_2",
+            "label": "감사인 교체",
+            "status": "ok",
+            "evidence": "교체 0"
+          },
+          {
+            "key": "p1_3",
+            "label": "영업적자",
+            "status": "ok",
+            "evidence": "2025 영익 +29억 흑전(2021 -46 적자에서 회복)"
+          },
+          {
+            "key": "p1_4",
+            "label": "이자보상<1",
+            "status": "hit",
+            "evidence": "⚠️ 부채 192%, 이자부담 매우 큼"
+          },
+          {
+            "key": "p1_5",
+            "label": "유동성",
+            "status": "hit",
+            "evidence": "⚠️ 부채비율 192% (5년 최악, 자기자본 473억 vs 부채 910억)"
+          },
+          {
+            "key": "p1_6",
+            "label": "손상차손",
+            "status": "ok",
+            "evidence": "없음"
+          },
+          {
+            "key": "p1_7",
+            "label": "CB·BW",
+            "status": "hit",
+            "evidence": "⚠️ CB·유증 5건 자본스트레스"
+          },
+          {
+            "key": "p1_8",
+            "label": "자산매각",
+            "status": "ok",
+            "evidence": "없음"
+          },
+          {
+            "key": "p1_9",
+            "label": "특수관계자",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_10",
+            "label": "사명교체",
+            "status": "hit",
+            "evidence": "⚠️ 영풍제지→한탑 사명교체 이력"
+          },
+          {
+            "key": "p1_11",
+            "label": "자본잠식",
+            "status": "ok",
+            "evidence": "자기자본 473억"
+          },
+          {
+            "key": "p1_12",
+            "label": "제2금융권",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_13",
+            "label": "이익↔CFO",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_14",
+            "label": "CF패턴",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_15",
+            "label": "회전율",
+            "status": "ok",
+            "evidence": "매출 정체"
+          },
+          {
+            "key": "p1_16",
+            "label": "개발비",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_17",
+            "label": "기타",
+            "status": "hit",
+            "evidence": "⚠️ DART anomaly warning 40/100, 정정공시 28.3%(26/92), 5년 4년 순익 적자(누적 -232억), ROE 평균 -9.64%"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_0",
+            "label": "매출CAGR",
+            "status": "ng",
+            "evidence": "1.09% 정체"
+          },
+          {
+            "key": "p2_1",
+            "label": "영익 우상향",
+            "status": "ng",
+            "evidence": "5년 변동 -46/+3/+9/+37/+29"
+          },
+          {
+            "key": "p2_2",
+            "label": "OPM 5%+",
+            "status": "ng",
+            "evidence": "최고 4.42%"
+          },
+          {
+            "key": "p2_3",
+            "label": "ROE 15%+",
+            "status": "ng",
+            "evidence": "평균 -9.64%, 2025 +4.41"
+          },
+          {
+            "key": "p2_4",
+            "label": "CFO+",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p2_5",
+            "label": "FCF+",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p2_6",
+            "label": "CF패턴",
+            "status": "ng",
+            "evidence": "CB·유증 의존"
+          },
+          {
+            "key": "p2_7",
+            "label": "주주환원율",
+            "status": "ng",
+            "evidence": "배당 0"
+          },
+          {
+            "key": "p2_8",
+            "label": "자사주",
+            "status": "ng",
+            "evidence": "없음"
+          },
+          {
+            "key": "p2_9",
+            "label": "배당증가",
+            "status": "ng",
+            "evidence": "배당 0"
+          },
+          {
+            "key": "p2_10",
+            "label": "PER 저평가",
+            "status": "ok",
+            "evidence": "PER 9.72 vs 동종 35.47"
+          },
+          {
+            "key": "p2_11",
+            "label": "PBR<1",
+            "status": "ok",
+            "evidence": "PBR 0.41, BPS 1,533"
+          }
+        ]
+      },
+      "timeseries": {
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "source": "DART 연결",
+        "revenue_eok": [
+          789,
+          991,
+          948,
+          849,
+          824
+        ],
+        "op_income_eok": [
+          -46,
+          3,
+          9,
+          37,
+          29
+        ],
+        "net_income_eok": [
+          -49,
+          -47,
+          -103,
+          -54,
+          21
+        ],
+        "op_margin_pct": [
+          -5.78,
+          0.34,
+          0.96,
+          4.42,
+          3.55
+        ],
+        "roe_pct": [
+          -9.93,
+          -9.51,
+          -21.48,
+          -11.69,
+          4.41
+        ],
+        "debt_ratio": [
+          181.48,
+          195.31,
+          194.87,
+          203.01,
+          192.29
+        ]
+      },
+      "financial_note": "DART anomaly 40/100. 부채 192% + 누적적자 -232억. 영풍제지→한탑 사명교체.",
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "이자보상<1",
+          "유동성",
+          "CB·BW",
+          "사명교체",
+          "기타"
+        ],
+        "part2_passed": [
+          "PER 저평가",
+          "PBR<1"
+        ],
+        "part2_failed": [
+          "매출CAGR",
+          "영익 우상향",
+          "OPM 5%+",
+          "ROE 15%+",
+          "CF패턴",
+          "주주환원율",
+          "자사주",
+          "배당증가"
+        ]
+      }
+    },
+    {
+      "name": "아즈텍WB",
+      "code": "032080",
+      "market": "KQ",
+      "price": 1191,
+      "per": 9.72,
+      "pbr": 0.41,
+      "roe": 0.87,
+      "dividend_yield": null,
+      "revenue_eok": 302,
+      "op_income_eok": 5,
+      "net_income_eok": 9,
+      "debt_ratio": 10.39,
+      "cfo_eok": null,
+      "fcf_eok": null,
+      "opinion": "중립",
+      "thesis": "건설·산업용 텅스텐·중석 제련업체. ⭐ 부채 10.39% 동종 최저, 자기자본 1,072억 견고 (시총 256억의 4.2배). PBR 0.41·BPS 5,109(주가 1,191의 4.3배) — 강력한 자산가치주. 그러나 본업 부진: 매출 364→302억 (-17%), 5년 평균 ROE 1.37% 저조, 4년 순익 적자(누적 -39억), 2025 영익 +5억·순익 +9억 흑전이나 미미. DART anomaly watch 25(CB 4건 만기전 취득). 시총 256억 코스닥 1648위. 자산 매력 vs 본업 부재 사이 — 청산가치 투자 관점에서만 분할 진입 고려. 본업 회복 신호 없어 중립.",
+      "tags": [
+        "텅스텐",
+        "제련",
+        "자산주",
+        "코스닥",
+        "마이크로캡",
+        "저PBR",
+        "중립"
+      ],
+      "analyzed_at": "2026-05-13T03:11:03+09:00",
+      "analysis_date": "2026-05-13",
+      "source_year": 2025,
+      "rcept_no": "-",
+      "checklist_part1_risk": 2,
+      "checklist_part1_total": 18,
+      "checklist_part1_na": 6,
+      "checklist_part2_quality": 3,
+      "checklist_part2_total": 12,
+      "checklist_part2_na": 2,
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_0",
+            "label": "감사의견",
+            "status": "ok",
+            "evidence": "2024·2025 적정"
+          },
+          {
+            "key": "p1_1",
+            "label": "강조사항",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_2",
+            "label": "감사인 교체",
+            "status": "ok",
+            "evidence": "교체 0"
+          },
+          {
+            "key": "p1_3",
+            "label": "영업적자",
+            "status": "ok",
+            "evidence": "2025 영익 +5억(소액)"
+          },
+          {
+            "key": "p1_4",
+            "label": "이자보상<1",
+            "status": "na",
+            "evidence": "부채 10% 매우 양호"
+          },
+          {
+            "key": "p1_5",
+            "label": "유동성",
+            "status": "ok",
+            "evidence": "부채비율 10.39% 동종 최저, 자기자본 1,072억 견고"
+          },
+          {
+            "key": "p1_6",
+            "label": "손상차손",
+            "status": "ok",
+            "evidence": "없음"
+          },
+          {
+            "key": "p1_7",
+            "label": "CB·BW",
+            "status": "hit",
+            "evidence": "⚠️ CB 4건 (2023~2024 만기전 취득)"
+          },
+          {
+            "key": "p1_8",
+            "label": "자산매각",
+            "status": "ok",
+            "evidence": "없음"
+          },
+          {
+            "key": "p1_9",
+            "label": "특수관계자",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_10",
+            "label": "사명교체",
+            "status": "ok",
+            "evidence": "안정"
+          },
+          {
+            "key": "p1_11",
+            "label": "자본잠식",
+            "status": "ok",
+            "evidence": "자기자본 1,072억 견고"
+          },
+          {
+            "key": "p1_12",
+            "label": "제2금융권",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_13",
+            "label": "이익↔CFO",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_14",
+            "label": "CF패턴",
+            "status": "ok",
+            "evidence": "부채 최저"
+          },
+          {
+            "key": "p1_15",
+            "label": "회전율",
+            "status": "ok",
+            "evidence": "매출 -4.51% 소폭 감소"
+          },
+          {
+            "key": "p1_16",
+            "label": "개발비",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_17",
+            "label": "기타",
+            "status": "hit",
+            "evidence": "⚠️ 순익 CAGR -46.74% 급감, 5년 4년 적자(누적 -39억). DART anomaly watch 25"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_0",
+            "label": "매출CAGR",
+            "status": "ng",
+            "evidence": "-4.51%"
+          },
+          {
+            "key": "p2_1",
+            "label": "영익 우상향",
+            "status": "ng",
+            "evidence": "변동 큼"
+          },
+          {
+            "key": "p2_2",
+            "label": "OPM 5%+",
+            "status": "ng",
+            "evidence": "2025 OPM 1.52%"
+          },
+          {
+            "key": "p2_3",
+            "label": "ROE 15%+",
+            "status": "ng",
+            "evidence": "평균 1.37%, 2025 0.87%"
+          },
+          {
+            "key": "p2_4",
+            "label": "CFO+",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p2_5",
+            "label": "FCF+",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p2_6",
+            "label": "CF패턴",
+            "status": "ok",
+            "evidence": "부채 매우 낮음"
+          },
+          {
+            "key": "p2_7",
+            "label": "주주환원율",
+            "status": "ng",
+            "evidence": "배당 0"
+          },
+          {
+            "key": "p2_8",
+            "label": "자사주",
+            "status": "ng",
+            "evidence": "없음"
+          },
+          {
+            "key": "p2_9",
+            "label": "배당증가",
+            "status": "ng",
+            "evidence": "배당 0"
+          },
+          {
+            "key": "p2_10",
+            "label": "PER 저평가",
+            "status": "ok",
+            "evidence": "PER 18.32(2025) — 단 동종 -105 적자업종"
+          },
+          {
+            "key": "p2_11",
+            "label": "PBR<1",
+            "status": "ok",
+            "evidence": "⭐ PBR 0.41 (자산주, BPS 5,109 vs 가격 1,191)"
+          }
+        ]
+      },
+      "timeseries": {
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "source": "DART 연결",
+        "revenue_eok": [
+          364,
+          455,
+          371,
+          354,
+          302
+        ],
+        "op_income_eok": [
+          -4,
+          21,
+          -1,
+          5,
+          5
+        ],
+        "net_income_eok": [
+          115,
+          -14,
+          -13,
+          -20,
+          9
+        ],
+        "op_margin_pct": [
+          -1.04,
+          4.73,
+          -0.2,
+          1.54,
+          1.52
+        ],
+        "roe_pct": [
+          10.43,
+          -1.29,
+          -1.22,
+          -1.92,
+          0.87
+        ],
+        "debt_ratio": [
+          30.74,
+          29.13,
+          14.95,
+          11.03,
+          10.39
+        ]
+      },
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "CB·BW",
+          "기타"
+        ],
+        "part2_passed": [
+          "CF패턴",
+          "PER 저평가",
+          "PBR<1"
+        ],
+        "part2_failed": [
+          "매출CAGR",
+          "영익 우상향",
+          "OPM 5%+",
+          "ROE 15%+",
+          "주주환원율",
+          "자사주",
+          "배당증가"
+        ]
+      }
+    },
+    {
+      "name": "골드앤에스",
+      "code": "035290",
+      "market": "KQ",
+      "price": 761,
+      "per": 27.7,
+      "pbr": 0.23,
+      "roe": -12.82,
+      "dividend_yield": null,
+      "revenue_eok": 90,
+      "op_income_eok": -19,
+      "net_income_eok": -15,
+      "debt_ratio": 43.82,
+      "cfo_eok": null,
+      "fcf_eok": null,
+      "opinion": "회피",
+      "thesis": "마이크로캡(시총 181억, 매출 90억). 5년 4년 영익 적자, 누적 순익 -98억, 2022 ROE -42.98% 최악. 2024 잠시 회복(영익 -5억, 순익 +1억)했으나 2025 다시 악화: 영익 -19억(OPM -20.82%), 순익 -15억. DART anomaly watch 25, 자본스트레스 7건(2024.06 유증·CB 정정 클러스터). 자기자본 152→115억 (5년 -24%) 잠식 진행. ⭐ PBR 0.23·BPS 5,109(주가 761의 6.7배)으로 자산 매력은 있으나 본업 회복 신호 전무. 정정공시 15.5%·외인 0.71%·코스닥 1614위. 회피.",
+      "tags": [
+        "코스닥",
+        "마이크로캡",
+        "적자",
+        "자본스트레스",
+        "자산주",
+        "회피"
+      ],
+      "analyzed_at": "2026-05-13T03:11:03+09:00",
+      "analysis_date": "2026-05-13",
+      "source_year": 2025,
+      "rcept_no": "-",
+      "checklist_part1_risk": 5,
+      "checklist_part1_total": 18,
+      "checklist_part1_na": 6,
+      "checklist_part2_quality": 1,
+      "checklist_part2_total": 12,
+      "checklist_part2_na": 2,
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_0",
+            "label": "감사의견",
+            "status": "ok",
+            "evidence": "2024·2025 적정"
+          },
+          {
+            "key": "p1_1",
+            "label": "강조사항",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_2",
+            "label": "감사인 교체",
+            "status": "ok",
+            "evidence": "교체 0"
+          },
+          {
+            "key": "p1_3",
+            "label": "영업적자",
+            "status": "hit",
+            "evidence": "⚠️ 2025 영익 -188억, OPM -20.82% 본업 붕괴"
+          },
+          {
+            "key": "p1_4",
+            "label": "이자보상<1",
+            "status": "hit",
+            "evidence": "⚠️ 영익 적자 → 이자보상 무의미"
+          },
+          {
+            "key": "p1_5",
+            "label": "유동성",
+            "status": "ok",
+            "evidence": "부채 44%"
+          },
+          {
+            "key": "p1_6",
+            "label": "손상차손",
+            "status": "hit",
+            "evidence": "⚠️ 5년 누적 적자 -98억, 자기자본 152→115억 잠식 진행"
+          },
+          {
+            "key": "p1_7",
+            "label": "CB·BW",
+            "status": "hit",
+            "evidence": "⚠️ 자본스트레스 7건 (유증·CB 클러스터, 2024 유증 정정 다수)"
+          },
+          {
+            "key": "p1_8",
+            "label": "자산매각",
+            "status": "ok",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_9",
+            "label": "특수관계자",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_10",
+            "label": "사명교체",
+            "status": "ok",
+            "evidence": "안정"
+          },
+          {
+            "key": "p1_11",
+            "label": "자본잠식",
+            "status": "ok",
+            "evidence": "자기자본 115억 (잠식 아님)"
+          },
+          {
+            "key": "p1_12",
+            "label": "제2금융권",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_13",
+            "label": "이익↔CFO",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_14",
+            "label": "CF패턴",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_15",
+            "label": "회전율",
+            "status": "ok",
+            "evidence": "매출 정체"
+          },
+          {
+            "key": "p1_16",
+            "label": "개발비",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_17",
+            "label": "기타",
+            "status": "hit",
+            "evidence": "⚠️ DART anomaly watch 25, 5년 평균 ROE -14.89% (2022 -42.98 최악), 정정공시 15.5%(16/103)"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_0",
+            "label": "매출CAGR",
+            "status": "ng",
+            "evidence": "2.6% 정체"
+          },
+          {
+            "key": "p2_1",
+            "label": "영익 우상향",
+            "status": "ng",
+            "evidence": "5년 4년 적자"
+          },
+          {
+            "key": "p2_2",
+            "label": "OPM 5%+",
+            "status": "ng",
+            "evidence": "2025 -20.82%"
+          },
+          {
+            "key": "p2_3",
+            "label": "ROE 15%+",
+            "status": "ng",
+            "evidence": "평균 -14.89%"
+          },
+          {
+            "key": "p2_4",
+            "label": "CFO+",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p2_5",
+            "label": "FCF+",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p2_6",
+            "label": "CF패턴",
+            "status": "ng",
+            "evidence": "유증·CB 의존"
+          },
+          {
+            "key": "p2_7",
+            "label": "주주환원율",
+            "status": "ng",
+            "evidence": "배당 0"
+          },
+          {
+            "key": "p2_8",
+            "label": "자사주",
+            "status": "ng",
+            "evidence": "없음"
+          },
+          {
+            "key": "p2_9",
+            "label": "배당증가",
+            "status": "ng",
+            "evidence": "배당 0"
+          },
+          {
+            "key": "p2_10",
+            "label": "PER 저평가",
+            "status": "ng",
+            "evidence": "PER 27.70 vs 동종 12.07 고평가"
+          },
+          {
+            "key": "p2_11",
+            "label": "PBR<1",
+            "status": "ok",
+            "evidence": "PBR 0.23, BPS 5,109(가격 761의 6.7배)"
+          }
+        ]
+      },
+      "timeseries": {
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "source": "DART 연결",
+        "revenue_eok": [
+          81,
+          95,
+          99,
+          96,
+          90
+        ],
+        "op_income_eok": [
+          6,
+          -11,
+          -14,
+          -5,
+          -19
+        ],
+        "net_income_eok": [
+          8,
+          -63,
+          -30,
+          1,
+          -15
+        ],
+        "op_margin_pct": [
+          7.77,
+          -12.06,
+          -13.73,
+          -5.07,
+          -20.82
+        ],
+        "roe_pct": [
+          5.08,
+          -42.98,
+          -24.21,
+          0.47,
+          -12.82
+        ],
+        "debt_ratio": [
+          72.28,
+          28.65,
+          28.01,
+          22.27,
+          43.82
+        ]
+      },
+      "financial_note": "DART anomaly watch 25, 5년 4년 영익 적자, 자기자본 152→115억 잠식 진행 중.",
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "영업적자",
+          "이자보상<1",
+          "손상차손",
+          "CB·BW",
+          "기타"
+        ],
+        "part2_passed": [
+          "PBR<1"
+        ],
+        "part2_failed": [
+          "매출CAGR",
+          "영익 우상향",
+          "OPM 5%+",
+          "ROE 15%+",
+          "CF패턴",
+          "주주환원율",
+          "자사주",
+          "배당증가",
+          "PER 저평가"
+        ]
+      }
+    },
+    {
+      "name": "우리엔터프라이즈",
+      "code": "037400",
+      "market": "KQ",
+      "price": 992,
+      "per": null,
+      "pbr": 0.18,
+      "roe": -3.09,
+      "dividend_yield": 2.02,
+      "revenue_eok": 10652,
+      "op_income_eok": 11,
+      "net_income_eok": -102,
+      "debt_ratio": 159.25,
+      "cfo_eok": null,
+      "fcf_eok": null,
+      "opinion": "중립",
+      "thesis": "자동차부품 무역업(매출 1.07조, 코스닥 마이크로캡 중 대형). 시총 260억 vs 매출 1조 = 매출배수 0.024 극저. 5년 ROE 21.94→-3.09% 점진 악화, 2025 첫 순익 적자(-102억), 영익 442→11억 -97% 급락. 부채비율 108→159% 1년 급증 (자기자본 3,311억 vs 부채 5,273억). 매출 5년 -32% 우하향. ⭐ PBR 0.18·BPS 5,603 (주가 992의 5.6배) — 자산가치 극저평가. 배당 시가배당률 2.02% 지급, DART anomaly watch 15(자본스트레스 0건, 정정 17%). 본업 모멘텀 부재이나 자산·배당 매력. 자동차 무역 업황 회복 트리거 필요. 중립.",
+      "tags": [
+        "자동차부품",
+        "무역",
+        "코스닥",
+        "마이크로캡",
+        "저PBR",
+        "배당",
+        "중립"
+      ],
+      "analyzed_at": "2026-05-13T03:11:03+09:00",
+      "analysis_date": "2026-05-13",
+      "source_year": 2025,
+      "rcept_no": "-",
+      "checklist_part1_risk": 3,
+      "checklist_part1_total": 18,
+      "checklist_part1_na": 6,
+      "checklist_part2_quality": 3,
+      "checklist_part2_total": 12,
+      "checklist_part2_na": 2,
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_0",
+            "label": "감사의견",
+            "status": "ok",
+            "evidence": "2024·2025 적정"
+          },
+          {
+            "key": "p1_1",
+            "label": "강조사항",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_2",
+            "label": "감사인 교체",
+            "status": "ok",
+            "evidence": "교체 0"
+          },
+          {
+            "key": "p1_3",
+            "label": "영업적자",
+            "status": "ok",
+            "evidence": "2025 영익 +11억 흑자(5년 모두 흑자)"
+          },
+          {
+            "key": "p1_4",
+            "label": "이자보상<1",
+            "status": "hit",
+            "evidence": "⚠️ 영익 11 vs 부채 5,273억 — 이자부담 큼"
+          },
+          {
+            "key": "p1_5",
+            "label": "유동성",
+            "status": "hit",
+            "evidence": "⚠️ 부채비율 108→159% 급증, 자기자본 3,311억 vs 부채 5,273억"
+          },
+          {
+            "key": "p1_6",
+            "label": "손상차손",
+            "status": "ok",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_7",
+            "label": "CB·BW",
+            "status": "ok",
+            "evidence": "자본스트레스 0건"
+          },
+          {
+            "key": "p1_8",
+            "label": "자산매각",
+            "status": "ok",
+            "evidence": "없음"
+          },
+          {
+            "key": "p1_9",
+            "label": "특수관계자",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_10",
+            "label": "사명교체",
+            "status": "ok",
+            "evidence": "안정"
+          },
+          {
+            "key": "p1_11",
+            "label": "자본잠식",
+            "status": "ok",
+            "evidence": "자기자본 3,311억 견고"
+          },
+          {
+            "key": "p1_12",
+            "label": "제2금융권",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_13",
+            "label": "이익↔CFO",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_14",
+            "label": "CF패턴",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_15",
+            "label": "회전율",
+            "status": "ok",
+            "evidence": "매출 -9.21% CAGR 정체"
+          },
+          {
+            "key": "p1_16",
+            "label": "개발비",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p1_17",
+            "label": "기타",
+            "status": "hit",
+            "evidence": "⚠️ DART anomaly watch 15, 매출 15,679→10,652억 (-32%) 5년 우하향, 2025 순익 -102억 첫 적자, ROE 21.94→-3.09% 추세 악화"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_0",
+            "label": "매출CAGR",
+            "status": "ng",
+            "evidence": "-9.21% 우하향"
+          },
+          {
+            "key": "p2_1",
+            "label": "영익 우상향",
+            "status": "ng",
+            "evidence": "442→11억 -97% 급락"
+          },
+          {
+            "key": "p2_2",
+            "label": "OPM 5%+",
+            "status": "ng",
+            "evidence": "2025 OPM 0.11%"
+          },
+          {
+            "key": "p2_3",
+            "label": "ROE 15%+",
+            "status": "ng",
+            "evidence": "평균 7.17%, 2025 -3.09 첫 적자"
+          },
+          {
+            "key": "p2_4",
+            "label": "CFO+",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p2_5",
+            "label": "FCF+",
+            "status": "na",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p2_6",
+            "label": "CF패턴",
+            "status": "ng",
+            "evidence": "부채 급증"
+          },
+          {
+            "key": "p2_7",
+            "label": "주주환원율",
+            "status": "ok",
+            "evidence": "DPS 있음 (배당수익률 2.02%)"
+          },
+          {
+            "key": "p2_8",
+            "label": "자사주",
+            "status": "ng",
+            "evidence": "미확인"
+          },
+          {
+            "key": "p2_9",
+            "label": "배당증가",
+            "status": "ok",
+            "evidence": "2025.12 배당 지급, 시가배당률 2.02%"
+          },
+          {
+            "key": "p2_10",
+            "label": "PER 저평가",
+            "status": "ng",
+            "evidence": "PER N/A (적자)"
+          },
+          {
+            "key": "p2_11",
+            "label": "PBR<1",
+            "status": "ok",
+            "evidence": "PBR 0.18 (BPS 5,603, 주가 992의 5.6배)"
+          }
+        ]
+      },
+      "timeseries": {
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "source": "DART 연결",
+        "revenue_eok": [
+          15679,
+          13795,
+          12880,
+          12591,
+          10652
+        ],
+        "op_income_eok": [
+          442,
+          348,
+          265,
+          162,
+          11
+        ],
+        "net_income_eok": [
+          545,
+          252,
+          190,
+          88,
+          -102
+        ],
+        "op_margin_pct": [
+          2.82,
+          2.52,
+          2.06,
+          1.29,
+          0.11
+        ],
+        "roe_pct": [
+          21.94,
+          8.48,
+          5.93,
+          2.59,
+          -3.09
+        ],
+        "debt_ratio": [
+          194.59,
+          119.26,
+          112.44,
+          107.56,
+          159.25
+        ]
+      },
+      "financial_note": "매출 1조 vs 시총 260억(매출배수 0.024) 극저평가. PBR 0.18 자산가치 매력 vs 5년 영익 -97% 급락 본업 모멘텀 부재.",
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "이자보상<1",
+          "유동성",
+          "기타"
+        ],
+        "part2_passed": [
+          "주주환원율",
+          "배당증가",
+          "PBR<1"
+        ],
+        "part2_failed": [
+          "매출CAGR",
+          "영익 우상향",
+          "OPM 5%+",
+          "ROE 15%+",
+          "CF패턴",
+          "자사주",
+          "PER 저평가"
         ]
       }
     }
