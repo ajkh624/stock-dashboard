@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-13T02:47:07+09:00",
+  "updated_at": "2026-05-13T02:55:58+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -6577,6 +6577,360 @@
       "per_percentile": 16.9,
       "pbr_percentile": 0.7,
       "div_percentile": 86.7
+    },
+    {
+      "name": "비비안",
+      "code": "002070",
+      "market": "KS",
+      "price": 10000,
+      "per": null,
+      "pbr": 0.18,
+      "roe": -18.08,
+      "dividend_yield": null,
+      "revenue_eok": 2224,
+      "op_income_eok": -50,
+      "net_income_eok": -126,
+      "debt_ratio": 144.96,
+      "cfo_eok": 86,
+      "fcf_eok": 63,
+      "opinion": "회피",
+      "thesis": "국내 속옷 노포 브랜드(매출 2,224억). ⚠️ 5년 연속 순익 적자(누적 -357억, 자기자본 826억의 43% 잠식 진행), 2025 영익 -50억 적자전환, ROE -18.08%, 부채비율 91.88→144.96% 악화. 2025 CB 247억(시총 240억의 100%+) + 유증 117억 발행 — 자본 만성 부족. DART anomaly 40/100 warning(정정공시 23.0% 31/135건, 자본스트레스 공시 36건). 52주 14,000↔345 40배 극단 변동성, 외인 0.45%, 증권사 커버 없음. 4Q OPM -24%·순익률 -43.57% 본업 붕괴. 유일 매력 PBR 0.18·BPS 5.5만원이나 적자로 잠식 중. 마이크로캡(시총 240억, 코스피 1847위) + 자본 스트레스 + 작전성 변동성 — 회피·매도. 추가 CB·유증 공시 시 즉시 손절.",
+      "tags": [
+        "섬유의류",
+        "속옷",
+        "마이크로캡",
+        "자본스트레스",
+        "CB발행",
+        "적자기업",
+        "회피"
+      ],
+      "analyzed_at": "2026-05-13T02:55:58+09:00",
+      "analysis_date": "2026-05-13",
+      "source_year": 2025,
+      "rcept_no": "20260323001209",
+      "checklist_part1_risk": 6,
+      "checklist_part1_total": 18,
+      "checklist_part1_na": 1,
+      "checklist_part2_quality": 1,
+      "checklist_part2_total": 12,
+      "checklist_part2_na": 0,
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_audit_qualified",
+            "label": "감사의견 비적정",
+            "status": "ok",
+            "evidence": "2024·2025 적정"
+          },
+          {
+            "key": "p1_audit_emphasis",
+            "label": "감사 강조사항",
+            "status": "ok",
+            "evidence": "명시 없음"
+          },
+          {
+            "key": "p1_auditor_change",
+            "label": "감사인 잦은 교체",
+            "status": "ok",
+            "evidence": "교체 0건"
+          },
+          {
+            "key": "p1_op_loss",
+            "label": "영업적자",
+            "status": "hit",
+            "evidence": "2025 영익 -50억 적자전환, 4Q -69억 급격 악화"
+          },
+          {
+            "key": "p1_int_cov",
+            "label": "이자보상배율 < 1",
+            "status": "hit",
+            "evidence": "영익 -50 vs 이자 44 → -1.13배 ❌"
+          },
+          {
+            "key": "p1_liquidity",
+            "label": "유동/당좌비율 < 100/50%",
+            "status": "hit",
+            "evidence": "당좌비율 32.4%, 부채비율 145% 악화"
+          },
+          {
+            "key": "p1_impairment",
+            "label": "손상차손",
+            "status": "ok",
+            "evidence": "종속기업 연결범위 변동 -362억 (부정적 신호)"
+          },
+          {
+            "key": "p1_cb_bw",
+            "label": "CB·BW 발행",
+            "status": "hit",
+            "evidence": "⚠️ CB 247억 발행 (시총 240억 대비 100%+, 잠재 희석)"
+          },
+          {
+            "key": "p1_asset_sale",
+            "label": "자산매각 적자 메우기",
+            "status": "ok",
+            "evidence": "매각예정자산 처분 19억 (소액)"
+          },
+          {
+            "key": "p1_related_party",
+            "label": "특수관계자",
+            "status": "na",
+            "evidence": "상세 미확인"
+          },
+          {
+            "key": "p1_name_change",
+            "label": "사명교체",
+            "status": "ok",
+            "evidence": "비비안 안정"
+          },
+          {
+            "key": "p1_capital_impair",
+            "label": "자본잠식",
+            "status": "ok",
+            "evidence": "자기자본 826억, 누적적자 -357억 (자본의 43% 잠식 진행)"
+          },
+          {
+            "key": "p1_2nd_finance",
+            "label": "제2금융권",
+            "status": "ok",
+            "evidence": "단기차입 134억 정상 회전"
+          },
+          {
+            "key": "p1_earnings_cash_gap",
+            "label": "이익↑+CFO↓",
+            "status": "ok",
+            "evidence": "순익 -126 vs CFO +86 — CFO 상회 (자산 매각·운전자본 효과)"
+          },
+          {
+            "key": "p1_cf_pattern",
+            "label": "CF패턴 위험형",
+            "status": "hit",
+            "evidence": "⚠️ 영(+86)/투(-247)/재(+327) — 차입·CB 의존형 (위험)"
+          },
+          {
+            "key": "p1_turnover",
+            "label": "회전율 급락",
+            "status": "ok",
+            "evidence": "매출 정체기 운전자본 안정"
+          },
+          {
+            "key": "p1_dev_asset",
+            "label": "개발비·영업권 비대",
+            "status": "ok",
+            "evidence": "무형 취득 0.2억 미미"
+          },
+          {
+            "key": "p1_other",
+            "label": "기타 위험",
+            "status": "hit",
+            "evidence": "⚠️ DART anomaly 40/100 warning: 정정공시 23.0%(31/135), 자본스트레스 36건. 52주 14,000/345 40배 변동성, 외인 0.45%, 컨센 N/A"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_revenue_up",
+            "label": "매출 5년 우상향 (CAGR 5%+)",
+            "status": "ng",
+            "evidence": "CAGR 4.31% (정체)"
+          },
+          {
+            "key": "p2_op_up",
+            "label": "영익 5년 우상향",
+            "status": "ng",
+            "evidence": "2025 적자전환 -50억"
+          },
+          {
+            "key": "p2_opm_5",
+            "label": "OPM 5%+",
+            "status": "ng",
+            "evidence": "5년 최고 2.68%, 2025 -2.25%"
+          },
+          {
+            "key": "p2_roe_15",
+            "label": "ROE 15%+",
+            "status": "ng",
+            "evidence": "5년 평균 -7.79%, 2025 -15.27%"
+          },
+          {
+            "key": "p2_cfo_pos",
+            "label": "CFO 5년 (+)",
+            "status": "ng",
+            "evidence": "5년 변동 (2024 -0.03억), 2025 +86억"
+          },
+          {
+            "key": "p2_fcf_pos",
+            "label": "FCF (+)",
+            "status": "ng",
+            "evidence": "2025 +63억(소액)"
+          },
+          {
+            "key": "p2_cf_growth_pattern",
+            "label": "CF패턴 우량형",
+            "status": "ng",
+            "evidence": "영+/투-/재+ 차입 의존형"
+          },
+          {
+            "key": "p2_shareholder_return",
+            "label": "주주환원율 30%+",
+            "status": "ng",
+            "evidence": "배당 0, 환원 없음"
+          },
+          {
+            "key": "p2_treasury_buyback",
+            "label": "자사주 매입·소각",
+            "status": "ng",
+            "evidence": "없음"
+          },
+          {
+            "key": "p2_dividend_grow",
+            "label": "배당 5년 증가",
+            "status": "ng",
+            "evidence": "배당 0"
+          },
+          {
+            "key": "p2_per_low",
+            "label": "PER 동종 저평가",
+            "status": "ng",
+            "evidence": "PER 산출 불가 (적자)"
+          },
+          {
+            "key": "p2_pbr_low",
+            "label": "PBR < 1",
+            "status": "ok",
+            "evidence": "PBR 0.18 (동종 평균 1.14의 16%), BPS 55,003원"
+          }
+        ]
+      },
+      "financial_note": "DART anomaly 40/100 warning: 정정공시 23.0%(31/135), 자본스트레스 공시 36건(CB·유증 클러스터). 52주 변동성 40배(345~14,000원), 컨센 커버 없음. 자본잠식 진입 위험.",
+      "timeseries": {
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "source": "DART 연결 (rcept 20260323001209 + buffett_snapshot)",
+        "revenue_eok": [
+          1879,
+          2131,
+          2173,
+          2217,
+          2224
+        ],
+        "op_income_eok": [
+          14,
+          57,
+          49,
+          6,
+          -50
+        ],
+        "net_income_eok": [
+          -32,
+          -82,
+          -79,
+          -38,
+          -126
+        ],
+        "op_margin_pct": [
+          0.76,
+          2.68,
+          2.24,
+          0.26,
+          -2.25
+        ],
+        "roe_pct": [
+          -3.11,
+          -8.46,
+          -8.95,
+          -3.17,
+          -15.27
+        ],
+        "debt_ratio": [
+          91.88,
+          108.18,
+          116.49,
+          113.95,
+          144.96
+        ],
+        "quarterly": {
+          "labels": [
+            "2024.12",
+            "2025.03",
+            "2025.06",
+            "2025.09",
+            "2025.12"
+          ],
+          "source": "네이버페이 분기실적 (누적-차감, 지배주주)",
+          "revenue_eok": [
+            431,
+            572,
+            805,
+            560,
+            288
+          ],
+          "op_income_eok": [
+            -38,
+            17,
+            23,
+            -21,
+            -69
+          ],
+          "net_income_eok": [
+            -122,
+            -20,
+            65,
+            -46,
+            -125
+          ],
+          "op_margin_pct": [
+            -8.94,
+            2.95,
+            2.91,
+            -3.76,
+            -24.06
+          ],
+          "roe_pct": [
+            -1.19,
+            -1.45,
+            0.73,
+            -9.57,
+            -18.08
+          ],
+          "debt_ratio": [
+            113.95,
+            141.07,
+            123.77,
+            127.5,
+            144.96
+          ]
+        }
+      },
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "영업적자",
+          "이자보상배율 < 1",
+          "유동/당좌비율 < 100/50%",
+          "CB·BW 발행",
+          "CF패턴 위험형",
+          "기타 위험"
+        ],
+        "part2_passed": [
+          "PBR < 1"
+        ],
+        "part2_failed": [
+          "매출 5년 우상향 (CAGR 5%+)",
+          "영익 5년 우상향",
+          "OPM 5%+",
+          "ROE 15%+",
+          "CFO 5년 (+)",
+          "FCF (+)",
+          "CF패턴 우량형",
+          "주주환원율 30%+",
+          "자사주 매입·소각",
+          "배당 5년 증가",
+          "PER 동종 저평가"
+        ]
+      }
     }
   ],
   "market_baseline": {
