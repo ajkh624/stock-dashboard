@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-13T04:47:33+09:00",
+  "updated_at": "2026-05-13T04:50:46+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -12453,234 +12453,232 @@
       "checklist_detail_full": {
         "part1": [
           {
-            "key": "p1_0",
-            "label": "감사 비적정",
+            "key": "p1_audit_qualified",
+            "label": "감사의견 한정/부적정/거절",
             "status": "ok",
-            "evidence": "2024·2025 적정"
+            "evidence": "2024·2025 적정의견 (DART anomaly)"
           },
           {
-            "key": "p1_1",
-            "label": "강조사항",
+            "key": "p1_going_concern",
+            "label": "계속기업 불확실성 단락",
+            "status": "ok",
+            "evidence": "emphasis null"
+          },
+          {
+            "key": "p1_audit_delay",
+            "label": "감사보고서 법정기한 지연",
+            "status": "ok",
+            "evidence": "정정공시율 2.1% 정상"
+          },
+          {
+            "key": "p1_3y_op_loss",
+            "label": "3년 연속 영업적자",
             "status": "hit",
-            "evidence": "⚠️ 매출 -73% 급락 + OPM -92% — 본업 사실상 해체"
+            "evidence": "2024(-37억)·2025(-128억) 2년 연속, 진행 중"
           },
           {
-            "key": "p1_2",
-            "label": "감사인 교체",
+            "key": "p1_interest_cover",
+            "label": "이자보상배율<1",
             "status": "ok",
-            "evidence": "교체 0"
+            "evidence": "부채비율 7.8%로 이자비용 미미"
           },
           {
-            "key": "p1_3",
-            "label": "영업적자",
+            "key": "p1_current_ratio",
+            "label": "유동비율<150% 또는 하락",
+            "status": "ok",
+            "evidence": "당좌비율 186% (전년 998% → 급락은 우려)"
+          },
+          {
+            "key": "p1_impairment_repeat",
+            "label": "손상차손 반복",
             "status": "hit",
-            "evidence": "⚠️ 2025 영익 -128억 OPM -92.12% — 본업 붕괴"
+            "evidence": "2023 NI -279억(영익 108억 대비 비정상), 2020 NI -253억 — 상시 일회성 손실"
           },
           {
-            "key": "p1_4",
-            "label": "이자보상<1",
+            "key": "p1_cb_bw_repeat",
+            "label": "CB/BW 반복 발행",
             "status": "hit",
-            "evidence": "⚠️ 영익 적자 → 무의미"
+            "evidence": "2021.11 사모 CB 200억(만기 2024.9, 전환가 5,000원 → 발행주식 22.77%) 1회. 추가발행은 없으나 희석 위험 잔존"
           },
           {
-            "key": "p1_5",
-            "label": "유동성",
+            "key": "p1_asset_sale_purpose",
+            "label": "핵심자산 매각=운영자금",
             "status": "ok",
-            "evidence": "부채 7.8% 매우 낮음"
+            "evidence": "최근 처분 공시 없음"
           },
           {
-            "key": "p1_6",
-            "label": "손상차손",
+            "key": "p1_related_party",
+            "label": "특수관계자 거래 불투명",
+            "status": "na",
+            "evidence": "별도 정밀조회 미진행"
+          },
+          {
+            "key": "p1_name_ceo_change",
+            "label": "사명/대표 교체 빈번",
             "status": "hit",
-            "evidence": "⚠️ 자산 1,083→984억, 2023 순익 -279억 손상 의심"
+            "evidence": "2021 자회사 ㈜태일(유류판매) 흡수합병으로 사업 정체성 변경. ES큐브로 사명 유지하나 본업 매출 -89% 폭락"
           },
           {
-            "key": "p1_7",
-            "label": "CB·BW",
+            "key": "p1_capital_erosion",
+            "label": "자본총계≈자본금/자본잠식",
             "status": "ok",
-            "evidence": "자본스트레스 0건 ⭐"
+            "evidence": "자본 859억 vs 자본금 678억 (참고: 발행주식 13.56M × 액면 5,000원), 잠식 없음"
           },
           {
-            "key": "p1_8",
-            "label": "자산매각",
+            "key": "p1_secondary_finance",
+            "label": "제2금융권 차입",
+            "status": "ok",
+            "evidence": "부채 45억으로 사실상 무차입"
+          },
+          {
+            "key": "p1_profit_cash_gap",
+            "label": "흑자 + 영업CF 음수",
+            "status": "na",
+            "evidence": "2025 영업적자 + CF 미수집(NA)"
+          },
+          {
+            "key": "p1_cf_pattern",
+            "label": "CF 영(-)/투(+)/재(+)",
+            "status": "na",
+            "evidence": "CF 데이터 미수집"
+          },
+          {
+            "key": "p1_turnover_decline",
+            "label": "매출채권/재고 회전율 하락",
             "status": "hit",
-            "evidence": "⚠️ 매출 517→139억 -73% — 사업부 양도·구조조정 진행 추정"
+            "evidence": "매출 1,258억→139억 (-89%) 자체가 회전 붕괴"
           },
           {
-            "key": "p1_9",
-            "label": "특수관계자",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p1_10",
-            "label": "사명교체",
+            "key": "p1_intangible_ratio",
+            "label": "개발비·영업권 과다",
             "status": "ok",
-            "evidence": "미확인"
+            "evidence": "자산 904억 대비 무형비중 크지 않음(별도 정밀확인 필요)"
           },
           {
-            "key": "p1_11",
-            "label": "자본잠식",
-            "status": "ok",
-            "evidence": "자기자본 913억 견고(자산매각 효과)"
-          },
-          {
-            "key": "p1_12",
-            "label": "제2금융권",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p1_13",
-            "label": "이익↔CFO",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p1_14",
-            "label": "CF패턴",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p1_15",
-            "label": "회전율",
-            "status": "ok",
-            "evidence": "-"
-          },
-          {
-            "key": "p1_16",
-            "label": "개발비",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p1_17",
-            "label": "기타",
-            "status": "ok",
-            "evidence": "⭐ DART anomaly clean 0/100, 정정공시 2.1%(매우 낮음)"
+            "key": "p1_micro_cap_speculative",
+            "label": "마이크로캡 작전·관리종목 위험",
+            "status": "hit",
+            "evidence": "시총 384억(코스닥 1,433위), 외인 2.73%, 컨센N/A, 배당0, 본업 사실상 소실 — 작전·관리종목 후보 환경"
           }
         ],
         "part2": [
           {
-            "key": "p2_0",
-            "label": "매출CAGR",
+            "key": "p2_revenue_up",
+            "label": "매출 우상향",
             "status": "ng",
-            "evidence": "-27.95% 분석 36종 최악급"
+            "evidence": "CAGR -33.09% (2020→2024)"
           },
           {
-            "key": "p2_1",
-            "label": "영익우상향",
+            "key": "p2_op_growth_gt_rev",
+            "label": "영익 성장률 > 매출 성장률",
             "status": "ng",
-            "evidence": "6→15→11→-37→-128 급락"
+            "evidence": "영익 음수 진입"
           },
           {
-            "key": "p2_2",
-            "label": "OPM5%+",
+            "key": "p2_opm_competitive",
+            "label": "OPM 경쟁사 대비 우월/개선",
             "status": "ng",
-            "evidence": "-92.12%"
+            "evidence": "OPM -92% vs 오로라 +11%, 골프존홀딩스 +0.8%"
           },
           {
-            "key": "p2_3",
-            "label": "ROE15%+",
+            "key": "p2_roe_15plus",
+            "label": "5년 ROE 10~15%+ 유지",
             "status": "ng",
-            "evidence": "평균 -1.61%"
+            "evidence": "5년 평균 ROE -8.44%, 변동성 stddev 22.96"
           },
           {
-            "key": "p2_4",
-            "label": "CFO+",
+            "key": "p2_cfo_gt_ni",
+            "label": "CFO > NI",
             "status": "na",
-            "evidence": "미확인"
+            "evidence": "CFO 데이터 미수집"
           },
           {
-            "key": "p2_5",
-            "label": "FCF+",
+            "key": "p2_fcf_positive",
+            "label": "FCF 플러스",
             "status": "na",
-            "evidence": "미확인"
+            "evidence": "FCF 데이터 미수집"
           },
           {
-            "key": "p2_6",
-            "label": "CF패턴",
+            "key": "p2_cf_pattern_good",
+            "label": "CF 영(+)/투(-)/재(-)",
             "status": "na",
-            "evidence": "미확인"
+            "evidence": "CF 데이터 미수집"
           },
           {
-            "key": "p2_7",
-            "label": "주주환원율",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p2_8",
-            "label": "자사주",
+            "key": "p2_total_return",
+            "label": "총주주환원율 높음",
             "status": "ng",
-            "evidence": "미확인"
+            "evidence": "배당 0, 자사주 소각 이력 없음 (2020 자사주 처분 1건 있음 — 환원 아닌 매각)"
           },
           {
-            "key": "p2_9",
-            "label": "배당증가",
-            "status": "na",
-            "evidence": "미확인"
+            "key": "p2_buyback_burn",
+            "label": "자사주 매입+소각",
+            "status": "ng",
+            "evidence": "2020년 자사주 처분 25.7억 (소각 아닌 외부 매각)"
           },
           {
-            "key": "p2_10",
-            "label": "PER",
-            "status": "na",
-            "evidence": "적자"
+            "key": "p2_dividend_consistent",
+            "label": "배당 꾸준+증액",
+            "status": "ng",
+            "evidence": "배당 0"
           },
           {
-            "key": "p2_11",
-            "label": "PBR<1",
-            "status": "na",
-            "evidence": "미확인"
+            "key": "p2_per_low",
+            "label": "PER < 업종/자사 평균",
+            "status": "ng",
+            "evidence": "PER N/A(적자), 동종 PER 10.32배 — 적자기업 비교 무의미"
+          },
+          {
+            "key": "p2_pbr_under_1",
+            "label": "PBR < 1",
+            "status": "ok",
+            "evidence": "PBR 0.42 (BPS 6,819, 주가 2,835). 단 자산 질·미래 캐시플로 없는 함정 가능"
           }
         ]
       },
       "timeseries": {
         "years": [
-          2021,
-          2022,
-          2023,
-          2024,
-          2025
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
         ],
-        "source": "DART 연결",
         "revenue_eok": [
-          517,
+          807,
+          1258,
           752,
           633,
           162,
           139
         ],
         "op_income_eok": [
-          68,
+          103,
+          3,
           153,
           108,
           -37,
           -128
         ],
         "net_income_eok": [
+          -253,
           54,
           247,
           -279,
           9,
           -21
         ],
-        "op_margin_pct": [
-          13.13,
-          20.4,
-          17.04,
-          -23.14,
-          -92.12
-        ],
         "roe_pct": [
+          -36.39,
           4.64,
           22.36,
           -33.85,
-          1.06,
-          -2.25
+          1.08,
+          -2.32
         ],
-        "debt_ratio": [
+        "debt_to_equity_pct": [
+          928.65,
           834.56,
           10.24,
           6.38,
@@ -12688,7 +12686,7 @@
           7.8
         ]
       },
-      "financial_note": "매출 -73% 급락, OPM -92%. 본업 해체 진행. 사업부 양도·구조조정 중으로 추정. 회피.",
+      "financial_note": "DART buffett_snapshot 의 2020년 매출 807억(연결 기준)은 합병 전 별도 회계 차이. 2021년은 ㈜태일 흡수합병 직후 자산 1,083억까지 팽창했다가 합병효과 일회성 종료 + 본업 축소로 2022년 자산 1,217억(별도→연결 회계기준 변경 의심) → 2024년 904억. 결산기 변경은 없음(12월 유지). 손익 5년 변동성 매우 큼.",
       "checklist_detail": {
         "part1_risks_hit": [
           "강조사항",
@@ -12705,6 +12703,14 @@
           "ROE15%+",
           "자사주"
         ]
+      },
+      "risk_class": "high",
+      "company_meta": {
+        "ceo": "안경환",
+        "industry_code": "46419",
+        "industry_name": "기타 상품 중개업",
+        "establish_date": "1977-06-20",
+        "address": "서울 강남구 강남대로 556 12층(논현동)"
       }
     },
     {
@@ -14968,6 +14974,69 @@
         "CapEx부담",
         "무배당",
         "코스피1717위"
+      ]
+    },
+    {
+      "analyzed_at": "2026-05-13T04:50:46+09:00",
+      "name": "ES큐브",
+      "code": "050120",
+      "price": 2835.0,
+      "per": 0.0,
+      "pbr": 0.42,
+      "roe": -2.32,
+      "dividend_yield": 0.0,
+      "debt_ratio": 7.8,
+      "cfo_eok": null,
+      "fcf_eok": null,
+      "revenue_eok": 139.0,
+      "op_income_eok": -128.0,
+      "net_income_eok": -21.0,
+      "opinion": "회피",
+      "opinion_color": "avoid",
+      "thesis": "사업 사실상 축소·청산 모드 의심. 매출 2021년 1,258억 → 2024년 162억 → 2025년 139억 (4년 -89%). 2024·2025 연속 영업적자(영익률 -23%/-92%), 2025년 NI -21억(EPS -151원). 2021년 자회사 ㈜태일(유류판매업) 흡수합병 + 200억 CB 사모 발행 후 본업 사실상 소실. 부채비율 5%·당좌비율 186%·BPS 6,819원(PBR 0.42)으로 BS는 깨끗하지만 미래 캐시플로 시그널이 없는 자산형 껍데기. 외인 2.73%·시총 384억·컨센N/A·배당 0의 전형적 마이크로캡 작전성/관리종목 위험 후보. DART anomaly score 0 clean(감사 적정 2024·2025)로 회계 자체는 깨끗하지만 매출 폭락은 PBR 0.42 자산가치주 베팅을 정당화하지 못함. 신규 매수 회피. 보유자는 평단 -25% 손절 또는 분기 흑자 2회 연속 정상화 확인 후 재평가.",
+      "checklist_part1_risk": 5,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 1,
+      "checklist_part2_total": 12,
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "3년연속_영업적자_진행",
+          "손상차손_반복",
+          "CB발행이력_200억",
+          "사업축소_매출_89퍼_감소",
+          "사명교체이력",
+          "영업이익률_급락",
+          "자회사_유류판매_흡수합병"
+        ],
+        "part2_passed": [
+          "PBR_under_1"
+        ],
+        "part2_failed": [
+          "매출_우상향",
+          "영익_성장",
+          "OPM_경쟁사_우월",
+          "ROE_5년_10이상",
+          "주주환원율",
+          "자사주_소각",
+          "배당_꾸준",
+          "PER_업종대비",
+          "CFO_NI_초과",
+          "FCF_플러스",
+          "CF패턴_플러스마이너스마이너스",
+          "EV_EBITDA_낮음"
+        ]
+      },
+      "dart_rcept": "00175623",
+      "source_year": 2025,
+      "tags": [
+        "마이크로캡",
+        "청산모드",
+        "저PBR함정",
+        "사업축소",
+        "CB발행이력",
+        "코스닥",
+        "자산가치주의심",
+        "회피"
       ]
     }
   ],
