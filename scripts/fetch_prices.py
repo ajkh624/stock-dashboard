@@ -102,14 +102,57 @@ def fetch_via_urllib(symbol: str) -> Optional[dict]:
         return {"symbol": symbol, "error": f"urllib: {str(e)[:100]}"}
 
 
-def fetch(symbol: str) -> Optional[dict]:
+def fetch_via_naver(code: str) -> Optional[dict]:
+    """네이버 금융 polling API (KRX 실시간) — Yahoo 차단 시 폴백.
+    한국 종목 전용. code 는 6자리 종목코드 (시장 접미사 제외).
+    """
+    url = f"https://polling.finance.naver.com/api/realtime?query=SERVICE_ITEM:{code}"
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=10) as r:
+            data = json.loads(r.read())
+        if data.get("resultCode") != "success":
+            return {"symbol": code, "error": "naver: non-success"}
+        rows = data["result"]["areas"][0]["datas"]
+        if not rows:
+            return {"symbol": code, "error": "naver: empty"}
+        d = rows[0]
+        price = d.get("nv")
+        prev = d.get("pcv")
+        change = d.get("cv")
+        pct = d.get("cr")
+        # 등락률 부호 (rf: 2=상승, 5=하락)
+        if d.get("rf") == "5" and change and change > 0:
+            change = -change
+            pct = -pct if pct else pct
+        return {
+            "symbol": f"{code}.KS/KQ",
+            "price": price,
+            "prev_close": prev,
+            "change": change,
+            "change_pct": pct,
+            "currency": "KRW",
+            "exchange": "KRX",
+            "source": "naver",
+            "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        }
+    except Exception as e:
+        return {"symbol": code, "error": f"naver: {type(e).__name__}: {str(e)[:100]}"}
+
+
+def fetch(symbol: str, code: str) -> Optional[dict]:
     if yf is not None:
         r = fetch_via_yfinance(symbol)
-        if r and "price" in r and r["price"] is not None:
+        if r and r.get("price") is not None:
             return r
-        # yfinance 실패 시 urllib 폴백
-        print(f"  [yfinance fail, fallback urllib] {r}")
-    return fetch_via_urllib(symbol)
+        print(f"  [yfinance fail] {r.get('error') if r else 'None'}")
+    # Yahoo 폴백 (urllib)
+    r = fetch_via_urllib(symbol)
+    if r and r.get("price") is not None:
+        return r
+    print(f"  [yahoo urllib fail] {r.get('error') if r else 'None'} → naver")
+    # 마지막 네이버 폴백
+    return fetch_via_naver(code)
 
 
 def main():
@@ -127,7 +170,7 @@ def main():
 
     results = {}
     for code, market, sym in targets:
-        r = fetch(sym)
+        r = fetch(sym, code)
         if r:
             results[code] = r
         print(f"  {sym}: {r.get('price') if r and 'price' in r else (r.get('error') if r else 'FAIL')}")
@@ -135,7 +178,7 @@ def main():
 
     out = {
         "updated_at": datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%dT%H:%M:%S+09:00"),
-        "source": "Yahoo Finance (yfinance)",
+        "source": "Yahoo Finance + 네이버 금융 fallback",
         "prices": results,
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
