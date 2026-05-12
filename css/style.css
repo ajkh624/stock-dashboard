@@ -162,6 +162,13 @@ th[title] { cursor: help; text-decoration: underline dotted var(--text-dim); tex
   display: block; font-size: 11px; color: var(--text-dim); font-weight: 400;
   margin-top: 2px;
 }
+.gl-list { list-style: none; padding: 0; margin: 4px 0 0; }
+.gl-list li {
+  padding: 6px 10px; margin-bottom: 4px; border-radius: 6px;
+  background: rgba(255,255,255,0.02); line-height: 1.55; font-size: 13px;
+}
+.gl-list li b { color: var(--text); }
+.gl-list li i { color: var(--text-dim); font-style: normal; font-size: 12px; display: block; margin-top: 2px; }
 .gloss-item p {
   margin: 0; font-size: 12px; line-height: 1.6; color: var(--text-dim);
 }
