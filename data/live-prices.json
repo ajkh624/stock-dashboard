@@ -1,42 +1,115 @@
 {
-  "updated_at": "2026-05-12T15:53:04+09:00",
-  "source": "Yahoo Finance + 네이버 금융 fallback",
+  "updated_at": "2026-05-12T15:54:13+09:00",
+  "source": "KRX (pykrx)",
+  "schedule": "일 1회 KST 18:00 (평일)",
   "prices": {
     "215200": {
       "symbol": "215200",
-      "error": "naver: HTTPError: HTTP Error 406: Not Acceptable"
+      "price": 46200,
+      "prev_close": 45450,
+      "change": 750,
+      "change_pct": 1.65,
+      "currency": "KRW",
+      "exchange": "KRX",
+      "source": "krx",
+      "trade_date": "2026-05-12",
+      "fetched_at": "2026-05-12T06:54:13+00:00"
     },
     "068930": {
       "symbol": "068930",
-      "error": "naver: HTTPError: HTTP Error 406: Not Acceptable"
+      "price": 8570,
+      "prev_close": 8760,
+      "change": -190,
+      "change_pct": -2.17,
+      "currency": "KRW",
+      "exchange": "KRX",
+      "source": "krx",
+      "trade_date": "2026-05-12",
+      "fetched_at": "2026-05-12T06:54:13+00:00"
     },
     "033530": {
       "symbol": "033530",
-      "error": "naver: HTTPError: HTTP Error 406: Not Acceptable"
+      "price": 7720,
+      "prev_close": 8170,
+      "change": -450,
+      "change_pct": -5.51,
+      "currency": "KRW",
+      "exchange": "KRX",
+      "source": "krx",
+      "trade_date": "2026-05-12",
+      "fetched_at": "2026-05-12T06:54:13+00:00"
     },
     "005490": {
       "symbol": "005490",
-      "error": "naver: HTTPError: HTTP Error 406: Not Acceptable"
+      "price": 479000,
+      "prev_close": 512000,
+      "change": -33000,
+      "change_pct": -6.45,
+      "currency": "KRW",
+      "exchange": "KRX",
+      "source": "krx",
+      "trade_date": "2026-05-12",
+      "fetched_at": "2026-05-12T06:54:13+00:00"
     },
     "175330": {
       "symbol": "175330",
-      "error": "naver: HTTPError: HTTP Error 406: Not Acceptable"
+      "price": 25700,
+      "prev_close": 26100,
+      "change": -400,
+      "change_pct": -1.53,
+      "currency": "KRW",
+      "exchange": "KRX",
+      "source": "krx",
+      "trade_date": "2026-05-12",
+      "fetched_at": "2026-05-12T06:54:13+00:00"
     },
     "023590": {
       "symbol": "023590",
-      "error": "naver: HTTPError: HTTP Error 406: Not Acceptable"
+      "price": 44250,
+      "prev_close": 47550,
+      "change": -3300,
+      "change_pct": -6.94,
+      "currency": "KRW",
+      "exchange": "KRX",
+      "source": "krx",
+      "trade_date": "2026-05-12",
+      "fetched_at": "2026-05-12T06:54:13+00:00"
     },
     "263800": {
       "symbol": "263800",
-      "error": "naver: HTTPError: HTTP Error 406: Not Acceptable"
+      "price": 5140,
+      "prev_close": 5220,
+      "change": -80,
+      "change_pct": -1.53,
+      "currency": "KRW",
+      "exchange": "KRX",
+      "source": "krx",
+      "trade_date": "2026-05-12",
+      "fetched_at": "2026-05-12T06:54:13+00:00"
     },
     "016380": {
       "symbol": "016380",
-      "error": "naver: HTTPError: HTTP Error 406: Not Acceptable"
+      "price": 6680,
+      "prev_close": 6750,
+      "change": -70,
+      "change_pct": -1.04,
+      "currency": "KRW",
+      "exchange": "KRX",
+      "source": "krx",
+      "trade_date": "2026-05-12",
+      "fetched_at": "2026-05-12T06:54:13+00:00"
     },
     "012450": {
       "symbol": "012450",
-      "error": "naver: HTTPError: HTTP Error 406: Not Acceptable"
+      "price": 1284000,
+      "prev_close": 1315000,
+      "change": -31000,
+      "change_pct": -2.36,
+      "currency": "KRW",
+      "exchange": "KRX",
+      "source": "krx",
+      "trade_date": "2026-05-12",
+      "fetched_at": "2026-05-12T06:54:13+00:00"
     }
   }
 }
