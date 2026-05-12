@@ -137,7 +137,7 @@ function renderCard(s) {
 
 function renderRow(s) {
   const opCls = opinionClassMap[s.opinion] || 'neutral';
-  return `<tr>
+  return `<tr class="stock-row" data-idx="${s._idx}" tabindex="0">
     <td>${shortDate(s.analyzed_at)}</td>
     <td><small style="color:var(--text-dim)">${s.source_year||'-'}</small></td>
     <td><strong>${s.name}</strong><br><small style="color:var(--text-dim)">${s.code}</small></td>
@@ -443,11 +443,19 @@ document.addEventListener('click', (e) => {
   }
   // Card click — but ignore clicks on inner interactive elements
   const card = e.target.closest('.card');
-  if (!card) return;
-  if (e.target.closest('details, summary, a, button, input')) return;
-  const idx = Number(card.dataset.idx);
-  const stock = STATE.stocks[idx];
-  if (stock) openChartModal(stock);
+  if (card && !e.target.closest('details, summary, a, button, input')) {
+    const idx = Number(card.dataset.idx);
+    const stock = STATE.stocks[idx];
+    if (stock) openChartModal(stock);
+    return;
+  }
+  // Table row click (desktop view)
+  const row = e.target.closest('tr.stock-row');
+  if (row && !e.target.closest('a, button, input')) {
+    const idx = Number(row.dataset.idx);
+    const stock = STATE.stocks[idx];
+    if (stock) openChartModal(stock);
+  }
 });
 
 // ESC to close
