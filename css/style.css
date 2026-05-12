@@ -241,11 +241,17 @@ th[title] { cursor: help; text-decoration: underline dotted var(--text-dim); tex
 }
 .gl-list { list-style: none; padding: 0; margin: 4px 0 0; }
 .gl-list li {
-  padding: 6px 10px; margin-bottom: 4px; border-radius: 6px;
-  background: rgba(255,255,255,0.02); line-height: 1.55; font-size: 13px;
+  padding: 10px 12px; margin-bottom: 6px; border-radius: 6px;
+  background: rgba(255,255,255,0.02); line-height: 1.65; font-size: 13px;
+  border-left: 2px solid var(--border);
 }
 .gl-list li b { color: var(--text); }
-.gl-list li i { color: var(--text-dim); font-style: normal; font-size: 12px; display: block; margin-top: 2px; }
+.gl-list li i { color: var(--text-dim); font-style: normal; font-size: 12px; display: block; margin-top: 4px; }
+.gl-list li i b { color: var(--accent); font-weight: 600; }
+.gloss-intro {
+  background: linear-gradient(135deg, rgba(74,222,128,0.05), rgba(96,165,250,0.05));
+  border-left: 3px solid var(--accent);
+}
 .gloss-item p {
   margin: 0; font-size: 12px; line-height: 1.6; color: var(--text-dim);
 }
