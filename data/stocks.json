@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-12T16:25:56+09:00",
+  "updated_at": "2026-05-12T16:45:53+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -3828,6 +3828,645 @@
         ]
       },
       "market": "KQ",
+      "analysis_date": "2026-05-12"
+    },
+    {
+      "analyzed_at": "2026-05-12T16:45:53+09:00",
+      "name": "LIG디펜스앤에어로스페이스",
+      "code": "079550",
+      "price": 879000,
+      "per": 16.41,
+      "pbr": 2.7,
+      "roe": 16.09,
+      "dividend_yield": 0.34,
+      "debt_ratio": 446.35,
+      "cfo_eok": -5843,
+      "fcf_eok": -8301,
+      "revenue_eok": 43069,
+      "op_income_eok": 3194,
+      "net_income_eok": 2375,
+      "opinion": "중립",
+      "opinion_color": "neutral",
+      "thesis": "(구 LIG넥스원) 미사일·정밀유도무기 1위. 방산 슈퍼사이클로 매출 1.8조→4.3조 (5년 CAGR +24%), 영익 972→3,194억 (+229%), 5년 평균 ROE 15.29% (변동성 매우 낮음, 표준편차 1.53). 그러나 ⚠️ 2025 CFO −5,843억 폭주 (운전자본 -11,054억 — 수주 폭증으로 매출채권/재고 누적), FCF −8,301억, 부채비율 237→446% 급등, 재무활동 +4,391억 차입 의존. CF패턴 영업(−)/투자(−)/재무(+) 위험. PER 16.41 (동종 57.37의 29%), PBR 2.70, 배당 1,950→2,950원 5년 증가. 정정공시 14.6% (DART anomaly 15/100 워치). 본업 우량(ROE 15%+ 5년)하나 수주잔고 회수가 핵심 — 1~2년 운전자본 정상화 확인 후 진입 권고. 한화에어로(매출 26.7조)·현대로템 대비 작지만 정밀유도탄 글로벌 수출 모멘텀 유효.",
+      "checklist_part1_risk": 5,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 8,
+      "checklist_part2_total": 12,
+      "checklist_part1_na": 0,
+      "checklist_part2_na": 0,
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "유동비율 < 150% (수주 폭증 운전자본 부담)",
+          "흑자 + CFO 마이너스 (운전자본 -11,054억) ⚠️",
+          "CF패턴 영업(−)/투자(−)/재무(+) (빌려 연명)",
+          "매출채권/재고자산 회전율 하락",
+          "정정공시 14.6% (DART anomaly 15/100)"
+        ],
+        "part2_passed": [
+          "매출 꾸준한 우상향 (CAGR +24%)",
+          "영업이익 성장률 > 매출 성장률 (+229% vs +137%)",
+          "ROE 평균 15.29% (변동성 매우 낮음 σ 1.53) ⭐",
+          "배당 5년 증가 (1,950→2,950원)",
+          "PER 동종업종 이하 (16.41 vs 57.37)",
+          "CFO > 순이익 (5년 평균은 양호, 25년 일시 예외)",
+          "주주환원율 25%+ (배당 환원)",
+          "감사 clean"
+        ],
+        "part2_failed": [
+          "OPM 두 자릿수 (7.42% — 방산 평균 수준)",
+          "FCF 5년 연속 (+) (25년 -8,301억)",
+          "정상 CF 패턴 (영업+/투자−/재무−)",
+          "자사주 매입·소각 無"
+        ]
+      },
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_audit_qualified",
+            "label": "감사의견 한정/부적정/의견거절 (최근 3년)",
+            "status": "ok",
+            "evidence": "2024/2025 적정의견"
+          },
+          {
+            "key": "p1_going_concern",
+            "label": "감사보고서 '계속기업 불확실성' 단락 존재",
+            "status": "ok",
+            "evidence": "emphasis 없음"
+          },
+          {
+            "key": "p1_audit_delay",
+            "label": "감사보고서 법정 기한(3/31) 지연",
+            "status": "ok",
+            "evidence": "2026.3.23 정상 제출 (rcept 20260323001211)"
+          },
+          {
+            "key": "p1_3y_op_loss",
+            "label": "3년 이상 연속 영업적자",
+            "status": "ok",
+            "evidence": "5년 모두 흑자 (972→1,791→1,864→2,234→3,194억)"
+          },
+          {
+            "key": "p1_interest_coverage",
+            "label": "이자보상배율 < 1",
+            "status": "ok",
+            "evidence": "영익 3,194억 / 이자지급 193억 = 16.5배 ⭐"
+          },
+          {
+            "key": "p1_current_ratio",
+            "label": "유동비율 < 150% 또는 감소 추세",
+            "status": "hit",
+            "evidence": "부채비율 237→446% 급등, 단기차입 +4,073억 — 운전자본 부담"
+          },
+          {
+            "key": "p1_impairment",
+            "label": "재고/유형자산 손상차손 반복",
+            "status": "ok",
+            "evidence": "특이 손상 없음 (수주잔고 견조)"
+          },
+          {
+            "key": "p1_cb_bw_repeat",
+            "label": "CB/BW 반복 발행",
+            "status": "ok",
+            "evidence": "CB/BW 발행 無 (24년 교환사채 1,322억 1회)"
+          },
+          {
+            "key": "p1_asset_sale_purpose",
+            "label": "핵심자산 매각 목적이 운영자금/차입상환",
+            "status": "ok",
+            "evidence": "자산매각 아닌 차입 확대로 자금 조달"
+          },
+          {
+            "key": "p1_related_party",
+            "label": "특수관계자 거래 복잡/불투명",
+            "status": "ok",
+            "evidence": "LIG그룹 — 방산 특화 단순 구조"
+          },
+          {
+            "key": "p1_mgmt_change",
+            "label": "사명/대표이사 교체 빈번",
+            "status": "ok",
+            "evidence": "2026.4 'LIG넥스원→LIG디펜스앤에어로스페이스' 사명 변경 (사업 확장 목적)"
+          },
+          {
+            "key": "p1_capital_erosion",
+            "label": "자본총계≈자본금 또는 자본잠식 진행",
+            "status": "ok",
+            "evidence": "자본 1.48조 / 자본금 1,100억 (유보율 1,200%+)"
+          },
+          {
+            "key": "p1_secondary_finance",
+            "label": "제2금융권(저축은행/캐피털) 차입",
+            "status": "ok",
+            "evidence": "1금융권/회사채 중심"
+          },
+          {
+            "key": "p1_profit_cash_gap",
+            "label": "흑자 + CFO 마이너스",
+            "status": "hit",
+            "evidence": "⚠️ 순익 2,375억 + CFO −5,843억 — 운전자본 -11,054억 폭주"
+          },
+          {
+            "key": "p1_cf_pattern_bad",
+            "label": "CF패턴 영업(−)/투자(+)/재무(+) (자산팔고 빌려 연명)",
+            "status": "hit",
+            "evidence": "영업(−5,843)/투자(−2,759)/재무(+4,391) — 빌려서 운전자본 메꾸는 위험"
+          },
+          {
+            "key": "p1_turnover_drop",
+            "label": "매출채권/재고자산 회전율 하락",
+            "status": "hit",
+            "evidence": "운전자본 -11,054억 폭주 = 매출채권/재고 급증 (수주 폭증 동반 자연 증가지만 회수 리스크)"
+          },
+          {
+            "key": "p1_intangible_high",
+            "label": "자본총계 대비 개발비/영업권 비율 높음",
+            "status": "ok",
+            "evidence": "무형자산 취득 760억 / 자본 14,761억 = 5.1%"
+          },
+          {
+            "key": "p1_other_risk",
+            "label": "기타 위험 (정정공시, 자본스트레스 등)",
+            "status": "hit",
+            "evidence": "⚠️ 정정공시 46/316 = 14.6% (DART anomaly 15/100 워치), 자본스트레스 공시 1건"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_revenue_up",
+            "label": "매출 꾸준한 우상향",
+            "status": "ok",
+            "evidence": "⭐ 18,222→22,208→23,086→32,763→43,069억 (CAGR +24%)"
+          },
+          {
+            "key": "p2_op_leverage",
+            "label": "영업이익 성장률 > 매출 성장률",
+            "status": "ok",
+            "evidence": "영익 +229% > 매출 +137% (5년)"
+          },
+          {
+            "key": "p2_opm_competitive",
+            "label": "OPM 두 자릿수",
+            "status": "ng",
+            "evidence": "OPM 7.42% (방산 5~8% 평균 수준, 한화에어로 11.6% 대비 낮음)"
+          },
+          {
+            "key": "p2_roe_15plus",
+            "label": "ROE 15%+ 5년 지속",
+            "status": "ok",
+            "evidence": "⭐ 13.76/13.15/16.63/16.83/16.09% (평균 15.29%, σ 1.53 매우 안정)"
+          },
+          {
+            "key": "p2_cfo_gt_ni",
+            "label": "CFO > 순이익",
+            "status": "ng",
+            "evidence": "⚠️ 25년 CFO −5,843 vs 순익 2,375 — but 23·24년은 CFO > NI (5년 평균 가중 시 양호)"
+          },
+          {
+            "key": "p2_fcf_positive",
+            "label": "FCF 5년 연속 (+)",
+            "status": "ng",
+            "evidence": "25년 FCF −8,301억 (CFO −5,843 − CapEx 2,458)"
+          },
+          {
+            "key": "p2_cf_pattern_good",
+            "label": "CF패턴 영업(+)/투자(−)/재무(−) 정상",
+            "status": "ng",
+            "evidence": "영업(−)/투자(−)/재무(+) — 성장기 수주 폭증 특성 (한화에어로와 유사)"
+          },
+          {
+            "key": "p2_shareholder_return",
+            "label": "주주환원율 30%+ (배당+자사주)",
+            "status": "ng",
+            "evidence": "배당성향 25.4%, 자사주 無 → 환원율 약 25%"
+          },
+          {
+            "key": "p2_treasury_burn",
+            "label": "자사주 매입 후 소각",
+            "status": "ng",
+            "evidence": "자사주 매입·소각 無"
+          },
+          {
+            "key": "p2_dividend_stable",
+            "label": "배당 5년 안정/증가",
+            "status": "ok",
+            "evidence": "⭐ 1,950→2,400→2,950원 (5년 증가), 배당성향 25.4%"
+          },
+          {
+            "key": "p2_per_attractive",
+            "label": "PER 동종업종 이하 또는 절대 저평가",
+            "status": "ok",
+            "evidence": "⭐ PER 16.41 vs 동종 57.37 (29% 수준) — 방산 슈퍼사이클 대비 상대 저평가"
+          },
+          {
+            "key": "p2_pbr_attractive",
+            "label": "PBR < 1 또는 업종 대비 디스카운트",
+            "status": "ng",
+            "evidence": "PBR 2.70 (절대치 부담, 업종 평균 약 8 대비 디스카운트)"
+          }
+        ]
+      },
+      "dart_rcept": "20260323001211",
+      "source_year": 2025,
+      "tags": [
+        "방산",
+        "미사일",
+        "폭발성장",
+        "운전자본트랩",
+        "사명변경"
+      ],
+      "timeseries": {
+        "source": "DART 연결재무 (5년)",
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "revenue_eok": [
+          18222,
+          22208,
+          23086,
+          32763,
+          43069
+        ],
+        "op_income_eok": [
+          972,
+          1791,
+          1864,
+          2234,
+          3194
+        ],
+        "net_income_eok": [
+          1051,
+          1229,
+          1750,
+          2128,
+          2375
+        ],
+        "op_margin_pct": [
+          5.33,
+          8.07,
+          8.07,
+          6.82,
+          7.42
+        ],
+        "roe_pct": [
+          13.76,
+          13.15,
+          16.63,
+          16.83,
+          16.09
+        ],
+        "debt_ratio": [
+          237.59,
+          222.16,
+          262.59,
+          389.91,
+          446.35
+        ],
+        "per": [
+          null,
+          null,
+          null,
+          null,
+          16.41
+        ],
+        "pbr": [
+          null,
+          null,
+          null,
+          null,
+          2.7
+        ],
+        "dividend_yield": [
+          null,
+          null,
+          1.4,
+          1.2,
+          0.34
+        ]
+      },
+      "market": "KS",
+      "analysis_date": "2026-05-12"
+    },
+    {
+      "analyzed_at": "2026-05-12T16:45:53+09:00",
+      "name": "현대로템",
+      "code": "064350",
+      "price": 215000,
+      "per": 18.03,
+      "pbr": 1.73,
+      "roe": 25.33,
+      "dividend_yield": 0.28,
+      "debt_ratio": 206.39,
+      "cfo_eok": 9043,
+      "fcf_eok": 7479,
+      "revenue_eok": 58390,
+      "op_income_eok": 10056,
+      "net_income_eok": 7705,
+      "opinion": "매수",
+      "opinion_color": "buy",
+      "thesis": "K2 전차·KTX 차량·플랜트 3축. 폴란드 K2 1차 11조 + 2차 추가 수주로 매출 2.9조→5.8조 (5년 CAGR +19%), 영익 802→10,056억 (+1,154%) ⭐, OPM 2.79→17.22% 폭증, ROE 4.05→25.33% 회복. CFO +9,043억 > 순익 7,705억, FCF +7,479억 강한 현금창출⭐, CF패턴 영업+/투자−/재무− 정상. 5년 평균 ROE 14.42% (변동성 큼 σ 7.56 — 21년 적자기 → 25년 정점). 위험: 배당성향 8.5%로 환원 미흡, 자사주 소각 無, PER 18.03(네이버 표기, 25년 EPS 기준 trailing 약 30), 동종 PER 57.37 대비 31%로 상대 저평가. 사이클 정점 의심 (OPM 17.22% — 비정상치, 5년 평균 8.2%). 정정공시 14.1% (DART 워치). K2 2차·노르웨이·UAE 추가 수주 모멘텀 vs 사이클 정점 우려. 분할매수, 1~2년 OPM 정상화 시 위험.",
+      "checklist_part1_risk": 3,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 9,
+      "checklist_part2_total": 12,
+      "checklist_part1_na": 0,
+      "checklist_part2_na": 0,
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "유동비율 < 150% 추정 (방산 특성 — 검증 필요)",
+          "ROE 변동성 큼 (21년 4.05 → 25년 25.33, σ 7.56)",
+          "정정공시 14.1% (DART anomaly 15/100)"
+        ],
+        "part2_passed": [
+          "매출 꾸준한 우상향 (CAGR +19%)",
+          "영업이익 성장률 > 매출 성장률 (+1,154% vs +103%) ⭐",
+          "OPM 두 자릿수 (17.22%)",
+          "ROE 25.33% (단년 정점)",
+          "CFO > 순이익 (1.17배) ⭐",
+          "FCF 5년 연속 (+) 추정 (25년 7,479억) ⭐",
+          "정상 CF 패턴 (영업+/투자−/재무−) ⭐",
+          "배당 5년 증가 (100→200→600원)",
+          "PER 동종업종 이하 (18.03 vs 57.37)"
+        ],
+        "part2_failed": [
+          "ROE 15%+ 5년 지속 (21년 4.05, 23년 9.52)",
+          "주주환원율 30%+ (배당성향 8.5%만)",
+          "자사주 매입 후 소각 無"
+        ]
+      },
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_audit_qualified",
+            "label": "감사의견 한정/부적정/의견거절 (최근 3년)",
+            "status": "ok",
+            "evidence": "2024/2025 적정의견"
+          },
+          {
+            "key": "p1_going_concern",
+            "label": "감사보고서 '계속기업 불확실성' 단락 존재",
+            "status": "ok",
+            "evidence": "emphasis 없음"
+          },
+          {
+            "key": "p1_audit_delay",
+            "label": "감사보고서 법정 기한(3/31) 지연",
+            "status": "ok",
+            "evidence": "2026.3.19 정상 제출 (rcept 20260319001275)"
+          },
+          {
+            "key": "p1_3y_op_loss",
+            "label": "3년 이상 연속 영업적자",
+            "status": "ok",
+            "evidence": "5년 모두 흑자 (802→1,475→2,100→4,566→10,056억)"
+          },
+          {
+            "key": "p1_interest_coverage",
+            "label": "이자보상배율 < 1",
+            "status": "ok",
+            "evidence": "영익 10,056억 / 이자지급 82억 = 122배 ⭐⭐"
+          },
+          {
+            "key": "p1_current_ratio",
+            "label": "유동비율 < 150% 또는 감소 추세",
+            "status": "hit",
+            "evidence": "부채비율 206% (개선 추세 25년 163→206), 방산·플랜트 선급금 부채 특성"
+          },
+          {
+            "key": "p1_impairment",
+            "label": "재고/유형자산 손상차손 반복",
+            "status": "ok",
+            "evidence": "특이 손상 없음"
+          },
+          {
+            "key": "p1_cb_bw_repeat",
+            "label": "CB/BW 반복 발행",
+            "status": "ok",
+            "evidence": "CB/BW 발행 無 (회사채 497억 발행)"
+          },
+          {
+            "key": "p1_asset_sale_purpose",
+            "label": "핵심자산 매각 목적이 운영자금/차입상환",
+            "status": "ok",
+            "evidence": "24년 자산 매각이 있었으나 25년은 자체 현금흐름"
+          },
+          {
+            "key": "p1_related_party",
+            "label": "특수관계자 거래 복잡/불투명",
+            "status": "ok",
+            "evidence": "현대차그룹 — 자동차·철도 시너지 정상"
+          },
+          {
+            "key": "p1_mgmt_change",
+            "label": "사명/대표이사 교체 빈번",
+            "status": "ok",
+            "evidence": "안정"
+          },
+          {
+            "key": "p1_capital_erosion",
+            "label": "자본총계≈자본금 또는 자본잠식 진행",
+            "status": "ok",
+            "evidence": "자본 3.04조 / 자본금 약 5,457억 (유보율 460%)"
+          },
+          {
+            "key": "p1_secondary_finance",
+            "label": "제2금융권(저축은행/캐피털) 차입",
+            "status": "ok",
+            "evidence": "1금융권/회사채 중심"
+          },
+          {
+            "key": "p1_profit_cash_gap",
+            "label": "흑자 + CFO 마이너스",
+            "status": "ok",
+            "evidence": "⭐ CFO +9,043억 > 순익 7,705억 (1.17배) — 이익 질 良"
+          },
+          {
+            "key": "p1_cf_pattern_bad",
+            "label": "CF패턴 영업(−)/투자(+)/재무(+) (자산팔고 빌려 연명)",
+            "status": "ok",
+            "evidence": "⭐ 영업(+9,043)/투자(−2,318)/재무(−2,370) — 정상 패턴"
+          },
+          {
+            "key": "p1_turnover_drop",
+            "label": "매출채권/재고자산 회전율 하락",
+            "status": "ok",
+            "evidence": "운전자본 -1,204억 (자연 증가 수준, 매출 +33% 대비 통제됨)"
+          },
+          {
+            "key": "p1_intangible_high",
+            "label": "자본총계 대비 개발비/영업권 비율 높음",
+            "status": "ok",
+            "evidence": "무형자산 취득 272억 / 자본 3.04조 = 0.9% (미미)"
+          },
+          {
+            "key": "p1_other_risk",
+            "label": "기타 위험 (정정공시, 자본스트레스 등)",
+            "status": "hit",
+            "evidence": "⚠️ 정정공시 36/256 = 14.1% (DART anomaly 15/100 워치)"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_revenue_up",
+            "label": "매출 꾸준한 우상향",
+            "status": "ok",
+            "evidence": "⭐ 28,725→31,633→35,874→43,766→58,390억 (CAGR +19%)"
+          },
+          {
+            "key": "p2_op_leverage",
+            "label": "영업이익 성장률 > 매출 성장률",
+            "status": "ok",
+            "evidence": "⭐⭐ 영익 +1,154% > 매출 +103% (5년) — 폭발적 레버리지"
+          },
+          {
+            "key": "p2_opm_competitive",
+            "label": "OPM 두 자릿수",
+            "status": "ok",
+            "evidence": "⭐ OPM 17.22% (방산·철도 평균 5~8% 대비 압도, but 5년 평균 8.2% — 정점 의심)"
+          },
+          {
+            "key": "p2_roe_15plus",
+            "label": "ROE 15%+ 5년 지속",
+            "status": "ng",
+            "evidence": "⚠️ 4.05/13.04/9.52/20.17/25.33% (평균 14.42%, σ 7.56 변동 큼) — 사이클 종목"
+          },
+          {
+            "key": "p2_cfo_gt_ni",
+            "label": "CFO > 순이익",
+            "status": "ok",
+            "evidence": "⭐ CFO 9,043 vs 순익 7,705억 (1.17배)"
+          },
+          {
+            "key": "p2_fcf_positive",
+            "label": "FCF 5년 연속 (+)",
+            "status": "ok",
+            "evidence": "⭐ FCF 25년 +7,479억 (CFO 9,043 − CapEx 1,564), 5년 추세 (+)"
+          },
+          {
+            "key": "p2_cf_pattern_good",
+            "label": "CF패턴 영업(+)/투자(−)/재무(−) 정상",
+            "status": "ok",
+            "evidence": "⭐ 영업(+9,043)/투자(−2,318)/재무(−2,370) — 우량주 패턴"
+          },
+          {
+            "key": "p2_shareholder_return",
+            "label": "주주환원율 30%+ (배당+자사주)",
+            "status": "ng",
+            "evidence": "⚠️ 배당성향 8.5%, 자사주 無 → 환원율 약 10% (매우 낮음)"
+          },
+          {
+            "key": "p2_treasury_burn",
+            "label": "자사주 매입 후 소각",
+            "status": "ng",
+            "evidence": "자사주 매입·소각 無"
+          },
+          {
+            "key": "p2_dividend_stable",
+            "label": "배당 5년 안정/증가",
+            "status": "ok",
+            "evidence": "100→200→600원 (5년 증가), 단 배당성향 8.5%로 절대 미흡"
+          },
+          {
+            "key": "p2_per_attractive",
+            "label": "PER 동종업종 이하 또는 절대 저평가",
+            "status": "ok",
+            "evidence": "⭐ 네이버 표기 PER 18.03 vs 동종 57.37 (31%), 25년 EPS 기준 trailing PER 30.5"
+          },
+          {
+            "key": "p2_pbr_attractive",
+            "label": "PBR < 1 또는 업종 대비 디스카운트",
+            "status": "ok",
+            "evidence": "PBR 1.73 (업종 평균 8 대비 디스카운트, 단 1배 이상)"
+          }
+        ]
+      },
+      "dart_rcept": "20260319001275",
+      "source_year": 2025,
+      "tags": [
+        "방산",
+        "K2전차",
+        "철도",
+        "폭발성장",
+        "현대차그룹",
+        "사이클정점"
+      ],
+      "timeseries": {
+        "source": "DART 연결재무 (5년)",
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "revenue_eok": [
+          28725,
+          31633,
+          35874,
+          43766,
+          58390
+        ],
+        "op_income_eok": [
+          802,
+          1475,
+          2100,
+          4566,
+          10056
+        ],
+        "net_income_eok": [
+          514,
+          1945,
+          1568,
+          4053,
+          7705
+        ],
+        "op_margin_pct": [
+          2.79,
+          4.66,
+          5.86,
+          10.43,
+          17.22
+        ],
+        "roe_pct": [
+          4.05,
+          13.04,
+          9.52,
+          20.17,
+          25.33
+        ],
+        "debt_ratio": [
+          223.85,
+          223.43,
+          218.25,
+          163.07,
+          206.39
+        ],
+        "per": [
+          null,
+          null,
+          null,
+          null,
+          18.03
+        ],
+        "pbr": [
+          null,
+          null,
+          null,
+          null,
+          1.73
+        ],
+        "dividend_yield": [
+          null,
+          null,
+          0.4,
+          0.4,
+          0.28
+        ]
+      },
+      "market": "KS",
       "analysis_date": "2026-05-12"
     }
   ]
