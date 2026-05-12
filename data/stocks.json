@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-13T02:14:27+09:00",
+  "updated_at": "2026-05-13T02:25:47+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -5134,6 +5134,363 @@
           "배당 5년 증가",
           "PER 동종 저평가",
           "PBR < 1"
+        ]
+      }
+    },
+    {
+      "name": "이마트",
+      "code": "139480",
+      "market": "KS",
+      "price": 107100,
+      "per": 21.76,
+      "pbr": 0.26,
+      "roe": 1.27,
+      "dividend_yield": 2.33,
+      "revenue_eok": 289704,
+      "op_income_eok": 3225,
+      "net_income_eok": 2463,
+      "debt_ratio": 144.61,
+      "cfo_eok": 13189,
+      "fcf_eok": 3072,
+      "opinion": "중립",
+      "thesis": "대형마트 1위(매출 29조, 점포 153개+트레이더스). 2023~2024 적자(영익 -47, 순익 -573억) 이후 ⚡ 2025 영익 +323억(+585%)·순익 +246억 흑전 V턴. 그러나 ⚠️ 2025.4Q 영익 -99억·순익 -1,163억 재적자 + 이자보상배율 0.63배(영익 3,225억 < 이자지급 5,117억) — 본업 손익분기점·부채부담 압박 지속. 부채비율 144.6%, 당좌비율 38.4% 단기 유동성도 yellow. 반면 PBR 0.26(동종 평균 0.81의 32%)·BPS 41만원으로 청산가치 ¼ 수준, 스타벅스코리아·SSG.COM·이베이코리아 등 자산가치 매력. 2026E 영익 +78%(컨센 5,744억), 추정 PER 12.12, 컨센 목표 142,636(+33%) 매수 3.91. DART anomaly 0/100 clean, FCF +3,072억, 차입 순상환, DPS 2,000→2,500 +25% 회복. 자산가치주 관점 분할 진입, 부동산 분리·자사주 소각 정책 변화 시 매수 신호.",
+      "tags": [
+        "대형마트",
+        "유통",
+        "자산가치주",
+        "저PBR",
+        "신세계그룹",
+        "코스피"
+      ],
+      "analyzed_at": "2026-05-13T02:25:47+09:00",
+      "analysis_date": "2026-05-13",
+      "source_year": 2025,
+      "rcept_no": "20260318001024",
+      "checklist_part1_risk": 3,
+      "checklist_part1_total": 18,
+      "checklist_part1_na": 1,
+      "checklist_part2_quality": 6,
+      "checklist_part2_total": 12,
+      "checklist_part2_na": 0,
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_audit_qualified",
+            "label": "감사의견 비적정",
+            "status": "ok",
+            "evidence": "2024·2025 적정"
+          },
+          {
+            "key": "p1_audit_emphasis",
+            "label": "감사 강조사항",
+            "status": "ok",
+            "evidence": "없음"
+          },
+          {
+            "key": "p1_auditor_change",
+            "label": "감사인 잦은 교체",
+            "status": "ok",
+            "evidence": "교체 0건"
+          },
+          {
+            "key": "p1_op_loss",
+            "label": "영업적자",
+            "status": "ok",
+            "evidence": "2025 영익 +323억 흑전(2023 -47, 2024 +47에서 회복)"
+          },
+          {
+            "key": "p1_int_cov",
+            "label": "이자보상배율 < 1",
+            "status": "hit",
+            "evidence": "영익 3,225 / 이자지급 5,117 = 0.63배 ❌ 본업으로 이자 못 갚음"
+          },
+          {
+            "key": "p1_liquidity",
+            "label": "유동/당좌비율 < 100/50%",
+            "status": "hit",
+            "evidence": "당좌비율 38.39% (50% 미만), 부채비율 144.61% 높음"
+          },
+          {
+            "key": "p1_impairment",
+            "label": "손상차손/영업권 상각",
+            "status": "ok",
+            "evidence": "2024 종속기업 손상 일부 반영후 2025 안정화"
+          },
+          {
+            "key": "p1_cb_bw",
+            "label": "CB·BW 발행",
+            "status": "ok",
+            "evidence": "2025 신규 0 (전전년 신종자본증권 2,954억)"
+          },
+          {
+            "key": "p1_asset_sale",
+            "label": "자산매각으로 적자 메우기",
+            "status": "ok",
+            "evidence": "종속기업 처분 2,373억, 유형 처분 1,672억 — 본업 영익 흑전이 주력"
+          },
+          {
+            "key": "p1_related_party",
+            "label": "특수관계자 거래",
+            "status": "na",
+            "evidence": "신세계그룹 내부거래 별도 검토"
+          },
+          {
+            "key": "p1_name_change",
+            "label": "잦은 사명교체",
+            "status": "ok",
+            "evidence": "없음"
+          },
+          {
+            "key": "p1_capital_impair",
+            "label": "자본잠식",
+            "status": "ok",
+            "evidence": "자기자본 13.7조 견고"
+          },
+          {
+            "key": "p1_2nd_finance",
+            "label": "제2금융권 차입",
+            "status": "ok",
+            "evidence": "정상 차입금 회전"
+          },
+          {
+            "key": "p1_earnings_cash_gap",
+            "label": "이익↑+CFO↓ 괴리",
+            "status": "ok",
+            "evidence": "순익 246 vs CFO 13,189 — CFO가 훨씬 큼 (자산 감가상각·리스부채 효과)"
+          },
+          {
+            "key": "p1_cf_pattern",
+            "label": "CF패턴 위험형",
+            "status": "ok",
+            "evidence": "영(+1.32조)/투(-1.07조)/재(-0.86조) 우량형 차입 순상환"
+          },
+          {
+            "key": "p1_turnover",
+            "label": "매출채권/재고 회전율",
+            "status": "ok",
+            "evidence": "매출 정체기 운전자본 안정 유지"
+          },
+          {
+            "key": "p1_dev_asset",
+            "label": "개발비·영업권 비대",
+            "status": "ok",
+            "evidence": "무형 취득 418억(CAPEX의 4%)"
+          },
+          {
+            "key": "p1_other",
+            "label": "기타 위험",
+            "status": "hit",
+            "evidence": "⚠️ 2025.4Q 영익 -99억 재적자, 순익 -1,163억 — 시즌·일회성 변수"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_revenue_up",
+            "label": "매출 5년 우상향 (CAGR 5%+)",
+            "status": "ng",
+            "evidence": "5년 CAGR 3.82% (정체)"
+          },
+          {
+            "key": "p2_op_up",
+            "label": "영익 5년 우상향",
+            "status": "ng",
+            "evidence": "317→323 V턴이나 적자 2년(2023~2024) 포함"
+          },
+          {
+            "key": "p2_opm_5",
+            "label": "OPM 5%+",
+            "status": "ng",
+            "evidence": "5년 모두 2% 미만 (대형마트 특성)"
+          },
+          {
+            "key": "p2_roe_15",
+            "label": "ROE 15%+ 5년",
+            "status": "ng",
+            "evidence": "5년 평균 3.27%, 2025 1.80% (DART), 1.27% (네이버 지배주주)"
+          },
+          {
+            "key": "p2_cfo_pos",
+            "label": "CFO 5년 (+)",
+            "status": "ok",
+            "evidence": "2025 +1.32조, 5년 모두 흑자"
+          },
+          {
+            "key": "p2_fcf_pos",
+            "label": "FCF (+)",
+            "status": "ok",
+            "evidence": "2025 +3,072억"
+          },
+          {
+            "key": "p2_cf_growth_pattern",
+            "label": "CF패턴 우량형",
+            "status": "ok",
+            "evidence": "영+/투-/재- 우량형, 차입 순상환"
+          },
+          {
+            "key": "p2_shareholder_return",
+            "label": "주주환원율 30%+",
+            "status": "ng",
+            "evidence": "배당성향 49.17% 있으나 적자기 이연. 자사주 0"
+          },
+          {
+            "key": "p2_treasury_buyback",
+            "label": "자사주 매입·소각",
+            "status": "ng",
+            "evidence": "2025 매입 4억(사실상 0), 소각 없음"
+          },
+          {
+            "key": "p2_dividend_grow",
+            "label": "배당 5년 증가",
+            "status": "ok",
+            "evidence": "DPS 2,000→2,000→2,000→2,000→2,500원 (2025 +25%)"
+          },
+          {
+            "key": "p2_per_low",
+            "label": "PER 동종 저평가",
+            "status": "ok",
+            "evidence": "PER 21.76 vs 동종 38.39 (57%), 추정PER 12.12"
+          },
+          {
+            "key": "p2_pbr_low",
+            "label": "PBR < 1",
+            "status": "ok",
+            "evidence": "PBR 0.26 vs 동종 평균 0.81 (BPS 410,591원, 청산가치 ¼)"
+          }
+        ]
+      },
+      "financial_note": "이자보상배율 0.63배는 본업 적자기 영향. CFO 1.32조 견고하므로 현금흐름 기준으로는 부채 상환 가능.",
+      "timeseries": {
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "source": "DART 연결 (rcept 20260318001024 + buffett_snapshot)",
+        "revenue_eok": [
+          249327,
+          293324,
+          294722,
+          290209,
+          289704
+        ],
+        "op_income_eok": [
+          3168,
+          1357,
+          -469,
+          471,
+          3225
+        ],
+        "net_income_eok": [
+          15891,
+          10077,
+          -1875,
+          -5734,
+          2463
+        ],
+        "op_margin_pct": [
+          1.27,
+          0.46,
+          -0.16,
+          0.16,
+          1.11
+        ],
+        "roe_pct": [
+          12.81,
+          7.47,
+          -1.36,
+          -4.38,
+          1.8
+        ],
+        "debt_ratio": [
+          151.95,
+          146.24,
+          141.75,
+          159.31,
+          144.61
+        ],
+        "quarterly": {
+          "labels": [
+            "2024.12",
+            "2025.03",
+            "2025.06",
+            "2025.09",
+            "2025.12",
+            "2026.03(E)"
+          ],
+          "source": "네이버페이 분기실적 (누적-차감, 지배주주)",
+          "revenue_eok": [
+            72497,
+            72189,
+            70390,
+            74008,
+            73117,
+            73715
+          ],
+          "op_income_eok": [
+            -771,
+            1593,
+            216,
+            1514,
+            -99,
+            1756
+          ],
+          "net_income_eok": [
+            -5963,
+            836,
+            -314,
+            3103,
+            -1163,
+            1004
+          ],
+          "op_margin_pct": [
+            -1.06,
+            2.21,
+            0.31,
+            2.05,
+            -0.14,
+            2.38
+          ],
+          "roe_pct": [
+            -5.4,
+            -5.0,
+            -4.29,
+            -2.82,
+            1.27,
+            null
+          ],
+          "debt_ratio": [
+            159.31,
+            158.04,
+            154.74,
+            151.15,
+            144.61,
+            null
+          ]
+        }
+      },
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "이자보상배율 < 1",
+          "유동/당좌비율 < 100/50%",
+          "기타 위험"
+        ],
+        "part2_passed": [
+          "CFO 5년 (+)",
+          "FCF (+)",
+          "CF패턴 우량형",
+          "배당 5년 증가",
+          "PER 동종 저평가",
+          "PBR < 1"
+        ],
+        "part2_failed": [
+          "매출 5년 우상향 (CAGR 5%+)",
+          "영익 5년 우상향",
+          "OPM 5%+",
+          "ROE 15%+ 5년",
+          "주주환원율 30%+",
+          "자사주 매입·소각"
         ]
       }
     }
