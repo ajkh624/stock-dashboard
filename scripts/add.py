@@ -81,10 +81,14 @@ def main():
     }
 
     db = json.loads(DATA.read_text(encoding="utf-8"))
+    before = len(db["stocks"])
+    db["stocks"] = [s for s in db["stocks"] if s.get("code") != args.code]
+    removed = before - len(db["stocks"])
     db["stocks"].append(entry)
     db["updated_at"] = now
     DATA.write_text(json.dumps(db, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"✅ added: {args.name} ({args.code}) → {DATA}")
+    action = "replaced" if removed else "added"
+    print(f"✅ {action}: {args.name} ({args.code}) → {DATA}")
 
 if __name__ == "__main__":
     main()
