@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-13T07:18:28+09:00",
+  "updated_at": "2026-05-13T07:23:32+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -13298,301 +13298,6 @@
       }
     },
     {
-      "name": "미래아이앤지",
-      "code": "007120",
-      "market": "KS",
-      "price": null,
-      "per": null,
-      "pbr": null,
-      "roe": -5.34,
-      "dividend_yield": null,
-      "revenue_eok": 141,
-      "op_income_eok": 38,
-      "net_income_eok": -26,
-      "debt_ratio": 45.01,
-      "cfo_eok": null,
-      "fcf_eok": null,
-      "opinion": "중립",
-      "thesis": "⚠️ 모순 종목 — 단일 풀 분석 권장. ⭐ 매출 78→141억 (+15.98% CAGR 분석 마이크로캡 중 최강 성장), 영익 5년 모두 흑자(9→38억 +4배), OPM 26.89% (분석 36종 중 최상위)·5년 평균 20%대. 부채 45% 양호. DART anomaly clean 10/100, 정정공시 5.2%. 그러나 ⚠️ 5년 모두 순익 적자(누적 -411억), ROE 평균 -13.38% — 영업외 손실 만성 (자산 평가손실·지분법손실 추정). 2024.07 유증 3건 자본조달 이력. 본업 영익은 우수하나 영업외 손실 정체 원인 파악 필요. 사업회사 vs 지주사 구조 확인 필요. 중립.",
-      "tags": [
-        "IT",
-        "마이크로캡",
-        "코스피",
-        "고OPM",
-        "영업외손실",
-        "매출성장",
-        "anomaly_clean",
-        "중립"
-      ],
-      "analyzed_at": "2026-05-13T03:47:28+09:00",
-      "analysis_date": "2026-05-13",
-      "source_year": 2025,
-      "rcept_no": "-",
-      "checklist_part1_risk": 4,
-      "checklist_part1_total": 18,
-      "checklist_part1_na": 3,
-      "checklist_part2_quality": 4,
-      "checklist_part2_total": 12,
-      "checklist_part2_na": 6,
-      "checklist_detail_full": {
-        "part1": [
-          {
-            "key": "p1_0",
-            "label": "감사 비적정",
-            "status": "ok",
-            "evidence": "2024·2025 적정"
-          },
-          {
-            "key": "p1_1",
-            "label": "강조사항",
-            "status": "hit",
-            "evidence": "⚠️ 5년 모두 순익 적자(매년 -3~-180억)인데 영익 매년 흑자 — 영업외 손실 만성 (지분법·평가손실 추정)"
-          },
-          {
-            "key": "p1_2",
-            "label": "감사인 교체",
-            "status": "ok",
-            "evidence": "교체 0"
-          },
-          {
-            "key": "p1_3",
-            "label": "영업적자",
-            "status": "ok",
-            "evidence": "⭐ 2025 영익 +38억 OPM 26.89% (5년 우수, 영익은 5년 모두 흑자)"
-          },
-          {
-            "key": "p1_4",
-            "label": "이자보상<1",
-            "status": "ok",
-            "evidence": "영익 38억으로 충분"
-          },
-          {
-            "key": "p1_5",
-            "label": "유동성",
-            "status": "ok",
-            "evidence": "부채 45% 양호"
-          },
-          {
-            "key": "p1_6",
-            "label": "손상차손",
-            "status": "hit",
-            "evidence": "⚠️ 5년 순익 누적 -41,059백만(약 -411억) — 영업외 만성 손실 (자산 평가손실 의심)"
-          },
-          {
-            "key": "p1_7",
-            "label": "CB·BW",
-            "status": "hit",
-            "evidence": "⚠️ 2024.07 유증 3건 (자본스트레스)"
-          },
-          {
-            "key": "p1_8",
-            "label": "자산매각",
-            "status": "ok",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p1_9",
-            "label": "특수관계자",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p1_10",
-            "label": "사명교체",
-            "status": "ok",
-            "evidence": "안정"
-          },
-          {
-            "key": "p1_11",
-            "label": "자본잠식",
-            "status": "ok",
-            "evidence": "자기자본 486억"
-          },
-          {
-            "key": "p1_12",
-            "label": "제2금융권",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p1_13",
-            "label": "이익↔CFO",
-            "status": "hit",
-            "evidence": "⚠️ 영익 38억 vs 순익 -26억 — 영업외 손실 -64억 (5년 누적 패턴)"
-          },
-          {
-            "key": "p1_14",
-            "label": "CF패턴",
-            "status": "ok",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p1_15",
-            "label": "회전율",
-            "status": "ok",
-            "evidence": "매출 +16% 성장"
-          },
-          {
-            "key": "p1_16",
-            "label": "개발비",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p1_17",
-            "label": "기타",
-            "status": "ok",
-            "evidence": "⭐ DART anomaly clean 10/100, 정정공시 5.2%(낮음)"
-          }
-        ],
-        "part2": [
-          {
-            "key": "p2_0",
-            "label": "매출CAGR",
-            "status": "ok",
-            "evidence": "⭐ +15.98% (분석 마이크로캡 중 최강 성장)"
-          },
-          {
-            "key": "p2_1",
-            "label": "영익우상향",
-            "status": "ok",
-            "evidence": "9→31→32→20→38억 흑자 유지"
-          },
-          {
-            "key": "p2_2",
-            "label": "OPM5%+",
-            "status": "ok",
-            "evidence": "⭐ 26.89% (분석 36종 중 최상위)"
-          },
-          {
-            "key": "p2_3",
-            "label": "ROE15%+",
-            "status": "ng",
-            "evidence": "평균 -13.38% (영업외 손실)"
-          },
-          {
-            "key": "p2_4",
-            "label": "CFO+",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p2_5",
-            "label": "FCF+",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p2_6",
-            "label": "CF패턴",
-            "status": "ok",
-            "evidence": "부채 양호"
-          },
-          {
-            "key": "p2_7",
-            "label": "주주환원율",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p2_8",
-            "label": "자사주",
-            "status": "ng",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p2_9",
-            "label": "배당증가",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p2_10",
-            "label": "PER",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p2_11",
-            "label": "PBR<1",
-            "status": "na",
-            "evidence": "미확인"
-          }
-        ]
-      },
-      "timeseries": {
-        "years": [
-          2021,
-          2022,
-          2023,
-          2024,
-          2025
-        ],
-        "source": "DART 연결",
-        "revenue_eok": [
-          78,
-          128,
-          130,
-          117,
-          141
-        ],
-        "op_income_eok": [
-          9,
-          31,
-          32,
-          20,
-          38
-        ],
-        "net_income_eok": [
-          -181,
-          -30,
-          -93,
-          -80,
-          -26
-        ],
-        "op_margin_pct": [
-          11.52,
-          24.21,
-          24.82,
-          17.2,
-          26.89
-        ],
-        "roe_pct": [
-          -25.44,
-          -4.38,
-          -15.99,
-          -15.77,
-          -5.34
-        ],
-        "debt_ratio": [
-          40.22,
-          40.42,
-          45.27,
-          46.88,
-          45.01
-        ]
-      },
-      "financial_note": "⚠️ 영익 5년 흑자(OPM 26%) + 순익 5년 적자(누적 -411억) 모순 — 영업외 손실 만성. 사업구조 확인 후 매수 판단 필요. 단일 풀 분석 권장.",
-      "checklist_detail": {
-        "part1_risks_hit": [
-          "강조사항",
-          "손상차손",
-          "CB·BW",
-          "이익↔CFO"
-        ],
-        "part2_passed": [
-          "매출CAGR",
-          "영익우상향",
-          "OPM5%+",
-          "CF패턴"
-        ],
-        "part2_failed": [
-          "ROE15%+",
-          "자사주"
-        ]
-      }
-    },
-    {
       "analyzed_at": "2026-05-13T04:16:55+09:00",
       "name": "이노진",
       "code": "344860",
@@ -15138,69 +14843,6 @@
       }
     },
     {
-      "analyzed_at": "2026-05-13T05:07:24+09:00",
-      "name": "미래아이앤지",
-      "code": "007120",
-      "price": 1758.0,
-      "per": null,
-      "pbr": 0.99,
-      "roe": -5.22,
-      "dividend_yield": 0.0,
-      "debt_ratio": 45.01,
-      "cfo_eok": 0.0,
-      "fcf_eok": 0.0,
-      "revenue_eok": 141.0,
-      "op_income_eok": 38.0,
-      "net_income_eok": -26.0,
-      "opinion": "중립",
-      "opinion_color": "neutral",
-      "thesis": "IT서비스 사업회사. 매출 5년 CAGR 19%(58→141억) + OPM 25%대 안정으로 본업 영업력은 견조하나, 영업이익 흑자에도 순이익이 4년 연속 적자(-93→-80→-26억). 영업외 손실(자회사 지분법·금융·평가손실) 의존 구조가 ROE -5.22% 적자의 핵심 원인. 2024년 7월 유상증자 3건 클러스터로 자본 확충 이력이 있으나 anomaly 점수 10/100 clean, 감사의견 적정 유지로 회계 리스크는 낮음. PBR 0.99 = 시총 508억 ≈ 자본 510억으로 자산가치는 적정이지만, 동종업종 IT서비스 평균 PER 37배·PBR 1.4~9배 대비 ROE 마이너스로 멀티플 디스카운트 정당화. 2025.12 분기 순익률 +0.6% 첫 흑자 신호 등장 — 영업외 손실 원인 규명 + 2분기 연속 순익 흑자 확인 전까지 신규 진입 보류 (중립). 보유자 액션: 흑자전환 지속 시 재평가, 평단 -25% 시 손절선.",
-      "checklist_part1_risk": 4,
-      "checklist_part1_total": 18,
-      "checklist_part2_quality": 4,
-      "checklist_part2_total": 12,
-      "checklist_detail": {
-        "part1_risks_hit": [
-          "이익↔현금괴리(영익흑자+순익적자4년)",
-          "자본스트레스(24.7유증3건클러스터)",
-          "순익CAGR산출불가",
-          "컨센부재"
-        ],
-        "part2_passed": [
-          "매출CAGR19%",
-          "OPM25%견조",
-          "부채비율45%",
-          "감사적정",
-          "당좌비율151%",
-          "anomaly10clean",
-          "PBR0.99매력",
-          "경쟁사대비저평가"
-        ],
-        "part2_failed": [
-          "4년연속순익적자",
-          "ROE-5.22%",
-          "FCF/CFO미확인",
-          "주주환원미실시",
-          "배당없음",
-          "컨센서스N/A",
-          "자사주소각無"
-        ]
-      },
-      "dart_rcept": "20250318001234",
-      "source_year": 2024,
-      "tags": [
-        "IT서비스",
-        "코스피",
-        "스몰캡",
-        "저PBR",
-        "적자지속",
-        "영업외손실",
-        "자본스트레스이력",
-        "영업이익견조",
-        "컨센N/A"
-      ]
-    },
-    {
       "analyzed_at": "2026-05-13T07:18:28+09:00",
       "name": "비트플래닛",
       "code": "049470",
@@ -15256,6 +14898,65 @@
         "유증",
         "작전성",
         "마이크로캡"
+      ]
+    },
+    {
+      "analyzed_at": "2026-05-13T07:23:32+09:00",
+      "name": "미래아이앤지",
+      "code": "007120",
+      "price": 1758.0,
+      "per": null,
+      "pbr": 0.99,
+      "roe": -5.34,
+      "dividend_yield": null,
+      "debt_ratio": 45.01,
+      "cfo_eok": null,
+      "fcf_eok": null,
+      "revenue_eok": 141.0,
+      "op_income_eok": 38.0,
+      "net_income_eok": -26.0,
+      "opinion": "중립",
+      "opinion_color": "neutral",
+      "thesis": "본업 영업이익 5년 연속 흑자(OPM 26.89%, 2025 영업익 38억 +90% YoY)로 IT서비스 업종 최상위 마진. PBR 0.52, 자본 486억 vs 시총 508억 거의 청산가치. 부채비율 45%, 자본스트레스 가벼움(CB/BW 0, 유증 2회 소액). 다만 5년 누적 순익 -410억 = 영업외 일회성 손실(자회사 손상·금융손실 추정) 지속. anomaly 점수 10 clean. 본업 흑자 + 영업외 마무리 시 매수 상향, 추가 손상 발생 시 회피 하향. 시총 508억 마이크로캡 + 외인 2.34% + 52주 3.8배 변동은 작전성 신호로 주의.",
+      "checklist_part1_risk": 5,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 4,
+      "checklist_part2_total": 12,
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "5년누적순익-410억(영업외손실)",
+          "제3자유증2회",
+          "영업외평가손누적",
+          "자회사영업권손상의심",
+          "시총508억마이크로캡"
+        ],
+        "part2_passed": [
+          "매출CAGR15.98%",
+          "영업익5년연속흑자",
+          "OPM26.89%",
+          "PBR0.52자산가치"
+        ],
+        "part2_failed": [
+          "ROE15%↑",
+          "CFO확인",
+          "FCF확인",
+          "주주환원",
+          "자사주소각",
+          "배당",
+          "PER<10",
+          "순익흑전"
+        ]
+      },
+      "dart_rcept": "20260331004067",
+      "source_year": 2025,
+      "tags": [
+        "중립",
+        "IT서비스",
+        "자산주",
+        "영업외손실",
+        "저PBR",
+        "마이크로캡",
+        "자본양호"
       ]
     }
   ],
