@@ -1,42 +1,42 @@
 {
-  "updated_at": "2026-05-12T15:44:31+09:00",
-  "source": "Yahoo Finance (yfinance)",
+  "updated_at": "2026-05-12T15:47:21+09:00",
+  "source": "Yahoo Finance + 네이버 금융 fallback",
   "prices": {
     "215200": {
-      "symbol": "215200.KQ",
-      "error": "urllib: HTTP Error 429: Too Many Requests"
+      "symbol": "215200",
+      "error": "naver: HTTPError: HTTP Error 406: Not Acceptable"
     },
     "068930": {
-      "symbol": "068930.KQ",
-      "error": "urllib: HTTP Error 429: Too Many Requests"
+      "symbol": "068930",
+      "error": "naver: HTTPError: HTTP Error 406: Not Acceptable"
     },
     "033530": {
-      "symbol": "033530.KS",
-      "error": "urllib: HTTP Error 429: Too Many Requests"
+      "symbol": "033530",
+      "error": "naver: HTTPError: HTTP Error 406: Not Acceptable"
     },
     "005490": {
-      "symbol": "005490.KS",
-      "error": "urllib: HTTP Error 429: Too Many Requests"
+      "symbol": "005490",
+      "error": "naver: HTTPError: HTTP Error 406: Not Acceptable"
     },
     "175330": {
-      "symbol": "175330.KS",
-      "error": "urllib: HTTP Error 429: Too Many Requests"
+      "symbol": "175330",
+      "error": "naver: HTTPError: HTTP Error 406: Not Acceptable"
     },
     "023590": {
-      "symbol": "023590.KS",
-      "error": "urllib: HTTP Error 429: Too Many Requests"
+      "symbol": "023590",
+      "error": "naver: HTTPError: HTTP Error 406: Not Acceptable"
     },
     "263800": {
-      "symbol": "263800.KQ",
-      "error": "urllib: HTTP Error 429: Too Many Requests"
+      "symbol": "263800",
+      "error": "naver: HTTPError: HTTP Error 406: Not Acceptable"
     },
     "016380": {
-      "symbol": "016380.KS",
-      "error": "urllib: HTTP Error 429: Too Many Requests"
+      "symbol": "016380",
+      "error": "naver: HTTPError: HTTP Error 406: Not Acceptable"
     },
     "012450": {
-      "symbol": "012450.KS",
-      "error": "urllib: HTTP Error 429: Too Many Requests"
+      "symbol": "012450",
+      "error": "naver: HTTPError: HTTP Error 406: Not Acceptable"
     }
   }
 }
