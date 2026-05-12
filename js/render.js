@@ -200,10 +200,10 @@ function renderCard(s) {
     </div>
     ${renderPriceBlock(s)}
     <div class="card-metrics">
-      <div class="metric"${tip('PER')}><span class="metric-label">PER</span><span class="metric-value">${fmtX(s.per)}</span></div>
-      <div class="metric"${tip('PBR')}><span class="metric-label">PBR</span><span class="metric-value">${fmtX(s.pbr)}</span></div>
+      <div class="metric"${tip('PER (네이버/KRX)')}>${renderPercentileBadge(s.per_percentile,'per')}<span class="metric-label">PER</span><span class="metric-value">${fmtX(s.per)}${s.krx_per?`<small class="krx-tag" title="KRX 공식 2026-05-13">/${s.krx_per.toFixed(2)}</small>`:''}</span></div>
+      <div class="metric"${tip('PBR (네이버/KRX)')}>${renderPercentileBadge(s.pbr_percentile,'pbr')}<span class="metric-label">PBR</span><span class="metric-value">${fmtX(s.pbr)}${s.krx_pbr?`<small class="krx-tag" title="KRX 공식 2026-05-13">/${s.krx_pbr.toFixed(2)}</small>`:''}</span></div>
       <div class="metric"${tip('ROE')}><span class="metric-label">ROE</span><span class="metric-value">${fmtPct(s.roe)}</span></div>
-      <div class="metric"${tip('배당')}><span class="metric-label">배당</span><span class="metric-value">${fmtPct(s.dividend_yield)}</span></div>
+      <div class="metric"${tip('배당')}>${renderPercentileBadge(s.div_percentile,'div')}<span class="metric-label">배당</span><span class="metric-value">${fmtPct(s.dividend_yield)}</span></div>
     </div>
     <div class="card-cf">
       <div${tip('CFO')}>CFO <strong>${fmt(s.cfo_eok)}억</strong></div>
@@ -216,6 +216,38 @@ function renderCard(s) {
     ${tags ? `<div class="card-tags">${tags}</div>` : ''}
     ${renderNote(s)}
   </article>`;
+}
+
+function renderMarketBaseline() {
+  const el = document.getElementById('marketBaseline');
+  if (!el) return;
+  const m = STATE.market_baseline;
+  if (!m) { el.style.display = 'none'; return; }
+  el.style.display = 'flex';
+  el.innerHTML = `
+    <span><span class="mb-label">📊 시장 기준선</span><strong>${m.baseline_date}</strong> · ${m.universe_size.toLocaleString()}종목 (${m.baseline_filter})</span>
+    <span>PER 중앙값 <strong>${m.per_median}</strong> · 평균 ${m.per_mean}</span>
+    <span>PBR 중앙값 <strong>${m.pbr_median}</strong> · 평균 ${m.pbr_mean}</span>
+    <span>배당 중앙값 <strong>${m.div_median}%</strong> · 평균 ${m.div_mean}%</span>
+    <span style="opacity:.7">카드 우상단 백분위 배지 = 등록 종목의 시장 상대 위치</span>
+  `;
+}
+
+function renderPercentileBadge(p, kind) {
+  if (p == null) return '';
+  // PER/PBR: 낮을수록 좋음 (저평가). 배당: 높을수록 좋음.
+  // 표시: 시장의 하위 N% 위치
+  let display, cls, title;
+  if (kind === 'div') {
+    display = `상위 ${(100-p).toFixed(0)}%`;
+    cls = p >= 80 ? 'pct-good' : (p >= 50 ? 'pct-mid' : 'pct-bad');
+    title = `배당수익률 시장 백분위: 상위 ${(100-p).toFixed(0)}% (높을수록 고배당)`;
+  } else {
+    display = `하위 ${p.toFixed(0)}%`;
+    cls = p <= 20 ? 'pct-good' : (p <= 50 ? 'pct-mid' : 'pct-bad');
+    title = `${kind.toUpperCase()} 시장 백분위: 하위 ${p.toFixed(0)}% (낮을수록 저평가)`;
+  }
+  return `<span class="pct-badge ${cls}" title="${title}">${display}</span>`;
 }
 
 function renderNote(s) {
@@ -717,6 +749,8 @@ async function load() {
   const data = await res.json();
   STATE.stocks = data.stocks || [];
   STATE.updated_at = data.updated_at;
+  STATE.market_baseline = data.market_baseline || null;
+  renderMarketBaseline();
   await loadLivePrices();
   render();
   // Mirror title -> data-tip for static HTML table headers
