@@ -1,5 +1,5 @@
 // Stock dashboard renderer
-let STATE = { stocks: [], updated_at: null };
+let STATE = { stocks: [], updated_at: null, livePrices: {}, liveUpdatedAt: null };
 
 const TOOLTIPS = {
   PER: 'PER = 주가 ÷ 주당순이익(EPS) · 이익 1원 사기 위해 주가 몇 배 내는가 · 10↓ 저평가 / 20↑ 고평가',
@@ -103,6 +103,50 @@ function renderChecklist(s) {
   </details>`;
 }
 
+function renderPriceBlock(s) {
+  const live = STATE.livePrices[s.code];
+  const analyzedDate = (s.analysis_date || (s.analyzed_at||'').slice(0,10)) || '-';
+  const analyzedPriceRow = `
+    <div class="price-row analyzed">
+      <span class="pr-label">분석일 (${analyzedDate})</span>
+      <span class="pr-value">${fmt(s.price, '원')}</span>
+    </div>`;
+  if (!live || live.error || live.price == null) {
+    return `<div class="price-block">${analyzedPriceRow}
+      <div class="price-row live na">
+        <span class="pr-label">실시간</span>
+        <span class="pr-value">${live && live.error ? '오류' : '대기중'}</span>
+      </div>
+    </div>`;
+  }
+  // 변동률 부호
+  const pct = live.change_pct;
+  const cls = pct == null ? 'flat' : (pct > 0 ? 'up' : (pct < 0 ? 'down' : 'flat'));
+  const sign = pct == null ? '' : (pct > 0 ? '▲' : (pct < 0 ? '▼' : '–'));
+  // 분석일 대비 변화율
+  const vsAnalyzed = (s.price && live.price) ? ((live.price - s.price)/s.price*100) : null;
+  const vsCls = vsAnalyzed == null ? 'flat' : (vsAnalyzed > 0 ? 'up' : (vsAnalyzed < 0 ? 'down' : 'flat'));
+  const vsSign = vsAnalyzed == null ? '' : (vsAnalyzed > 0 ? '+' : '');
+  // 시각
+  const fetched = live.fetched_at ? new Date(live.fetched_at) : null;
+  const fetchedStr = fetched ? `${fetched.getMonth()+1}/${fetched.getDate()} ${String(fetched.getHours()).padStart(2,'0')}:${String(fetched.getMinutes()).padStart(2,'0')}` : '-';
+  return `<div class="price-block">
+    ${analyzedPriceRow}
+    <div class="price-row live ${cls}">
+      <span class="pr-label">실시간 (${fetchedStr})</span>
+      <span class="pr-value">
+        ${fmt(live.price, '원')}
+        <span class="pr-chg">${sign}${pct == null ? '-' : Math.abs(pct).toFixed(2)+'%'}</span>
+      </span>
+    </div>
+    ${vsAnalyzed != null ? `
+    <div class="price-row diff ${vsCls}">
+      <span class="pr-label">분석일 대비</span>
+      <span class="pr-value">${vsSign}${vsAnalyzed.toFixed(2)}%</span>
+    </div>` : ''}
+  </div>`;
+}
+
 function renderCard(s) {
   const opCls = opinionClassMap[s.opinion] || 'neutral';
   const tags = (s.tags||[]).map(t=>`<span class="tag">${t}</span>`).join('');
@@ -116,7 +160,7 @@ function renderCard(s) {
       </div>
       <span class="opinion ${opCls}">${s.opinion}</span>
     </div>
-    <div class="card-price"${tip('현재가')}>${fmt(s.price, '원')}</div>
+    ${renderPriceBlock(s)}
     <div class="card-metrics">
       <div class="metric"${tip('PER')}><span class="metric-label">PER</span><span class="metric-value">${fmtX(s.per)}</span></div>
       <div class="metric"${tip('PBR')}><span class="metric-label">PBR</span><span class="metric-value">${fmtX(s.pbr)}</span></div>
@@ -137,11 +181,22 @@ function renderCard(s) {
 
 function renderRow(s) {
   const opCls = opinionClassMap[s.opinion] || 'neutral';
+  const live = STATE.livePrices[s.code];
+  const livePrice = live && !live.error && live.price != null ? live.price : null;
+  const vsAnalyzed = (s.price && livePrice) ? ((livePrice - s.price)/s.price*100) : null;
+  const liveCls = livePrice == null ? 'flat' : (live.change_pct == null ? 'flat' : (live.change_pct > 0 ? 'up' : (live.change_pct < 0 ? 'down' : 'flat')));
+  const liveCellHTML = livePrice == null
+    ? `<span style="color:var(--text-dim)">${live && live.error ? '오류' : '-'}</span>`
+    : `<span class="live-px ${liveCls}">${fmt(livePrice)}${live.change_pct != null ? ` <small>(${live.change_pct > 0 ? '+' : ''}${live.change_pct.toFixed(2)}%)</small>` : ''}</span>`;
+  const analyzedCellHTML = `<span>${fmt(s.price)}</span><br><small style="color:var(--text-dim)">${s.analysis_date || (s.analyzed_at||'').slice(0,10)}</small>`;
+  const vsCellHTML = vsAnalyzed == null ? '-' : `<span class="${vsAnalyzed>0?'up':(vsAnalyzed<0?'down':'flat')}">${vsAnalyzed > 0 ? '+' : ''}${vsAnalyzed.toFixed(2)}%</span>`;
   return `<tr class="stock-row" data-idx="${s._idx}" tabindex="0">
     <td>${shortDate(s.analyzed_at)}</td>
     <td><small style="color:var(--text-dim)">${s.source_year||'-'}</small></td>
     <td><strong>${s.name}</strong><br><small style="color:var(--text-dim)">${s.code}</small></td>
-    <td class="num">${fmt(s.price)}</td>
+    <td class="num" title="분석일 가격">${analyzedCellHTML}</td>
+    <td class="num" title="실시간 (Yahoo Finance)">${liveCellHTML}</td>
+    <td class="num" title="분석일 대비">${vsCellHTML}</td>
     <td class="num">${fmtX(s.per)}</td>
     <td class="num">${fmtX(s.pbr)}</td>
     <td class="num">${fmtPct(s.roe)}</td>
@@ -472,16 +527,36 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
+async function loadLivePrices() {
+  try {
+    const res = await fetch('data/live-prices.json?ts=' + Date.now(), {cache: 'no-store'});
+    if (!res.ok) return;
+    const data = await res.json();
+    STATE.livePrices = data.prices || {};
+    STATE.liveUpdatedAt = data.updated_at;
+    const liveEl = document.getElementById('liveUpdatedAt');
+    if (liveEl) liveEl.textContent = `실시간(Yahoo): ${shortDate(data.updated_at)}`;
+  } catch (e) {
+    console.warn('live prices load failed', e);
+  }
+}
+
 async function load() {
   const res = await fetch('data/stocks.json?ts=' + Date.now());
   const data = await res.json();
   STATE.stocks = data.stocks || [];
   STATE.updated_at = data.updated_at;
+  await loadLivePrices();
   render();
   // Mirror title -> data-tip for static HTML table headers
   document.querySelectorAll('th[title]:not([data-tip])').forEach(el => {
     el.setAttribute('data-tip', el.getAttribute('title'));
   });
+  // 페이지가 열려있는 동안 실시간 가격 자동 갱신 (3분마다)
+  setInterval(async () => {
+    await loadLivePrices();
+    render();
+  }, 180000);
 }
 
 ['searchInput','opinionFilter','sortBy'].forEach(id =>

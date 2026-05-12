@@ -18,7 +18,37 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); f
 header { padding: 20px 16px 12px; border-bottom: 1px solid var(--border); }
 header h1 { margin: 0 0 4px; font-size: 20px; }
 .sub { margin: 0; color: var(--text-dim); font-size: 13px; }
-.meta { margin-top: 8px; display: flex; gap: 12px; font-size: 12px; color: var(--text-dim); }
+.meta { margin-top: 8px; display: flex; gap: 12px; font-size: 12px; color: var(--text-dim); flex-wrap: wrap; }
+.live-tag {
+  background: rgba(74,222,128,0.1); color: var(--accent);
+  padding: 2px 8px; border-radius: 10px; font-size: 11px;
+}
+
+/* Price block (analyzed + live + diff) */
+.price-block {
+  display: flex; flex-direction: column; gap: 4px;
+  background: rgba(255,255,255,0.03); border-radius: 8px;
+  padding: 8px 10px; margin-bottom: 10px;
+}
+.price-row { display: flex; justify-content: space-between; align-items: baseline; }
+.price-row .pr-label { font-size: 11px; color: var(--text-dim); }
+.price-row .pr-value { font-size: 13px; font-weight: 600; }
+.price-row.analyzed .pr-value { font-size: 14px; }
+.price-row.live .pr-value { font-size: 18px; font-weight: 700; }
+.price-row.live .pr-chg { font-size: 12px; margin-left: 6px; }
+.price-row.live.up .pr-value, .price-row.live.up .pr-chg { color: #ef4444; }
+.price-row.live.down .pr-value, .price-row.live.down .pr-chg { color: #4ade80; }
+.price-row.live.flat .pr-value { color: var(--text); }
+.price-row.diff.up { color: #ef4444; }
+.price-row.diff.down { color: #4ade80; }
+.price-row.live.na .pr-value { color: var(--text-dim); font-weight: 500; font-size: 13px; }
+
+/* Table live cell */
+.live-px.up { color: #ef4444; }
+.live-px.down { color: #4ade80; }
+.up { color: #ef4444; }
+.down { color: #4ade80; }
+.flat { color: var(--text-dim); }
 
 main { padding: 16px; max-width: 1200px; margin: 0 auto; }
 

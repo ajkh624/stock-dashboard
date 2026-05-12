@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>📈 안박사 주식 재무제표 분석 대시보드</title>
-<link rel="stylesheet" href="css/style.css?v=10">
+<link rel="stylesheet" href="css/style.css?v=11">
 </head>
 <body>
 <header>
@@ -13,6 +13,7 @@
   <div class="meta">
     <span id="stockCount">- 종목</span>
     <span id="updatedAt">갱신: -</span>
+    <span id="liveUpdatedAt" class="live-tag">실시간(Yahoo): -</span>
   </div>
 </header>
 
@@ -197,7 +198,9 @@
           <th title="본 카드 작성·갱신 일시 (KST)">분석일시</th>
           <th title="Fiscal Year — 참고한 사업보고서 회계연도">FY</th>
           <th>종목</th>
-          <th class="num" title="직전 거래일 종가 (출처: 네이버페이 증권)">현재가</th>
+          <th class="num" title="분석 당시 종가 (네이버페이 증권)">분석일가</th>
+          <th class="num" title="실시간 — Yahoo Finance v8 chart API · GitHub Actions가 15분마다 갱신">실시간</th>
+          <th class="num" title="실시간 ÷ 분석일가 − 1 — 분석 이후 변동률">변동</th>
           <th class="num" title="PER = 주가 ÷ 주당순이익(EPS) · 이익 1원 사기 위해 주가 몇 배 내는가 · 10↓ 저평가 / 20↑ 고평가">PER</th>
           <th class="num" title="PBR = 주가 ÷ 주당순자산(BPS) · 청산가치 대비 주가 · 1배↓ 장부가 이하 · 자산 부실 시 함정 주의">PBR</th>
           <th class="num" title="ROE = 당기순이익 ÷ 자기자본 · 주주 돈으로 얼마 벌었나 · 15%+ 5년 유지 = 우량 (버핏 핵심지표)">ROE</th>
@@ -240,6 +243,6 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-<script src="js/render.js?v=9"></script>
+<script src="js/render.js?v=10"></script>
 </body>
 </html>
