@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-13T07:28:58+09:00",
+  "updated_at": "2026-05-13T07:35:19+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -12714,297 +12714,6 @@
       }
     },
     {
-      "name": "신라섬유",
-      "code": "001000",
-      "market": "KQ",
-      "price": null,
-      "per": null,
-      "pbr": null,
-      "roe": 0.5,
-      "dividend_yield": null,
-      "revenue_eok": 36,
-      "op_income_eok": 5,
-      "net_income_eok": 1,
-      "debt_ratio": 112.36,
-      "cfo_eok": null,
-      "fcf_eok": null,
-      "opinion": "회피",
-      "thesis": "면직물·섬유 극소형(매출 36억!). 매출 43→36억 -16% 5년 우하향, 5년 4년 순익 적자(2025 +1억 간신히 흑전), 5년 평균 ROE -0.41%. 영익 절대규모 4~7억으로 미미하나 OPM 13.59% 의외 양호(원가 통제). 부채 110%대 5년 정체, 자기자본 145억. DART anomaly clean 0/100·자본스트레스 0건 거버넌스 양호. 그러나 본업 사실상 정체·축소 진행, 시총 대비 매출 영세성 — 회피.",
-      "tags": [
-        "섬유",
-        "면직물",
-        "코스닥",
-        "극소형",
-        "매출축소",
-        "anomaly_clean",
-        "회피"
-      ],
-      "analyzed_at": "2026-05-13T03:41:26+09:00",
-      "analysis_date": "2026-05-13",
-      "source_year": 2025,
-      "rcept_no": "-",
-      "checklist_part1_risk": 2,
-      "checklist_part1_total": 18,
-      "checklist_part1_na": 8,
-      "checklist_part2_quality": 2,
-      "checklist_part2_total": 12,
-      "checklist_part2_na": 6,
-      "checklist_detail_full": {
-        "part1": [
-          {
-            "key": "p1_0",
-            "label": "감사 비적정",
-            "status": "ok",
-            "evidence": "2024·2025 적정"
-          },
-          {
-            "key": "p1_1",
-            "label": "강조사항",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p1_2",
-            "label": "감사인 교체",
-            "status": "ok",
-            "evidence": "교체 0"
-          },
-          {
-            "key": "p1_3",
-            "label": "영업적자",
-            "status": "ok",
-            "evidence": "2025 영익 +5억 흑자 유지(5년 모두 흑자)"
-          },
-          {
-            "key": "p1_4",
-            "label": "이자보상<1",
-            "status": "hit",
-            "evidence": "⚠️ 영익 5억 vs 부채 163억 — 이자보상 약함"
-          },
-          {
-            "key": "p1_5",
-            "label": "유동성",
-            "status": "hit",
-            "evidence": "⚠️ 부채비율 112.36% (5년 110% 수준 정체)"
-          },
-          {
-            "key": "p1_6",
-            "label": "손상차손",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p1_7",
-            "label": "CB·BW",
-            "status": "ok",
-            "evidence": "⭐ 자본스트레스 0건"
-          },
-          {
-            "key": "p1_8",
-            "label": "자산매각",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p1_9",
-            "label": "특수관계자",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p1_10",
-            "label": "사명교체",
-            "status": "ok",
-            "evidence": "안정"
-          },
-          {
-            "key": "p1_11",
-            "label": "자본잠식",
-            "status": "ok",
-            "evidence": "자기자본 145억"
-          },
-          {
-            "key": "p1_12",
-            "label": "제2금융권",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p1_13",
-            "label": "이익↔CFO",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p1_14",
-            "label": "CF패턴",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p1_15",
-            "label": "회전율",
-            "status": "ok",
-            "evidence": "매출 정체"
-          },
-          {
-            "key": "p1_16",
-            "label": "개발비",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p1_17",
-            "label": "기타",
-            "status": "ok",
-            "evidence": "⭐ DART anomaly clean 0/100, 정정공시 2.3%(매우 낮음)"
-          }
-        ],
-        "part2": [
-          {
-            "key": "p2_0",
-            "label": "매출CAGR",
-            "status": "ng",
-            "evidence": "-4.69% 우하향"
-          },
-          {
-            "key": "p2_1",
-            "label": "영익우상향",
-            "status": "ng",
-            "evidence": "6→4→3→4→4억 정체"
-          },
-          {
-            "key": "p2_2",
-            "label": "OPM5%+",
-            "status": "ok",
-            "evidence": "2025 OPM 13.59% (영익 절대규모는 5억으로 미미)"
-          },
-          {
-            "key": "p2_3",
-            "label": "ROE15%+",
-            "status": "ng",
-            "evidence": "평균 -0.41%"
-          },
-          {
-            "key": "p2_4",
-            "label": "CFO+",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p2_5",
-            "label": "FCF+",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p2_6",
-            "label": "CF패턴",
-            "status": "ok",
-            "evidence": "부채 안정"
-          },
-          {
-            "key": "p2_7",
-            "label": "주주환원율",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p2_8",
-            "label": "자사주",
-            "status": "ng",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p2_9",
-            "label": "배당증가",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p2_10",
-            "label": "PER",
-            "status": "na",
-            "evidence": "미확인"
-          },
-          {
-            "key": "p2_11",
-            "label": "PBR<1",
-            "status": "na",
-            "evidence": "미확인"
-          }
-        ]
-      },
-      "timeseries": {
-        "years": [
-          2021,
-          2022,
-          2023,
-          2024,
-          2025
-        ],
-        "source": "DART 연결",
-        "revenue_eok": [
-          43,
-          44,
-          38,
-          37,
-          36
-        ],
-        "op_income_eok": [
-          7,
-          5,
-          4,
-          4,
-          5
-        ],
-        "net_income_eok": [
-          7,
-          0,
-          -7,
-          -3,
-          1
-        ],
-        "op_margin_pct": [
-          15.37,
-          10.49,
-          10.37,
-          11.36,
-          13.59
-        ],
-        "roe_pct": [
-          4.35,
-          -0.23,
-          -4.56,
-          -2.1,
-          0.5
-        ],
-        "debt_ratio": [
-          113.28,
-          107.48,
-          110.18,
-          112.79,
-          112.36
-        ]
-      },
-      "checklist_detail": {
-        "part1_risks_hit": [
-          "이자보상<1",
-          "유동성"
-        ],
-        "part2_passed": [
-          "OPM5%+",
-          "CF패턴"
-        ],
-        "part2_failed": [
-          "매출CAGR",
-          "영익우상향",
-          "ROE15%+",
-          "자사주"
-        ]
-      }
-    },
-    {
       "analyzed_at": "2026-05-13T04:16:55+09:00",
       "name": "이노진",
       "code": "344860",
@@ -13854,69 +13563,6 @@
         "코스닥",
         "자산가치주의심",
         "회피"
-      ]
-    },
-    {
-      "analyzed_at": "2026-05-13T04:55:10+09:00",
-      "name": "신라섬유",
-      "code": "001000",
-      "price": 1506.0,
-      "per": 502.0,
-      "pbr": 2.53,
-      "roe": 0.5,
-      "dividend_yield": null,
-      "debt_ratio": 112.4,
-      "cfo_eok": null,
-      "fcf_eok": null,
-      "revenue_eok": 36.0,
-      "op_income_eok": 5.0,
-      "net_income_eok": 1.0,
-      "opinion": "회피",
-      "opinion_color": "avoid",
-      "thesis": "섬유(니트원사) 사양산업 마이크로캡. 시총 366억·매출 37억·자본 144억 영세 규모. 5년 매출 CAGR -3.2%, ROE 평균 -0.04%(2025 흑전 0.5%). 영업익은 4~5억 +유지지만 절대 규모 미미·자본효율 극저. PBR 2.53배로 자본가치 대비 2.5배 프리미엄, PER 502배 — '저PBR 가치주'가 전혀 아닌 가짜 저가주. 52주 3,085→1,506 -51% drawdown (테마성 작전 후 정상화 진행). 회계 anomaly clean(0/100)·자본스트레스 0건이라 즉시 부실 위험은 없으나, 본업 성장 동력·주주환원·컨센 모두 부재. 신규 진입 비추, 보유자는 단계적 청산 권장.",
-      "checklist_part1_risk": 6,
-      "checklist_part1_total": 18,
-      "checklist_part2_quality": 1,
-      "checklist_part2_total": 12,
-      "checklist_detail": {
-        "part1_risks_hit": [
-          "이익↔현금괴리(영업외손실)",
-          "자산회전율저조(0.12회)",
-          "매출CAGR마이너스",
-          "사양산업+마이크로캡",
-          "52주반토막작전이력",
-          "ROE5년평균제로"
-        ],
-        "part2_passed": [
-          "OPM10%+유지",
-          "감사적정",
-          "자본잠식없음",
-          "회계anomalyclean",
-          "자본스트레스0건"
-        ],
-        "part2_failed": [
-          "매출우상향",
-          "영업익성장",
-          "ROE10%+",
-          "주주환원",
-          "PER<업종",
-          "PBR<1",
-          "자사주소각",
-          "배당증액"
-        ]
-      },
-      "dart_rcept": "20260306000948",
-      "source_year": 2025,
-      "tags": [
-        "섬유",
-        "사양산업",
-        "마이크로캡",
-        "저ROE",
-        "PBR과대",
-        "작전이력",
-        "무배당",
-        "코스닥",
-        "회피케이스"
       ]
     },
     {
@@ -14779,6 +14425,66 @@
           ]
         }
       }
+    },
+    {
+      "analyzed_at": "2026-05-13T07:35:19+09:00",
+      "name": "신라섬유",
+      "code": "001000",
+      "price": 1506.0,
+      "per": 502.0,
+      "pbr": 2.53,
+      "roe": 0.5,
+      "dividend_yield": null,
+      "debt_ratio": 112.36,
+      "cfo_eok": null,
+      "fcf_eok": null,
+      "revenue_eok": 36.0,
+      "op_income_eok": 5.0,
+      "net_income_eok": 0.7,
+      "opinion": "회피",
+      "opinion_color": "avoid",
+      "thesis": "매출 43→36억 5년 -16% 정체, 5년 누적 순익 -3억(2025 0.7억 흑전도 실질 적자급), ROE 평균 -0.41% 무의미. 본업 섬유 사양산업 + 임대수익 위주 부동산 분류지만 규모 36억 미달. PBR 2.53배는 자본 145억 대비 150% 프리미엄, PER 502배 의미 없음. CB/유증/M&A 5년간 0건 = 변화 의지 없음. anomaly 점수 0 깨끗하나 활동 부재의 다른 표현. 시총 366억 vs 매출 36억은 본업 무관 작전성 가격. 신규 회피, 보유자 손절 권장.",
+      "checklist_part1_risk": 5,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 0,
+      "checklist_part2_total": 12,
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "매출-16%5년정체",
+          "5년누적순익-3억",
+          "당좌비율3.87%극단적낮음",
+          "부채비율112%고정",
+          "PBR2.53자본대비150%프리미엄",
+          "시총366억vs매출36억작전성변동"
+        ],
+        "part2_passed": [],
+        "part2_failed": [
+          "매출CAGR",
+          "영업익",
+          "OPM실질",
+          "ROE15%",
+          "CFO확인",
+          "FCF확인",
+          "주주환원",
+          "자사주소각",
+          "배당",
+          "PER<10",
+          "PBR<1",
+          "순익CAGR"
+        ]
+      },
+      "dart_rcept": "20260331004067",
+      "source_year": 2025,
+      "tags": [
+        "회피",
+        "사양산업",
+        "섬유",
+        "부동산임대",
+        "저성장",
+        "작전성",
+        "마이크로캡",
+        "자산프리미엄"
+      ]
     }
   ],
   "market_baseline": {
