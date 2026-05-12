@@ -187,7 +187,10 @@ function renderCard(s) {
   const hasTs = !!(s.timeseries && s.timeseries.years && s.timeseries.years.length);
   return `
   <article class="card${hasTs?' has-ts':''}" data-code="${s.code}" data-idx="${s._idx}" role="button" tabindex="0">
-    <button class="card-delete" data-action="delete" title="이 카드 숨기기" aria-label="삭제">✕</button>
+    <div class="card-actions">
+      <button class="card-note-btn" data-action="note" title="메모 추가/편집" aria-label="메모">📝</button>
+      <button class="card-delete" data-action="delete" title="이 카드 숨기기" aria-label="삭제">✕</button>
+    </div>
     <div class="card-head">
       <div>
         <span class="card-name">${s.name}</span>
@@ -211,7 +214,39 @@ function renderCard(s) {
     ${renderChecklist(s)}
     <p class="card-thesis">${s.thesis||''}</p>
     ${tags ? `<div class="card-tags">${tags}</div>` : ''}
+    ${renderNote(s)}
   </article>`;
+}
+
+function renderNote(s) {
+  const note = getNote(s.code);
+  if (!note) return '';
+  return `<div class="card-note" data-note-code="${s.code}" title="클릭하여 편집"><span class="card-note-label">📝 메모</span><span class="card-note-text">${escapeHtml(note)}</span></div>`;
+}
+
+function escapeHtml(str) {
+  return String(str).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function getNote(code) {
+  try { return (JSON.parse(localStorage.getItem('stockDashboard.notes')||'{}'))[code] || ''; }
+  catch(e) { return ''; }
+}
+
+function saveNote(code, text) {
+  let store = {};
+  try { store = JSON.parse(localStorage.getItem('stockDashboard.notes')||'{}'); } catch(e) {}
+  if (text && text.trim()) store[code] = text.trim();
+  else delete store[code];
+  localStorage.setItem('stockDashboard.notes', JSON.stringify(store));
+}
+
+function editNote(code, name) {
+  const current = getNote(code);
+  const input = prompt(`${name} 메모 (비워두면 삭제)`, current);
+  if (input === null) return;  // cancel
+  saveNote(code, input);
+  render();
 }
 
 function renderRow(s) {
@@ -573,6 +608,27 @@ document.addEventListener('click', (e) => {
   // Hidden badge → 복원 모달 열기
   if (e.target.closest('#hiddenBadge')) {
     openHiddenModal();
+    return;
+  }
+  // Note button (card)
+  const noteBtn = e.target.closest('[data-action="note"]');
+  if (noteBtn) {
+    e.stopPropagation();
+    const host = noteBtn.closest('.card');
+    if (host) {
+      const idx = Number(host.dataset.idx);
+      const stock = STATE.stocks[idx];
+      if (stock) editNote(stock.code, stock.name);
+    }
+    return;
+  }
+  // Existing note pill (click to edit)
+  const notePill = e.target.closest('.card-note');
+  if (notePill) {
+    e.stopPropagation();
+    const code = notePill.dataset.noteCode;
+    const stock = STATE.stocks.find(s => s.code === code);
+    if (stock) editNote(stock.code, stock.name);
     return;
   }
   // Delete button (card or row)

@@ -32,17 +32,50 @@ header h1 { margin: 0 0 4px; font-size: 20px; }
 
 /* Delete buttons */
 .card { position: relative; }
-.card-delete {
+.card-actions {
   position: absolute; top: 10px; right: 10px;
+  display: flex; gap: 6px; z-index: 5;
+}
+.card-note-btn, .card-delete {
   width: 26px; height: 26px; border-radius: 50%;
-  background: rgba(239,68,68,0.1); color: #fca5a5;
-  border: 1px solid rgba(239,68,68,0.25);
   font-size: 12px; cursor: pointer; line-height: 1;
   opacity: 0; transition: opacity 0.15s ease;
-  z-index: 5;
 }
+.card-note-btn {
+  background: rgba(250,204,21,0.1); color: #fde68a;
+  border: 1px solid rgba(250,204,21,0.25);
+}
+.card-note-btn:hover { background: rgba(250,204,21,0.3); color: #fff; }
+.card-delete {
+  background: rgba(239,68,68,0.1); color: #fca5a5;
+  border: 1px solid rgba(239,68,68,0.25);
+}
+.card:hover .card-note-btn,
 .card:hover .card-delete { opacity: 1; }
 .card-delete:hover { background: rgba(239,68,68,0.3); color: #fff; }
+
+/* Touch devices — always visible */
+@media (hover: none) {
+  .card-note-btn, .card-delete { opacity: 0.7; }
+}
+
+/* Card note (pinned at bottom of card) */
+.card-note {
+  margin-top: 10px; padding: 8px 10px;
+  background: rgba(250,204,21,0.08);
+  border: 1px solid rgba(250,204,21,0.25);
+  border-left: 3px solid #facc15;
+  border-radius: 6px;
+  font-size: 12px; line-height: 1.5;
+  cursor: pointer; transition: background 0.15s;
+}
+.card-note:hover { background: rgba(250,204,21,0.15); }
+.card-note-label {
+  display: inline-block; margin-right: 6px;
+  font-weight: 600; color: #fde68a;
+}
+.card-note-text { color: var(--text); white-space: pre-wrap; word-break: break-word; }
+
 .row-delete {
   width: 24px; height: 24px; border-radius: 50%;
   background: transparent; color: var(--text-dim);
@@ -50,6 +83,22 @@ header h1 { margin: 0 0 4px; font-size: 20px; }
   font-size: 11px; cursor: pointer; line-height: 1;
 }
 .row-delete:hover { background: rgba(239,68,68,0.2); color: #fff; border-color: rgba(239,68,68,0.4); }
+
+/* Modal footer with home button */
+.modal-foot {
+  padding: 12px 20px; border-top: 1px solid var(--border);
+  background: rgba(0,0,0,0.2);
+  text-align: center;
+  position: sticky; bottom: 0;
+}
+.btn-back-home {
+  padding: 10px 24px; border-radius: 8px;
+  background: var(--accent); color: #0a0a0a;
+  border: none; cursor: pointer;
+  font-size: 14px; font-weight: 600;
+  transition: opacity 0.15s;
+}
+.btn-back-home:hover { opacity: 0.85; }
 
 /* Hidden modal */
 .modal-panel-sm { max-width: 480px; margin: auto; inset: 64px auto; max-height: 80vh; }
