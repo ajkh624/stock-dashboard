@@ -1,42 +1,42 @@
 {
-  "updated_at": "2026-05-12T15:42:26+09:00",
-  "source": "Yahoo Finance v8 chart API",
+  "updated_at": "2026-05-12T15:44:31+09:00",
+  "source": "Yahoo Finance (yfinance)",
   "prices": {
     "215200": {
       "symbol": "215200.KQ",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "urllib: HTTP Error 429: Too Many Requests"
     },
     "068930": {
       "symbol": "068930.KQ",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "urllib: HTTP Error 429: Too Many Requests"
     },
     "033530": {
       "symbol": "033530.KS",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "urllib: HTTP Error 429: Too Many Requests"
     },
     "005490": {
       "symbol": "005490.KS",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "urllib: HTTP Error 429: Too Many Requests"
     },
     "175330": {
       "symbol": "175330.KS",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "urllib: HTTP Error 429: Too Many Requests"
     },
     "023590": {
       "symbol": "023590.KS",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "urllib: HTTP Error 429: Too Many Requests"
     },
     "263800": {
       "symbol": "263800.KQ",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "urllib: HTTP Error 429: Too Many Requests"
     },
     "016380": {
       "symbol": "016380.KS",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "urllib: HTTP Error 429: Too Many Requests"
     },
     "012450": {
       "symbol": "012450.KS",
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "urllib: HTTP Error 429: Too Many Requests"
     }
   }
 }
