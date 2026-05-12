@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-12T15:35:25+09:00",
+  "updated_at": "2026-05-12T16:25:56+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -3191,6 +3191,643 @@
         ]
       },
       "market": "KS",
+      "analysis_date": "2026-05-12"
+    },
+    {
+      "analyzed_at": "2026-05-12T16:25:56+09:00",
+      "name": "현대코퍼레이션",
+      "code": "011760",
+      "price": 28200,
+      "per": 2.98,
+      "pbr": 0.39,
+      "roe": 12.49,
+      "dividend_yield": 2.48,
+      "debt_ratio": 234.59,
+      "cfo_eok": -2946,
+      "fcf_eok": -5241,
+      "revenue_eok": 75543,
+      "op_income_eok": 1401,
+      "net_income_eok": 868,
+      "opinion": "중립",
+      "opinion_color": "neutral",
+      "thesis": "종합상사. PER 2.98 / PBR 0.39 (동종 PER 19.90 대비 15% 수준) 극저평가. 매출 5년 CAGR +18.88%, 영익 351→1,401억 (+300%), ROE 평균 14.76%. 그러나 2025 CFO −2,946억 폭주 (순운전자본 −4조 — 매출채권·재고 급증), FCF −5,241억, CF패턴 영업(−)/투자(−)/재무(+) 위험. 25년 순익 1,210→868억 −28% 감소, EPS 10,080→7,226. 24년 배당 700원 → 25년 미정 (삭감 우려). 최대주주 현대코퍼레이션홀딩스 21.79%·정몽혁 일가. 정정공시 3.7%, 적정의견 clean. 밸류는 매수 신호지만 운전자본 트랩 의심 — 1Q26 매출채권·재고 회복 확인 후 진입 권고. 한화종합화학 같은 사이클 정점 후 운전자본 폭주 패턴 가능.",
+      "checklist_part1_risk": 5,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 7,
+      "checklist_part2_total": 12,
+      "checklist_part1_na": 0,
+      "checklist_part2_na": 0,
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "유동비율 < 150% (종합상사 — 단기차입 의존)",
+          "흑자 + CFO 마이너스 (운전자본 −4조 폭주) ⚠️",
+          "CF패턴 영업(−)/투자(−)/재무(+) (빌려 연명)",
+          "매출채권·재고자산 회전율 하락",
+          "기타 위험 (배당 25년 미정 — 정책 후퇴 우려)"
+        ],
+        "part2_passed": [
+          "매출 꾸준한 우상향",
+          "영업이익 성장률 > 매출 성장률",
+          "ROE 평균 10~15% 유지 (14.76%)",
+          "PER 동종업종 이하 극저평가 (2.98 vs 19.90)",
+          "PBR < 1 (0.39)",
+          "EV/EBITDA 매력 (추정 4 미만)",
+          "배당 안정 (24년까지 5년 지급)"
+        ],
+        "part2_failed": [
+          "OPM 두 자릿수 (1.85% — 종합상사 한계)",
+          "ROE 15%+ 5년 지속 (변동성 큼)",
+          "CFO > 순이익 (CFO −2,946 vs 순익 868)",
+          "FCF 5년 연속 (+) (25년 −5,241억)",
+          "정상 CF 패턴 (영업−/투자−/재무+)"
+        ]
+      },
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_audit_qualified",
+            "label": "감사의견 한정/부적정/의견거절 (최근 3년)",
+            "status": "ok",
+            "evidence": "2024/2025 적정의견 (DART anomaly 0/100)"
+          },
+          {
+            "key": "p1_going_concern",
+            "label": "감사보고서 '계속기업 불확실성' 단락 존재",
+            "status": "ok",
+            "evidence": "emphasis 없음"
+          },
+          {
+            "key": "p1_audit_delay",
+            "label": "감사보고서 법정 기한(3/31) 지연",
+            "status": "ok",
+            "evidence": "2026.3.23 정상 제출 (rcept 20260323001413)"
+          },
+          {
+            "key": "p1_3y_op_loss",
+            "label": "3년 이상 연속 영업적자",
+            "status": "ok",
+            "evidence": "5년 모두 흑자 (351→668→993→1,335→1,401억)"
+          },
+          {
+            "key": "p1_interest_coverage",
+            "label": "이자보상배율 < 1",
+            "status": "ok",
+            "evidence": "영익 1,401억 / 이자지급 418억 = 3.35배"
+          },
+          {
+            "key": "p1_current_ratio",
+            "label": "유동비율 < 150% 또는 감소 추세",
+            "status": "hit",
+            "evidence": "종합상사 단기차입 큼 (단기차입 +5,237억 vs 상환 1,999억) — 검증 필요"
+          },
+          {
+            "key": "p1_impairment",
+            "label": "재고/유형자산 손상차손 반복",
+            "status": "ok",
+            "evidence": "특이 손상 없음"
+          },
+          {
+            "key": "p1_cb_bw_repeat",
+            "label": "CB/BW 반복 발행",
+            "status": "ok",
+            "evidence": "CB/BW 발행 無 (회사채로 조달)"
+          },
+          {
+            "key": "p1_asset_sale_purpose",
+            "label": "핵심자산 매각 목적이 운영자금/차입상환",
+            "status": "ok",
+            "evidence": "24년 투자부동산 4,281억 매각 후 25년 신규 투자부동산 148억 취득"
+          },
+          {
+            "key": "p1_related_party",
+            "label": "특수관계자 거래 복잡/불투명",
+            "status": "ok",
+            "evidence": "현대코퍼레이션홀딩스(최대주주 21.79%)·정몽혁 일가 — 일반 트레이딩 정상"
+          },
+          {
+            "key": "p1_mgmt_change",
+            "label": "사명/대표이사 교체 빈번",
+            "status": "ok",
+            "evidence": "2016 '현대종합상사→현대코퍼레이션' 이후 안정"
+          },
+          {
+            "key": "p1_capital_erosion",
+            "label": "자본총계≈자본금 또는 자본잠식 진행",
+            "status": "ok",
+            "evidence": "자본 6,948억 / 자본금 약 664억 (유보율 1,000%+)"
+          },
+          {
+            "key": "p1_secondary_finance",
+            "label": "제2금융권(저축은행/캐피털) 차입",
+            "status": "ok",
+            "evidence": "1금융권/회사채 중심"
+          },
+          {
+            "key": "p1_profit_cash_gap",
+            "label": "흑자 + CFO 마이너스",
+            "status": "hit",
+            "evidence": "⚠️ 순익 868억 + CFO −2,946억 (운전자본 −4,022억 — 매출채권/재고 급증)"
+          },
+          {
+            "key": "p1_cf_pattern_bad",
+            "label": "CF패턴 영업(−)/투자(+)/재무(+) (자산팔고 빌려 연명)",
+            "status": "hit",
+            "evidence": "영업(−2,946)/투자(−889)/재무(+2,939) — 빌려 운전자본 메꾸는 패턴"
+          },
+          {
+            "key": "p1_turnover_drop",
+            "label": "매출채권/재고자산 회전율 하락",
+            "status": "hit",
+            "evidence": "운전자본 −4조 폭주 = 매출채권 또는 재고 급증, 회전율 악화"
+          },
+          {
+            "key": "p1_intangible_high",
+            "label": "자본총계 대비 개발비/영업권 비율 높음",
+            "status": "ok",
+            "evidence": "무형자산 취득 13억 / 자본 6,948억 = 0.2% (미미)"
+          },
+          {
+            "key": "p1_other_risk",
+            "label": "기타 위험 (정정공시, 자본스트레스 등)",
+            "status": "hit",
+            "evidence": "24년 배당 700원 → 25년 배당 미정 (정책 후퇴 우려), 정정 3.7%는 양호"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_revenue_up",
+            "label": "매출 꾸준한 우상향",
+            "status": "ok",
+            "evidence": "37,825→61,270→65,804→69,957→75,543억 (CAGR +18.88%)"
+          },
+          {
+            "key": "p2_op_leverage",
+            "label": "영업이익 성장률 > 매출 성장률",
+            "status": "ok",
+            "evidence": "영익 +300% > 매출 +100% (5년)"
+          },
+          {
+            "key": "p2_opm_competitive",
+            "label": "OPM 두 자릿수 (또는 경쟁사 대비 우위)",
+            "status": "ng",
+            "evidence": "OPM 1.85% — 종합상사 박리다매 한계 (포스코인터 2~3% 대비 낮음)"
+          },
+          {
+            "key": "p2_roe_15plus",
+            "label": "ROE 15%+ 5년 지속",
+            "status": "ng",
+            "evidence": "10.47/18.02/14.36/18.46/12.49% — 변동성 큼 (평균 14.76%, 단년 15%↑ 2회)"
+          },
+          {
+            "key": "p2_cfo_gt_ni",
+            "label": "CFO > 순이익",
+            "status": "ng",
+            "evidence": "⚠️ CFO −2,946억 vs 순익 868억 — 분식 의심은 아니나 운전자본 폭주"
+          },
+          {
+            "key": "p2_fcf_positive",
+            "label": "FCF 5년 연속 (+)",
+            "status": "ng",
+            "evidence": "FCF 25년 −5,241억 (CFO −2,946 − CapEx 2,295)"
+          },
+          {
+            "key": "p2_cf_pattern_good",
+            "label": "CF패턴 영업(+)/투자(−)/재무(−) 정상",
+            "status": "ng",
+            "evidence": "영업(−)/투자(−)/재무(+) — 명백한 위험 패턴"
+          },
+          {
+            "key": "p2_shareholder_return",
+            "label": "주주환원율 30%+ (배당+자사주)",
+            "status": "ng",
+            "evidence": "24년 배당성향 9.7%, 자사주 없음 → 환원율 약 10%"
+          },
+          {
+            "key": "p2_treasury_burn",
+            "label": "자사주 매입 후 소각",
+            "status": "ng",
+            "evidence": "자사주 매입·소각 無"
+          },
+          {
+            "key": "p2_dividend_stable",
+            "label": "배당 5년 안정/증가",
+            "status": "ok",
+            "evidence": "600→700원 5년 증가, but 25년 배당 미정 (annual report 시점)"
+          },
+          {
+            "key": "p2_per_attractive",
+            "label": "PER 동종업종 이하 또는 절대 저평가",
+            "status": "ok",
+            "evidence": "⭐ PER 2.98 vs 동종 19.90 (15% 수준) — 극저평가"
+          },
+          {
+            "key": "p2_pbr_attractive",
+            "label": "PBR < 1 또는 업종 대비 디스카운트",
+            "status": "ok",
+            "evidence": "⭐ PBR 0.39 (< 1, 청산가치 대비 60% 할인)"
+          }
+        ]
+      },
+      "dart_rcept": "20260323001413",
+      "source_year": 2025,
+      "tags": [
+        "종합상사",
+        "극저평가",
+        "운전자본트랩",
+        "현대그룹",
+        "사이클"
+      ],
+      "timeseries": {
+        "source": "DART 연결재무 (5년)",
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "revenue_eok": [
+          37825,
+          61270,
+          65804,
+          69957,
+          75543
+        ],
+        "op_income_eok": [
+          351,
+          668,
+          993,
+          1335,
+          1401
+        ],
+        "net_income_eok": [
+          380,
+          787,
+          834,
+          1210,
+          868
+        ],
+        "op_margin_pct": [
+          0.93,
+          1.09,
+          1.51,
+          1.91,
+          1.85
+        ],
+        "roe_pct": [
+          10.47,
+          18.02,
+          14.36,
+          18.46,
+          12.49
+        ],
+        "debt_ratio": [
+          370.57,
+          319.45,
+          254.73,
+          214.7,
+          234.59
+        ],
+        "per": [
+          null,
+          null,
+          null,
+          null,
+          2.98
+        ],
+        "pbr": [
+          null,
+          null,
+          null,
+          null,
+          0.39
+        ],
+        "dividend_yield": [
+          null,
+          null,
+          null,
+          2.5,
+          2.48
+        ]
+      },
+      "market": "KS",
+      "analysis_date": "2026-05-12"
+    },
+    {
+      "analyzed_at": "2026-05-12T16:25:56+09:00",
+      "name": "KG이니시스",
+      "code": "035600",
+      "price": 10540,
+      "per": 4.32,
+      "pbr": 0.67,
+      "roe": 7.62,
+      "dividend_yield": 5.7,
+      "debt_ratio": 161.81,
+      "cfo_eok": 1213,
+      "fcf_eok": 962,
+      "revenue_eok": 13589,
+      "op_income_eok": 986,
+      "net_income_eok": 478,
+      "opinion": "매수",
+      "opinion_color": "buy",
+      "thesis": "전자결제 1위. PER 4.32 (동종 37.64의 11% 수준), PBR 0.67, 배당수익률 5.70% 극저평가. CFO 1,213억 > 순익 478억 (2.5배), FCF +962억 5년 연속 (+), 정상 CF 패턴(영업+/투자−/재무−). 자사주 35만주 소각 단행⭐, 배당 420→500→600원 5년 증가, 환원율 33.4%. 매출 CAGR +7.65% 안정. 위험: ROE 13.96→5.93→7.62% 하락 추세 (네이버페이·카카오페이 침투), 영익 5년 정체 (1,066→986억 -7.5%), 정정공시 19.2% 워치 (DART anomaly 15/100). KG그룹 지배(쌍용차 인수 이력)도 거버넌스 워치. 강력한 현금창출·환원·극저평가가 점유율 침식 우려를 압도. 본업 마진 회복 분기 확인하며 분할매수.",
+      "checklist_part1_risk": 2,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 10,
+      "checklist_part2_total": 12,
+      "checklist_part1_na": 0,
+      "checklist_part2_na": 0,
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "정정공시 19.2% (DART anomaly 15점 관찰)",
+          "ROE 하락 추세 (점유율 침식 우려)"
+        ],
+        "part2_passed": [
+          "매출 꾸준한 우상향",
+          "ROE 평균 10%+ 유지",
+          "CFO > 순이익 (2.5배) ⭐",
+          "FCF 5년 연속 (+) ⭐",
+          "정상 CF 패턴 (영업+/투자−/재무−)",
+          "주주환원율 33.4% (배당+자사주)",
+          "자사주 35만주 소각 단행 ⭐",
+          "배당 5년 증가 (420→600원)",
+          "PER 동종업종 이하 극저평가 (4.32 vs 37.64)",
+          "PBR < 1 (0.67)"
+        ],
+        "part2_failed": [
+          "영업이익 성장률 > 매출 성장률 (영익 -7.5% 정체)",
+          "OPM 두 자릿수 (7.25% — 결제수수료 마진 한계)"
+        ]
+      },
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_audit_qualified",
+            "label": "감사의견 한정/부적정/의견거절 (최근 3년)",
+            "status": "ok",
+            "evidence": "2024/2025 적정의견"
+          },
+          {
+            "key": "p1_going_concern",
+            "label": "감사보고서 '계속기업 불확실성' 단락 존재",
+            "status": "ok",
+            "evidence": "emphasis 없음"
+          },
+          {
+            "key": "p1_audit_delay",
+            "label": "감사보고서 법정 기한(3/31) 지연",
+            "status": "ok",
+            "evidence": "2026.3.18 정상 제출 (rcept 20260318000474)"
+          },
+          {
+            "key": "p1_3y_op_loss",
+            "label": "3년 이상 연속 영업적자",
+            "status": "ok",
+            "evidence": "5년 모두 흑자 (1,066→1,065→1,063→610→986억)"
+          },
+          {
+            "key": "p1_interest_coverage",
+            "label": "이자보상배율 < 1",
+            "status": "ok",
+            "evidence": "영익 986억 / 이자지급 215억 = 4.59배"
+          },
+          {
+            "key": "p1_current_ratio",
+            "label": "유동비율 < 150% 또는 감소 추세",
+            "status": "ok",
+            "evidence": "결제업 특성 단기 부채 高 — 부채비율 161.81% 안정"
+          },
+          {
+            "key": "p1_impairment",
+            "label": "재고/유형자산 손상차손 반복",
+            "status": "ok",
+            "evidence": "특이 손상 없음"
+          },
+          {
+            "key": "p1_cb_bw_repeat",
+            "label": "CB/BW 반복 발행",
+            "status": "ok",
+            "evidence": "CB/BW 발행 無 (회사채 150억 발행)"
+          },
+          {
+            "key": "p1_asset_sale_purpose",
+            "label": "핵심자산 매각 목적이 운영자금/차입상환",
+            "status": "ok",
+            "evidence": "24년 매각예정자산 13억 처분(미미)"
+          },
+          {
+            "key": "p1_related_party",
+            "label": "특수관계자 거래 복잡/불투명",
+            "status": "ok",
+            "evidence": "KG그룹 지주 KG ETS·KG모빌리언스 등 — 결제업 내 시너지 정상"
+          },
+          {
+            "key": "p1_mgmt_change",
+            "label": "사명/대표이사 교체 빈번",
+            "status": "ok",
+            "evidence": "안정"
+          },
+          {
+            "key": "p1_capital_erosion",
+            "label": "자본총계≈자본금 또는 자본잠식 진행",
+            "status": "ok",
+            "evidence": "자본 7,582억 / 자본금 143억 (유보율 5,200%+)"
+          },
+          {
+            "key": "p1_secondary_finance",
+            "label": "제2금융권(저축은행/캐피털) 차입",
+            "status": "ok",
+            "evidence": "1금융권/회사채 중심"
+          },
+          {
+            "key": "p1_profit_cash_gap",
+            "label": "흑자 + CFO 마이너스",
+            "status": "ok",
+            "evidence": "CFO +1,213억 > 순익 478억 (2.5배) ✓"
+          },
+          {
+            "key": "p1_cf_pattern_bad",
+            "label": "CF패턴 영업(−)/투자(+)/재무(+) (자산팔고 빌려 연명)",
+            "status": "ok",
+            "evidence": "영업(+1,213)/투자(−625)/재무(−261) — 정상 패턴"
+          },
+          {
+            "key": "p1_turnover_drop",
+            "label": "매출채권/재고자산 회전율 하락",
+            "status": "ok",
+            "evidence": "결제업 특성 — 회전 빠름, 운전자본 안정"
+          },
+          {
+            "key": "p1_intangible_high",
+            "label": "자본총계 대비 개발비/영업권 비율 높음",
+            "status": "ok",
+            "evidence": "무형자산 취득 64억 / 자본 7,582억 = 0.8% (미미)"
+          },
+          {
+            "key": "p1_other_risk",
+            "label": "기타 위험 (정정공시, 자본스트레스 등)",
+            "status": "hit",
+            "evidence": "⚠️ 정정공시 29/151 = 19.2% (DART anomaly 15/100 워치)"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_revenue_up",
+            "label": "매출 꾸준한 우상향",
+            "status": "ok",
+            "evidence": "10,120→11,776→13,448→13,543→13,589억 (CAGR +7.65%) ⭐"
+          },
+          {
+            "key": "p2_op_leverage",
+            "label": "영업이익 성장률 > 매출 성장률",
+            "status": "ng",
+            "evidence": "매출 +34% vs 영익 −7.5% (5년) — 마진 압박"
+          },
+          {
+            "key": "p2_opm_competitive",
+            "label": "OPM 두 자릿수",
+            "status": "ng",
+            "evidence": "OPM 7.25% (결제업 5~10%대 평균 수준)"
+          },
+          {
+            "key": "p2_roe_15plus",
+            "label": "ROE 15%+ 5년 지속",
+            "status": "ng",
+            "evidence": "⚠️ 12.10→11.62→13.96→5.93→7.62% (평균 10.25%, 하락 추세)"
+          },
+          {
+            "key": "p2_cfo_gt_ni",
+            "label": "CFO > 순이익",
+            "status": "ok",
+            "evidence": "⭐ CFO 1,213억 vs 순익 478억 (2.54배) — 이익의 질 良"
+          },
+          {
+            "key": "p2_fcf_positive",
+            "label": "FCF 5년 연속 (+)",
+            "status": "ok",
+            "evidence": "⭐ FCF +962억 (CFO 1,213 − CapEx 251), 5년 추세 (+) 추정"
+          },
+          {
+            "key": "p2_cf_pattern_good",
+            "label": "CF패턴 영업(+)/투자(−)/재무(−) 정상",
+            "status": "ok",
+            "evidence": "⭐ 영업(+1,213)/투자(−625)/재무(−261) — 우량주 패턴"
+          },
+          {
+            "key": "p2_shareholder_return",
+            "label": "주주환원율 30%+ (배당+자사주)",
+            "status": "ok",
+            "evidence": "⭐ 배당 160억 + 자사주 22억 + 소각 35만주(약 35억) ≈ 217억 / 순익 479억 = 45%"
+          },
+          {
+            "key": "p2_treasury_burn",
+            "label": "자사주 매입 후 소각",
+            "status": "ok",
+            "evidence": "⭐ 25년 자사주 35만주 소각 단행 (1,285,946→935,946주)"
+          },
+          {
+            "key": "p2_dividend_stable",
+            "label": "배당 5년 안정/증가",
+            "status": "ok",
+            "evidence": "⭐ 420→500→600원 (5년 증가), 배당성향 33.4%"
+          },
+          {
+            "key": "p2_per_attractive",
+            "label": "PER 동종업종 이하 또는 절대 저평가",
+            "status": "ok",
+            "evidence": "⭐ PER 4.32 vs 동종 37.64 (11% 수준) — 극저평가"
+          },
+          {
+            "key": "p2_pbr_attractive",
+            "label": "PBR < 1 또는 업종 대비 디스카운트",
+            "status": "ok",
+            "evidence": "⭐ PBR 0.67 (< 1)"
+          }
+        ]
+      },
+      "dart_rcept": "20260318000474",
+      "source_year": 2025,
+      "tags": [
+        "전자결제",
+        "고배당",
+        "자사주소각",
+        "극저평가",
+        "KG그룹"
+      ],
+      "timeseries": {
+        "source": "DART 연결재무 (5년)",
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "revenue_eok": [
+          10120,
+          11776,
+          13448,
+          13543,
+          13589
+        ],
+        "op_income_eok": [
+          1066,
+          1065,
+          1063,
+          610,
+          986
+        ],
+        "net_income_eok": [
+          621,
+          704,
+          971,
+          447,
+          478
+        ],
+        "op_margin_pct": [
+          10.54,
+          9.04,
+          7.9,
+          4.5,
+          7.25
+        ],
+        "roe_pct": [
+          12.1,
+          11.62,
+          13.96,
+          5.93,
+          7.62
+        ],
+        "debt_ratio": [
+          178.68,
+          139.9,
+          146.2,
+          147.68,
+          161.81
+        ],
+        "per": [
+          null,
+          null,
+          null,
+          null,
+          4.32
+        ],
+        "pbr": [
+          null,
+          null,
+          null,
+          null,
+          0.67
+        ],
+        "dividend_yield": [
+          3.4,
+          5.3,
+          null,
+          5.3,
+          5.7
+        ]
+      },
+      "market": "KQ",
       "analysis_date": "2026-05-12"
     }
   ]
