@@ -23,6 +23,53 @@ header h1 { margin: 0 0 4px; font-size: 20px; }
   background: rgba(74,222,128,0.1); color: var(--accent);
   padding: 2px 8px; border-radius: 10px; font-size: 11px;
 }
+.hidden-badge {
+  background: rgba(245,158,11,0.12); color: #fbbf24;
+  border: 0; padding: 2px 10px; border-radius: 10px; font-size: 11px;
+  cursor: pointer; display: inline-flex; align-items: center; gap: 4px;
+}
+.hidden-badge:hover { background: rgba(245,158,11,0.22); }
+
+/* Delete buttons */
+.card { position: relative; }
+.card-delete {
+  position: absolute; top: 10px; right: 10px;
+  width: 26px; height: 26px; border-radius: 50%;
+  background: rgba(239,68,68,0.1); color: #fca5a5;
+  border: 1px solid rgba(239,68,68,0.25);
+  font-size: 12px; cursor: pointer; line-height: 1;
+  opacity: 0; transition: opacity 0.15s ease;
+  z-index: 5;
+}
+.card:hover .card-delete { opacity: 1; }
+.card-delete:hover { background: rgba(239,68,68,0.3); color: #fff; }
+.row-delete {
+  width: 24px; height: 24px; border-radius: 50%;
+  background: transparent; color: var(--text-dim);
+  border: 1px solid var(--border);
+  font-size: 11px; cursor: pointer; line-height: 1;
+}
+.row-delete:hover { background: rgba(239,68,68,0.2); color: #fff; border-color: rgba(239,68,68,0.4); }
+
+/* Hidden modal */
+.modal-panel-sm { max-width: 480px; margin: auto; inset: 64px auto; max-height: 80vh; }
+@media (max-width: 767px) {
+  .modal-panel-sm { inset: 0; max-width: 100%; max-height: 100vh; }
+}
+.hidden-list { list-style: none; padding: 0; margin: 0; }
+.hidden-list li {
+  display: flex; justify-content: space-between; align-items: center; gap: 10px;
+  padding: 10px 12px; margin-bottom: 6px;
+  background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+  font-size: 13px;
+}
+.btn-restore, .btn-restore-all {
+  background: var(--accent); color: #052e16; border: 0;
+  padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 600;
+  cursor: pointer;
+}
+.btn-restore-all { background: var(--buy); }
+.btn-restore:hover, .btn-restore-all:hover { filter: brightness(1.1); }
 
 /* Price block (analyzed + live + diff) */
 .price-block {

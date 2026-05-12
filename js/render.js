@@ -1,6 +1,40 @@
 // Stock dashboard renderer
 let STATE = { stocks: [], updated_at: null, livePrices: {}, liveUpdatedAt: null };
 
+// ========== Hidden stocks (localStorage) ==========
+const HIDDEN_KEY = 'stockDashboard.hiddenStocks';
+function loadHidden() {
+  try { return new Set(JSON.parse(localStorage.getItem(HIDDEN_KEY) || '[]')); }
+  catch { return new Set(); }
+}
+function saveHidden(set) {
+  localStorage.setItem(HIDDEN_KEY, JSON.stringify([...set]));
+}
+function stockKey(s) {
+  // 같은 종목 여러 분석본 구분: code + analyzed_at
+  return `${s.code}__${s.analyzed_at || ''}`;
+}
+function isHidden(s) {
+  return loadHidden().has(stockKey(s));
+}
+function hideStock(s) {
+  const h = loadHidden(); h.add(stockKey(s)); saveHidden(h); render(); updateHiddenBadge();
+}
+function restoreStock(key) {
+  const h = loadHidden(); h.delete(key); saveHidden(h); render(); updateHiddenBadge();
+}
+function restoreAll() {
+  saveHidden(new Set()); render(); updateHiddenBadge();
+}
+function updateHiddenBadge() {
+  const n = loadHidden().size;
+  const el = document.getElementById('hiddenBadge');
+  if (!el) return;
+  if (n === 0) { el.style.display = 'none'; return; }
+  el.style.display = 'inline-flex';
+  el.textContent = `🗑️ 숨김 ${n}개`;
+}
+
 const TOOLTIPS = {
   PER: 'PER = 주가 ÷ 주당순이익(EPS) · 이익 1원 사기 위해 주가 몇 배 내는가 · 10↓ 저평가 / 20↑ 고평가',
   PBR: 'PBR = 주가 ÷ 주당순자산(BPS) · 청산가치 대비 주가 · 1배↓ 장부가 이하 · 자산 부실 시 함정 주의',
@@ -153,6 +187,7 @@ function renderCard(s) {
   const hasTs = !!(s.timeseries && s.timeseries.years && s.timeseries.years.length);
   return `
   <article class="card${hasTs?' has-ts':''}" data-code="${s.code}" data-idx="${s._idx}" role="button" tabindex="0">
+    <button class="card-delete" data-action="delete" title="이 카드 숨기기" aria-label="삭제">✕</button>
     <div class="card-head">
       <div>
         <span class="card-name">${s.name}</span>
@@ -209,6 +244,7 @@ function renderRow(s) {
     </td>
     <td><span class="opinion ${opCls}">${s.opinion}</span></td>
     <td style="max-width:360px;font-size:12px;color:var(--text-dim)">${s.thesis||''}</td>
+    <td><button class="row-delete" data-action="delete" title="이 행 숨기기" aria-label="삭제">✕</button></td>
   </tr>`;
 }
 
@@ -216,8 +252,10 @@ function applyFilters(list) {
   const q = document.getElementById('searchInput').value.trim().toLowerCase();
   const op = document.getElementById('opinionFilter').value;
   const sort = document.getElementById('sortBy').value;
+  const hidden = loadHidden();
 
   let out = list.filter(s => {
+    if (hidden.has(stockKey(s))) return false;
     if (op && s.opinion !== op) return false;
     if (!q) return true;
     const hay = [s.name, s.code, ...(s.tags||[])].join(' ').toLowerCase();
@@ -242,6 +280,53 @@ function render() {
   document.getElementById('tbody').innerHTML = list.map(renderRow).join('');
   document.getElementById('stockCount').textContent = `${list.length} 종목`;
   document.getElementById('updatedAt').textContent = `갱신: ${shortDate(STATE.updated_at)}`;
+  updateHiddenBadge();
+}
+
+// ========== Hidden stocks 복원 모달 ==========
+function openHiddenModal() {
+  const m = document.getElementById('hiddenModal');
+  if (!m) return;
+  renderHiddenModal();
+  m.classList.add('open');
+  m.setAttribute('aria-hidden', 'false');
+}
+function closeHiddenModal() {
+  const m = document.getElementById('hiddenModal');
+  if (!m) return;
+  m.classList.remove('open');
+  m.setAttribute('aria-hidden', 'true');
+}
+function renderHiddenModal() {
+  const hidden = loadHidden();
+  const body = document.getElementById('hiddenBody');
+  if (!body) return;
+  if (hidden.size === 0) {
+    body.innerHTML = '<p style="color:var(--text-dim);text-align:center;padding:24px">숨긴 항목이 없습니다.</p>';
+    return;
+  }
+  // hidden 키 → stock 매칭
+  const items = [...hidden].map(key => {
+    const stock = STATE.stocks.find(s => stockKey(s) === key);
+    return { key, stock };
+  });
+  body.innerHTML = `
+    <div style="margin-bottom:12px;display:flex;justify-content:space-between;align-items:center">
+      <span style="color:var(--text-dim);font-size:12px">총 ${hidden.size}개 숨김</span>
+      <button id="restoreAllBtn" class="btn-restore-all">전체 복원</button>
+    </div>
+    <ul class="hidden-list">
+      ${items.map(({key, stock}) => `
+        <li>
+          <div>
+            <strong>${stock ? stock.name : '(삭제된 종목)'}</strong>
+            <small style="color:var(--text-dim);margin-left:6px">${stock ? stock.code : key}</small>
+            ${stock?.analyzed_at ? `<br><small style="color:var(--text-dim)">분석: ${shortDate(stock.analyzed_at)}</small>` : ''}
+          </div>
+          <button data-restore="${key}" class="btn-restore">복원</button>
+        </li>
+      `).join('')}
+    </ul>`;
 }
 
 // ========== Time-series Chart Modal ==========
@@ -485,6 +570,23 @@ function closeChartModal() {
 
 // Click delegation
 document.addEventListener('click', (e) => {
+  // Hidden badge → 복원 모달 열기
+  if (e.target.closest('#hiddenBadge')) {
+    openHiddenModal();
+    return;
+  }
+  // Delete button (card or row)
+  const delBtn = e.target.closest('[data-action="delete"]');
+  if (delBtn) {
+    e.stopPropagation();
+    const host = delBtn.closest('.card, tr.stock-row');
+    if (host) {
+      const idx = Number(host.dataset.idx);
+      const stock = STATE.stocks[idx];
+      if (stock) hideStock(stock);
+    }
+    return;
+  }
   // Period toggle
   const seg = e.target.closest('#modalToggle .seg');
   if (seg && !seg.disabled) {
@@ -494,6 +596,19 @@ document.addEventListener('click', (e) => {
   // Modal close
   if (e.target.closest('[data-close="1"]')) {
     closeChartModal();
+    closeHiddenModal();
+    return;
+  }
+  // Restore from hidden modal
+  const restoreBtn = e.target.closest('[data-restore]');
+  if (restoreBtn) {
+    restoreStock(restoreBtn.dataset.restore);
+    renderHiddenModal();
+    return;
+  }
+  if (e.target.closest('#restoreAllBtn')) {
+    restoreAll();
+    renderHiddenModal();
     return;
   }
   // Card click — but ignore clicks on inner interactive elements
