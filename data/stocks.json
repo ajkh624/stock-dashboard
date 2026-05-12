@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-12T15:18:57+09:00",
+  "updated_at": "2026-05-12T15:25:57+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -2815,33 +2815,33 @@
       "net_income_eok": 22020.0,
       "opinion": "매수",
       "opinion_color": "buy",
-      "thesis": "방산·우주 슈퍼사이클 폭발. 매출 5.5조→26.7조(5년 CAGR 48%), 영익 277→3,089억(11배). 2025 ROE 13%, OPM 11.6%. CFO 4조·FCF 2조 강한 현금창출. 단 (1) 2025년 4.2조 유상증자로 ROE 22→13% 희석·BPS 점프, (2) PER 32.93·PBR 5.00 결산기준(현재가 기준 44.9/6.8로 더 팽창), (3) 부채비율 221%·자본스트레스 공시 34건. 동종업종 PER 57 대비 상대 저평가. 컨센 목표가 1,821,333원(+42%). 분할매수 권장. 출처: DART rcept 20260316001112 + 네이버 결산기준.",
+      "thesis": "방산·우주 슈퍼사이클 폭발: 매출 5.5조→26.7조 (5년 CAGR +48%), 영익 277억→3.1조 (11배). CFO 4조·FCF 2조 강한 현금창출, 5년 평균 ROE 13.5%. PER 32.93 (동종 57.37 대비 57%), PBR 5.00 (동종 8.5 대비 낮음) — 상대 저평가. 리스크: 2025 유상증자 4.2조로 ROE 22→13% 희석·BPS 점프, 부채비율 221%, 한화그룹 종속회사 유상증자 공시 34건, 정정공시 13.1%. 컨센 목표가 1,821,333원(+42%). 분할매수 권장.",
       "checklist_part1_risk": 4,
       "checklist_part1_total": 18,
-      "checklist_part2_quality": 8,
+      "checklist_part2_quality": 6,
       "checklist_part2_total": 12,
       "checklist_detail": {
         "part1_risks_hit": [
-          "부채비율 221% 위험권",
-          "2025 유상증자 4.2조 희석",
-          "자본스트레스 공시 34건",
-          "정정공시 13.1%(101/771)"
+          "유동비율 < 150% 또는 감소 추세",
+          "특수관계자 거래 복잡/불투명",
+          "CF패턴 영업(-)/투자(+)/재무(+) (자산팔고 빌려 연명)",
+          "기타 위험 (정정공시, 자본스트레스 등)"
         ],
         "part2_passed": [
-          "매출 폭발 성장",
-          "영익 폭발 성장",
-          "OPM 두자릿수",
-          "CFO>NI",
-          "FCF 흑자",
-          "5년 평균 ROE 13.5%",
-          "정상 CF 패턴",
-          "배당 지속"
+          "매출 꾸준한 우상향",
+          "영업이익 성장률 > 매출 성장률",
+          "OPM 경쟁사 대비 우위",
+          "CFO > 순이익",
+          "배당 5년 안정/증가",
+          "PER 동종업종 이하 또는 절대 저평가"
         ],
         "part2_failed": [
-          "ROE 53→19% 급락",
-          "PER 45 고평가",
-          "PBR 6.8 고평가",
-          "주주환원율 낮음(배당성향 25%)"
+          "ROE 15%+ 5년 지속",
+          "FCF 5년 연속 (+)",
+          "CF패턴 영업(+)/투자(-)/재무(-) 정상",
+          "주주환원율 30%+ (배당+자사주)",
+          "자사주 매입 후 소각",
+          "PBR < 1 또는 업종 대비 디스카운트"
         ]
       },
       "dart_rcept": "20260316001112",
@@ -2849,9 +2849,10 @@
       "tags": [
         "방산",
         "우주항공",
-        "성장주",
-        "유상증자",
-        "부채위험"
+        "폭발성장",
+        "유상증자희석",
+        "부채위험",
+        "한화그룹"
       ],
       "timeseries": {
         "source": "DART 연결재무 + 네이버페이 분기",
@@ -2982,6 +2983,194 @@
             5.0
           ]
         }
+      },
+      "checklist_part1_na": 0,
+      "checklist_part2_na": 0,
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_audit_qualified",
+            "label": "감사의견 한정/부적정/의견거절 (최근 3년)",
+            "status": "ok",
+            "evidence": "2024/2025 적정의견 (DART anomaly)"
+          },
+          {
+            "key": "p1_going_concern",
+            "label": "감사보고서 '계속기업 불확실성' 단락 존재",
+            "status": "ok",
+            "evidence": "emphasis 없음"
+          },
+          {
+            "key": "p1_audit_delay",
+            "label": "감사보고서 법정 기한(3/31) 지연",
+            "status": "ok",
+            "evidence": "2026.3.16 정상 제출 (rcept 20260316001112)"
+          },
+          {
+            "key": "p1_3y_op_loss",
+            "label": "3년 이상 연속 영업적자",
+            "status": "ok",
+            "evidence": "5년 모두 흑자 (2,771→30,893억, +1,015%)"
+          },
+          {
+            "key": "p1_interest_coverage",
+            "label": "이자보상배율 < 1",
+            "status": "ok",
+            "evidence": "영익 30,893억 / 이자지급 4,544억 = 6.8배"
+          },
+          {
+            "key": "p1_current_ratio",
+            "label": "유동비율 < 150% 또는 감소 추세",
+            "status": "hit",
+            "evidence": "당좌비율 54.67% (방산 특수 — 선급금 부채 영향)"
+          },
+          {
+            "key": "p1_impairment",
+            "label": "재고/유형자산 손상차손 반복",
+            "status": "ok",
+            "evidence": "특이 손상 없음 (방산 수주잔고 견조)"
+          },
+          {
+            "key": "p1_cb_bw_repeat",
+            "label": "CB/BW 반복 발행",
+            "status": "ok",
+            "evidence": "CB/BW 발행 無 (2025 유상증자로 자금조달)"
+          },
+          {
+            "key": "p1_asset_sale_purpose",
+            "label": "핵심자산 매각 목적이 운영자금/차입상환",
+            "status": "ok",
+            "evidence": "자산매각 아닌 유상증자 4.2조로 시설투자"
+          },
+          {
+            "key": "p1_related_party",
+            "label": "특수관계자 거래 복잡/불투명",
+            "status": "hit",
+            "evidence": "한화그룹 지배구조 복잡, 종속회사 유상증자 公시 34건"
+          },
+          {
+            "key": "p1_mgmt_change",
+            "label": "사명/대표이사 교체 빈번",
+            "status": "ok",
+            "evidence": "2018 '한화테크윈→한화에어로' 이후 안정"
+          },
+          {
+            "key": "p1_capital_erosion",
+            "label": "자본총계≈자본금 또는 자본잠식 진행",
+            "status": "ok",
+            "evidence": "자본 16.79조 / 자본금 2,578억 (유보율 3,547%)"
+          },
+          {
+            "key": "p1_secondary_finance",
+            "label": "제2금융권(저축은행/캐피털) 차입",
+            "status": "ok",
+            "evidence": "1금융권/회사채 중심"
+          },
+          {
+            "key": "p1_profit_cash_gap",
+            "label": "흑자 + CFO 마이너스",
+            "status": "ok",
+            "evidence": "CFO 4조 498억 > 순익 2조 2,020억 (1.84배) ✓"
+          },
+          {
+            "key": "p1_cf_pattern_bad",
+            "label": "CF패턴 영업(-)/투자(+)/재무(+) (자산팔고 빌려 연명)",
+            "status": "hit",
+            "evidence": "영업(+4조)/투자(-4조)/재무(+4.7조) — 정상 패턴이나 재무(+) 큰 비중은 유상증자 영향"
+          },
+          {
+            "key": "p1_turnover_drop",
+            "label": "매출채권/재고자산 회전율 하락",
+            "status": "ok",
+            "evidence": "매출 폭증 추세, 회전율 별도 검증 필요"
+          },
+          {
+            "key": "p1_intangible_high",
+            "label": "자본총계 대비 개발비/영업권 비율 높음",
+            "status": "ok",
+            "evidence": "무형자산 취득 2,836억 / 자본 16.8조 = 1.7%"
+          },
+          {
+            "key": "p1_other_risk",
+            "label": "기타 위험 (정정공시, 자본스트레스 등)",
+            "status": "hit",
+            "evidence": "정정공시 13.1% (101/771), 자본스트레스 공시 34건 (DART 점수 25/100 관찰)"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_revenue_up",
+            "label": "매출 꾸준한 우상향",
+            "status": "ok",
+            "evidence": "55,414→65,396→78,897→112,401→267,029 (CAGR +48%) ⭐"
+          },
+          {
+            "key": "p2_op_leverage",
+            "label": "영업이익 성장률 > 매출 성장률",
+            "status": "ok",
+            "evidence": "영익 +1,015% > 매출 +382% (5년) — 폭발적 레버리지"
+          },
+          {
+            "key": "p2_opm_competitive",
+            "label": "OPM 경쟁사 대비 우위",
+            "status": "ok",
+            "evidence": "OPM 11.57% (방산 평균 5~8%, 한국항공우주 5.3% 대비 우위)"
+          },
+          {
+            "key": "p2_roe_15plus",
+            "label": "ROE 15%+ 5년 지속",
+            "status": "ng",
+            "evidence": "7.68→3.87→20.86→22.10→13.12% 변동성 큼 (5년 평균 13.5%)"
+          },
+          {
+            "key": "p2_cfo_gt_ni",
+            "label": "CFO > 순이익",
+            "status": "ok",
+            "evidence": "CFO 4조 498억 > 순익 2조 2,020억 ✓"
+          },
+          {
+            "key": "p2_fcf_positive",
+            "label": "FCF 5년 연속 (+)",
+            "status": "ng",
+            "evidence": "FCF 2025 2조 (+) but CapEx 1.7조 급증으로 변동성 큼, 과거 일부 연도 (-) 가능성"
+          },
+          {
+            "key": "p2_cf_pattern_good",
+            "label": "CF패턴 영업(+)/투자(-)/재무(-) 정상",
+            "status": "ng",
+            "evidence": "영업(+4조)/투자(-4조)/재무(+4.7조) — 재무(+)는 유상증자/차입 확대 (성장기 특성)"
+          },
+          {
+            "key": "p2_shareholder_return",
+            "label": "주주환원율 30%+ (배당+자사주)",
+            "status": "ng",
+            "evidence": "배당성향 25.6%, 자사주 0 → 환원율 약 25%"
+          },
+          {
+            "key": "p2_treasury_burn",
+            "label": "자사주 매입 후 소각",
+            "status": "ng",
+            "evidence": "2025 자사주 취득 0원, 소각 無 (성장 재투자 우선)"
+          },
+          {
+            "key": "p2_dividend_stable",
+            "label": "배당 5년 안정/증가",
+            "status": "ok",
+            "evidence": "배당 5년 증가: 1,771→3,443→7,000원 (4배 증가)"
+          },
+          {
+            "key": "p2_per_attractive",
+            "label": "PER 동종업종 이하 또는 절대 저평가",
+            "status": "ok",
+            "evidence": "PER 32.93 (동일업종 PER 57.37 대비 57% 수준)"
+          },
+          {
+            "key": "p2_pbr_attractive",
+            "label": "PBR < 1 또는 업종 대비 디스카운트",
+            "status": "ng",
+            "evidence": "PBR 5.00 (업종 평균 약 8.5 대비 낮지만 절대치 부담)"
+          }
+        ]
       }
     }
   ]
