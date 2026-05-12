@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-13T00:19:48+09:00",
+  "updated_at": "2026-05-13T02:06:15+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -732,358 +732,6 @@
         }
       },
       "market": "KQ",
-      "analysis_date": "2026-05-12"
-    },
-    {
-      "analyzed_at": "2026-05-12T01:45:40+09:00",
-      "name": "SJG세종",
-      "code": "033530",
-      "price": 8170.0,
-      "per": 3.35,
-      "pbr": 0.42,
-      "roe": 13.0,
-      "dividend_yield": 2.5,
-      "debt_ratio": 151,
-      "cfo_eok": 927,
-      "fcf_eok": 52,
-      "revenue_eok": 18969,
-      "op_income_eok": 854,
-      "net_income_eok": 687,
-      "opinion": "매수",
-      "opinion_color": "buy",
-      "thesis": "매출 1.9조·영업이익 854억 턴어라운드. PER 3.35/PBR 0.42 극단적 저평가. 자동차 부품 사이클 회복. 부채비율 151% 부담.",
-      "checklist_part1_risk": 2,
-      "checklist_part1_total": 18,
-      "checklist_part2_quality": 7,
-      "checklist_part2_total": 12,
-      "checklist_detail": {
-        "part1_risks_hit": [
-          "부채비율 151%",
-          "자동차 사이클 의존",
-          "환율 노출"
-        ],
-        "part2_passed": [
-          "PBR 0.42 자산가치 이하",
-          "매출 회복",
-          "영업이익 흑전",
-          "업황 턴어라운드",
-          "이해 가능 사업",
-          "본업 집중",
-          "경쟁사 대비 저평가"
-        ],
-        "part2_failed": [
-          "ROE 변동 큼",
-          "FCF 불안정",
-          "배당 미흡",
-          "독점·해자 없음",
-          "장기 성장성"
-        ]
-      },
-      "dart_rcept": "20260316000994",
-      "source_year": 2025,
-      "tags": [
-        "자동차부품",
-        "턴어라운드",
-        "저PBR"
-      ],
-      "checklist_part1_na": 1,
-      "checklist_part2_na": 0,
-      "checklist_detail_full": {
-        "part1": [
-          {
-            "key": "p1_audit_qualified",
-            "label": "감사의견 한정/부적정/의견거절 (최근 3년)",
-            "status": "ok",
-            "evidence": "2024/2025 적정의견"
-          },
-          {
-            "key": "p1_going_concern",
-            "label": "감사보고서 '계속기업 불확실성' 단락 존재",
-            "status": "ok",
-            "evidence": "emphasis 미확인"
-          },
-          {
-            "key": "p1_audit_delay",
-            "label": "감사보고서 법정 기한(3/31) 지연",
-            "status": "ok",
-            "evidence": "2026.3.16 정상 제출"
-          },
-          {
-            "key": "p1_3y_op_loss",
-            "label": "3년 이상 연속 영업적자",
-            "status": "ok",
-            "evidence": "2021 적자 외 2022~2025 흑자"
-          },
-          {
-            "key": "p1_interest_coverage",
-            "label": "이자보상배율 < 1",
-            "status": "hit",
-            "evidence": "부채비율 151%, 영익 854억으로 회복했으나 과거 적자기 이자보상 < 1 추정"
-          },
-          {
-            "key": "p1_current_ratio",
-            "label": "유동비율 < 150% 또는 감소 추세",
-            "status": "na",
-            "evidence": "유동자산 8,350억/유동부채 6,926억 = 121% 약함"
-          },
-          {
-            "key": "p1_impairment",
-            "label": "재고/유형자산 손상차손 반복",
-            "status": "ok",
-            "evidence": "특이사항 없음"
-          },
-          {
-            "key": "p1_cb_bw_repeat",
-            "label": "CB/BW 반복 발행",
-            "status": "hit",
-            "evidence": "자본스트레스 공시 2건 (CB/BW 발행 가능성)"
-          },
-          {
-            "key": "p1_asset_sale_purpose",
-            "label": "핵심자산 매각 목적이 운영자금/차입상환",
-            "status": "ok",
-            "evidence": "확인 필요"
-          },
-          {
-            "key": "p1_related_party",
-            "label": "특수관계자 거래 복잡/불투명",
-            "status": "ok",
-            "evidence": "정정공시 5.0% 평이"
-          },
-          {
-            "key": "p1_mgmt_change",
-            "label": "사명/대표이사 교체 빈번",
-            "status": "ok",
-            "evidence": "변동 없음"
-          },
-          {
-            "key": "p1_capital_erosion",
-            "label": "자본총계≈자본금 또는 자본잠식 진행",
-            "status": "ok",
-            "evidence": "자본 5,287억 / 자본금 139억"
-          },
-          {
-            "key": "p1_secondary_finance",
-            "label": "제2금융권(저축은행/캐피털) 차입",
-            "status": "ok",
-            "evidence": "특이사항 없음"
-          },
-          {
-            "key": "p1_profit_cash_gap",
-            "label": "흑자 + CFO 마이너스",
-            "status": "ok",
-            "evidence": "CFO 927억 충분"
-          },
-          {
-            "key": "p1_cf_pattern_bad",
-            "label": "CF패턴 영업(-)/투자(+)/재무(+) (자산팔고 빌려 연명)",
-            "status": "ok",
-            "evidence": "건전"
-          },
-          {
-            "key": "p1_turnover_drop",
-            "label": "매출채권/재고자산 회전율 하락",
-            "status": "ok",
-            "evidence": "매출 회복 추세"
-          },
-          {
-            "key": "p1_intangible_high",
-            "label": "자본총계 대비 개발비/영업권 비율 높음",
-            "status": "ok",
-            "evidence": "자동차부품 제조업, 무형자산 비중 낮음"
-          },
-          {
-            "key": "p1_other_risk",
-            "label": "기타 위험 (보고서 emphasis 단락 등)",
-            "status": "ok",
-            "evidence": "특이사항 없음"
-          }
-        ],
-        "part2": [
-          {
-            "key": "p2_revenue_up",
-            "label": "매출 꾸준한 우상향",
-            "status": "ok",
-            "evidence": "1.55→1.86→1.79→1.82→1.90조 (CAGR 5.2%) ✓"
-          },
-          {
-            "key": "p2_op_leverage",
-            "label": "영업이익 성장률 > 매출 성장률",
-            "status": "ok",
-            "evidence": "영익 -27→321→519→606→854억 가파른 성장"
-          },
-          {
-            "key": "p2_opm_competitive",
-            "label": "OPM 경쟁사 대비 우월 또는 개선",
-            "status": "ng",
-            "evidence": "OPM 4.5% 자동차부품 평균(5~7%) 하회"
-          },
-          {
-            "key": "p2_roe_15_5y",
-            "label": "ROE 5년 10~15%+ 유지",
-            "status": "ng",
-            "evidence": "5년 평균 3.77% (J커브, 2025만 13% 도달)"
-          },
-          {
-            "key": "p2_cfo_gt_ni",
-            "label": "CFO > 당기순이익",
-            "status": "ok",
-            "evidence": "CFO 927억 > NI 687억 ✓"
-          },
-          {
-            "key": "p2_fcf_positive",
-            "label": "FCF 플러스",
-            "status": "ok",
-            "evidence": "FCF +52억 (약하나 + 유지)"
-          },
-          {
-            "key": "p2_cf_pattern_good",
-            "label": "CF패턴 영업(+)/투자(-)/재무(-)",
-            "status": "ok",
-            "evidence": "영(+927)/투(-626)/재(+96) — 신규 사이클 CapEx"
-          },
-          {
-            "key": "p2_total_yield",
-            "label": "총주주환원율(배당+자사주소각) 높음",
-            "status": "ng",
-            "evidence": "배당 2.5%, 자사주 소각 미확인"
-          },
-          {
-            "key": "p2_buyback_burn",
-            "label": "자사주 매입 → 소각까지 실행",
-            "status": "ng",
-            "evidence": "자사주 소각 확인 안 됨"
-          },
-          {
-            "key": "p2_dividend_growth",
-            "label": "배당 꾸준 지급/증액",
-            "status": "ng",
-            "evidence": "배당 미흡"
-          },
-          {
-            "key": "p2_per_below_avg",
-            "label": "PER < 업종 평균 또는 자사 과거 평균",
-            "status": "ok",
-            "evidence": "PER 3.35 매우 낮음 (자동차부품 평균 ~10)"
-          },
-          {
-            "key": "p2_pbr_under1",
-            "label": "PBR < 1",
-            "status": "ok",
-            "evidence": "PBR 0.42 ✓"
-          }
-        ]
-      },
-      "timeseries": {
-        "source": "DART 연결재무 시계열 (POSCO/JB 일부 매출 없음)",
-        "years": [
-          2021,
-          2022,
-          2023,
-          2024,
-          2025
-        ],
-        "revenue_eok": [
-          15482,
-          18589,
-          17923,
-          18166,
-          18969
-        ],
-        "op_income_eok": [
-          -27,
-          321,
-          519,
-          606,
-          854
-        ],
-        "net_income_eok": [
-          -108,
-          2,
-          43,
-          340,
-          687
-        ],
-        "op_margin_pct": [
-          -0.18,
-          1.73,
-          2.89,
-          3.34,
-          4.5
-        ],
-        "roe_pct": [
-          -2.67,
-          0.05,
-          1.05,
-          7.41,
-          12.99
-        ],
-        "debt_ratio": [
-          192.88,
-          186.35,
-          179.64,
-          170.09,
-          150.88
-        ],
-        "quarterly": {
-          "source": "네이버페이 증권 분기별 (IFRS연결/별도, 직전 분기 누적 차감)",
-          "labels": [
-            "25.1Q",
-            "25.2Q",
-            "25.3Q",
-            "25.4Q"
-          ],
-          "revenue_eok": [
-            4536,
-            4815,
-            4688,
-            4931
-          ],
-          "op_income_eok": [
-            222,
-            372,
-            247,
-            13
-          ],
-          "net_income_eok": [
-            232,
-            229,
-            243,
-            -18
-          ],
-          "op_margin_pct": [
-            4.89,
-            7.73,
-            5.27,
-            0.26
-          ],
-          "roe_pct": [
-            9.1,
-            9.41,
-            13.92,
-            14.05
-          ],
-          "debt_ratio": [
-            177.21,
-            166.15,
-            160.02,
-            150.88
-          ],
-          "per": [
-            2.71,
-            2.89,
-            2.53,
-            4.07
-          ],
-          "pbr": [
-            0.23,
-            0.26,
-            0.32,
-            0.52
-          ]
-        }
-      },
-      "market": "KS",
       "analysis_date": "2026-05-12"
     },
     {
@@ -4786,6 +4434,353 @@
       },
       "market": "KQ",
       "analysis_date": "2026-05-13"
+    },
+    {
+      "name": "SJG세종",
+      "code": "033530",
+      "market": "KS",
+      "price": 7720,
+      "per": 3.12,
+      "pbr": 0.4,
+      "roe": 14.05,
+      "dividend_yield": 2.59,
+      "revenue_eok": 18969,
+      "op_income_eok": 854,
+      "net_income_eok": 687,
+      "debt_ratio": 150.88,
+      "cfo_eok": 927,
+      "fcf_eok": 51,
+      "opinion": "매수",
+      "thesis": "(구 세종공업) 자동차 배기·머플러 부품 1위 — 5년 V자 턴어라운드 명확. 매출 1.55조→1.90조 (CAGR +5.2%), 영익 -27→854억 (적자→흑자, OPM -0.18→4.50%), 순익 -108→687억, ROE -2.67→12.99% 회복. 부채비율 193→151% 개선중(여전 높음). CFO +927억 견고, FCF +51억 간신히 +. ⚠️ 2025.4Q 영익 247→13억 -94.8% 급감·순익 적자전환 — 일회성 비용 추정이나 원인 미확인 변수. 멀티플 PER 3.12·PBR 0.40으로 동종 자동차부품(현대모비스 13.81/한국타이어 6.73/에스엘 9.67) 최저, 동종 평균 PER 13.06의 24% 수준. 2026.12(E) 매출 1.94조·영익 910·순익 723 컨센, 회복 예상. DART anomaly 0/100 clean, 감사 적정. 분기 충격 원인 확인 후 분할매수 권장.",
+      "tags": [
+        "자동차부품",
+        "턴어라운드",
+        "저PER",
+        "저PBR",
+        "고배당후보",
+        "코스피"
+      ],
+      "analyzed_at": "2026-05-13T02:06:15+09:00",
+      "analysis_date": "2026-05-13",
+      "source_year": 2025,
+      "rcept_no": "20260316000994",
+      "checklist_part1_risk": 1,
+      "checklist_part1_total": 18,
+      "checklist_part1_na": 1,
+      "checklist_part2_quality": 6,
+      "checklist_part2_total": 12,
+      "checklist_part2_na": 0,
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_audit_qualified",
+            "label": "감사의견 비적정 (한정·부적정·의견거절)",
+            "status": "ok",
+            "evidence": "2024·2025 모두 적정의견 (DART anomaly clean)"
+          },
+          {
+            "key": "p1_audit_emphasis",
+            "label": "감사보고서 강조사항 (계속기업 의문 등)",
+            "status": "ok",
+            "evidence": "강조사항 없음"
+          },
+          {
+            "key": "p1_auditor_change",
+            "label": "감사인 잦은 교체 (3년내 2회+)",
+            "status": "ok",
+            "evidence": "교체 0건 (anomaly auditor_changes=0)"
+          },
+          {
+            "key": "p1_op_loss",
+            "label": "영업적자 (최근 결산기)",
+            "status": "ok",
+            "evidence": "2025 영익 +854억 (5년 흑자 누적, OPM 4.5%)"
+          },
+          {
+            "key": "p1_int_cov",
+            "label": "이자보상배율 < 1",
+            "status": "ok",
+            "evidence": "영익 854 / 이자지급 137 = 6.23배"
+          },
+          {
+            "key": "p1_liquidity",
+            "label": "유동비율 < 100% / 당좌비율 < 50%",
+            "status": "hit",
+            "evidence": "당좌비율 71.66% (100% 미만 yellow), 부채비율 150.88% 여전히 높음"
+          },
+          {
+            "key": "p1_impairment",
+            "label": "손상차손/영업권 상각 빈발",
+            "status": "ok",
+            "evidence": "2025 사업보고서 별도 손상 이슈 없음"
+          },
+          {
+            "key": "p1_cb_bw",
+            "label": "CB·BW 지속 발행 (희석)",
+            "status": "ok",
+            "evidence": "2025 발행 없음, 전환상환우선주 23년 발행 후 신규 0"
+          },
+          {
+            "key": "p1_asset_sale",
+            "label": "자산매각으로 적자 메우기",
+            "status": "ok",
+            "evidence": "유형자산 처분 261억 vs 본업 영익 854억, 처분이익 의존 아님"
+          },
+          {
+            "key": "p1_related_party",
+            "label": "특수관계자 거래 과다·부실",
+            "status": "na",
+            "evidence": "상세 미확인 (사업보고서 주석 별도 확인 필요)"
+          },
+          {
+            "key": "p1_name_change",
+            "label": "잦은 사명교체",
+            "status": "ok",
+            "evidence": "세종공업→SJG세종 (2024 사명변경 1회)"
+          },
+          {
+            "key": "p1_capital_impair",
+            "label": "자본잠식",
+            "status": "ok",
+            "evidence": "자기자본 5,287억, 자본총계 양호"
+          },
+          {
+            "key": "p1_2nd_finance",
+            "label": "제2금융권·고리 차입 의존",
+            "status": "ok",
+            "evidence": "단기차입 회전 정상, 고리 차입 미확인"
+          },
+          {
+            "key": "p1_earnings_cash_gap",
+            "label": "이익↑+CFO↓ 괴리 (분식 의심)",
+            "status": "ok",
+            "evidence": "순익 687 vs CFO 927 (CFO>순익, 정상)"
+          },
+          {
+            "key": "p1_cf_pattern",
+            "label": "CF패턴 위험형 (영−/투−/재+)",
+            "status": "ok",
+            "evidence": "영(+927)/투(-626)/재(+96) — 정상 성장기형, 영업 흑자 견고"
+          },
+          {
+            "key": "p1_turnover",
+            "label": "매출채권/재고 회전율 급락",
+            "status": "ok",
+            "evidence": "운전자본 변동 -633억(2025) vs -395억(2024), 수준 유지 (급락 아님)"
+          },
+          {
+            "key": "p1_dev_asset",
+            "label": "자본대비 개발비·영업권 비대",
+            "status": "ok",
+            "evidence": "무형자산 취득 48억 수준, 비중 낮음"
+          },
+          {
+            "key": "p1_other",
+            "label": "기타 (대주주 변경·소송·공정위)",
+            "status": "ok",
+            "evidence": "DART anomaly 0/100 clean, 정정공시 5.0% (정상 수준)"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_revenue_up",
+            "label": "매출 5년 우상향 (CAGR 5%+)",
+            "status": "ok",
+            "evidence": "15,482→18,969 (5년 CAGR +5.21%)"
+          },
+          {
+            "key": "p2_op_up",
+            "label": "영업이익 5년 우상향",
+            "status": "ok",
+            "evidence": "-27→854 (적자→흑자 V턴, 4년 연속 우상향)"
+          },
+          {
+            "key": "p2_opm_5",
+            "label": "OPM 5%+ 유지",
+            "status": "ng",
+            "evidence": "2025 OPM 4.50% (5% 미달, 그러나 추세 -0.18→4.50 상승)"
+          },
+          {
+            "key": "p2_roe_15",
+            "label": "ROE 15%+ 5년 유지",
+            "status": "ng",
+            "evidence": "5년 평균 3.77% (네이버 2025 지배주주 14.05% 최근 1년만 양호)"
+          },
+          {
+            "key": "p2_cfo_pos",
+            "label": "CFO 5년 연속 (+)",
+            "status": "ok",
+            "evidence": "2025 +927억, 5년 모두 흑자 (DART)"
+          },
+          {
+            "key": "p2_fcf_pos",
+            "label": "FCF 5년 (+)",
+            "status": "ng",
+            "evidence": "2025 FCF +51억 (간신히+), 직전 연도 CapEx 부담"
+          },
+          {
+            "key": "p2_cf_growth_pattern",
+            "label": "CF패턴 우량형 (영+/투−/재−)",
+            "status": "ng",
+            "evidence": "영(+)/투(-)/재(+) 성장기형, 차입 의존 (재무 +96)"
+          },
+          {
+            "key": "p2_shareholder_return",
+            "label": "주주환원율 30%+",
+            "status": "ng",
+            "evidence": "배당성향 7.87% + 자사주 0 = 환원율 낮음"
+          },
+          {
+            "key": "p2_treasury_buyback",
+            "label": "자사주 매입·소각",
+            "status": "ng",
+            "evidence": "2025 자사주 매입·소각 없음"
+          },
+          {
+            "key": "p2_dividend_grow",
+            "label": "배당 5년 증가",
+            "status": "ok",
+            "evidence": "DPS 150→150→150→150→200원 (2025 첫 인상)"
+          },
+          {
+            "key": "p2_per_low",
+            "label": "PER 동종 대비 저평가",
+            "status": "ok",
+            "evidence": "PER 3.12 vs 동종 13.06 (24% 수준, 동종 최저)"
+          },
+          {
+            "key": "p2_pbr_low",
+            "label": "PBR < 1",
+            "status": "ok",
+            "evidence": "PBR 0.40 (동종 평균 ~1.0의 40%, BPS 19,312원)"
+          }
+        ]
+      },
+      "timeseries": {
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "source": "DART 연결 (rcept 20260316000994 + buffett_snapshot)",
+        "revenue_eok": [
+          15482,
+          18589,
+          17923,
+          18166,
+          18969
+        ],
+        "op_income_eok": [
+          -27,
+          321,
+          519,
+          606,
+          854
+        ],
+        "net_income_eok": [
+          -108,
+          2,
+          43,
+          340,
+          687
+        ],
+        "op_margin_pct": [
+          -0.18,
+          1.73,
+          2.89,
+          3.34,
+          4.5
+        ],
+        "roe_pct": [
+          -2.67,
+          0.05,
+          1.05,
+          7.41,
+          12.99
+        ],
+        "debt_ratio": [
+          192.88,
+          186.35,
+          179.64,
+          170.09,
+          150.88
+        ],
+        "quarterly": {
+          "labels": [
+            "2024.12",
+            "2025.03",
+            "2025.06",
+            "2025.09",
+            "2025.12"
+          ],
+          "source": "네이버페이 분기실적 (지배주주)",
+          "revenue_eok": [
+            4510,
+            4536,
+            4815,
+            4688,
+            4931
+          ],
+          "op_income_eok": [
+            71,
+            222,
+            372,
+            247,
+            13
+          ],
+          "net_income_eok": [
+            -17,
+            232,
+            229,
+            243,
+            -18
+          ],
+          "op_margin_pct": [
+            1.58,
+            4.89,
+            7.73,
+            5.27,
+            0.26
+          ],
+          "roe_pct": [
+            7.77,
+            9.1,
+            9.41,
+            13.92,
+            14.05
+          ],
+          "debt_ratio": [
+            170.09,
+            177.21,
+            166.15,
+            160.02,
+            150.88
+          ]
+        }
+      },
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "유동비율 < 100% / 당좌비율 < 50%"
+        ],
+        "part2_passed": [
+          "매출 5년 우상향 (CAGR 5%+)",
+          "영업이익 5년 우상향",
+          "CFO 5년 연속 (+)",
+          "배당 5년 증가",
+          "PER 동종 대비 저평가",
+          "PBR < 1"
+        ],
+        "part2_failed": [
+          "OPM 5%+ 유지",
+          "ROE 15%+ 5년 유지",
+          "FCF 5년 (+)",
+          "CF패턴 우량형 (영+/투−/재−)",
+          "주주환원율 30%+",
+          "자사주 매입·소각"
+        ]
+      }
     }
   ]
 }
