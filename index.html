@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>📈 안박사 주식 재무제표 분석 대시보드</title>
-<link rel="stylesheet" href="css/style.css?v=14">
+<link rel="stylesheet" href="css/style.css?v=15">
 </head>
 <body>
 <header>
@@ -15,6 +15,7 @@
     <span id="updatedAt">갱신: -</span>
     <span id="liveUpdatedAt" class="live-tag">실시간(Yahoo): -</span>
     <button id="hiddenBadge" class="hidden-badge" style="display:none" title="숨긴 항목 보기/복원">🗑️ 숨김 0개</button>
+    <button id="syncStatus" class="sync-status" type="button" title="메모 동기화 설정" onclick="openSyncSettings()" data-state="off">🔒 동기화 꺼짐</button>
   </div>
 </header>
 
@@ -468,6 +469,8 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-<script src="js/render.js?v=12"></script>
+<script src="js/render.js?v=13"></script>
+<script src="js/notes-sync.js?v=1"></script>
+<script>window.addEventListener('load', () => window.initNoteSync && window.initNoteSync());</script>
 </body>
 </html>

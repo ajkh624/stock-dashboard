@@ -100,6 +100,63 @@ header h1 { margin: 0 0 4px; font-size: 20px; }
 }
 .btn-back-home:hover { opacity: 0.85; }
 
+/* Sync status badge */
+.sync-status {
+  padding: 4px 10px; border-radius: 12px;
+  background: rgba(255,255,255,0.05); color: var(--text-dim);
+  border: 1px solid var(--border);
+  font-size: 11px; cursor: pointer;
+  transition: all 0.15s;
+}
+.sync-status:hover { background: rgba(255,255,255,0.1); color: var(--text); }
+.sync-status[data-state="synced"] { color: var(--accent); border-color: rgba(74,222,128,0.3); }
+.sync-status[data-state="syncing"] { color: #60a5fa; border-color: rgba(96,165,250,0.3); }
+.sync-status[data-state="error"] { color: #fca5a5; border-color: rgba(239,68,68,0.3); }
+
+/* Sync modal */
+.sync-step {
+  padding: 12px; margin-bottom: 16px; border-radius: 6px;
+  background: rgba(255,255,255,0.03); border: 1px solid var(--border);
+  font-size: 12px; line-height: 1.7;
+}
+.sync-step p { margin: 4px 0; color: var(--text-dim); }
+.sync-step a { color: var(--accent); }
+.sync-step code {
+  padding: 2px 6px; border-radius: 3px;
+  background: rgba(255,255,255,0.08); font-size: 11px;
+}
+.sync-field {
+  display: block; margin-bottom: 12px;
+}
+.sync-field span {
+  display: block; margin-bottom: 4px;
+  font-size: 12px; color: var(--text-dim); font-weight: 600;
+}
+.sync-field input {
+  width: 100%; padding: 8px 10px; border-radius: 6px;
+  background: rgba(0,0,0,0.3); color: var(--text);
+  border: 1px solid var(--border); font-size: 13px;
+  font-family: monospace;
+}
+.sync-field input:focus { outline: none; border-color: var(--accent); }
+.sync-actions {
+  display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px;
+}
+.btn-primary, .btn-secondary {
+  padding: 8px 16px; border-radius: 6px;
+  font-size: 13px; cursor: pointer;
+  transition: opacity 0.15s;
+}
+.btn-primary {
+  background: var(--accent); color: #0a0a0a;
+  border: none; font-weight: 600;
+}
+.btn-secondary {
+  background: transparent; color: var(--text-dim);
+  border: 1px solid var(--border);
+}
+.btn-primary:hover, .btn-secondary:hover { opacity: 0.85; }
+
 /* Hidden modal */
 .modal-panel-sm { max-width: 480px; margin: auto; inset: 64px auto; max-height: 80vh; }
 @media (max-width: 767px) {
