@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-12T16:45:53+09:00",
+  "updated_at": "2026-05-13T00:19:48+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -4468,6 +4468,324 @@
       },
       "market": "KS",
       "analysis_date": "2026-05-12"
+    },
+    {
+      "analyzed_at": "2026-05-13T00:19:48+09:00",
+      "name": "SOOP",
+      "code": "067160",
+      "price": 52700,
+      "per": 13.19,
+      "pbr": 3.15,
+      "roe": 20.62,
+      "dividend_yield": 6.41,
+      "debt_ratio": 75.84,
+      "cfo_eok": 1214,
+      "fcf_eok": 1005,
+      "revenue_eok": 4666,
+      "op_income_eok": 1248,
+      "net_income_eok": 1037,
+      "opinion": "매수",
+      "opinion_color": "buy",
+      "thesis": "(구 아프리카TV) 국내 라이브 스트리밍 1위. 트위치 한국 철수(24년) 수혜 + 글로벌 SOOP 출시. 매출 2,605→4,666억 (CAGR +15.7%), 영익 888→1,248억, OPM 26~34% 압도적 ⭐ (플랫폼 해자). ROE 5년 평균 26.27% (모든 연도 20%+), 부채비율 75.84%로 낮음. CFO +1,214억 > 순익 1,037억 (1.17배), FCF +1,005억, CF패턴 영업+/투자-/재무- 정상 ⭐. 배당 850→1,500→3,380원 5년 폭증, 배당성향 35.3%, 배당수익률 5.0%. PER 13.19 vs 동종 22.05 (60%). 30항목 체크리스트 우량 10/위험 1로 대시보드 종목 중 최상위급. 위험: 정정공시 10.9% (DART 15/100), PBR 3.15 절대치 부담, OPM 매출보다 영익 성장 둔화(영업 레버리지 약화), 자사주 소각 無. 추격매수 아닌 분할매수 권장.",
+      "checklist_part1_risk": 1,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 10,
+      "checklist_part2_total": 12,
+      "checklist_part1_na": 0,
+      "checklist_part2_na": 0,
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "정정공시 10.9% (DART anomaly 15/100)"
+        ],
+        "part2_passed": [
+          "매출 꾸준한 우상향 (CAGR +15.7%)",
+          "OPM 두 자릿수 (26.76%) ⭐⭐",
+          "ROE 15%+ 5년 지속 (모두 20%+) ⭐⭐",
+          "CFO > 순이익 (1.17배) ⭐",
+          "FCF 5년 연속 (+) ⭐",
+          "정상 CF 패턴 (영업+/투자−/재무−) ⭐",
+          "주주환원율 35.3% (배당)",
+          "배당 5년 증가 (850→3,380원) ⭐",
+          "PER 동종업종 이하 (13.19 vs 22.05)",
+          "부채비율 75.84% (낮음) ⭐"
+        ],
+        "part2_failed": [
+          "영업이익 성장률 > 매출 성장률 (매출 +79% vs 영익 +40%, 레버리지 약화)",
+          "자사주 매입 후 소각 無 (보유만 84만주)",
+          "PBR < 1 (3.15 — 절대치 부담)"
+        ]
+      },
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_audit_qualified",
+            "label": "감사의견 한정/부적정/의견거절 (최근 3년)",
+            "status": "ok",
+            "evidence": "2024/2025 적정의견"
+          },
+          {
+            "key": "p1_going_concern",
+            "label": "감사보고서 '계속기업 불확실성' 단락 존재",
+            "status": "ok",
+            "evidence": "emphasis 없음"
+          },
+          {
+            "key": "p1_audit_delay",
+            "label": "감사보고서 법정 기한(3/31) 지연",
+            "status": "ok",
+            "evidence": "2026.3.19 정상 제출 (rcept 20260319001348)"
+          },
+          {
+            "key": "p1_3y_op_loss",
+            "label": "3년 이상 연속 영업적자",
+            "status": "ok",
+            "evidence": "5년 모두 흑자 (888→824→903→1,135→1,248억)"
+          },
+          {
+            "key": "p1_interest_coverage",
+            "label": "이자보상배율 < 1",
+            "status": "ok",
+            "evidence": "⭐ 영익 1,248억 / 이자지급 2.5억 = 499배"
+          },
+          {
+            "key": "p1_current_ratio",
+            "label": "유동비율 < 150% 또는 감소 추세",
+            "status": "ok",
+            "evidence": "부채비율 75.84% 매우 낮음, 차입 거의 없음"
+          },
+          {
+            "key": "p1_impairment",
+            "label": "재고/유형자산 손상차손 반복",
+            "status": "ok",
+            "evidence": "플랫폼 특성 — 손상 위험 낮음"
+          },
+          {
+            "key": "p1_cb_bw_repeat",
+            "label": "CB/BW 반복 발행",
+            "status": "ok",
+            "evidence": "CB/BW 발행 無"
+          },
+          {
+            "key": "p1_asset_sale_purpose",
+            "label": "핵심자산 매각 목적이 운영자금/차입상환",
+            "status": "ok",
+            "evidence": "자산매각 없음, 현금 풍부"
+          },
+          {
+            "key": "p1_related_party",
+            "label": "특수관계자 거래 복잡/불투명",
+            "status": "ok",
+            "evidence": "단순 구조, 특이사항 없음"
+          },
+          {
+            "key": "p1_mgmt_change",
+            "label": "사명/대표이사 교체 빈번",
+            "status": "ok",
+            "evidence": "2024 아프리카TV→SOOP 1회 변경 (글로벌 진출 목적, 빈번 아님)"
+          },
+          {
+            "key": "p1_capital_erosion",
+            "label": "자본총계≈자본금 또는 자본잠식 진행",
+            "status": "ok",
+            "evidence": "자본 5,032억 / 자본금 약 57억 (유보율 8,800%+)"
+          },
+          {
+            "key": "p1_secondary_finance",
+            "label": "제2금융권(저축은행/캐피털) 차입",
+            "status": "ok",
+            "evidence": "차입 거의 없음"
+          },
+          {
+            "key": "p1_profit_cash_gap",
+            "label": "흑자 + CFO 마이너스",
+            "status": "ok",
+            "evidence": "⭐ CFO +1,214억 > 순익 1,037억 (1.17배)"
+          },
+          {
+            "key": "p1_cf_pattern_bad",
+            "label": "CF패턴 영업(−)/투자(+)/재무(+) (자산팔고 빌려 연명)",
+            "status": "ok",
+            "evidence": "⭐ 영업(+1,214)/투자(−1,846)/재무(−269) — 정상"
+          },
+          {
+            "key": "p1_turnover_drop",
+            "label": "매출채권/재고자산 회전율 하락",
+            "status": "ok",
+            "evidence": "플랫폼 특성 — 재고 없음, 매출채권 미미"
+          },
+          {
+            "key": "p1_intangible_high",
+            "label": "자본총계 대비 개발비/영업권 비율 높음",
+            "status": "ok",
+            "evidence": "무형자산 취득 18억 / 자본 5,032억 = 0.4% (미미)"
+          },
+          {
+            "key": "p1_other_risk",
+            "label": "기타 위험 (정정공시, 자본스트레스 등)",
+            "status": "hit",
+            "evidence": "⚠️ 정정공시 20/183 = 10.9% (DART anomaly 15/100 워치)"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_revenue_up",
+            "label": "매출 꾸준한 우상향",
+            "status": "ok",
+            "evidence": "⭐ 2,605→2,891→3,440→4,132→4,666억 (CAGR +15.7%)"
+          },
+          {
+            "key": "p2_op_leverage",
+            "label": "영업이익 성장률 > 매출 성장률",
+            "status": "ng",
+            "evidence": "매출 +79% vs 영익 +40.6% (5년) — 영업 레버리지 약화, 콘텐츠 비용 부담"
+          },
+          {
+            "key": "p2_opm_competitive",
+            "label": "OPM 두 자릿수",
+            "status": "ok",
+            "evidence": "⭐⭐ OPM 26.76% (플랫폼 평균 압도, 5년 평균 28.6%)"
+          },
+          {
+            "key": "p2_roe_15plus",
+            "label": "ROE 15%+ 5년 지속",
+            "status": "ok",
+            "evidence": "⭐⭐ 33.84/24.68/25.44/26.78/20.62% (5년 평균 26.27%, 모두 20%+, σ 4.31 안정)"
+          },
+          {
+            "key": "p2_cfo_gt_ni",
+            "label": "CFO > 순이익",
+            "status": "ok",
+            "evidence": "⭐ CFO 1,214 vs 순익 1,037 (1.17배)"
+          },
+          {
+            "key": "p2_fcf_positive",
+            "label": "FCF 5년 연속 (+)",
+            "status": "ok",
+            "evidence": "⭐ FCF +1,005억 (CFO 1,214 − CapEx 209), 5년 추세 (+)"
+          },
+          {
+            "key": "p2_cf_pattern_good",
+            "label": "CF패턴 영업(+)/투자(−)/재무(−) 정상",
+            "status": "ok",
+            "evidence": "⭐ 영업(+1,214)/투자(−1,846)/재무(−269) — 우량주 패턴"
+          },
+          {
+            "key": "p2_shareholder_return",
+            "label": "주주환원율 30%+ (배당+자사주)",
+            "status": "ok",
+            "evidence": "⭐ 배당성향 35.3% (배당 360억), 24년까지 자사주 매입도 누적"
+          },
+          {
+            "key": "p2_treasury_burn",
+            "label": "자사주 매입 후 소각",
+            "status": "ng",
+            "evidence": "자사주 837,863주 보유, 소각 無 (25년 매입도 0원)"
+          },
+          {
+            "key": "p2_dividend_stable",
+            "label": "배당 5년 안정/증가",
+            "status": "ok",
+            "evidence": "⭐⭐ 850→1,500→3,380원 (5년 폭증), 배당수익률 5.0%"
+          },
+          {
+            "key": "p2_per_attractive",
+            "label": "PER 동종업종 이하 또는 절대 저평가",
+            "status": "ok",
+            "evidence": "⭐ PER 13.19 vs 동종 22.05 (60% 수준)"
+          },
+          {
+            "key": "p2_pbr_attractive",
+            "label": "PBR < 1 또는 업종 대비 디스카운트",
+            "status": "ng",
+            "evidence": "PBR 3.15 — 절대치 부담, but ROE 20%+ 감안 시 정당화 가능"
+          }
+        ]
+      },
+      "dart_rcept": "20260319001348",
+      "source_year": 2025,
+      "tags": [
+        "라이브스트리밍",
+        "플랫폼",
+        "고배당",
+        "고ROE",
+        "사명변경",
+        "트위치수혜"
+      ],
+      "timeseries": {
+        "source": "DART 연결재무 (5년)",
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "revenue_eok": [
+          2605,
+          2891,
+          3440,
+          4132,
+          4666
+        ],
+        "op_income_eok": [
+          888,
+          824,
+          903,
+          1135,
+          1248
+        ],
+        "net_income_eok": [
+          709,
+          595,
+          746,
+          1024,
+          1037
+        ],
+        "op_margin_pct": [
+          34.1,
+          28.51,
+          26.25,
+          27.47,
+          26.76
+        ],
+        "roe_pct": [
+          33.84,
+          24.68,
+          25.44,
+          26.78,
+          20.62
+        ],
+        "debt_ratio": [
+          94.89,
+          92.86,
+          97.06,
+          87.15,
+          75.84
+        ],
+        "per": [
+          null,
+          null,
+          null,
+          null,
+          13.19
+        ],
+        "pbr": [
+          null,
+          null,
+          null,
+          null,
+          3.15
+        ],
+        "dividend_yield": [
+          1.1,
+          null,
+          1.1,
+          1.6,
+          5.0
+        ]
+      },
+      "market": "KQ",
+      "analysis_date": "2026-05-13"
     }
   ]
 }
