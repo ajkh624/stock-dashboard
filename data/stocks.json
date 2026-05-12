@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-13T04:58:06.212886",
+  "updated_at": "2026-05-13T05:01:06+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -15101,6 +15101,338 @@
         ]
       },
       "financial_note": "2024 순익 +123억은 가감조정 -137억 영업외 일회성(투자수익·금융자산 처분). 영업이익은 -19억 적자, 2025년 영업이익 -33억으로 재악화. 5년 연속 본업 적자 + CFO 음수."
+    },
+    {
+      "analyzed_at": "2026-05-13T05:01:06+09:00",
+      "name": "알로이스",
+      "code": "297570",
+      "price": 1552.0,
+      "per": 10.85,
+      "pbr": 1.16,
+      "roe": 11.45,
+      "dividend_yield": null,
+      "debt_ratio": 105.54,
+      "cfo_eok": 74.0,
+      "fcf_eok": 73.0,
+      "revenue_eok": 429.0,
+      "op_income_eok": 65.0,
+      "net_income_eok": 45.0,
+      "opinion": "중립",
+      "opinion_color": "neutral",
+      "thesis": "통신장비·셋톱박스 OEM. 5년 매출 256→367(21피크)→287→266→309→429억(25,IFRS연결전환). OPM 15~19% 견조. 별도 CFO 2023 126억/2024 74억 강력, FCF 黑 지속. 24년 NI -4억은 일회성 추정(영익 48억 양호). 25년 매출 +39% 회복·NI 45억 흑전. 다만 ① 24년 CB 27억·BW 50억 상환=과거 자금조달 의존 이력, ② 외인 1.54%·시총 537억·컨센 N/A 마이크로캡 한계, ③ 25년 부채비율 105%로 급등(연결편입 효과), ④ 무배당·자사주 무. PER 10.85 vs 업종 30.87로 명목 저평가지만 셋톱박스 사이클·고객사 의존도 미공개 리스크. 보유자는 흑전 지속·신사업 트리거 확인 시까지 유지, 신규는 분기 실적 확인 후 진입.",
+      "checklist_part1_risk": 2,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 5,
+      "checklist_part2_total": 12,
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "CB·BW 발행이력(24년 상환 진행)",
+          "당좌비율 73.6%로 악화"
+        ],
+        "part2_passed": [
+          "OPM 15%+ 견조",
+          "CFO>NI",
+          "FCF 흑자 지속",
+          "CF패턴 정상",
+          "PER<업종평균"
+        ],
+        "part2_failed": [
+          "ROE 5년 연속 15%↑ X(24년 -1)",
+          "매출 CAGR<5%",
+          "배당 무",
+          "자사주 소각 무",
+          "PBR>1",
+          "영익성장>매출성장 미확인",
+          "EV/EBITDA 미확인"
+        ]
+      },
+      "dart_rcept": "20250321000238",
+      "source_year": 2024,
+      "tags": [
+        "통신장비",
+        "셋톱박스",
+        "코스닥소형주",
+        "사이클",
+        "CB/BW이력",
+        "IFRS연결전환"
+      ],
+      "market": "KQ",
+      "analysis_date": "2026-05-13",
+      "financial_note": "2025년 IFRS 별도→연결 전환(자회사 편입). 24년 NI -4억은 영익 48억 대비 일회성 영업외손실 추정. 25년 분기에서 단기 부채비율 105%로 급등은 연결편입 효과.",
+      "timeseries": {
+        "years": [
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "revenue_eok": [
+          256,
+          367,
+          287,
+          266,
+          309,
+          429
+        ],
+        "op_income_eok": [
+          44,
+          70,
+          43,
+          42,
+          48,
+          65
+        ],
+        "net_income_eok": [
+          35,
+          55,
+          61,
+          49,
+          -4,
+          45
+        ],
+        "op_margin_pct": [
+          17.1,
+          18.97,
+          14.95,
+          15.99,
+          15.53,
+          15.24
+        ],
+        "roe_pct": [
+          17.51,
+          21.95,
+          19.47,
+          13.61,
+          -1.0,
+          11.45
+        ],
+        "debt_to_equity_pct": [
+          31.54,
+          64.43,
+          33.1,
+          43.58,
+          48.27,
+          105.54
+        ],
+        "quarterly": {
+          "labels": [
+            "24.12",
+            "25.03",
+            "25.06",
+            "25.09",
+            "25.12"
+          ],
+          "revenue_eok": [
+            86,
+            82,
+            70,
+            124,
+            153
+          ],
+          "op_income_eok": [
+            7,
+            17,
+            14,
+            12,
+            22
+          ],
+          "net_income_eok": [
+            -23,
+            13,
+            -4,
+            25,
+            11
+          ]
+        }
+      },
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_audit_qualified",
+            "label": "감사의견 한정/부적정/의견거절(최근 3년)",
+            "status": "ok",
+            "evidence": "2023/2024 적정의견 (DART anomaly)"
+          },
+          {
+            "key": "p1_going_concern",
+            "label": "계속기업 불확실성 강조사항",
+            "status": "ok",
+            "evidence": "emphasis null"
+          },
+          {
+            "key": "p1_audit_delay",
+            "label": "감사보고서 법정기한 지연",
+            "status": "ok",
+            "evidence": "2024 사업보고서 25.03.21 정상 제출"
+          },
+          {
+            "key": "p1_op_loss_3y",
+            "label": "3년 연속 영업적자",
+            "status": "ok",
+            "evidence": "OPM 15~19% 5년 견조"
+          },
+          {
+            "key": "p1_interest_cover_lt1",
+            "label": "이자보상배율<1",
+            "status": "ok",
+            "evidence": "별도 영익 48억 vs 이자지급 2.1억"
+          },
+          {
+            "key": "p1_current_ratio_low",
+            "label": "유동비율<150% 또는 하락",
+            "status": "hit",
+            "evidence": "당좌비율 23년 164→24년 207→25.12 73.6 급락"
+          },
+          {
+            "key": "p1_impairment_recur",
+            "label": "손상차손/재고평가손 반복",
+            "status": "na",
+            "evidence": "공시 분석 보류"
+          },
+          {
+            "key": "p1_cb_bw_recur",
+            "label": "CB·BW 반복 발행",
+            "status": "hit",
+            "evidence": "24년 CB 27억·BW 50억 상환 / 사채 신규 40억 + 차입 80억"
+          },
+          {
+            "key": "p1_asset_sale_operating",
+            "label": "핵심자산 매각 운영자금 충당",
+            "status": "ok",
+            "evidence": "24년 유형/무형 처분 없음"
+          },
+          {
+            "key": "p1_related_party",
+            "label": "특수관계자 거래 복잡",
+            "status": "na",
+            "evidence": "주석 별도 점검 필요"
+          },
+          {
+            "key": "p1_name_ceo_change",
+            "label": "사명·대표 빈번 교체",
+            "status": "ok",
+            "evidence": "확인 안 됨"
+          },
+          {
+            "key": "p1_capital_impairment",
+            "label": "자본잠식/자본총계≈자본금",
+            "status": "ok",
+            "evidence": "자본 404억>>자본금"
+          },
+          {
+            "key": "p1_2nd_finance",
+            "label": "제2금융권 차입",
+            "status": "na",
+            "evidence": "세부 차입처 미확인"
+          },
+          {
+            "key": "p1_profit_cf_gap",
+            "label": "흑자 + CFO 마이너스",
+            "status": "ok",
+            "evidence": "별도 CFO 74억>NI(별도 +)"
+          },
+          {
+            "key": "p1_cf_pattern_bad",
+            "label": "CF패턴 영(-)/투(+)/재(+)",
+            "status": "ok",
+            "evidence": "영(+74)/투(-85)/재(+5.9) 정상"
+          },
+          {
+            "key": "p1_turnover_decline",
+            "label": "매출채권·재고 회전율 하락",
+            "status": "na",
+            "evidence": "분기별 변동 큼·연간 미산정"
+          },
+          {
+            "key": "p1_intangible_heavy",
+            "label": "자본 대비 개발비·영업권 과대",
+            "status": "na",
+            "evidence": "BS 미확인"
+          },
+          {
+            "key": "p1_amendment_high",
+            "label": "정정공시율 과다(>15%)",
+            "status": "ok",
+            "evidence": "DART anomaly 10.1% watch 등급"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_revenue_up",
+            "label": "매출 꾸준한 우상향",
+            "status": "ng",
+            "evidence": "21년 367 피크→23년 266 저점→25년 429 V자, CAGR 4.83%로 5% 미만"
+          },
+          {
+            "key": "p2_op_growth_gt_rev",
+            "label": "영업이익 성장률>매출 성장률",
+            "status": "na",
+            "evidence": "5년 데이터로 명확 검증 불가"
+          },
+          {
+            "key": "p2_opm_superior",
+            "label": "OPM 경쟁사 대비 우월/개선",
+            "status": "ok",
+            "evidence": "15.24% vs LG전자 -0.46% / 가온그룹 6.0% / 아남전자 0.7%"
+          },
+          {
+            "key": "p2_roe_15plus",
+            "label": "ROE 5년 10~15%+ 유지",
+            "status": "ng",
+            "evidence": "5년 ROE: 17.5/21.9/19.5/13.6/-1.0 — 24년 마이너스로 일관성 깨짐"
+          },
+          {
+            "key": "p2_cfo_gt_ni",
+            "label": "CFO>당기순이익",
+            "status": "ok",
+            "evidence": "별도 24년 CFO 74억 vs NI -4억 → 이익의 질 OK"
+          },
+          {
+            "key": "p2_fcf_positive",
+            "label": "FCF 플러스",
+            "status": "ok",
+            "evidence": "별도 CFO 74 - CapEx 0.8 ≈ 73억"
+          },
+          {
+            "key": "p2_cf_pattern_good",
+            "label": "CF패턴 영(+)/투(-)/재(-)",
+            "status": "ng",
+            "evidence": "24년 재(+5.9억) — 사채 40+차입 80 신규로 CB·BW 상환 차환 구조"
+          },
+          {
+            "key": "p2_total_payout_high",
+            "label": "총주주환원율 높음",
+            "status": "ng",
+            "evidence": "무배당, 자사주 매입/소각 없음"
+          },
+          {
+            "key": "p2_buyback_burn",
+            "label": "자사주 소각 실행",
+            "status": "ng",
+            "evidence": "공시 없음"
+          },
+          {
+            "key": "p2_dividend_growing",
+            "label": "배당 꾸준·증액",
+            "status": "ng",
+            "evidence": "배당 무"
+          },
+          {
+            "key": "p2_per_below_avg",
+            "label": "PER<업종/자사 과거 평균",
+            "status": "ok",
+            "evidence": "PER 10.85 vs 동일업종 30.87 (단 마이크로캡 디스카운트 감안)"
+          },
+          {
+            "key": "p2_pbr_below_1",
+            "label": "PBR<1",
+            "status": "ng",
+            "evidence": "PBR 1.16 — 25년 BPS 1,339원·주가 1,552원으로 1 상회"
+          }
+        ]
+      }
     }
   ],
   "market_baseline": {
