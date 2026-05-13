@@ -317,7 +317,11 @@ function renderRow(s) {
     : `<span class="live-px ${liveCls}">${fmt(livePrice)}${live.change_pct != null ? ` <small>(${live.change_pct > 0 ? '+' : ''}${live.change_pct.toFixed(2)}%)</small>` : ''}</span>`;
   const analyzedCellHTML = `<span>${fmt(s.price)}</span><br><small style="color:var(--text-dim)">${s.analysis_date || (s.analyzed_at||'').slice(0,10)}</small>`;
   const vsCellHTML = vsAnalyzed == null ? '-' : `<span class="${vsAnalyzed>0?'up':(vsAnalyzed<0?'down':'flat')}">${vsAnalyzed > 0 ? '+' : ''}${vsAnalyzed.toFixed(2)}%</span>`;
-  return `<tr class="stock-row" data-idx="${s._idx}" tabindex="0">
+  const watching = window.Journal ? Journal.isWatching(s.code) : false;
+  const pos = window.Journal ? Journal.getPosition(s.code) : { qty: 0 };
+  const alertN = window.Journal ? Journal.getAlerts(s.code).length : 0;
+  const trades = window.Journal ? Journal.getTrades(s.code) : [];
+  return `<tr class="stock-row" data-idx="${s._idx}" data-code="${s.code}" tabindex="0">
     <td>${shortDate(s.analyzed_at)}</td>
     <td><small style="color:var(--text-dim)">${s.source_year||'-'}</small></td>
     <td><strong>${s.name}</strong><br><small style="color:var(--text-dim)">${s.code}</small></td>
@@ -336,7 +340,14 @@ function renderRow(s) {
     </td>
     <td><span class="opinion ${opCls}">${s.opinion}</span></td>
     <td style="max-width:360px;font-size:12px;color:var(--text-dim)">${s.thesis||''}</td>
-    <td><button class="row-delete" data-action="delete" title="이 행 숨기기" aria-label="삭제">✕</button></td>
+    <td class="row-actions" onclick="event.stopPropagation()">
+      <button class="row-act-btn card-cmp-btn" data-action="cmp" title="비교 바스켓에 추가/제외" aria-label="비교">☐</button>
+      <button class="row-act-btn ${watching?'active-watch':''}" data-action="watch" title="${watching?'워치리스트에서 제거':'워치리스트에 추가'}" aria-label="워치">${watching?'⭐':'☆'}</button>
+      <button class="row-act-btn ${pos.qty>0?'active-trade':''}" data-action="trade" title="매매 기록${pos.qty>0?` (보유 ${pos.qty}주)`:''}" aria-label="매매">📒${trades.length?`<small>${trades.length}</small>`:''}</button>
+      <button class="row-act-btn ${alertN>0?'active-alert':''}" data-action="alert" title="가격 알림${alertN>0?` (${alertN}개)`:''}" aria-label="알림">🔔${alertN?`<small>${alertN}</small>`:''}</button>
+      <button class="row-act-btn" data-action="note" title="메모 추가/편집" aria-label="메모">📝</button>
+      <button class="row-delete" data-action="delete" title="이 행 숨기기" aria-label="삭제">✕</button>
+    </td>
   </tr>`;
 }
 
@@ -863,11 +874,11 @@ document.addEventListener('click', (e) => {
     openHiddenModal();
     return;
   }
-  // Note button (card)
+  // Note button (card or row)
   const noteBtn = e.target.closest('[data-action="note"]');
   if (noteBtn) {
     e.stopPropagation();
-    const host = noteBtn.closest('.card');
+    const host = noteBtn.closest('.card, tr.stock-row');
     if (host) {
       const idx = Number(host.dataset.idx);
       const stock = STATE.stocks[idx];
@@ -879,7 +890,7 @@ document.addEventListener('click', (e) => {
   const watchBtn = e.target.closest('[data-action="watch"]');
   if (watchBtn) {
     e.stopPropagation();
-    const host = watchBtn.closest('.card');
+    const host = watchBtn.closest('.card, tr.stock-row');
     if (host && window.Journal) {
       const idx = Number(host.dataset.idx);
       const stock = STATE.stocks[idx];
@@ -891,7 +902,7 @@ document.addEventListener('click', (e) => {
   const tradeBtn = e.target.closest('[data-action="trade"]');
   if (tradeBtn) {
     e.stopPropagation();
-    const host = tradeBtn.closest('.card');
+    const host = tradeBtn.closest('.card, tr.stock-row');
     if (host) {
       const idx = Number(host.dataset.idx);
       const stock = STATE.stocks[idx];
@@ -903,7 +914,7 @@ document.addEventListener('click', (e) => {
   const alertBtn = e.target.closest('[data-action="alert"]');
   if (alertBtn) {
     e.stopPropagation();
-    const host = alertBtn.closest('.card');
+    const host = alertBtn.closest('.card, tr.stock-row');
     if (host) {
       const idx = Number(host.dataset.idx);
       const stock = STATE.stocks[idx];
