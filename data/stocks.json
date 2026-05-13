@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-13T22:50:05+09:00",
+  "updated_at": "2026-05-14T07:11:15+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -4466,379 +4466,6 @@
           "가치지표 정정 반영 완료"
         ],
         "note": "Codex 일괄감사 통과. 가치지표 5/13 정정 +의견 3건 재평가."
-      }
-    },
-    {
-      "analyzed_at": "2026-05-13T00:19:48+09:00",
-      "name": "SOOP",
-      "code": "067160",
-      "price": 52700,
-      "per": 5.96,
-      "pbr": 1.2,
-      "roe": 24.08,
-      "dividend_yield": 6.4,
-      "debt_ratio": 75.84,
-      "cfo_eok": 1214,
-      "fcf_eok": 1005,
-      "revenue_eok": 4666,
-      "op_income_eok": 1248,
-      "net_income_eok": 1037,
-      "opinion": "강매수",
-      "opinion_color": "strong-buy",
-      "thesis": "(구 아프리카TV) 국내 라이브 스트리밍 1위. 트위치 한국 철수(24년) 수혜 + 글로벌 SOOP 출시. 매출 2,605→4,666억 (CAGR +15.7%), 영익 888→1,248억, OPM 26~34% 압도적 ⭐ (플랫폼 해자). ROE 5년 평균 26.27% (모든 연도 20%+), 부채비율 75.84%로 낮음. CFO +1,214억 > 순익 1,037억 (1.17배), FCF +1,005억, CF패턴 영업+/투자-/재무- 정상 ⭐. 배당 850→1,500→3,380원 5년 폭증, 배당성향 35.3%, 배당수익률 5.0%. PER 13.19 vs 동종 22.05 (60%). 30항목 체크리스트 우량 10/위험 1로 대시보드 종목 중 최상위급. 위험: 정정공시 10.9% (DART 15/100), PBR 3.15 절대치 부담, OPM 매출보다 영익 성장 둔화(영업 레버리지 약화), 자사주 소각 無. 추격매수 아닌 분할매수 권장.",
-      "checklist_part1_risk": 1,
-      "checklist_part1_total": 18,
-      "checklist_part2_quality": 10,
-      "checklist_part2_total": 12,
-      "checklist_part1_na": 0,
-      "checklist_part2_na": 0,
-      "checklist_detail": {
-        "part1_risks_hit": [
-          "기타 위험 (정정공시, 자본스트레스 등) — 치지직(네이버) 경쟁 위협 + 자사주 소각 0건 (스톡옵션 보상용 처분만 7건)"
-        ],
-        "part2_passed": [
-          "매출 꾸준한 우상향",
-          "영업이익 성장률 > 매출 성장률",
-          "OPM 두 자릿수",
-          "ROE 15%+ 5년 지속",
-          "CFO > 순이익",
-          "FCF 5년 연속 (+)",
-          "CF패턴 영업(+)/투자(−)/재무(−) 정상",
-          "주주환원율 30%+ (배당+자사주)",
-          "배당 5년 안정/증가",
-          "PER 동종업종 이하 또는 절대 저평가"
-        ],
-        "part2_failed": [
-          "자사주 매입 후 소각",
-          "PBR < 1 또는 업종 대비 디스카운트"
-        ]
-      },
-      "checklist_detail_full": {
-        "part1": [
-          {
-            "key": "p1_audit_qualified",
-            "label": "감사의견 한정/부적정/의견거절 (최근 3년)",
-            "status": "ok",
-            "evidence": "2024/2025 적정의견"
-          },
-          {
-            "key": "p1_going_concern",
-            "label": "감사보고서 '계속기업 불확실성' 단락 존재",
-            "status": "ok",
-            "evidence": "emphasis 없음"
-          },
-          {
-            "key": "p1_audit_delay",
-            "label": "감사보고서 법정 기한(3/31) 지연",
-            "status": "ok",
-            "evidence": "2026.3.19 정상 제출 (rcept 20260319001348)"
-          },
-          {
-            "key": "p1_3y_op_loss",
-            "label": "3년 이상 연속 영업적자",
-            "status": "ok",
-            "evidence": "25년 영업익 1,248억 (OPM 26.7%)"
-          },
-          {
-            "key": "p1_interest_coverage",
-            "label": "이자보상배율 < 1",
-            "status": "ok",
-            "evidence": "영업익 1,248억 vs 이자 미미"
-          },
-          {
-            "key": "p1_current_ratio",
-            "label": "유동비율 < 150% 또는 감소 추세",
-            "status": "ok",
-            "evidence": "부채비율 75.84% 매우 낮음, 차입 거의 없음"
-          },
-          {
-            "key": "p1_impairment",
-            "label": "재고/유형자산 손상차손 반복",
-            "status": "ok",
-            "evidence": "플랫폼 특성 — 손상 위험 낮음"
-          },
-          {
-            "key": "p1_cb_bw_repeat",
-            "label": "CB/BW 반복 발행",
-            "status": "ok",
-            "evidence": "CB/BW 발행 無"
-          },
-          {
-            "key": "p1_asset_sale_purpose",
-            "label": "핵심자산 매각 목적이 운영자금/차입상환",
-            "status": "ok",
-            "evidence": "자산매각 없음, 현금 풍부"
-          },
-          {
-            "key": "p1_related_party",
-            "label": "특수관계자 거래 복잡/불투명",
-            "status": "ok",
-            "evidence": "단순 구조, 특이사항 없음"
-          },
-          {
-            "key": "p1_mgmt_change",
-            "label": "사명/대표이사 교체 빈번",
-            "status": "ok",
-            "evidence": "2024 아프리카TV→SOOP 1회 변경 (글로벌 진출 목적, 빈번 아님)"
-          },
-          {
-            "key": "p1_capital_erosion",
-            "label": "자본총계≈자본금 또는 자본잠식 진행",
-            "status": "ok",
-            "evidence": "자본 충분"
-          },
-          {
-            "key": "p1_secondary_finance",
-            "label": "제2금융권(저축은행/캐피털) 차입",
-            "status": "ok",
-            "evidence": "차입 거의 없음"
-          },
-          {
-            "key": "p1_profit_cash_gap",
-            "label": "흑자 + CFO 마이너스",
-            "status": "ok",
-            "evidence": "CFO 1,214억 ≈ NI 1,037억"
-          },
-          {
-            "key": "p1_cf_pattern_bad",
-            "label": "CF패턴 영업(−)/투자(+)/재무(+) (자산팔고 빌려 연명)",
-            "status": "ok",
-            "evidence": "⭐ 영업(+1,214)/투자(−1,846)/재무(−269) — 정상"
-          },
-          {
-            "key": "p1_turnover_drop",
-            "label": "매출채권/재고자산 회전율 하락",
-            "status": "ok",
-            "evidence": "플랫폼 특성 — 재고 없음, 매출채권 미미"
-          },
-          {
-            "key": "p1_intangible_high",
-            "label": "자본총계 대비 개발비/영업권 비율 높음",
-            "status": "ok",
-            "evidence": "무형자산 취득 18억 / 자본 5,032억 = 0.4% (미미)"
-          },
-          {
-            "key": "p1_other_risk",
-            "label": "기타 위험 (정정공시, 자본스트레스 등)",
-            "status": "hit",
-            "evidence": "치지직(네이버) 경쟁 위협 + 자사주 소각 0건 (스톡옵션 보상용 처분만 7건)"
-          }
-        ],
-        "part2": [
-          {
-            "key": "p2_revenue_up",
-            "label": "매출 꾸준한 우상향",
-            "status": "ok",
-            "evidence": "매출 4,666억 안정 성장"
-          },
-          {
-            "key": "p2_op_leverage",
-            "label": "영업이익 성장률 > 매출 성장률",
-            "status": "ok",
-            "evidence": "영업레버리지 강력"
-          },
-          {
-            "key": "p2_opm_competitive",
-            "label": "OPM 두 자릿수",
-            "status": "ok",
-            "evidence": "OPM 26.7% 한국 플랫폼 최고급"
-          },
-          {
-            "key": "p2_roe_15plus",
-            "label": "ROE 15%+ 5년 지속",
-            "status": "ok",
-            "evidence": "⭐⭐ 33.84/24.68/25.44/26.78/20.62% (5년 평균 26.27%, 모두 20%+, σ 4.31 안정)"
-          },
-          {
-            "key": "p2_cfo_gt_ni",
-            "label": "CFO > 순이익",
-            "status": "ok",
-            "evidence": "CFO 1,214억 ≥ NI 1,037억"
-          },
-          {
-            "key": "p2_fcf_positive",
-            "label": "FCF 5년 연속 (+)",
-            "status": "ok",
-            "evidence": "FCF +"
-          },
-          {
-            "key": "p2_cf_pattern_good",
-            "label": "CF패턴 영업(+)/투자(−)/재무(−) 정상",
-            "status": "ok",
-            "evidence": "정상 패턴 (플레이디 인수 진행)"
-          },
-          {
-            "key": "p2_shareholder_return",
-            "label": "주주환원율 30%+ (배당+자사주)",
-            "status": "ok",
-            "evidence": "⭐ 배당성향 35.3% (배당 360억), 24년까지 자사주 매입도 누적"
-          },
-          {
-            "key": "p2_treasury_burn",
-            "label": "자사주 매입 후 소각",
-            "status": "ng",
-            "evidence": "자사주 837,863주 보유, 소각 無 (25년 매입도 0원)"
-          },
-          {
-            "key": "p2_dividend_stable",
-            "label": "배당 5년 안정/증가",
-            "status": "ok",
-            "evidence": "⭐⭐ 850→1,500→3,380원 (5년 폭증), 배당수익률 5.0%"
-          },
-          {
-            "key": "p2_per_attractive",
-            "label": "PER 동종업종 이하 또는 절대 저평가",
-            "status": "ok",
-            "evidence": "⭐ PER 13.19 vs 동종 22.05 (60% 수준)"
-          },
-          {
-            "key": "p2_pbr_attractive",
-            "label": "PBR < 1 또는 업종 대비 디스카운트",
-            "status": "ng",
-            "evidence": "PBR 3.15 — 절대치 부담, but ROE 20%+ 감안 시 정당화 가능"
-          }
-        ]
-      },
-      "dart_rcept": "20260319001348",
-      "source_year": 2025,
-      "tags": [
-        "라이브스트리밍",
-        "플랫폼",
-        "고배당",
-        "고ROE",
-        "사명변경",
-        "트위치수혜"
-      ],
-      "timeseries": {
-        "source": "DART 연결재무 (5년)",
-        "years": [
-          2021,
-          2022,
-          2023,
-          2024,
-          2025
-        ],
-        "revenue_eok": [
-          2605,
-          2891,
-          3440,
-          4132,
-          4666
-        ],
-        "op_income_eok": [
-          888,
-          824,
-          903,
-          1135,
-          1248
-        ],
-        "net_income_eok": [
-          709,
-          595,
-          746,
-          1024,
-          1037
-        ],
-        "op_margin_pct": [
-          34.1,
-          28.51,
-          26.25,
-          27.47,
-          26.76
-        ],
-        "roe_pct": [
-          33.84,
-          24.68,
-          25.44,
-          26.78,
-          20.62
-        ],
-        "debt_ratio": [
-          94.89,
-          92.86,
-          97.06,
-          87.15,
-          75.84
-        ],
-        "per": [
-          null,
-          null,
-          null,
-          null,
-          13.19
-        ],
-        "pbr": [
-          null,
-          null,
-          null,
-          null,
-          3.15
-        ],
-        "dividend_yield": [
-          1.1,
-          null,
-          1.1,
-          1.6,
-          5.0
-        ]
-      },
-      "market": "KQ",
-      "analysis_date": "2026-05-13",
-      "krx_per": 5.51,
-      "krx_pbr": 1.2,
-      "krx_div_yield": 6.41,
-      "per_percentile": 12.0,
-      "pbr_percentile": 60.3,
-      "div_percentile": 95.7,
-      "krx_dividend_yield": 6.41,
-      "krx_close": 52700.0,
-      "krx_asof": "2026-05-13",
-      "opinion_before_audit": "매수",
-      "opinion_change_reason": "실제 PER 5.96·PBR 1.20·배당 6.40%로 카드보다 훨씬 매력적. ROE 24.08% 우수",
-      "audit_passed": {
-        "date": "2026-05-13",
-        "agent": "codex (gpt-5) + claude (deep analysis)",
-        "verdict": "PASS_DEEP_VERIFIED",
-        "verified": [
-          "매출",
-          "영업익",
-          "순익",
-          "부채비율",
-          "ROE",
-          "PER",
-          "PBR",
-          "배당",
-          "영업CF",
-          "자사주정책",
-          "M&A이력",
-          "내부자거래"
-        ],
-        "deep_analysis": true,
-        "note": "강매수 3종 깊이 분석 완료: DART CF 검증 + 자본이벤트 + 내부자 클러스터 + M&A 시너지 분석 완료. SOOP 의견 강매수 확정 유지."
-      },
-      "deep_analysis": {
-        "deep_analysis_date": "2026-05-13",
-        "key_findings": [
-          "본업 OPM **26.7%** (영업익 1,248억 / 매출 4,666억) — 한국 플랫폼 최고급",
-          "ROE 24.08% / 영업CF 1,214억 / 부채비율 75.84% 우량",
-          "2025.04 플레이디(나스미디어 자회사) 인수 735억 (70.38% 지분) — 광고 시너지 확보",
-          "종속기업 취득 +202억 사업결합 효과 추가",
-          "자사주 처분 7건 모두 임직원 스톡옵션 행사용 = 소각 아닌 임직원 보상",
-          "내부자 매수 클러스터 2026Q1 사내이사 이민원 + 전무 편원진 + 이사 김진기 (3명 동시)",
-          "단기금융자산 1,747억 신규 취득 = 매각대금 운용 진행",
-          "법인세납부 356억 = 흑자 진실성 확인"
-        ],
-        "growth_drivers": [
-          "별풍선·후원 매출 안정 + 플레이디 광고 사업 시너지",
-          "글로벌 라이브스트리밍 확장 (e스포츠·치지직 대응)",
-          "내부자 매수 클러스터 = 26년 가속 성장 기대"
-        ],
-        "risks": [
-          "치지직(네이버) 경쟁 위협 지속",
-          "자사주 정책 = 소각 0건, 임직원 보상용 처분만 (DMS·메가스터디와 다름)",
-          "플레이디 인수 후 시너지 검증 필요"
-        ],
-        "verdict_confirmation": "강매수 유지. OPM 26.7% + ROE 24% + PER 5.96·PBR 1.20 = 동급 플랫폼 대비 압도적 저평가. 단 자사주 소각 정책 부재가 한 단계 격을 낮춤."
       }
     },
     {
@@ -19883,6 +19510,353 @@
           "cfo": 14,
           "capex": 44,
           "fcf": -30
+        }
+      }
+    },
+    {
+      "name": "SOOP",
+      "code": "067160",
+      "market": "KQ",
+      "analysis_date": "2026-05-13",
+      "price": 52800,
+      "market_cap_eok": 6069,
+      "industry": "양방향미디어와서비스 (라이브스트리밍 플랫폼)",
+      "per": 5.96,
+      "pbr": 1.2,
+      "roe": 24.08,
+      "roe_dart": 20.62,
+      "eps": 8860,
+      "bps": 43822,
+      "dividend_yield": 6.4,
+      "dps": 3380,
+      "payout_ratio": 35.37,
+      "revenue_eok": 4666,
+      "op_income_eok": 1248,
+      "net_income_eok": 1037,
+      "op_margin": 26.76,
+      "debt_to_equity": 75.84,
+      "cfo_eok": 1214,
+      "capex_eok": 209,
+      "fcf_eok": 1005,
+      "cf_trend": {
+        "Y-2": {
+          "cfo": 1197,
+          "capex": 94,
+          "fcf": 1103
+        },
+        "Y-1": {
+          "cfo": 1575,
+          "capex": 147,
+          "fcf": 1428
+        },
+        "Y": {
+          "cfo": 1214,
+          "capex": 209,
+          "fcf": 1005
+        }
+      },
+      "buyback_eok": 0,
+      "dividend_eok": 160,
+      "shareholder_return_eok": 160,
+      "consensus_target": 74167,
+      "consensus_opinion": "3.67 매수",
+      "upside_pct": 40.5,
+      "week52_high": 98500,
+      "week52_low": 51400,
+      "opinion": "매수",
+      "thesis": "라이브스트리밍 1위 플랫폼. 5년 매출 CAGR 15.7%·순익 CAGR 10%, ROE 20%대 유지, 부채비율 75.8%까지 개선. PER 5.96/PBR 1.20은 업종 PER 21.36의 28% 수준 + 배당수익률 6.4%로 디딤돌. 52주 고가 98,500 대비 -46% 조정 구간에서 2026Q1 내부자(전무·사내이사·이사) 매수 클러스터 발생. 2025년 플레이디(KT·나스미디어 자회사) 70.4%를 735억에 인수해 광고 사업 확장. 단 컨센 2026E 영익 -7.8%·EPS -5.8% 역성장 가시, Q4 영업익 -15.5% QoQ 둔화 모멘텀이 리스크. 컨센 목표가 74,167원(+40.5% 업사이드).",
+      "tags": [
+        "라이브스트리밍",
+        "고배당",
+        "내부자매수",
+        "저PER",
+        "플레이디인수",
+        "성장둔화",
+        "코스닥200위"
+      ],
+      "rcept": "20260319001348",
+      "source_year": 2025,
+      "part1_risk": 3,
+      "part2_quality": 10,
+      "risks_hit": [
+        "영업이익 성장률 둔화 (2025Q4 -15.5% QoQ, 2026E -7.8% YoY)",
+        "ROE 추세 하락 (33→24→26→27→21)",
+        "자사주 매입 중단 (2023 188억→2024 91억→2025 0)"
+      ],
+      "passed": [
+        "매출 5년 CAGR 15.7%",
+        "순익 5년 CAGR 10%",
+        "ROE 5년 평균 26%",
+        "영업이익률 26.76%",
+        "부채비율 75.84% (개선)",
+        "CFO 1,214억 흑자",
+        "FCF 1,005억 양호",
+        "배당 인상 (1,500→3,380)",
+        "PER 5.96 업종 대비 1/3",
+        "내부자 매수 클러스터 (2026Q1)"
+      ],
+      "failed": [
+        "EV/EBITDA 미산출",
+        "자사주 소각 이력 미확인"
+      ],
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_audit_qualified",
+            "label": "감사의견 비적정",
+            "status": "ok",
+            "evidence": "2024·2025 적정"
+          },
+          {
+            "key": "p1_audit_emphasis",
+            "label": "강조사항",
+            "status": "ok",
+            "evidence": "감사 강조사항 없음"
+          },
+          {
+            "key": "p1_auditor_change",
+            "label": "감사인 교체",
+            "status": "ok",
+            "evidence": "교체 0회"
+          },
+          {
+            "key": "p1_op_loss",
+            "label": "영업적자",
+            "status": "ok",
+            "evidence": "2025 영업익 1,248억"
+          },
+          {
+            "key": "p1_interest_coverage",
+            "label": "이자보상배율<1",
+            "status": "ok",
+            "evidence": "이자지급 2.5억 vs 영익 1,248억"
+          },
+          {
+            "key": "p1_liquidity",
+            "label": "유동비율 낮음",
+            "status": "ok",
+            "evidence": "당좌비율 120.29%"
+          },
+          {
+            "key": "p1_impairment",
+            "label": "손상차손",
+            "status": "ok",
+            "evidence": "별도 손상 시그널 없음"
+          },
+          {
+            "key": "p1_cb_bw",
+            "label": "CB·BW 발행",
+            "status": "ok",
+            "evidence": "자본스트레스 0건"
+          },
+          {
+            "key": "p1_asset_sale",
+            "label": "핵심자산 매각",
+            "status": "ok",
+            "evidence": "해당 없음 (오히려 플레이디 인수)"
+          },
+          {
+            "key": "p1_related_party",
+            "label": "특수관계자 거래",
+            "status": "ok",
+            "evidence": "특이 사항 없음"
+          },
+          {
+            "key": "p1_name_change",
+            "label": "사명 교체",
+            "status": "hit",
+            "evidence": "2024 아프리카TV→SOOP 변경 (브랜드 리뉴얼, 작전성 아님)"
+          },
+          {
+            "key": "p1_capital_impairment",
+            "label": "자본잠식",
+            "status": "ok",
+            "evidence": "자본 5,032억 흑자"
+          },
+          {
+            "key": "p1_secondary_finance",
+            "label": "제2금융권 차입",
+            "status": "ok",
+            "evidence": "해당 없음"
+          },
+          {
+            "key": "p1_profit_cash_gap",
+            "label": "이익↔현금 괴리",
+            "status": "ok",
+            "evidence": "순익 1,037 vs CFO 1,214"
+          },
+          {
+            "key": "p1_cf_pattern",
+            "label": "CF 패턴 이상",
+            "status": "ok",
+            "evidence": "영업+/투자-/재무- 정상 성숙기"
+          },
+          {
+            "key": "p1_turnover",
+            "label": "회전율 악화",
+            "status": "ok",
+            "evidence": "매출 +12.9% 성장"
+          },
+          {
+            "key": "p1_dev_cost_high",
+            "label": "자본대비 개발비/영업권 과다",
+            "status": "hit",
+            "evidence": "플레이디 인수로 영업권 발생 예정 (모니터링 필요)"
+          },
+          {
+            "key": "p1_eps_decline",
+            "label": "EPS 하락 추세",
+            "status": "hit",
+            "evidence": "2026E EPS 8,343 (-5.8%)"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_revenue_up",
+            "label": "매출 5년 CAGR≥5%",
+            "status": "ok",
+            "evidence": "15.69%"
+          },
+          {
+            "key": "p2_op_income_up",
+            "label": "영업익 성장",
+            "status": "ok",
+            "evidence": "5년 +40.5%"
+          },
+          {
+            "key": "p2_opm",
+            "label": "영업이익률≥10%",
+            "status": "ok",
+            "evidence": "26.76%"
+          },
+          {
+            "key": "p2_roe",
+            "label": "ROE 5년 평균≥10%",
+            "status": "ok",
+            "evidence": "26.27%"
+          },
+          {
+            "key": "p2_cfo",
+            "label": "CFO 5년 연속 흑자",
+            "status": "ok",
+            "evidence": "매년 1천억대"
+          },
+          {
+            "key": "p2_fcf",
+            "label": "FCF 흑자",
+            "status": "ok",
+            "evidence": "1,005억"
+          },
+          {
+            "key": "p2_cf_pattern",
+            "label": "성숙기 +-- 패턴",
+            "status": "ok",
+            "evidence": "영업+/투자-/재무-"
+          },
+          {
+            "key": "p2_payout",
+            "label": "주주환원 ≥20%",
+            "status": "ok",
+            "evidence": "배당성향 35.37%"
+          },
+          {
+            "key": "p2_treasury_burn",
+            "label": "자사주 소각",
+            "status": "ng",
+            "evidence": "2025 자사주 매입 0 (전년 91억→중단)"
+          },
+          {
+            "key": "p2_dividend",
+            "label": "배당수익률≥3%",
+            "status": "ok",
+            "evidence": "6.40%"
+          },
+          {
+            "key": "p2_per",
+            "label": "PER<업종평균",
+            "status": "ok",
+            "evidence": "5.96 vs 업종 21.36"
+          },
+          {
+            "key": "p2_pbr",
+            "label": "PBR<3",
+            "status": "ok",
+            "evidence": "1.20"
+          }
+        ]
+      },
+      "timeseries": {
+        "years": [
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "revenue": [
+          2605,
+          2891,
+          3440,
+          4132,
+          4666
+        ],
+        "op_income": [
+          888,
+          824,
+          903,
+          1135,
+          1248
+        ],
+        "net_income": [
+          709,
+          595,
+          746,
+          1024,
+          1037
+        ],
+        "roe": [
+          33.84,
+          24.68,
+          25.44,
+          26.78,
+          20.62
+        ],
+        "debt": [
+          94.89,
+          92.86,
+          97.06,
+          87.15,
+          75.84
+        ],
+        "quarterly": {
+          "labels": [
+            "2024.12",
+            "2025.03",
+            "2025.06",
+            "2025.09",
+            "2025.12"
+          ],
+          "revenue": [
+            1117,
+            1077,
+            1169,
+            1259,
+            1162
+          ],
+          "op_income": [
+            278,
+            279,
+            300,
+            363,
+            306
+          ],
+          "net_income": [
+            260,
+            234,
+            225,
+            294,
+            284
+          ]
         }
       }
     }
