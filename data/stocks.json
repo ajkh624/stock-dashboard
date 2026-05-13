@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-13T22:42:33+09:00",
+  "updated_at": "2026-05-13T22:50:05+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -19073,6 +19073,354 @@
         ]
       },
       "financial_note": "신탁업 6위 대형사이지만 본업 사이클 침체 가속화. 매출 2년 -21%·영업익 2년 -71%·OPM 45→17% 반토막 = 부동산 PF 부실 사이클 직격탄. 25년 순익 494억은 영업익 342억 + 영업외 약 152억 일회성 (이연법인세 환입·기타 가능성). 부회장 김규철(대표이사) 본인의 -120,580주 매도(2026Q1)는 본업 회복 자신감 없다는 결정적 시그널 — DSR제강 대표이사 매수 클러스터와 정반대. 청산매력 PBR 0.27·자본 1.08조·배당 6.33%는 매력이지만, 부동산 PF 사이클 추가 악화 가능성·부회장 매도·이익 가속 감소로 회피. 26년 1Q 본업 반등 시그널 + 부회장 매수 전환 시 재평가."
+    },
+    {
+      "analyzed_at": "2026-05-13T22:50:00+09:00",
+      "name": "KPX케미칼",
+      "code": "025000",
+      "price": 52000.0,
+      "per": 4.88,
+      "pbr": 0.33,
+      "roe": 7.76,
+      "dividend_yield": 7.21,
+      "debt_ratio": 31.57,
+      "cfo_eok": null,
+      "fcf_eok": null,
+      "revenue_eok": 8084.0,
+      "op_income_eok": 274.0,
+      "net_income_eok": 516.0,
+      "opinion": "중립",
+      "opinion_color": "neutral",
+      "thesis": "1974년 설립 폴리프로필렌글리콜(PPG) 국내 1위 + 전자재료(LCD/반도체 CMP패드) 제조사 (KPX홀딩스 그룹). **2025.12.01 인적분할 완료** — KPX케미칼(존속 PPG) + **KPX일렉트로켐(분할신설 전자재료, 코스닥 신규상장 예정)**, 분할비율 0.9:0.1 (분할 신설사 자본 662억 / 매출 448억). 핵심 매력: (1) PER 4.88·PBR 0.33·배당 **7.21%** (DPS 3,750원) 청산매력 압도적, (2) anomaly **0/100 clean** 정정공시 7.0% (86건 중 6건 최우량), (3) 부채비율 31.57% 무차입 우량, (4) 자본 6,653억 vs 시총 약 2,500억 = 청산가치 38% + 분할로 KPX일렉트로켐 신주 별도 배정 = 주주가치 분배. 핵심 위험: (1) **내부자 매도 클러스터 strong_sell**: 2025Q4 KPX홀딩스 -254,348주 + 토요타통상 -48,660주 (지분 정리), 단 분할 직전 매도로 분할 후 재분배 추정, (2) 본업 OPM 24년 4.48→25년 3.39% 감소, 영업익 389→274억 -30%, (3) 매출 23년 9,111억 → 25년 8,083억 (2년 누적 -11% 감소), (4) ROE 10년 평균 7.82% 자본효율 낮음, (5) 25년 순익 516억 vs 영업익 274억 = 영업외 +242억 일회성 (분할 관련·자기주식 처분 36.5억 등 추정). 종합: 청산매력+배당7.21%+anomaly clean 우량 vs 매도클러스터+본업둔화 = **중립**. 분할 후 2026Q1~Q2 KPX일렉트로켐 상장 + 본업 PPG 회복 시 매수 재평가.",
+      "checklist_part1_risk": 2,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 5,
+      "checklist_part2_total": 12,
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "매출채권/재고자산 회전율 하락 — 매출 2년 누적 -11% 감소 + 영업익 2년 -53% 급감",
+          "기타 위험 (보고서 emphasis 단락 등) — 2025Q4 매도 클러스터 KPX홀딩스 -254,348주 + 토요타통상 -48,660주 (분할 직전 정리 가능성) + 25년 순익 516억 중 약 242억 영업외 일회성"
+        ],
+        "part2_passed": [
+          "CF패턴 영업(+)/투자(-)/재무(-)",
+          "총주주환원율(배당+자사주소각) 높음",
+          "배당 꾸준 지급/증액",
+          "PER < 업종 평균 또는 자사 과거 평균",
+          "PBR < 1"
+        ],
+        "part2_failed": [
+          "매출 꾸준한 우상향",
+          "영업이익 성장률 > 매출 성장률",
+          "OPM 경쟁사 대비 우월 또는 개선",
+          "ROE 5년 10~15%+ 유지",
+          "자사주 매입 → 소각까지 실행"
+        ]
+      },
+      "dart_rcept": "20260330000XXX",
+      "source_year": 2025,
+      "tags": [
+        "PPG화학",
+        "KOSPI",
+        "KPX그룹",
+        "인적분할2025-12",
+        "KPX일렉트로켐분할상장예정",
+        "내부자매도클러스터",
+        "본업OPM3.39%둔화",
+        "anomaly0clean",
+        "PBR0.33청산매력",
+        "배당7.21%"
+      ],
+      "timeseries": {
+        "source": "DART 연결재무 (2016-2025) + KRX 2026-05-13",
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "revenue_eok": [
+          10208,
+          9836,
+          9111,
+          8686,
+          8084
+        ],
+        "op_income_eok": [
+          447,
+          465,
+          584,
+          389,
+          274
+        ],
+        "net_income_eok": [
+          492,
+          296,
+          658,
+          639,
+          516
+        ],
+        "op_margin_pct": [
+          4.38,
+          4.73,
+          6.41,
+          4.48,
+          3.39
+        ],
+        "roe_pct": [
+          8.52,
+          4.97,
+          10.17,
+          9.11,
+          7.76
+        ],
+        "debt_ratio": [
+          34.44,
+          30.51,
+          27.2,
+          25.58,
+          31.57
+        ],
+        "per": [
+          null,
+          null,
+          null,
+          null,
+          4.88
+        ],
+        "pbr": [
+          null,
+          null,
+          null,
+          null,
+          0.33
+        ],
+        "dividend_yield": [
+          null,
+          null,
+          null,
+          null,
+          7.21
+        ],
+        "note": "본업 PPG: 23년 OPM 6.41% 호황 → 24년 4.48 → 25년 3.39% 가속 둔화. 매출 2년 -11% 감소·영업익 2년 -53% 급감 (22년 BPA 호황 종료). 25년 순익 516억은 영업익 274억 + 영업외 약 242억 일회성 (분할 관련 자산평가·자기주식처분 36.5억 등 추정). 2025.12.01 KPX일렉트로켐 인적분할 시행."
+      },
+      "krx_per": 4.88,
+      "krx_pbr": 0.33,
+      "krx_dividend_yield": 7.21,
+      "krx_close": 52000,
+      "krx_eps": 10656,
+      "krx_bps": 157576,
+      "krx_dps": 3750,
+      "krx_asof": "2026-05-13",
+      "corporate_events": [
+        {
+          "date": "2025-12-01",
+          "type": "인적분할",
+          "label": "KPX일렉트로켐(전자재료) 분할 신설 0.9:0.1 (분할신설사 자본 662억·매출 448억, 코스닥 신규상장 예정)"
+        },
+        {
+          "date": "2025-Q4",
+          "type": "내부자매도클러스터",
+          "label": "KPX홀딩스 -254,348주 + 토요타통상 -48,660주 + 대표 양준영 -526주 (분할 직전 지분정리)"
+        },
+        {
+          "date": "2025-04-15",
+          "type": "자기주식처분",
+          "label": "자사주 84,779주(1.75%) @43,050원 = 36.5억 시간외 매도 (운영자금·투자재원)"
+        }
+      ],
+      "anomaly_score": 0,
+      "anomaly_verdict": "clean",
+      "anomaly_flags": [],
+      "insider_signal": "strong_sell_cluster_pre_split",
+      "insider_detail": "2023~2026 매수 2건/매도 3건 = 순매도 -162,099주. 2025Q4 KPX홀딩스 -254,348주 + 토요타통상 -48,660주 = 분할 직전 지분 정리. 단순 매도 클러스터로 해석하기보다 분할 후 재배정 가능성 고려 필요. 대표이사 양준영 -526주는 미미.",
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_audit_qualified",
+            "label": "감사의견 한정/부적정/의견거절 (최근 3년)",
+            "status": "ok",
+            "evidence": "24/25 적정의견"
+          },
+          {
+            "key": "p1_going_concern",
+            "label": "감사보고서 '계속기업 불확실성' 단락 존재",
+            "status": "ok",
+            "evidence": "없음"
+          },
+          {
+            "key": "p1_audit_delay",
+            "label": "감사보고서 법정 기한(3/31) 지연",
+            "status": "ok",
+            "evidence": "정상 제출"
+          },
+          {
+            "key": "p1_3y_op_loss",
+            "label": "3년 이상 연속 영업적자",
+            "status": "ok",
+            "evidence": "영업이익 10년 연속 흑자"
+          },
+          {
+            "key": "p1_interest_coverage",
+            "label": "이자보상배율 < 1",
+            "status": "ok",
+            "evidence": "영업익 274억 vs 이자비용 미미 (부채비율 31.57%)"
+          },
+          {
+            "key": "p1_current_ratio",
+            "label": "유동비율 < 150% 또는 감소 추세",
+            "status": "ok",
+            "evidence": "부채비율 31.57% 우량"
+          },
+          {
+            "key": "p1_impairment",
+            "label": "재고/유형자산 손상차손 반복",
+            "status": "ok",
+            "evidence": "특이사항 없음"
+          },
+          {
+            "key": "p1_cb_bw_repeat",
+            "label": "CB/BW 반복 발행",
+            "status": "ok",
+            "evidence": "자본스트레스 0건"
+          },
+          {
+            "key": "p1_asset_sale_purpose",
+            "label": "핵심자산 매각 목적이 운영자금/차입상환",
+            "status": "watch",
+            "evidence": "25.04 자기주식 36.5억 시간외 매도 (운영자금·투자재원 확보)"
+          },
+          {
+            "key": "p1_related_party",
+            "label": "특수관계자 거래 복잡/불투명",
+            "status": "watch",
+            "evidence": "KPX홀딩스 지주사 + 토요타통상 합작 구조"
+          },
+          {
+            "key": "p1_mgmt_change",
+            "label": "사명/대표이사 교체 빈번",
+            "status": "ok",
+            "evidence": "양준영 대표 안정 (KPX그룹 양태진 회장 가족)"
+          },
+          {
+            "key": "p1_capital_erosion",
+            "label": "자본총계≈자본금 또는 자본잠식 진행",
+            "status": "ok",
+            "evidence": "자본 6,653억 충분"
+          },
+          {
+            "key": "p1_secondary_finance",
+            "label": "제2금융권(저축은행/캐피털) 차입",
+            "status": "ok",
+            "evidence": "제1금융권"
+          },
+          {
+            "key": "p1_profit_cash_gap",
+            "label": "흑자 + CFO 마이너스",
+            "status": "ok",
+            "evidence": "순익 516억, 부채 안정 = CFO 추정 우량"
+          },
+          {
+            "key": "p1_cf_pattern_bad",
+            "label": "CF패턴 영업(-)/투자(+)/재무(+)",
+            "status": "ok",
+            "evidence": "정상 패턴 추정 (분할 진행)"
+          },
+          {
+            "key": "p1_turnover_drop",
+            "label": "매출채권/재고자산 회전율 하락",
+            "status": "hit",
+            "evidence": "매출 2년 누적 -11% 감소 + 영업익 2년 -53% 급감"
+          },
+          {
+            "key": "p1_intangible_high",
+            "label": "자본총계 대비 개발비/영업권 비율 높음",
+            "status": "ok",
+            "evidence": "제조업 유형자산 중심"
+          },
+          {
+            "key": "p1_other_risk",
+            "label": "기타 위험 (보고서 emphasis 단락 등)",
+            "status": "hit",
+            "evidence": "2025Q4 매도 클러스터 KPX홀딩스 -254,348주 + 토요타통상 -48,660주 (분할 직전 정리 가능성) + 25년 순익 516억 중 약 242억 영업외 일회성"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_revenue_up",
+            "label": "매출 꾸준한 우상향",
+            "status": "ng",
+            "evidence": "매출 2년 누적 -11% 감소 (9,111→8,084억)"
+          },
+          {
+            "key": "p2_op_leverage",
+            "label": "영업이익 성장률 > 매출 성장률",
+            "status": "ng",
+            "evidence": "영업익 2년 -53% 급감 (584→274억)"
+          },
+          {
+            "key": "p2_opm_competitive",
+            "label": "OPM 경쟁사 대비 우월 또는 개선",
+            "status": "ng",
+            "evidence": "OPM 6.41→4.48→3.39% 2년 연속 둔화"
+          },
+          {
+            "key": "p2_roe_15_5y",
+            "label": "ROE 5년 10~15%+ 유지",
+            "status": "ng",
+            "evidence": "25년 7.76% (10% 미달), 10년 평균 7.82% 자본효율 낮음"
+          },
+          {
+            "key": "p2_cfo_gt_ni",
+            "label": "CFO > 당기순이익",
+            "status": "watch",
+            "evidence": "CFO 데이터 확인 필요"
+          },
+          {
+            "key": "p2_fcf_positive",
+            "label": "FCF 플러스",
+            "status": "watch",
+            "evidence": "FCF 데이터 미확인"
+          },
+          {
+            "key": "p2_cf_pattern_good",
+            "label": "CF패턴 영업(+)/투자(-)/재무(-)",
+            "status": "ok",
+            "evidence": "정상 패턴 추정"
+          },
+          {
+            "key": "p2_total_yield",
+            "label": "총주주환원율(배당+자사주소각) 높음",
+            "status": "ok",
+            "evidence": "배당 7.21% (DPS 3,750원) 한국 상장사 상위급"
+          },
+          {
+            "key": "p2_buyback_burn",
+            "label": "자사주 매입 → 소각까지 실행",
+            "status": "ng",
+            "evidence": "자사주 매입 0건, 25년 처분 84,779주 (소각 아닌 시간외 매도)"
+          },
+          {
+            "key": "p2_dividend_growth",
+            "label": "배당 꾸준 지급/증액",
+            "status": "ok",
+            "evidence": "배당 7.21% 안정 지급"
+          },
+          {
+            "key": "p2_per_below_avg",
+            "label": "PER < 업종 평균 또는 자사 과거 평균",
+            "status": "ok",
+            "evidence": "PER 4.88 시장 15.21 대비 68% 할인"
+          },
+          {
+            "key": "p2_pbr_under1",
+            "label": "PBR < 1",
+            "status": "ok",
+            "evidence": "PBR 0.33 자본 6,653억 vs 시총 약 2,500억 (청산가치 38%)"
+          }
+        ]
+      },
+      "financial_note": "1974년 설립 PPG 국내 1위(BPA 화학) + 전자재료 사업부 보유 → 2025.12.01 인적분할로 KPX일렉트로켐 신설(전자재료 사업부 이전, 코스닥 신규상장 예정). 분할비율 0.9:0.1로 기존 주주에게 분할신설사 신주 비례 배정 = 주주가치 분배. 본업 PPG는 BPA 사이클 호황(22~23년) 종료로 OPM 3.39% 둔화. 매도 클러스터는 KPX홀딩스(지주) + 토요타통상 합작 정리로 단순 매도보다 분할 관련 지분 재편 가능성. 청산매력 PBR 0.33 + 배당 7.21% + 분할 후 KPX일렉트로켐 상장 가치 추가 = 매력적이나 본업 둔화·매도클러스터로 보수적 기준 중립."
     }
   ],
   "market_baseline": {
