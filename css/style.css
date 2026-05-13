@@ -1101,31 +1101,3 @@ footer { padding: 24px 16px; text-align: center; color: var(--text-dim); font-si
   color: #fff;
   border-color: rgba(239,68,68,0.5);
 }
-
-/* ========== KRX-sourced columns (시각 구별) ========== */
-th.krx-col {
-  background: rgba(59,130,246,0.08) !important;
-  color: #93c5fd !important;
-  position: relative;
-  border-left: 1px solid rgba(59,130,246,0.25);
-  border-right: 1px solid rgba(59,130,246,0.25);
-}
-th.krx-col .krx-mark {
-  display: inline-block;
-  margin-left: 4px;
-  font-size: 9px;
-  background: rgba(59,130,246,0.25);
-  color: #93c5fd;
-  border-radius: 3px;
-  padding: 0 3px;
-  font-weight: 700;
-  vertical-align: middle;
-}
-td.krx-cell {
-  background: rgba(59,130,246,0.04);
-  color: #cbd5e1;
-  font-size: 12px;
-  border-left: 1px solid rgba(59,130,246,0.12);
-  border-right: 1px solid rgba(59,130,246,0.12);
-}
-tr.stock-row:hover td.krx-cell { background: rgba(59,130,246,0.10); }
