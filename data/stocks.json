@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-13T20:24:26+09:00",
+  "updated_at": "2026-05-13T22:18:07+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -18047,6 +18047,356 @@
           }
         ]
       }
+    },
+    {
+      "analyzed_at": "2026-05-13T21:30:00+09:00",
+      "name": "DSR제강",
+      "code": "069730",
+      "price": 5140.0,
+      "per": 3.0,
+      "pbr": 0.39,
+      "roe": 13.13,
+      "dividend_yield": 8.37,
+      "debt_ratio": 37.51,
+      "cfo_eok": null,
+      "fcf_eok": null,
+      "revenue_eok": 2266.0,
+      "op_income_eok": 280.0,
+      "net_income_eok": 247.0,
+      "opinion": "매수",
+      "opinion_color": "buy",
+      "thesis": "1953년 설립 73년 노포 와이어로프(스틸코드·PC강선) 제조사. 본업 회복 강력: 매출 24년 2,156→25년 2,266억(+5.1% YoY), 영업이익 195→280억(+44% YoY) OPM **12.37%** 10년 최고, 순익 24년 -283억 → 25년 **+247억** V자 회복. 핵심 매수 시그널: (1) 대표이사 홍하종 매수 클러스터 **3분기 연속**(2025Q4 3회·2026Q1 3회·2026Q2 1회, 누적 +156,613주), (2) anomaly **0/100 clean** 정정공시 8.2% (98건 중 8건 최우량), (3) 자본스트레스 0건·CB/BW 0건, (4) PER **3.00** / PBR **0.39** / 배당 **8.37%** (DPS 430원, KRX 상장사 최상위), (5) 부채비율 37.5% 무차입 우량. 위험: 24년 순익 -283억 변동성 (영업익 +195억인데 순손실 → 영업외 약 478억 손실, 24.07 디에스알(주) 계열사 주식 양도 348억 사업자금 확보와 관련 추정 일회성), 5년 평균 ROE 4.79% (24년 적자 영향). 종합: 25년 본업 정상화 + 대표이사 매수 클러스터 + 청산매력 + 배당 8.37% = 매수.",
+      "checklist_part1_risk": 2,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 9,
+      "checklist_part2_total": 12,
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "기타 위험 (보고서 emphasis 단락 등) — 24년 순익 -283억 변동성 (영업외 약 478억 손실, 일회성으로 25년 정상화)"
+        ],
+        "part2_passed": [
+          "영업이익 성장률 > 매출 성장률",
+          "OPM 경쟁사 대비 우월 또는 개선",
+          "CF패턴 영업(+)/투자(-)/재무(-)",
+          "총주주환원율(배당+자사주소각) 높음",
+          "배당 꾸준 지급/증액",
+          "PER < 업종 평균 또는 자사 과거 평균",
+          "PBR < 1"
+        ],
+        "part2_failed": [
+          "자사주 매입 → 소각까지 실행"
+        ]
+      },
+      "dart_rcept": "20260319000XXX",
+      "source_year": 2025,
+      "tags": [
+        "와이어로프",
+        "KOSPI",
+        "1953노포",
+        "대표이사매수클러스터",
+        "anomaly0clean",
+        "ROE13.13%두자리",
+        "OPM12.37%10년최고",
+        "PBR0.39청산매력",
+        "배당8.37%최상위",
+        "본업V자회복"
+      ],
+      "timeseries": {
+        "source": "DART 연결재무 (2016-2025) + KRX 2026-05-13",
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "revenue_eok": [
+          2071,
+          2617,
+          2130,
+          2156,
+          2266
+        ],
+        "op_income_eok": [
+          43,
+          264,
+          235,
+          195,
+          280
+        ],
+        "net_income_eok": [
+          76,
+          289,
+          129,
+          -283,
+          247
+        ],
+        "op_margin_pct": [
+          2.07,
+          10.08,
+          11.03,
+          9.05,
+          12.37
+        ],
+        "roe_pct": [
+          4.95,
+          15.8,
+          6.63,
+          -17.12,
+          13.13
+        ],
+        "debt_ratio": [
+          57.12,
+          41.67,
+          34.73,
+          35.95,
+          37.51
+        ],
+        "per": [
+          null,
+          null,
+          null,
+          null,
+          3.0
+        ],
+        "pbr": [
+          null,
+          null,
+          null,
+          null,
+          0.39
+        ],
+        "dividend_yield": [
+          null,
+          null,
+          null,
+          null,
+          8.37
+        ],
+        "note": "본업 와이어로프: 21년 OPM 2% 저점 → 22년 호황 OPM 10% 회복 → 23~25년 OPM 11~12% 안정. 24년 순익 -283억은 영업외 약 478억 손실(7월 디에스알 계열사 주식 양도 348억 사업자금화 등 일회성), 25년 정상화. 부채비율 5년 안정 35~57%."
+      },
+      "krx_per": 3.0,
+      "krx_pbr": 0.39,
+      "krx_dividend_yield": 8.37,
+      "krx_close": 5140,
+      "krx_eps": 1714,
+      "krx_bps": 13180,
+      "krx_dps": 430,
+      "krx_asof": "2026-05-13",
+      "corporate_events": [
+        {
+          "date": "2026-Q1~Q2",
+          "type": "대표이사매수",
+          "label": "홍하종 대표이사 2026Q1 +75,233주 + 2026Q2 +6,680주 = 누적 +81,913주"
+        },
+        {
+          "date": "2025-Q4",
+          "type": "내부자매수클러스터",
+          "label": "홍하종 대표·홍유경 본부장 동시 매수 +124,289주 (3명, 10건 보고)"
+        },
+        {
+          "date": "2024-07-19",
+          "type": "계열사주식양도",
+          "label": "디에스알(주) 주식 2,530,000주 양도 348억 (자산 13.23%·자본 17.82%, 사업자금 확보)"
+        },
+        {
+          "date": "2024-Q2~Q3",
+          "type": "대주주매도",
+          "label": "홍석빈 대표 -1,728,000주 매도 (24Q3) — 24Q4 이후 매수 전환"
+        }
+      ],
+      "anomaly_score": 0,
+      "anomaly_verdict": "clean",
+      "anomaly_flags": [],
+      "insider_signal": "buy_cluster_strong",
+      "insider_detail": "2023~2026 매수 20건/매도 5건. 24년 대주주 홍석빈 -1,728,000주 매도 후 24Q4부터 차세대 경영진(홍하종 대표·홍유경 본부장·홍승현 본부장) 매수 전환. 2025Q4 매수 클러스터(3명 동시 +124,289주) + 2026Q1 홍하종 +75,233주 + 2026Q2 +6,680주 = 본업 V자 회복 자신감.",
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_audit_qualified",
+            "label": "감사의견 한정/부적정/의견거절 (최근 3년)",
+            "status": "ok",
+            "evidence": "24/25 적정의견"
+          },
+          {
+            "key": "p1_going_concern",
+            "label": "감사보고서 '계속기업 불확실성' 단락 존재",
+            "status": "ok",
+            "evidence": "없음"
+          },
+          {
+            "key": "p1_audit_delay",
+            "label": "감사보고서 법정 기한(3/31) 지연",
+            "status": "ok",
+            "evidence": "정상 제출"
+          },
+          {
+            "key": "p1_3y_op_loss",
+            "label": "3년 이상 연속 영업적자",
+            "status": "ok",
+            "evidence": "영업이익 10년 연속 흑자 (2016~2025), 25년 영업익 280억 사상 최고"
+          },
+          {
+            "key": "p1_interest_coverage",
+            "label": "이자보상배율 < 1",
+            "status": "ok",
+            "evidence": "영업익 280억 vs 이자비용 미미 (부채비율 37.5%)"
+          },
+          {
+            "key": "p1_current_ratio",
+            "label": "유동비율 < 150% 또는 감소 추세",
+            "status": "ok",
+            "evidence": "부채비율 37.5% 우량, 유동성 안정"
+          },
+          {
+            "key": "p1_impairment",
+            "label": "재고/유형자산 손상차손 반복",
+            "status": "ok",
+            "evidence": "특이사항 없음"
+          },
+          {
+            "key": "p1_cb_bw_repeat",
+            "label": "CB/BW 반복 발행",
+            "status": "ok",
+            "evidence": "자본스트레스 0건"
+          },
+          {
+            "key": "p1_asset_sale_purpose",
+            "label": "핵심자산 매각 목적이 운영자금/차입상환",
+            "status": "watch",
+            "evidence": "24.07 디에스알(주) 계열사 주식 양도 348억 사업자금 확보 (1회성)"
+          },
+          {
+            "key": "p1_related_party",
+            "label": "특수관계자 거래 복잡/불투명",
+            "status": "watch",
+            "evidence": "홍씨 가족경영 (대표 홍하종 + 본부장 홍승현·홍유경 = 형제 추정), 디에스알 계열사 관계"
+          },
+          {
+            "key": "p1_mgmt_change",
+            "label": "사명/대표이사 교체 빈번",
+            "status": "ok",
+            "evidence": "홍씨 가족 안정 경영, 73년 노포"
+          },
+          {
+            "key": "p1_capital_erosion",
+            "label": "자본총계≈자본금 또는 자본잠식 진행",
+            "status": "ok",
+            "evidence": "자본 1,880억 vs 자본금 미미 = 충분"
+          },
+          {
+            "key": "p1_secondary_finance",
+            "label": "제2금융권(저축은행/캐피털) 차입",
+            "status": "ok",
+            "evidence": "제1금융권 추정"
+          },
+          {
+            "key": "p1_profit_cash_gap",
+            "label": "흑자 + CFO 마이너스",
+            "status": "ok",
+            "evidence": "25년 순익 247억, CFO 우량 추정 (부채비율 감소 + 영업이익 회복)"
+          },
+          {
+            "key": "p1_cf_pattern_bad",
+            "label": "CF패턴 영업(-)/투자(+)/재무(+) (자산팔고 빌려 연명)",
+            "status": "ok",
+            "evidence": "정상 패턴 (영업회복 + 배당지급)"
+          },
+          {
+            "key": "p1_turnover_drop",
+            "label": "매출채권/재고자산 회전율 하락",
+            "status": "ok",
+            "evidence": "확인 무이상 (매출 안정 성장)"
+          },
+          {
+            "key": "p1_intangible_high",
+            "label": "자본총계 대비 개발비/영업권 비율 높음",
+            "status": "ok",
+            "evidence": "제조업 유형자산 중심, 무형 비중 미미"
+          },
+          {
+            "key": "p1_other_risk",
+            "label": "기타 위험 (보고서 emphasis 단락 등)",
+            "status": "hit",
+            "evidence": "24년 순익 -283억 변동성 (영업외 약 478억 손실, 일회성으로 25년 정상화)"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_revenue_up",
+            "label": "매출 꾸준한 우상향",
+            "status": "watch",
+            "evidence": "10년 CAGR 3.07% (1,725→2,266억), 22년 호황·24~25 회복"
+          },
+          {
+            "key": "p2_op_leverage",
+            "label": "영업이익 성장률 > 매출 성장률",
+            "status": "ok",
+            "evidence": "25년 영업익 +44% YoY vs 매출 +5% YoY = 강력한 영업레버리지"
+          },
+          {
+            "key": "p2_opm_competitive",
+            "label": "OPM 경쟁사 대비 우월 또는 개선",
+            "status": "ok",
+            "evidence": "OPM 12.37% 10년 최고, 3년 연속 11%+ 유지"
+          },
+          {
+            "key": "p2_roe_15_5y",
+            "label": "ROE 5년 10~15%+ 유지",
+            "status": "watch",
+            "evidence": "25년 13.13%, 22년 15.8%, 24년 -17% 변동성 큼 (5년 평균 4.79%)"
+          },
+          {
+            "key": "p2_cfo_gt_ni",
+            "label": "CFO > 당기순이익",
+            "status": "watch",
+            "evidence": "감가상각 + 영업이익 회복으로 CFO > NI 추정 (데이터 확인 필요)"
+          },
+          {
+            "key": "p2_fcf_positive",
+            "label": "FCF 플러스",
+            "status": "watch",
+            "evidence": "FCF 데이터 미확인"
+          },
+          {
+            "key": "p2_cf_pattern_good",
+            "label": "CF패턴 영업(+)/투자(-)/재무(-)",
+            "status": "ok",
+            "evidence": "정상 패턴 (영업회복 + 배당지급)"
+          },
+          {
+            "key": "p2_total_yield",
+            "label": "총주주환원율(배당+자사주소각) 높음",
+            "status": "ok",
+            "evidence": "배당 8.37% 한국 상장사 최상위 (DPS 430원)"
+          },
+          {
+            "key": "p2_buyback_burn",
+            "label": "자사주 매입 → 소각까지 실행",
+            "status": "ng",
+            "evidence": "자사주 매입/소각 0건 (배당으로만 환원)"
+          },
+          {
+            "key": "p2_dividend_growth",
+            "label": "배당 꾸준 지급/증액",
+            "status": "ok",
+            "evidence": "배당 8.37% DPS 430원 안정 지급"
+          },
+          {
+            "key": "p2_per_below_avg",
+            "label": "PER < 업종 평균 또는 자사 과거 평균",
+            "status": "ok",
+            "evidence": "PER 3.00 시장 15.21 대비 80% 할인, 철강 업종 평균 대비 압도적 저평가"
+          },
+          {
+            "key": "p2_pbr_under1",
+            "label": "PBR < 1",
+            "status": "ok",
+            "evidence": "PBR 0.39 자본 1,880억 vs 시총 약 870억 (청산가치 46%)"
+          }
+        ]
+      },
+      "financial_note": "10년 매출 CAGR 3.07%로 본업 정체이나 OPM은 5년 연속 9~12%로 상승 추세 = 효율화 진행. 24년 순익 -283억은 영업이익 +195억인데도 발생한 영업외 손실 약 478억(7월 디에스알 계열사 주식 양도 348억 사업자금 확보 등 일회성). 25년 V자 회복 + 대표이사 매수 클러스터 = 일회성 종결 시그널. 자본 1,880억 vs 시총 약 870억 = 청산가치 46% + 부채비율 37.5% 무차입 = 안전 마진 두꺼움. 배당 8.37%로 매수 후 보유 시 인컴 매력 압도적."
     }
   ],
   "market_baseline": {
