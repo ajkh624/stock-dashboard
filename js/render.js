@@ -536,7 +536,7 @@ function renderCharts() {
     return;
   }
 
-  body.innerHTML = `${checklistHTML}<div class="chart-grid">${specs.map((sp, i) => {
+  body.innerHTML = `${checklistHTML}${renderEventLegend(CURRENT_STOCK)}<div class="chart-grid">${specs.map((sp, i) => {
     const arr = pd.data[sp.key];
     const latest = arr[arr.length-1];
     return `<div class="chart-box">
@@ -552,22 +552,25 @@ function renderCharts() {
     const ctx = document.getElementById(`chart_${i}`);
     if (!ctx) return;
     const arr = pd.data[sp.key];
+    const eventDS = buildEventDataset(CURRENT_STOCK, pd.labels, arr, CURRENT_PERIOD);
+    const datasets = [{
+      label: sp.label,
+      data: arr,
+      borderColor: sp.color,
+      backgroundColor: sp.color + '22',
+      tension: 0.25,
+      spanGaps: true,
+      pointRadius: 4,
+      pointHoverRadius: 6,
+      pointBackgroundColor: sp.color,
+      fill: true,
+    }];
+    if (eventDS) datasets.push(eventDS);
     const inst = new Chart(ctx, {
       type: 'line',
       data: {
         labels: pd.labels,
-        datasets: [{
-          label: sp.label,
-          data: arr,
-          borderColor: sp.color,
-          backgroundColor: sp.color + '22',
-          tension: 0.25,
-          spanGaps: true,
-          pointRadius: 4,
-          pointHoverRadius: 6,
-          pointBackgroundColor: sp.color,
-          fill: true,
-        }]
+        datasets: datasets
       },
       options: {
         responsive: true,
@@ -579,7 +582,13 @@ function renderCharts() {
             borderColor: '#2a2f3a', borderWidth: 1,
             titleColor: '#e6e8ec', bodyColor: '#e6e8ec',
             callbacks: {
-              label: (c) => `${sp.label}: ${fmtVal(c.parsed.y, sp.unit)}`
+              label: (c) => {
+                if (c.dataset._isEvent) {
+                  const ev = c.dataset._events[c.dataIndex];
+                  return ev ? `${ev.type}: ${ev.label}` : null;
+                }
+                return `${sp.label}: ${fmtVal(c.parsed.y, sp.unit)}`;
+              }
             }
           }
         },
@@ -603,6 +612,103 @@ function renderCharts() {
     CHART_INSTANCES.push(inst);
   });
 }
+
+// ========== Corporate Events on Charts (Tier 2.3) ==========
+const EVENT_STYLES = {
+  '유증':   { color:'#fb7185', icon:'▼' },
+  'CB':     { color:'#fb7185', icon:'▼' },
+  'BW':     { color:'#fb7185', icon:'▼' },
+  '감자':   { color:'#dc2626', icon:'⚠' },
+  '매각':   { color:'#fbbf24', icon:'▼' },
+  '자사주': { color:'#4ade80', icon:'▲' },
+  '인수':   { color:'#60a5fa', icon:'●' },
+  '기타':   { color:'#9099a8', icon:'◆' },
+};
+
+function eventStyle(type) { return EVENT_STYLES[type] || EVENT_STYLES['기타']; }
+
+// 이벤트 날짜를 차트 라벨 인덱스로 매핑
+// period=annual: 연도 매칭, quarterly: YY.NQ 매칭
+function mapEventToIndex(ev, labels, period) {
+  const d = new Date(ev.date);
+  if (isNaN(d)) return -1;
+  if (period === 'annual') {
+    const y = String(d.getFullYear());
+    return labels.indexOf(y);
+  } else {
+    const yy = String(d.getFullYear()).slice(2);
+    const q = Math.floor(d.getMonth() / 3) + 1;
+    const lab = `${yy}.${q}Q`;
+    return labels.indexOf(lab);
+  }
+}
+
+function buildEventDataset(stock, labels, valArr, period) {
+  const events = stock.corporate_events;
+  if (!events || !events.length) return null;
+  // 각 라벨 인덱스 별 이벤트 묶기
+  const byIdx = new Map();
+  events.forEach(ev => {
+    const i = mapEventToIndex(ev, labels, period);
+    if (i < 0) return;
+    if (!byIdx.has(i)) byIdx.set(i, []);
+    byIdx.get(i).push(ev);
+  });
+  if (!byIdx.size) return null;
+  // 데이터 포인트: y 값은 해당 인덱스의 값 또는 inferred. 빈 인덱스는 null
+  const data = labels.map((_, i) => {
+    if (!byIdx.has(i)) return null;
+    const v = valArr[i];
+    return v != null ? v : null;
+  });
+  const evMeta = labels.map((_, i) => {
+    const evs = byIdx.get(i);
+    if (!evs) return null;
+    return { type: evs[0].type, label: evs.map(e=>e.label).join(' / ') };
+  });
+  // 첫 이벤트 색을 dataset 메인색으로
+  const firstEv = events[0];
+  const sty = eventStyle(firstEv.type);
+  return {
+    label: '자본이벤트',
+    data,
+    type: 'line',
+    showLine: false,
+    pointStyle: 'triangle',
+    pointRadius: 9,
+    pointHoverRadius: 12,
+    pointBackgroundColor: sty.color,
+    pointBorderColor: '#0f1115',
+    pointBorderWidth: 2,
+    spanGaps: false,
+    _isEvent: true,
+    _events: evMeta,
+  };
+}
+
+function renderEventLegend(stock) {
+  const events = stock.corporate_events;
+  if (!events || !events.length) return '';
+  // 타입별 그룹
+  const groups = {};
+  events.forEach(ev => {
+    if (!groups[ev.type]) groups[ev.type] = [];
+    groups[ev.type].push(ev);
+  });
+  const sorted = [...events].sort((a,b)=>(a.date||'').localeCompare(b.date||''));
+  const items = sorted.map(ev => {
+    const sty = eventStyle(ev.type);
+    return `<li><span class="ev-ico" style="color:${sty.color}">${sty.icon}</span>
+      <span class="ev-date">${ev.date}</span>
+      <span class="ev-type" style="color:${sty.color}">${ev.type}</span>
+      <span class="ev-lbl">${ev.label}</span></li>`;
+  }).join('');
+  return `<details class="event-legend" open>
+    <summary>📌 자본이벤트 ${events.length}건 — 차트 위 ▼ 마커로 표시</summary>
+    <ul class="ev-list">${items}</ul>
+  </details>`;
+}
+
 
 function updateToggleAvailability() {
   const toggle = document.getElementById('modalToggle');

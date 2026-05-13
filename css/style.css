@@ -933,3 +933,43 @@ footer { padding: 24px 16px; text-align: center; color: var(--text-dim); font-si
   .stop-row { grid-template-columns: 44px 1fr auto; gap: 6px; }
   .stop-label { display: none; }
 }
+
+/* ========= Corporate Events Legend (Tier 2.3) ========= */
+.event-legend {
+  background: rgba(251,113,133,.06);
+  border: 1px solid rgba(251,113,133,.25);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+.event-legend summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #fb7185;
+  user-select: none;
+  list-style: none;
+}
+.event-legend summary::-webkit-details-marker { display: none; }
+.event-legend summary::before { content: '▼ '; font-size: 10px; transition: transform .15s; }
+.event-legend:not([open]) summary::before { content: '▶ '; }
+.event-legend .ev-list {
+  list-style: none; padding: 8px 0 0 0; margin: 0;
+  display: flex; flex-direction: column; gap: 4px;
+}
+.event-legend .ev-list li {
+  display: grid;
+  grid-template-columns: 18px 90px 60px 1fr;
+  gap: 8px; align-items: center;
+  padding: 4px 6px;
+  border-radius: 4px;
+  background: rgba(255,255,255,.02);
+}
+.event-legend .ev-ico { font-size: 14px; text-align: center; }
+.event-legend .ev-date { color: #9099a8; font-variant-numeric: tabular-nums; font-size: 11px; }
+.event-legend .ev-type { font-weight: 600; font-size: 11px; }
+.event-legend .ev-lbl { color: #e6e8ec; font-size: 12px; }
+@media (max-width: 480px) {
+  .event-legend .ev-list li { grid-template-columns: 18px 70px 1fr; }
+  .event-legend .ev-type { display: none; }
+}
