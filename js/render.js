@@ -192,6 +192,7 @@ function renderCard(s) {
   return `
   <article class="card${hasTs?' has-ts':''}${watching?' watching':''}${pos.qty>0?' holding':''}" data-code="${s.code}" data-idx="${s._idx}" role="button" tabindex="0">
     <div class="card-actions">
+      <button class="card-cmp-btn" data-action="cmp" title="비교 바스켓에 추가/제외" aria-label="비교">☐</button>
       <button class="card-watch-btn ${watching?'active':''}" data-action="watch" title="${watching?'워치리스트에서 제거':'워치리스트에 추가'}" aria-label="워치">${watching?'⭐':'☆'}</button>
       <button class="card-trade-btn ${pos.qty>0?'active':''}" data-action="trade" title="매매 기록${pos.qty>0?` (보유 ${pos.qty}주)`:''}" aria-label="매매">📒${trades.length?`<small>${trades.length}</small>`:''}</button>
       <button class="card-alert-btn ${alertN>0?'active':''}" data-action="alert" title="가격 알림${alertN>0?` (${alertN}개 활성)`:''}" aria-label="알림">🔔${alertN?`<small>${alertN}</small>`:''}</button>
@@ -369,6 +370,7 @@ function render() {
   document.getElementById('stockCount').textContent = `${list.length} 종목`;
   document.getElementById('updatedAt').textContent = `갱신: ${shortDate(STATE.updated_at)}`;
   updateHiddenBadge();
+  if (window.Compare && window.Compare.updateUI) window.Compare.updateUI();
 }
 
 // ========== Hidden stocks 복원 모달 ==========

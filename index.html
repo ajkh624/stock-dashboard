@@ -475,10 +475,33 @@
   </div>
 </div>
 
+<!-- 종목 비교 모달 (Tier 2.1) -->
+<div class="modal" id="cmpModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close="1"></div>
+  <div class="modal-panel">
+    <button class="modal-close" data-close="1" aria-label="닫기">✕</button>
+    <header class="modal-head">
+      <div>
+        <h2 id="cmpModalTitle">📊 종목 비교</h2>
+        <p id="cmpModalSub" class="modal-sub">-</p>
+      </div>
+      <div class="modal-toggle" role="tablist">
+        <button type="button" class="seg active" id="cmpPeriodAnnual" data-period="annual">📅 연간</button>
+        <button type="button" class="seg" id="cmpPeriodQ" data-period="quarterly">📊 분기</button>
+      </div>
+    </header>
+    <div class="modal-body" id="cmpModalBody"></div>
+    <footer class="modal-foot">
+      <button class="btn-back-home" data-close="1" type="button">← 돌아가기</button>
+    </footer>
+  </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script src="js/journal-sync.js?v=1"></script>
 <script src="js/journal-ui.js?v=1"></script>
-<script src="js/render.js?v=15"></script>
+<script src="js/render.js?v=16"></script>
+<script src="js/compare.js?v=1"></script>
 <script>window.addEventListener('load', () => window.initNoteSync && window.initNoteSync());</script>
 </body>
 </html>
