@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-13T17:41:37+09:00",
+  "updated_at": "2026-05-13T18:05:24+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -14501,6 +14501,363 @@
         ]
       },
       "financial_note": "25년 순익 918억 = 관계기업 지분처분이익 689억 + 지분법이익 381억 일회성. 본업 기준 ROE 5~6%, PER ~25~30배. 표면 PER 1.84·PBR 0.63은 일회성 EPS·BPS 부풀려진 수치."
+    },
+    {
+      "analyzed_at": "2026-05-13T18:05:24+09:00",
+      "name": "SB성보",
+      "code": "003080",
+      "price": 2375.0,
+      "per": 1.44,
+      "pbr": 0.32,
+      "roe": 22.33,
+      "dividend_yield": 8.1,
+      "debt_ratio": 49.41,
+      "cfo_eok": -60.5,
+      "fcf_eok": -89.9,
+      "revenue_eok": 643.0,
+      "op_income_eok": -81.0,
+      "net_income_eok": 341.0,
+      "opinion": "회피",
+      "opinion_color": "avoid",
+      "thesis": "1961년 설립 65년 노포 농약(살균·살충제) 제조사. 표면 PER 1.44·PBR 0.32·배당 8.1% 매력적이지만 25년 순익 341억은 투자부동산 699억+유형자산 243억+금융자산 550억 등 약 1,500억 자산처분 일회성. 본업 영업이익 -81억(OPM -12.66%)·매출 CAGR 10년 1.16% 정체. 영업현금흐름 5년 중 4년 마이너스(25년 -60억 vs 순익 341억 = 명백한 괴리). 부채비율 23년 25→24년 73(장기차입 +440억)→25년 49로 급변. 본업은 농약이지만 부동산/금융자산 운용이 손익 결정 = 자산성 회사. 자본스트레스 0건·anomaly 0/100·감사 적정·윤정선 오너 33.87% 안정. 청산가치 1/3(시총 465억 vs 자본 1,528억) 자산가치주 잠재력은 있지만 신규 매수 비추, 보유자는 본업 흑전+자사주 소각 결정 시 재평가.",
+      "checklist_part1_risk": 5,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 5,
+      "checklist_part2_total": 12,
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "10년중6년영업적자(OPM-12.66%)",
+          "자산처분1500억(운영자금/차입상환)",
+          "흑자341억+CFO-60억(현금흐름트랩)",
+          "CF패턴영업-투자+재무-",
+          "이자보상배율의미없음(영업적자)"
+        ],
+        "part2_passed": [
+          "PER1.44",
+          "PBR0.32",
+          "자본스트레스0건",
+          "감사적정",
+          "배당5년연속",
+          "5년누적영업현금적자아닌해1년",
+          "자본잠식없음"
+        ],
+        "part2_failed": [
+          "매출CAGR1.16%",
+          "영업적자10년중6년",
+          "ROE15%지속",
+          "CFO>순익",
+          "CF패턴정상",
+          "자사주소각0",
+          "OPM10%+",
+          "영업레버리지",
+          "주주환원30%+"
+        ]
+      },
+      "dart_rcept": "20260318001484",
+      "source_year": 2025,
+      "tags": [
+        "농약",
+        "KOSPI",
+        "자산가치주",
+        "부동산매각",
+        "현금흐름트랩",
+        "본업영업적자",
+        "일회성이익",
+        "청산가치30%",
+        "1961노포",
+        "가족경영"
+      ],
+      "timeseries": {
+        "source": "DART 연결재무 (2016-2025) + 네이버페이/KRX 2026-05-13",
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "revenue_eok": [
+          577,
+          664,
+          626,
+          598,
+          643
+        ],
+        "op_income_eok": [
+          10,
+          19,
+          2,
+          -29,
+          -81
+        ],
+        "net_income_eok": [
+          13,
+          39,
+          12,
+          -36,
+          341
+        ],
+        "op_margin_pct": [
+          1.8,
+          2.87,
+          0.32,
+          -4.9,
+          -12.66
+        ],
+        "roe_pct": [
+          0.94,
+          2.86,
+          0.88,
+          -2.91,
+          22.33
+        ],
+        "debt_ratio": [
+          26.84,
+          24.3,
+          24.99,
+          72.98,
+          49.41
+        ],
+        "per": [
+          null,
+          null,
+          null,
+          null,
+          1.44
+        ],
+        "pbr": [
+          null,
+          null,
+          null,
+          null,
+          0.32
+        ],
+        "dividend_yield": [
+          null,
+          null,
+          null,
+          null,
+          8.1
+        ],
+        "note": "2025 net_income 341억은 투자부동산처분 699억+유형자산처분 243억+금융자산처분 550억 등 약 1,500억 자산처분 일회성. 본업 영업적자 -81억. CFO 5년 중 4년 음수."
+      },
+      "krx_per": 1.44,
+      "krx_pbr": 0.32,
+      "krx_dividend_yield": 8.1,
+      "krx_close": 2530,
+      "krx_eps": 1704,
+      "krx_bps": 7765,
+      "krx_dps": 205,
+      "krx_asof": "2026-05-13",
+      "corporate_events": [
+        {
+          "date": "2025-12-31",
+          "type": "투자부동산처분",
+          "label": "투자부동산 처분 +699억"
+        },
+        {
+          "date": "2025-12-31",
+          "type": "유형자산처분",
+          "label": "유형자산 처분 +243억"
+        },
+        {
+          "date": "2025-12-31",
+          "type": "금융자산처분",
+          "label": "비유동금융자산 처분 +550억"
+        },
+        {
+          "date": "2024-12-31",
+          "type": "장기차입",
+          "label": "장기차입금 +440억 (부채비율 25→73)"
+        }
+      ],
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_audit_qualified",
+            "label": "3년 감사의견 한정/부적정/거절",
+            "status": "ok",
+            "evidence": "24·25 적정의견 (anomaly 0/100)"
+          },
+          {
+            "key": "p1_going_concern",
+            "label": "계속기업 불확실성",
+            "status": "ok",
+            "evidence": "없음"
+          },
+          {
+            "key": "p1_audit_delayed",
+            "label": "감사보고서 제출 지연",
+            "status": "ok",
+            "evidence": "2026-03-18 정상 제출"
+          },
+          {
+            "key": "p1_operating_loss",
+            "label": "3년+ 연속 영업적자",
+            "status": "hit",
+            "evidence": "10년 중 6년 영업적자(17·19·20·24·25). 5년 평균 영업이익 -1.7억"
+          },
+          {
+            "key": "p1_interest_coverage",
+            "label": "이자보상배율 1 미만",
+            "status": "hit",
+            "evidence": "25년 영업적자 -81억, 이자비용 20억 → 영업적자라 의미無"
+          },
+          {
+            "key": "p1_current_ratio",
+            "label": "유동비율 150% 미만 or 감소",
+            "status": "na",
+            "evidence": "데이터 미수집 (부채비율 49%로 무리 없을 것)"
+          },
+          {
+            "key": "p1_impairment_recurring",
+            "label": "재고/유형 손상차손 반복",
+            "status": "ok",
+            "evidence": "특이사항 없음"
+          },
+          {
+            "key": "p1_cb_bw_repeat",
+            "label": "CB/BW 반복 발행",
+            "status": "ok",
+            "evidence": "5년 0건"
+          },
+          {
+            "key": "p1_asset_sale_for_debt",
+            "label": "핵심자산 매각 (운영자금/차입상환 목적)",
+            "status": "hit",
+            "evidence": "25년 투자부동산 699억+유형 243억+금융 550억 = 1,500억 처분 → 차입금 47억 상환 + 금융자산 재투자"
+          },
+          {
+            "key": "p1_related_party",
+            "label": "특수관계자 거래 복잡/불투명",
+            "status": "ok",
+            "evidence": "가족경영 48.62% 특수관계 단순, 거래 미공시 없음"
+          },
+          {
+            "key": "p1_ceo_namechange",
+            "label": "사명/대표 빈번한 교체",
+            "status": "ok",
+            "evidence": "성보화학→SB성보 사명 변경 1회 외 안정"
+          },
+          {
+            "key": "p1_capital_impairment",
+            "label": "자본총계 ≈ 자본금 or 자본잠식",
+            "status": "ok",
+            "evidence": "자본 1,528억 충분"
+          },
+          {
+            "key": "p1_secondary_loan",
+            "label": "제2금융권 차입",
+            "status": "ok",
+            "evidence": "제1금융권 추정"
+          },
+          {
+            "key": "p1_profit_cf_gap",
+            "label": "흑자 + CFO 음수",
+            "status": "hit",
+            "evidence": "25년 순익 +341억 vs CFO -60억 = 명백한 괴리 (5년 중 4년 CFO 음수)"
+          },
+          {
+            "key": "p1_cf_pattern",
+            "label": "CF패턴 영업(-)/투자(+)/재무(-)",
+            "status": "hit",
+            "evidence": "25년 영업-60/투자+455/재무-328 = 자산처분 의존 일회성 패턴"
+          },
+          {
+            "key": "p1_turnover_drop",
+            "label": "매출채권/재고 회전율 하락",
+            "status": "na",
+            "evidence": "세부 데이터 미수집"
+          },
+          {
+            "key": "p1_intangible_heavy",
+            "label": "자본 대비 개발비/영업권 30%+",
+            "status": "ok",
+            "evidence": "농약·부동산 자산 위주, 무형자산 비중 낮음"
+          },
+          {
+            "key": "p1_goodwill_risk",
+            "label": "인수 자회사 손상",
+            "status": "ok",
+            "evidence": "M&A 이력 없음"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_revenue_up",
+            "label": "매출 CAGR ≥ 5%",
+            "status": "ng",
+            "evidence": "10년 CAGR 1.16% (580→643억)"
+          },
+          {
+            "key": "p2_oper_leverage",
+            "label": "영업익 성장 > 매출 성장",
+            "status": "ng",
+            "evidence": "매출 +7% YoY인데 영업이익 -29→-81 적자 확대"
+          },
+          {
+            "key": "p2_opm",
+            "label": "OPM 10%+ 개선/유지",
+            "status": "ng",
+            "evidence": "-12.66% (2.87 → 0.32 → -4.90 → -12.66 4년 연속 악화)"
+          },
+          {
+            "key": "p2_roe_high",
+            "label": "ROE 10~15%+ 지속",
+            "status": "ng",
+            "evidence": "10년 평균 7.42% / stddev 14.91 변동성 극심. 25년 22% 일회성"
+          },
+          {
+            "key": "p2_cfo_gt_ni",
+            "label": "CFO > 순이익",
+            "status": "ng",
+            "evidence": "25년 CFO -60억 < 순익 341억. 5년 중 4년 CFO 음수 (21·23·24·25)"
+          },
+          {
+            "key": "p2_fcf_positive",
+            "label": "FCF 5년 연속 +",
+            "status": "ng",
+            "evidence": "25년 FCF -90억(CFO -60 - CapEx 30), 자산처분 1,500억 제외 시 부정"
+          },
+          {
+            "key": "p2_cf_pattern",
+            "label": "CF패턴 영업+/투자-/재무-",
+            "status": "ng",
+            "evidence": "위반 (위험 #15와 동일)"
+          },
+          {
+            "key": "p2_payout_ratio",
+            "label": "총주주환원율 30%+",
+            "status": "ng",
+            "evidence": "배당 40억 / 순익 341억 = 11.7% (24년 -73%, 23년 220%로 변동 큼)"
+          },
+          {
+            "key": "p2_treasury_burn",
+            "label": "자사주 소각 실행",
+            "status": "ng",
+            "evidence": "자사주 432,000주(2.16%) 매입만, 소각 0건"
+          },
+          {
+            "key": "p2_dividend_5yr",
+            "label": "배당 5년 연속/증가",
+            "status": "ok",
+            "evidence": "5년 연속 배당 + 25년 26.5→40억 +51% 증액"
+          },
+          {
+            "key": "p2_per_cheap",
+            "label": "PER 업종/과거 평균↓",
+            "status": "ok",
+            "evidence": "PER 1.44 (시장 15.21 대비 91% 할인) — 단 일회성 EPS 1,704원 기준"
+          },
+          {
+            "key": "p2_pbr_low",
+            "label": "PBR < 1",
+            "status": "ok",
+            "evidence": "PBR 0.32 — 자본 1,528억 vs 시총 465억 (청산가치 30%)"
+          }
+        ]
+      },
+      "financial_note": "25년 순익 341억 = 투자부동산 699억 + 유형자산 243억 + 금융자산 550억 등 약 1,500억 자산처분 일회성. 본업(농약) 영업적자 -81억. CFO 5년 중 4년 마이너스 = 본업 현금창출력 없음. 부동산 자산가치주 잠재력은 있지만 우량주 기준 미달. 본업 PER 정상화 시 ~50배 이상."
     }
   ],
   "market_baseline": {
