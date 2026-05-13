@@ -33,7 +33,7 @@
     clear() { this.codes.clear(); this.save(); },
     has(code) { return this.codes.has(code); },
     list() {
-      const all = (window.STATE && STATE.stocks) || [];
+      const all = (typeof STATE !== 'undefined' && STATE.stocks) || (window.STATE && STATE.stocks) || [];
       return [...this.codes].map(c => all.find(s => s.code === c)).filter(Boolean);
     }
   };
@@ -173,7 +173,7 @@
   }
 
   function buildHeaderTable(stocks) {
-    const live = window.STATE?.livePrices || {};
+    const live = (typeof STATE !== 'undefined' ? STATE.livePrices : window.STATE?.livePrices) || {};
     const head = stocks.map(s => `<th>${s.name}<br><small>${s.code}</small></th>`).join('');
     const row = (label, cells, hint='') => `<tr><th class="lbl"${hint?` title="${hint}"`:''}>${label}</th>${cells}</tr>`;
     const cell = (val, cls='') => `<td class="${cls}">${val}</td>`;
