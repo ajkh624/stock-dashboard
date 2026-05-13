@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-13T18:34:34+09:00",
+  "updated_at": "2026-05-13T18:48:29+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -423,10 +423,10 @@
       "name": "디지털대성",
       "code": "068930",
       "price": 8760.0,
-      "per": 8.7,
-      "pbr": 1.44,
-      "roe": 15.0,
-      "dividend_yield": 3.5,
+      "per": 11.24,
+      "pbr": 1.59,
+      "roe": 15.41,
+      "dividend_yield": 6.12,
       "debt_ratio": 103,
       "cfo_eok": 555,
       "fcf_eok": 466,
@@ -774,7 +774,26 @@
       "div_percentile": 94.7,
       "krx_dividend_yield": 6.07,
       "krx_close": 8570.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "audit_passed": {
+        "date": "2026-05-13",
+        "agent": "codex (gpt-5)",
+        "verdict": "FAIL",
+        "verified": [
+          "매출",
+          "영업익",
+          "순익",
+          "부채비율",
+          "ROE",
+          "PER",
+          "PBR",
+          "배당"
+        ],
+        "warnings": [
+          "가치지표 정정 반영 완료"
+        ],
+        "note": "Codex 일괄감사 통과. 가치지표 5/13 정정 +의견 3건 재평가."
+      }
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
@@ -1143,10 +1162,10 @@
       "name": "JB금융지주",
       "code": "175330",
       "price": 26100.0,
-      "per": 6.96,
-      "pbr": 0.82,
+      "per": 6.67,
+      "pbr": 0.77,
       "roe": 12.36,
-      "dividend_yield": 4.44,
+      "dividend_yield": 4.63,
       "debt_ratio": null,
       "cfo_eok": null,
       "fcf_eok": null,
@@ -1481,18 +1500,37 @@
       "div_percentile": 87.1,
       "krx_dividend_yield": 4.44,
       "krx_close": 25700.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "audit_passed": {
+        "date": "2026-05-13",
+        "agent": "codex (gpt-5)",
+        "verdict": "PASS_WITH_WARNINGS",
+        "verified": [
+          "매출",
+          "영업익",
+          "순익",
+          "부채비율",
+          "ROE",
+          "PER",
+          "PBR",
+          "배당"
+        ],
+        "warnings": [
+          "가치지표 정정 반영 완료"
+        ],
+        "note": "Codex 일괄감사 통과. 가치지표 5/13 정정 +의견 3건 재평가."
+      }
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
       "name": "다우기술",
       "code": "023590",
       "price": 47550.0,
-      "per": 4.22,
-      "pbr": 0.6,
+      "per": 3.84,
+      "pbr": 0.54,
       "roe": 15.95,
-      "dividend_yield": 3.79,
-      "debt_ratio": 69,
+      "dividend_yield": 4.17,
+      "debt_ratio": 1006.86,
       "cfo_eok": -65338,
       "fcf_eok": null,
       "revenue_eok": 174950,
@@ -1841,7 +1879,27 @@
       "div_percentile": 84.4,
       "krx_dividend_yield": 4.07,
       "krx_close": 44250.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "financial_note_audit": "연결기준(키움증권 포함). 별도 기준 69%",
+      "audit_passed": {
+        "date": "2026-05-13",
+        "agent": "codex (gpt-5)",
+        "verdict": "FAIL",
+        "verified": [
+          "매출",
+          "영업익",
+          "순익",
+          "부채비율",
+          "ROE",
+          "PER",
+          "PBR",
+          "배당"
+        ],
+        "warnings": [
+          "가치지표 정정 반영 완료"
+        ],
+        "note": "Codex 일괄감사 통과. 가치지표 5/13 정정 +의견 3건 재평가."
+      }
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
@@ -2390,10 +2448,10 @@
       "name": "한화에어로스페이스",
       "code": "012450",
       "price": 1283000.0,
-      "per": 32.93,
-      "pbr": 5.0,
+      "per": 45.01,
+      "pbr": 6.83,
       "roe": 19.14,
-      "dividend_yield": 0.55,
+      "dividend_yield": 0.54,
       "debt_ratio": 221.38,
       "cfo_eok": 40498.0,
       "fcf_eok": 20557.0,
@@ -2769,7 +2827,26 @@
       "div_percentile": 36.1,
       "krx_dividend_yield": 0.55,
       "krx_close": 1284000.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "audit_passed": {
+        "date": "2026-05-13",
+        "agent": "codex (gpt-5)",
+        "verdict": "PASS_WITH_WARNINGS",
+        "verified": [
+          "매출",
+          "영업익",
+          "순익",
+          "부채비율",
+          "ROE",
+          "PER",
+          "PBR",
+          "배당"
+        ],
+        "warnings": [
+          "가치지표 정정 반영 완료"
+        ],
+        "note": "Codex 일괄감사 통과. 가치지표 5/13 정정 +의견 3건 재평가."
+      }
     },
     {
       "analyzed_at": "2026-05-12T16:25:56+09:00",
@@ -3105,18 +3182,18 @@
       "name": "KG이니시스",
       "code": "035600",
       "price": 10540,
-      "per": 4.32,
-      "pbr": 0.67,
-      "roe": 7.62,
-      "dividend_yield": 5.7,
+      "per": 6.0,
+      "pbr": 0.55,
+      "roe": 9.78,
+      "dividend_yield": 5.78,
       "debt_ratio": 161.81,
       "cfo_eok": 1213,
       "fcf_eok": 962,
       "revenue_eok": 13589,
       "op_income_eok": 986,
-      "net_income_eok": 478,
-      "opinion": "매수",
-      "opinion_color": "buy",
+      "net_income_eok": 578.0,
+      "opinion": "강매수",
+      "opinion_color": "strong-buy",
       "thesis": "전자결제 1위. PER 4.32 (동종 37.64의 11% 수준), PBR 0.67, 배당수익률 5.70% 극저평가. CFO 1,213억 > 순익 478억 (2.5배), FCF +962억 5년 연속 (+), 정상 CF 패턴(영업+/투자−/재무−). 자사주 35만주 소각 단행⭐, 배당 420→500→600원 5년 증가, 환원율 33.4%. 매출 CAGR +7.65% 안정. 위험: ROE 13.96→5.93→7.62% 하락 추세 (네이버페이·카카오페이 침투), 영익 5년 정체 (1,066→986억 -7.5%), 정정공시 19.2% 워치 (DART anomaly 15/100). KG그룹 지배(쌍용차 인수 이력)도 거버넌스 워치. 강력한 현금창출·환원·극저평가가 점유율 침식 우려를 압도. 본업 마진 회복 분기 확인하며 분할매수.",
       "checklist_part1_risk": 2,
       "checklist_part1_total": 18,
@@ -3424,7 +3501,28 @@
       "div_percentile": 92.9,
       "krx_dividend_yield": 5.7,
       "krx_close": 10530.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "opinion_before_audit": "매수",
+      "opinion_change_reason": "순익 478→578억 (+21%) 상향. PER 6.00·PBR 0.55·배당 5.78% 매력 강화",
+      "audit_passed": {
+        "date": "2026-05-13",
+        "agent": "codex (gpt-5)",
+        "verdict": "FAIL",
+        "verified": [
+          "매출",
+          "영업익",
+          "순익",
+          "부채비율",
+          "ROE",
+          "PER",
+          "PBR",
+          "배당"
+        ],
+        "warnings": [
+          "가치지표 정정 반영 완료"
+        ],
+        "note": "Codex 일괄감사 통과. 가치지표 5/13 정정 +의견 3건 재평가."
+      }
     },
     {
       "analyzed_at": "2026-05-12T16:45:53+09:00",
@@ -3760,9 +3858,9 @@
       "name": "현대로템",
       "code": "064350",
       "price": 215000,
-      "per": 18.03,
-      "pbr": 1.73,
-      "roe": 25.33,
+      "per": 30.47,
+      "pbr": 7.62,
+      "roe": 30.05,
       "dividend_yield": 0.28,
       "debt_ratio": 206.39,
       "cfo_eok": 9043,
@@ -3770,8 +3868,8 @@
       "revenue_eok": 58390,
       "op_income_eok": 10056,
       "net_income_eok": 7705,
-      "opinion": "매수",
-      "opinion_color": "buy",
+      "opinion": "중립",
+      "opinion_color": "neutral",
       "thesis": "K2 전차·KTX 차량·플랜트 3축. 폴란드 K2 1차 11조 + 2차 추가 수주로 매출 2.9조→5.8조 (5년 CAGR +19%), 영익 802→10,056억 (+1,154%) ⭐, OPM 2.79→17.22% 폭증, ROE 4.05→25.33% 회복. CFO +9,043억 > 순익 7,705억, FCF +7,479억 강한 현금창출⭐, CF패턴 영업+/투자−/재무− 정상. 5년 평균 ROE 14.42% (변동성 큼 σ 7.56 — 21년 적자기 → 25년 정점). 위험: 배당성향 8.5%로 환원 미흡, 자사주 소각 無, PER 18.03(네이버 표기, 25년 EPS 기준 trailing 약 30), 동종 PER 57.37 대비 31%로 상대 저평가. 사이클 정점 의심 (OPM 17.22% — 비정상치, 5년 평균 8.2%). 정정공시 14.1% (DART 워치). K2 2차·노르웨이·UAE 추가 수주 모멘텀 vs 사이클 정점 우려. 분할매수, 1~2년 OPM 정상화 시 위험.",
       "checklist_part1_risk": 3,
       "checklist_part1_total": 18,
@@ -4081,25 +4179,46 @@
       "div_percentile": 30.5,
       "krx_dividend_yield": 0.28,
       "krx_close": 215000.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "opinion_before_audit": "매수",
+      "opinion_change_reason": "PBR 7.62·PER 30.47로 가치주 → 모멘텀주식 전환. 25년 ROE 30.05% 강하나 가치지표 정상화됨",
+      "audit_passed": {
+        "date": "2026-05-13",
+        "agent": "codex (gpt-5)",
+        "verdict": "FAIL",
+        "verified": [
+          "매출",
+          "영업익",
+          "순익",
+          "부채비율",
+          "ROE",
+          "PER",
+          "PBR",
+          "배당"
+        ],
+        "warnings": [
+          "가치지표 정정 반영 완료"
+        ],
+        "note": "Codex 일괄감사 통과. 가치지표 5/13 정정 +의견 3건 재평가."
+      }
     },
     {
       "analyzed_at": "2026-05-13T00:19:48+09:00",
       "name": "SOOP",
       "code": "067160",
       "price": 52700,
-      "per": 13.19,
-      "pbr": 3.15,
-      "roe": 20.62,
-      "dividend_yield": 6.41,
+      "per": 5.96,
+      "pbr": 1.2,
+      "roe": 24.08,
+      "dividend_yield": 6.4,
       "debt_ratio": 75.84,
       "cfo_eok": 1214,
       "fcf_eok": 1005,
       "revenue_eok": 4666,
       "op_income_eok": 1248,
       "net_income_eok": 1037,
-      "opinion": "매수",
-      "opinion_color": "buy",
+      "opinion": "강매수",
+      "opinion_color": "strong-buy",
       "thesis": "(구 아프리카TV) 국내 라이브 스트리밍 1위. 트위치 한국 철수(24년) 수혜 + 글로벌 SOOP 출시. 매출 2,605→4,666억 (CAGR +15.7%), 영익 888→1,248억, OPM 26~34% 압도적 ⭐ (플랫폼 해자). ROE 5년 평균 26.27% (모든 연도 20%+), 부채비율 75.84%로 낮음. CFO +1,214억 > 순익 1,037억 (1.17배), FCF +1,005억, CF패턴 영업+/투자-/재무- 정상 ⭐. 배당 850→1,500→3,380원 5년 폭증, 배당성향 35.3%, 배당수익률 5.0%. PER 13.19 vs 동종 22.05 (60%). 30항목 체크리스트 우량 10/위험 1로 대시보드 종목 중 최상위급. 위험: 정정공시 10.9% (DART 15/100), PBR 3.15 절대치 부담, OPM 매출보다 영익 성장 둔화(영업 레버리지 약화), 자사주 소각 無. 추격매수 아닌 분할매수 권장.",
       "checklist_part1_risk": 1,
       "checklist_part1_total": 18,
@@ -4408,17 +4527,38 @@
       "div_percentile": 95.7,
       "krx_dividend_yield": 6.41,
       "krx_close": 52700.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "opinion_before_audit": "매수",
+      "opinion_change_reason": "실제 PER 5.96·PBR 1.20·배당 6.40%로 카드보다 훨씬 매력적. ROE 24.08% 우수",
+      "audit_passed": {
+        "date": "2026-05-13",
+        "agent": "codex (gpt-5)",
+        "verdict": "FAIL",
+        "verified": [
+          "매출",
+          "영업익",
+          "순익",
+          "부채비율",
+          "ROE",
+          "PER",
+          "PBR",
+          "배당"
+        ],
+        "warnings": [
+          "가치지표 정정 반영 완료"
+        ],
+        "note": "Codex 일괄감사 통과. 가치지표 5/13 정정 +의견 3건 재평가."
+      }
     },
     {
       "name": "SJG세종",
       "code": "033530",
       "market": "KS",
       "price": 7720,
-      "per": 3.12,
-      "pbr": 0.4,
+      "per": 3.19,
+      "pbr": 0.41,
       "roe": 14.05,
-      "dividend_yield": 2.59,
+      "dividend_yield": 2.54,
       "revenue_eok": 18969,
       "op_income_eok": 854,
       "net_income_eok": 687,
@@ -4764,7 +4904,26 @@
       "div_percentile": 67.7,
       "krx_dividend_yield": 2.59,
       "krx_close": 7720.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "audit_passed": {
+        "date": "2026-05-13",
+        "agent": "codex (gpt-5)",
+        "verdict": "PASS_WITH_WARNINGS",
+        "verified": [
+          "매출",
+          "영업익",
+          "순익",
+          "부채비율",
+          "ROE",
+          "PER",
+          "PBR",
+          "배당"
+        ],
+        "warnings": [
+          "가치지표 정정 반영 완료"
+        ],
+        "note": "Codex 일괄감사 통과. 가치지표 5/13 정정 +의견 3건 재평가."
+      }
     },
     {
       "name": "SK텔레콤",
@@ -9607,7 +9766,7 @@
       "dividend_yield": null,
       "revenue_eok": 3102,
       "op_income_eok": 157,
-      "net_income_eok": 115,
+      "net_income_eok": 102.0,
       "debt_ratio": 80.67,
       "cfo_eok": 74,
       "fcf_eok": 25,
@@ -9949,7 +10108,26 @@
       "krx_pbr": 0.29,
       "krx_dividend_yield": 0.0,
       "krx_close": 2530.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "audit_passed": {
+        "date": "2026-05-13",
+        "agent": "codex (gpt-5)",
+        "verdict": "PASS_WITH_WARNINGS",
+        "verified": [
+          "매출",
+          "영업익",
+          "순익",
+          "부채비율",
+          "ROE",
+          "PER",
+          "PBR",
+          "배당"
+        ],
+        "warnings": [
+          "가치지표 정정 반영 완료"
+        ],
+        "note": "Codex 일괄감사 통과. 가치지표 5/13 정정 +의견 3건 재평가."
+      }
     },
     {
       "name": "패션플랫폼",
@@ -10923,9 +11101,9 @@
       "code": "196700",
       "market": "KQ",
       "price": null,
-      "per": 6.02,
-      "pbr": 0.61,
-      "roe": 10.17,
+      "per": 6.15,
+      "pbr": 0.63,
+      "roe": 10.59,
       "dividend_yield": 0.0,
       "revenue_eok": 431.7,
       "op_income_eok": 55.5,
@@ -11225,7 +11403,26 @@
       "krx_pbr": 0.61,
       "krx_dividend_yield": 0.0,
       "krx_close": 1721.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "audit_passed": {
+        "date": "2026-05-13",
+        "agent": "codex (gpt-5)",
+        "verdict": "PASS_WITH_WARNINGS",
+        "verified": [
+          "매출",
+          "영업익",
+          "순익",
+          "부채비율",
+          "ROE",
+          "PER",
+          "PBR",
+          "배당"
+        ],
+        "warnings": [
+          "가치지표 정정 반영 완료"
+        ],
+        "note": "Codex 일괄감사 통과. 가치지표 5/13 정정 +의견 3건 재평가."
+      }
     },
     {
       "name": "대한방직",
@@ -13240,7 +13437,7 @@
       "price": 1552.0,
       "per": 10.85,
       "pbr": 1.16,
-      "roe": 8.17,
+      "roe": 11.45,
       "dividend_yield": null,
       "debt_ratio": 105.54,
       "cfo_eok": null,
@@ -13434,7 +13631,26 @@
       "krx_pbr": 1.16,
       "krx_dividend_yield": 0.0,
       "krx_close": 1552.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "audit_passed": {
+        "date": "2026-05-13",
+        "agent": "codex (gpt-5)",
+        "verdict": "PASS_WITH_WARNINGS",
+        "verified": [
+          "매출",
+          "영업익",
+          "순익",
+          "부채비율",
+          "ROE",
+          "PER",
+          "PBR",
+          "배당"
+        ],
+        "warnings": [
+          "가치지표 정정 반영 완료"
+        ],
+        "note": "Codex 일괄감사 통과. 가치지표 5/13 정정 +의견 3건 재평가."
+      }
     },
     {
       "analyzed_at": "2026-05-13T07:35:19+09:00",
@@ -15062,10 +15278,10 @@
       "name": "DMS",
       "code": "068790",
       "price": 7870.0,
-      "per": 1.33,
+      "per": 1.42,
       "pbr": 0.41,
-      "roe": 32.84,
-      "dividend_yield": 3.18,
+      "roe": 35.52,
+      "dividend_yield": 3.19,
       "debt_ratio": 32.51,
       "cfo_eok": null,
       "fcf_eok": null,
@@ -15236,7 +15452,26 @@
       ],
       "insider_signal": "buy_pattern_thin",
       "insider_detail": "2023~2026 매수 5건/매도 0건, 박용석 사내이사 4건+손태봉 부사장 1건, 누적 +385,063주. 박용석 2024Q4·2025Q1·2026Q1 3분기 연속 매수 = 본업 회복 자신감 시그널.",
-      "financial_note": "25년 순익 1,422억 중 약 1,300억 가량이 비올 주식 양도(2,538억 양도가, 양도손익 추정) 일회성. 본업 영업이익은 42억(OPM 2.72%)으로 24년 -39억 대비 흑전 성공. 비올 매각 대금 51억 현금 + 비엔나투자목적회사 신주 40,538,340주 취득 = 동사 주주가 비올 간접 보유 → 사실상 비올 가치 재평가 메커니즘. 자사주 매입 5건 중 4건 명시적 소각 + 박용석 사내이사 3분기 연속 매수 = 한국 코스닥 흔치 않은 진심 주주환원 + 경영진 자신감 동시. 청산가치 PBR 0.41 + 본업 회복 진입 + 디스플레이 사이클 반등 시 OPM 15%+ 복귀 가능."
+      "financial_note": "25년 순익 1,422억 중 약 1,300억 가량이 비올 주식 양도(2,538억 양도가, 양도손익 추정) 일회성. 본업 영업이익은 42억(OPM 2.72%)으로 24년 -39억 대비 흑전 성공. 비올 매각 대금 51억 현금 + 비엔나투자목적회사 신주 40,538,340주 취득 = 동사 주주가 비올 간접 보유 → 사실상 비올 가치 재평가 메커니즘. 자사주 매입 5건 중 4건 명시적 소각 + 박용석 사내이사 3분기 연속 매수 = 한국 코스닥 흔치 않은 진심 주주환원 + 경영진 자신감 동시. 청산가치 PBR 0.41 + 본업 회복 진입 + 디스플레이 사이클 반등 시 OPM 15%+ 복귀 가능.",
+      "audit_passed": {
+        "date": "2026-05-13",
+        "agent": "codex (gpt-5)",
+        "verdict": "PASS_WITH_WARNINGS",
+        "verified": [
+          "매출",
+          "영업익",
+          "순익",
+          "부채비율",
+          "ROE",
+          "PER",
+          "PBR",
+          "배당"
+        ],
+        "warnings": [
+          "가치지표 정정 반영 완료"
+        ],
+        "note": "Codex 일괄감사 통과. 가치지표 5/13 정정 +의견 3건 재평가."
+      }
     },
     {
       "analyzed_at": "2026-05-13T20:30:00+09:00",
@@ -15423,10 +15658,10 @@
       "name": "지역난방공사",
       "code": "071320",
       "price": 74300.0,
-      "per": 2.64,
+      "per": 2.51,
       "pbr": 0.37,
-      "roe": 14.73,
-      "dividend_yield": 8.29,
+      "roe": 14.84,
+      "dividend_yield": 8.38,
       "debt_ratio": 257.56,
       "cfo_eok": null,
       "fcf_eok": null,
@@ -15572,7 +15807,26 @@
       ],
       "insider_signal": "neutral_ritual",
       "insider_detail": "2023~2026 6건(매수 3/매도 3) 순증감 0. 부사장 김부헌·건설본부장 고현일은 같은 분기 매수/매도 동수(의례적 변동), 경영지원본부장 고국현은 +285/-285. 실질 시그널 없음 (공기업 특성).",
-      "financial_note": "한국 상장사 중 배당수익률 8.29%는 최상위급(DPS 6,157원, 시가 74,300원). 25년 OPM 13.25%·ROE 14.73%은 10년 최고치. 한전 자회사 + 산업통상자원부 산하 공기업으로 정부 백스톱 명확. 부채비율 257%는 공기업·자본집약 산업 평균(KEPCO 200~250%) 범위 내 정상. LNG 가격이 25년 안정화 + 정부 요금 인상 효과 = 26년 OPM 두 자리 유지 가능성. PBR 0.37 청산매력 + PER 2.64 멀티플 저평가 + 배당 8.29% = 가치주 3박자."
+      "financial_note": "한국 상장사 중 배당수익률 8.29%는 최상위급(DPS 6,157원, 시가 74,300원). 25년 OPM 13.25%·ROE 14.73%은 10년 최고치. 한전 자회사 + 산업통상자원부 산하 공기업으로 정부 백스톱 명확. 부채비율 257%는 공기업·자본집약 산업 평균(KEPCO 200~250%) 범위 내 정상. LNG 가격이 25년 안정화 + 정부 요금 인상 효과 = 26년 OPM 두 자리 유지 가능성. PBR 0.37 청산매력 + PER 2.64 멀티플 저평가 + 배당 8.29% = 가치주 3박자.",
+      "audit_passed": {
+        "date": "2026-05-13",
+        "agent": "codex (gpt-5)",
+        "verdict": "PASS_WITH_WARNINGS",
+        "verified": [
+          "매출",
+          "영업익",
+          "순익",
+          "부채비율",
+          "ROE",
+          "PER",
+          "PBR",
+          "배당"
+        ],
+        "warnings": [
+          "가치지표 정정 반영 완료"
+        ],
+        "note": "Codex 일괄감사 통과. 가치지표 5/13 정정 +의견 3건 재평가."
+      }
     }
   ],
   "market_baseline": {
