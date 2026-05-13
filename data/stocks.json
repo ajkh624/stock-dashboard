@@ -1187,7 +1187,7 @@
       "roe": 12.36,
       "dividend_yield": 4.63,
       "debt_ratio": null,
-      "cfo_eok": null,
+      "cfo_eok": -11375,
       "fcf_eok": null,
       "revenue_eok": 20449,
       "op_income_eok": 9523,
@@ -1538,7 +1538,27 @@
       },
       "opinion_before_review": "매수",
       "review_date": "2026-05-13",
-      "review_reason": "보수적 기준 적용 (매수=위험≤2&우량≥8, 강매수=위험≤1&우량≥10). 현재 위험 0 우량 10 → 강매수 강등"
+      "review_reason": "보수적 기준 적용 (매수=위험≤2&우량≥8, 강매수=위험≤1&우량≥10). 현재 위험 0 우량 10 → 강매수 강등",
+      "capex_eok": 1148,
+      "is_financial": true,
+      "cf_note": "금융지주 — CFO는 대출채권·예치금 증가가 음수로 잡혀 일반 FCF 개념 부적합. 주주환원 기준: 배당 2,200억 + 자사주매입 1,063억 = 3,263억",
+      "cf_trend": {
+        "2023": {
+          "cfo": -2999,
+          "capex": 4343,
+          "fcf": null
+        },
+        "2024": {
+          "cfo": -9632,
+          "capex": 1097,
+          "fcf": null
+        },
+        "2025": {
+          "cfo": -11375,
+          "capex": 1148,
+          "fcf": null
+        }
+      }
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
@@ -1919,7 +1939,27 @@
       },
       "opinion_before_review": "매수",
       "review_date": "2026-05-13",
-      "review_reason": "보수적 기준 적용 (매수=위험≤2&우량≥8, 강매수=위험≤1&우량≥10). 현재 위험 1 우량 11 → 강매수 강등"
+      "review_reason": "보수적 기준 적용 (매수=위험≤2&우량≥8, 강매수=위험≤1&우량≥10). 현재 위험 1 우량 11 → 강매수 강등",
+      "capex_eok": 1315,
+      "is_financial": true,
+      "cf_note": "증권업(키움증권 연결) — CFO 음수는 당기손익-공정가치측정금융자산 +13.5조, 대출채권 +4조 운전자본 증가에서 비롯. 일반 FCF 개념 부적합. 별도(다우기술 단독)는 + CFO. 주주환원: 배당 1,855억",
+      "cf_trend": {
+        "2023": {
+          "cfo": -20498,
+          "capex": 1046,
+          "fcf": null
+        },
+        "2024": {
+          "cfo": -49078,
+          "capex": 676,
+          "fcf": null
+        },
+        "2025": {
+          "cfo": -65338,
+          "capex": 1315,
+          "fcf": null
+        }
+      }
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
@@ -16963,8 +17003,8 @@
       "roe": 35.52,
       "dividend_yield": 3.19,
       "debt_ratio": 32.51,
-      "cfo_eok": null,
-      "fcf_eok": null,
+      "cfo_eok": 360,
+      "fcf_eok": 290,
       "revenue_eok": 1555.0,
       "op_income_eok": 42.0,
       "net_income_eok": 1422.0,
@@ -17334,6 +17374,24 @@
             "evidence": "PBR 0.41 청산가치"
           }
         ]
+      },
+      "capex_eok": 70,
+      "cf_trend": {
+        "2023": {
+          "cfo": -280,
+          "capex": 449,
+          "fcf": -729
+        },
+        "2024": {
+          "cfo": 611,
+          "capex": 47,
+          "fcf": 564
+        },
+        "2025": {
+          "cfo": 360,
+          "capex": 70,
+          "fcf": 290
+        }
       }
     },
     {
@@ -18076,8 +18134,8 @@
       "roe": 13.13,
       "dividend_yield": 8.37,
       "debt_ratio": 37.51,
-      "cfo_eok": null,
-      "fcf_eok": null,
+      "cfo_eok": 166,
+      "fcf_eok": 140,
       "revenue_eok": 2266.0,
       "op_income_eok": 280.0,
       "net_income_eok": 247.0,
@@ -18439,6 +18497,24 @@
         ],
         "errors": [],
         "note": "DART 25년 사업보고서 일관, 24년 손실 원인 정정 완료. 매수 의견 유지."
+      },
+      "capex_eok": 26,
+      "cf_trend": {
+        "2023": {
+          "cfo": 417,
+          "capex": 19,
+          "fcf": 398
+        },
+        "2024": {
+          "cfo": 62,
+          "capex": 62,
+          "fcf": 0
+        },
+        "2025": {
+          "cfo": 166,
+          "capex": 26,
+          "fcf": 140
+        }
       }
     },
     {
