@@ -1101,3 +1101,38 @@ footer { padding: 24px 16px; text-align: center; color: var(--text-dim); font-si
   color: #fff;
   border-color: rgba(239,68,68,0.5);
 }
+
+/* ========== 네이버 vs KRX 비교 셀 ========== */
+th .hdr-aux {
+  display: block;
+  font-size: 9px;
+  color: #93c5fd;
+  font-weight: 500;
+  margin-top: 1px;
+  letter-spacing: 0.3px;
+}
+.cmp-cell { white-space: nowrap; }
+.cmp-cell .krx-aux {
+  color: #93c5fd;
+  font-size: 11px;
+  margin-left: 1px;
+}
+.cmp-cell .cmp-diff {
+  font-size: 10px;
+  margin-left: 2px;
+  padding: 1px 4px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.cmp-cell .cmp-diff.diff-small {
+  color: var(--text-dim);
+  background: rgba(255,255,255,0.04);
+}
+.cmp-cell .cmp-diff.diff-mid {
+  color: #fbbf24;
+  background: rgba(245,158,11,0.12);
+}
+.cmp-cell .cmp-diff.diff-large {
+  color: #f87171;
+  background: rgba(239,68,68,0.15);
+}

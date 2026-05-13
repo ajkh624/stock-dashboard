@@ -69,6 +69,27 @@ const fmt = (n, suffix='') => (n == null ? '-' : Number(n).toLocaleString() + su
 const fmtPct = (n) => (n == null ? '-' : Number(n).toFixed(1) + '%');
 const fmtX = (n) => (n == null ? '-' : Number(n).toFixed(2));
 
+// 네이버 vs KRX 비교 셀: "네이버 / KRX (Δ%)"
+// kind: 'x' = 배수(PER/PBR), 'pct' = 퍼센트(배당)
+function cmpCell(navVal, krxVal, kind='x') {
+  const navStr = navVal == null
+    ? '<span style="color:var(--text-dim)">-</span>'
+    : (kind === 'pct' ? fmtPct(navVal) : fmtX(navVal));
+  if (krxVal == null) return navStr;
+  const krxStr = kind === 'pct' ? fmtPct(krxVal) : fmtX(krxVal);
+  if (navVal == null || navVal === 0) {
+    return `${navStr} <small class="krx-aux">/${krxStr}</small>`;
+  }
+  const diffPct = ((krxVal - navVal) / Math.abs(navVal)) * 100;
+  const absDiff = Math.abs(diffPct);
+  let diffCls = 'diff-small';
+  if (absDiff >= 20) diffCls = 'diff-large';
+  else if (absDiff >= 10) diffCls = 'diff-mid';
+  const sign = diffPct > 0 ? '+' : '';
+  const diffStr = absDiff < 0.5 ? '≈' : `${sign}${diffPct.toFixed(1)}%`;
+  return `${navStr} <small class="krx-aux">/${krxStr}</small> <small class="cmp-diff ${diffCls}">(${diffStr})</small>`;
+}
+
 function shortDate(iso) {
   if (!iso) return '-';
   const d = new Date(iso);
@@ -328,10 +349,10 @@ function renderRow(s) {
     <td class="num" title="분석일 가격">${analyzedCellHTML}</td>
     <td class="num" title="실시간 (Yahoo Finance)">${liveCellHTML}</td>
     <td class="num" title="분석일 대비">${vsCellHTML}</td>
-    <td class="num">${fmtX(s.per)}</td>
-    <td class="num">${fmtX(s.pbr)}</td>
+    <td class="num cmp-cell" title="네이버(분석시점) / KRX(2026-05-13) (차이%)">${cmpCell(s.per, s.krx_per, 'x')}</td>
+    <td class="num cmp-cell" title="네이버(분석시점) / KRX(2026-05-13) (차이%)">${cmpCell(s.pbr, s.krx_pbr, 'x')}</td>
     <td class="num">${fmtPct(s.roe)}</td>
-    <td class="num">${fmtPct(s.dividend_yield)}</td>
+    <td class="num cmp-cell" title="네이버(분석시점) / KRX 배당수익률(2026-05-13) (차이%)">${cmpCell(s.dividend_yield, s.krx_dividend_yield, 'pct')}</td>
     <td class="num">${fmt(s.cfo_eok)}</td>
     <td class="num">${fmt(s.fcf_eok)}</td>
     <td class="chk-cell">
