@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-14T08:08:27+09:00",
+  "updated_at": "2026-05-14T08:14:45+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -20290,6 +20290,401 @@
       "checklist_part1_risk": 5,
       "part2_quality": 1,
       "checklist_part2_quality": 1,
+      "checklist_part1_total": 17,
+      "checklist_part2_total": 13,
+      "checklist_part1_na": 0,
+      "checklist_part2_na": 1
+    },
+    {
+      "name": "SK하이닉스",
+      "code": "000660",
+      "market": "KS",
+      "analysis_date": "2026-05-14",
+      "price": 1976000,
+      "market_cap_eok": 14082998,
+      "industry": "반도체와반도체장비 (HBM·DRAM·NAND)",
+      "per": 33.52,
+      "pbr": 11.32,
+      "pbr_book_value_date": "2025-12 BPS 174,538 / 현재가 1,976,000 기준",
+      "roe": 44.15,
+      "roe_dart": 35.59,
+      "eps": 58955,
+      "bps": 174538,
+      "dividend_yield": 0.15,
+      "dps": 3000,
+      "payout_ratio": 4.88,
+      "revenue_eok": 971467,
+      "op_income_eok": 472063,
+      "net_income_eok": 429479,
+      "op_margin": 48.59,
+      "debt_to_equity": 45.95,
+      "cfo_eok": 533731,
+      "capex_eok": 285793,
+      "fcf_eok": 247938,
+      "cf_trend": {
+        "Y-2": {
+          "cfo": 42782,
+          "capex": 87798,
+          "fcf": -45016
+        },
+        "Y-1": {
+          "cfo": 297959,
+          "capex": 166626,
+          "fcf": 131333
+        },
+        "Y": {
+          "cfo": 533731,
+          "capex": 285793,
+          "fcf": 247938
+        }
+      },
+      "buyback_eok": 0,
+      "buyback_note": "자기주식 처분 650억은 임직원 RSU·스톡옵션 양도 (보상성), 환원 효과 없음",
+      "dividend_eok": 16812,
+      "shareholder_return_eok": 16812,
+      "shareholder_return_pct": 3.9,
+      "consensus_target": 1963200,
+      "consensus_opinion": "4.00 매수",
+      "upside_pct": -0.6,
+      "week52_high": 1990000,
+      "week52_low": 196500,
+      "opinion": "매수",
+      "opinion_caveat": "조건부 매수 — Quality 합격 + Valuation 경고. 강매수 룰 충족하나 PBR 11.32·환원율 3.9%·10년 ROE σ 21%p로 사이클 피크 매수 부담. PBR 5~6배(주가 약 100만원대) 진입 시 강매수 재고.",
+      "thesis": "2025년 매출 97조·영익 47조·OPM 48.59%·ROE 35.59%의 폭발적 실적 — HBM 1위 + DRAM 슈퍼사이클 정점. 책 30항목 위험 1·우량 8(norm 11)로 룰상 강매수 충족이지만 **PBR 11.32·배당 0.15%·총주주환원율 3.9%로 책 기준 4종 명확 미달** + 10년 ROE 변동성 -17~+44%(σ 21%p) 사이클 종목 정성 리스크. DART anomaly 10/100 clean (감사 적정·정정 2.7%·본사 자본조달 0). 자본스트레스 5건은 종속사 유증 집계로 본사 희석 아님 검증 완료. FCF 24.8조 + CFO 53.4조 압도적 현금창출, 부채비율 87→62→46% 빠른 디레버리징. 보유자는 유지하되 추가 매수는 PBR 정상화(5~6배·주가 100만원대) 또는 사이클 둔화 신호 시 분할 진입 권장. 신규 진입은 컨센 목표 1,963,200원이 현재가와 동일(상승여력 -0.6%) → 단기 추격 비추.",
+      "tags": [
+        "HBM1위",
+        "DRAM슈퍼사이클",
+        "ROE35%",
+        "FCF양호",
+        "사이클피크",
+        "PBR고평가",
+        "환원율부족",
+        "코스피2위"
+      ],
+      "rcept": "20260317000635",
+      "source_year": 2025,
+      "audit_passed": true,
+      "audit_by": "claude",
+      "audit_at": "2026-05-14",
+      "audit_notes": "Codex 인증 OK였으나 다중 검증 포인트 6개라 Claude로 직행. 2026E 매출 331조는 네이버 데이터 이상치 (Q1E 50조와 모순), 정상 추정 PER ~13~16x. PBR 11.32(현시점) vs 3.73(2025-12 종가 기준) 확인. 자본스트레스 5건은 종속사 유증 — 본사 자본조달 0건. 강매수 → 조건부 매수 권고.",
+      "risks_hit": [
+        "유동비율 132.97% (당좌 기준, 책 150% 미만)"
+      ],
+      "valuation_warnings": [
+        "PBR 11.32배 (책 1배 미만 기준의 11배)",
+        "배당수익률 0.15% (책 3%+ 기준의 5%)",
+        "총주주환원율 3.9% (책 30%+ 기준의 1/8)",
+        "10년 ROE 표준편차 21%p (비메모리 평균 5%p의 4배 — 사이클 변동성)",
+        "10년 중 2회 적자 (2019 -2조, 2023 -9.1조)"
+      ],
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_audit",
+            "label": "3년 감사의견 한정·부적정·의견거절",
+            "status": "ok",
+            "evidence": "2024·2025 적정의견"
+          },
+          {
+            "key": "p1_going_concern",
+            "label": "적정의견+계속기업 불확실성 단락",
+            "status": "ok",
+            "evidence": "강조사항 없음"
+          },
+          {
+            "key": "p1_audit_late",
+            "label": "감사보고서 법정기한 지연",
+            "status": "ok",
+            "evidence": "2026-03-17 정기 접수"
+          },
+          {
+            "key": "p1_op_loss_3y",
+            "label": "3년 이상 연속 영업적자",
+            "status": "ok",
+            "evidence": "2023 영업적자 1회 (단년), 2024·2025 흑자 전환"
+          },
+          {
+            "key": "p1_interest_coverage",
+            "label": "이자보상배율 <1",
+            "status": "ok",
+            "evidence": "이자 0.94조 vs 영익 47.21조 = 약 50배"
+          },
+          {
+            "key": "p1_capital_impairment",
+            "label": "자본총계≈자본금 또는 자본잠식",
+            "status": "ok",
+            "evidence": "자본 120.7조 vs 자본금 3.6조"
+          },
+          {
+            "key": "p1_secondary_finance",
+            "label": "제2금융권 차입",
+            "status": "ok",
+            "evidence": "우량 회사채·해외 금융 중심"
+          },
+          {
+            "key": "p1_profit_cash_gap",
+            "label": "손익 흑자 + CFO 마이너스",
+            "status": "ok",
+            "evidence": "순익 42.95 vs CFO 53.37 (CFO > 순익)"
+          },
+          {
+            "key": "p1_distress_pattern",
+            "label": "영업(-)/투자(+)/재무(+) 자산매각 연명",
+            "status": "ok",
+            "evidence": "+53.4/-48.1/-1.4 성숙기 +/-/- 정상"
+          },
+          {
+            "key": "p1_turnover",
+            "label": "매출채권·재고 회전율 하락",
+            "status": "ok",
+            "evidence": "매출 +46.8% YoY 고성장"
+          },
+          {
+            "key": "p1_goodwill_high",
+            "label": "자본대비 개발비·영업권 비율 높음",
+            "status": "ok",
+            "evidence": "사업결합 현금유출 3.08조 신규 (모니터링)"
+          },
+          {
+            "key": "p1_current_ratio",
+            "label": "유동비율 <150% 또는 감소",
+            "status": "hit",
+            "evidence": "당좌비율 132.97% (책 150% 미만 hit, 다만 개선 추세 76→113→133)"
+          },
+          {
+            "key": "p1_impairment",
+            "label": "재고평가손·유형자산 손상 반복",
+            "status": "ok",
+            "evidence": "2023 사이클 손상 후 회복, 반복 패턴 아님"
+          },
+          {
+            "key": "p1_cb_bw",
+            "label": "CB·BW 반복 발행",
+            "status": "ok",
+            "evidence": "본사 CB·BW 0건. EB 1건(2023, 자기주식교환, 희석 無). 자본스트레스 5건은 종속사 유증."
+          },
+          {
+            "key": "p1_asset_sale_purpose",
+            "label": "핵심자산 매각 (운영자금 목적)",
+            "status": "ok",
+            "evidence": "해당 없음"
+          },
+          {
+            "key": "p1_related_party",
+            "label": "특수관계자 거래 복잡·불투명",
+            "status": "ok",
+            "evidence": "SK그룹 내 정상 거래, 특이 사항 없음"
+          },
+          {
+            "key": "p1_name_change",
+            "label": "사명·대표이사 교체 빈번",
+            "status": "ok",
+            "evidence": "안정 (곽노정 CEO 체제)"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_revenue_up",
+            "label": "매출액 꾸준히 우상향",
+            "status": "ok",
+            "evidence": "2023 사이클 저점 32.8조 → 2025 97.1조 회복·돌파"
+          },
+          {
+            "key": "p2_op_faster_than_rev",
+            "label": "매출성장률 < 영업이익성장률",
+            "status": "ok",
+            "evidence": "매출 +46.8% vs 영익 +101.2% YoY (영익이 매출의 2배 성장)"
+          },
+          {
+            "key": "p2_opm",
+            "label": "OPM 경쟁사 대비 우위",
+            "status": "ok",
+            "evidence": "OPM 48.59% — 삼성전자 21.39%·DB하이텍 18.16% 압도"
+          },
+          {
+            "key": "p2_roe",
+            "label": "ROE 10~15%+ 꾸준",
+            "status": "ok",
+            "evidence": "2025 35.59% / 5년 평균 15.46% (사이클 변동성 ng — 정성 위험으로 분류)"
+          },
+          {
+            "key": "p2_cfo_gt_ni",
+            "label": "CFO > 당기순이익",
+            "status": "ok",
+            "evidence": "CFO 53.4 > 순익 42.9 (퀄리티 양호)"
+          },
+          {
+            "key": "p2_fcf_plus",
+            "label": "FCF 플러스",
+            "status": "ok",
+            "evidence": "FCF 24.8조 (2023 -4.5 → 2024 +13.1 → 2025 +24.8 회복)"
+          },
+          {
+            "key": "p2_cf_mature_pattern",
+            "label": "영업(+)/투자(-)/재무(-) 패턴",
+            "status": "ok",
+            "evidence": "+/-/- 성숙기 정상"
+          },
+          {
+            "key": "p2_total_return",
+            "label": "총주주환원율 30%+",
+            "status": "ng",
+            "evidence": "3.9% (배당 1.68조 + 자사주매입 0 / 순익 42.95조) — 책 권장 30%+ 미달, 한국 빅테크 평균 이하"
+          },
+          {
+            "key": "p2_buyback_cancel",
+            "label": "자사주 매입+소각 실행",
+            "status": "ng",
+            "evidence": "자사주 매입 0건, 처분 650억은 임직원 RSU 양도(환원 효과 無)"
+          },
+          {
+            "key": "p2_dividend_growth",
+            "label": "배당금 꾸준·증액",
+            "status": "ng",
+            "evidence": "DPS 1,200→2,204→3,000원 증액이나 배당수익률 0.15% 극저 (시중 RP 금리 1/30)"
+          },
+          {
+            "key": "p2_per_low",
+            "label": "PER < 업종/과거 평균",
+            "status": "ok",
+            "evidence": "PER 33.52 vs 업종 35.04 (소폭 우위), 추정 PER은 컨센 데이터 이상치로 인용 불가"
+          },
+          {
+            "key": "p2_pbr_lt_1",
+            "label": "PBR < 1배",
+            "status": "ng",
+            "evidence": "PBR 11.32 (현시점, 현재가 1,976,000/BPS 174,538) — 책 1배 기준 11배 초과, 사이클 피크"
+          },
+          {
+            "key": "p2_ev_ebitda",
+            "label": "EV/EBITDA 낮음",
+            "status": "na",
+            "evidence": "미산출"
+          }
+        ]
+      },
+      "timeseries": {
+        "years": [
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "revenue_eok": [
+          429978,
+          446216,
+          327657,
+          661930,
+          971467
+        ],
+        "op_income_eok": [
+          124103,
+          68094,
+          -77303,
+          234673,
+          472063
+        ],
+        "net_income_eok": [
+          96162,
+          22417,
+          -91375,
+          197969,
+          429479
+        ],
+        "op_margin_pct": [
+          28.86,
+          15.26,
+          -23.59,
+          35.45,
+          48.59
+        ],
+        "roe_pct": [
+          15.46,
+          3.54,
+          -17.08,
+          26.78,
+          35.59
+        ],
+        "debt_ratio": [
+          54.92,
+          64.12,
+          87.52,
+          62.15,
+          45.95
+        ],
+        "cfo_eok": [
+          null,
+          null,
+          42782,
+          297959,
+          533731
+        ],
+        "fcf_eok": [
+          null,
+          null,
+          -45016,
+          131333,
+          247938
+        ],
+        "source": "DART 연결 (2021-2025) + 네이버페이",
+        "quarterly": {
+          "labels": [
+            "2024.12",
+            "2025.03",
+            "2025.06",
+            "2025.09",
+            "2025.12"
+          ],
+          "revenue_eok": [
+            197670,
+            176391,
+            222320,
+            244489,
+            328267
+          ],
+          "op_income_eok": [
+            80828,
+            74405,
+            92129,
+            113834,
+            191696
+          ],
+          "net_income_eok": [
+            80065,
+            81082,
+            69962,
+            125975,
+            152460
+          ],
+          "op_margin_pct": [
+            40.89,
+            42.18,
+            41.44,
+            46.56,
+            58.4
+          ],
+          "per": [
+            6.4,
+            5.34,
+            7.37,
+            7.09,
+            11.04
+          ],
+          "pbr": [
+            1.62,
+            1.62,
+            2.31,
+            2.4,
+            3.73
+          ],
+          "source": "네이버페이 분기 누적차감"
+        }
+      },
+      "part1_risk": 1,
+      "checklist_part1_risk": 1,
+      "part2_quality": 8,
+      "checklist_part2_quality": 8,
       "checklist_part1_total": 17,
       "checklist_part2_total": 13,
       "checklist_part1_na": 0,
