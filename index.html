@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>📈 안박사 주식 재무제표 분석 대시보드</title>
-<link rel="stylesheet" href="css/style.css?v=17">
+<link rel="stylesheet" href="css/style.css?v=18">
 </head>
 <body>
 <header>
@@ -405,6 +405,8 @@
 
   <section class="cards" id="cards"></section>
 
+  <nav class="pager" id="pagerTop" aria-label="페이지 이동 (상단)"></nav>
+
   <section class="table-wrap">
     <table id="stockTable">
       <thead>
@@ -430,6 +432,8 @@
       <tbody id="tbody"></tbody>
     </table>
   </section>
+
+  <nav class="pager" id="pagerBottom" aria-label="페이지 이동 (하단)"></nav>
 </main>
 
 <footer>
@@ -500,7 +504,7 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script src="js/journal-sync.js?v=1"></script>
 <script src="js/journal-ui.js?v=2"></script>
-<script src="js/render.js?v=18"></script>
+<script src="js/render.js?v=19"></script>
 <script src="js/compare.js?v=3"></script>
 <script>window.addEventListener('load', () => window.initNoteSync && window.initNoteSync());</script>
 </body>

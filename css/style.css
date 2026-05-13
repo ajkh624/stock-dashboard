@@ -59,6 +59,28 @@ header h1 { margin: 0 0 4px; font-size: 20px; }
   .card-note-btn, .card-delete { opacity: 0.7; }
 }
 
+/* Mobile: actions를 별도 행으로 분리해 의견 배지·차트 라벨과 겹침 방지 */
+@media (max-width: 540px) {
+  .card { padding-top: 12px; }
+  .card-actions {
+    position: static;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 8px;
+  }
+  .card-actions button {
+    width: 30px; height: 30px;
+    font-size: 12px;
+    opacity: 1 !important;
+    display: inline-flex; align-items: center; justify-content: center;
+  }
+  .card.has-ts::after {
+    top: auto; right: 12px; bottom: 12px;
+    font-size: 9px;
+  }
+}
+
 /* Card note (pinned at bottom of card) */
 .card-note {
   margin-top: 10px; padding: 8px 10px;
@@ -972,4 +994,56 @@ footer { padding: 24px 16px; text-align: center; color: var(--text-dim); font-si
 @media (max-width: 480px) {
   .event-legend .ev-list li { grid-template-columns: 18px 70px 1fr; }
   .event-legend .ev-type { display: none; }
+}
+
+/* ========== Pager (페이지네이션) ========== */
+.pager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 16px 0;
+  padding: 0 4px;
+}
+.pager:empty { display: none; }
+.pager .pg-btn {
+  min-width: 36px; height: 36px;
+  padding: 0 10px;
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: border-color 0.12s, background 0.12s;
+}
+.pager .pg-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  background: rgba(74,222,128,0.06);
+}
+.pager .pg-btn.active {
+  background: var(--accent);
+  color: #052e16;
+  border-color: var(--accent);
+  font-weight: 700;
+}
+.pager .pg-btn:disabled {
+  opacity: 0.35; cursor: not-allowed;
+}
+.pager .pg-ellipsis {
+  color: var(--text-dim);
+  padding: 0 4px;
+  user-select: none;
+}
+.pager .pg-info {
+  color: var(--text-dim);
+  font-size: 12px;
+  margin-left: 8px;
+}
+@media (max-width: 540px) {
+  .pager { gap: 4px; }
+  .pager .pg-btn { min-width: 34px; height: 34px; padding: 0 8px; font-size: 12px; }
+  .pager .pg-info { width: 100%; text-align: center; margin: 4px 0 0; }
 }

@@ -2,6 +2,11 @@
 let STATE = { stocks: [], updated_at: null, livePrices: {}, liveUpdatedAt: null };
 window.STATE = STATE;
 
+// ========== Pagination ==========
+const PAGE_SIZE = 20;
+let CURRENT_PAGE = 1;
+function resetPage() { CURRENT_PAGE = 1; }
+
 // ========== Hidden stocks (localStorage) ==========
 const HIDDEN_KEY = 'stockDashboard.hiddenStocks';
 function loadHidden() {
@@ -366,12 +371,75 @@ function render() {
   // assign stable index for modal lookup
   STATE.stocks.forEach((s, i) => s._idx = i);
   const list = applyFilters(STATE.stocks);
-  document.getElementById('cards').innerHTML = list.map(renderCard).join('');
-  document.getElementById('tbody').innerHTML = list.map(renderRow).join('');
-  document.getElementById('stockCount').textContent = `${list.length} 종목`;
+  const total = list.length;
+  const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+  if (CURRENT_PAGE > totalPages) CURRENT_PAGE = totalPages;
+  if (CURRENT_PAGE < 1) CURRENT_PAGE = 1;
+  const start = (CURRENT_PAGE - 1) * PAGE_SIZE;
+  const pageItems = list.slice(start, start + PAGE_SIZE);
+
+  document.getElementById('cards').innerHTML = pageItems.map(renderCard).join('');
+  document.getElementById('tbody').innerHTML = pageItems.map(renderRow).join('');
+  document.getElementById('stockCount').textContent = `${total} 종목`;
   document.getElementById('updatedAt').textContent = `갱신: ${shortDate(STATE.updated_at)}`;
+  renderPager(total, totalPages);
   updateHiddenBadge();
   if (window.Compare && window.Compare.updateUI) window.Compare.updateUI();
+}
+
+// ========== Pager UI ==========
+function renderPager(total, totalPages) {
+  const html = buildPagerHTML(total, totalPages);
+  ['pagerTop', 'pagerBottom'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.innerHTML = html;
+  });
+}
+function buildPagerHTML(total, totalPages) {
+  if (total <= PAGE_SIZE) {
+    // 한 페이지면 정보만 표시 (또는 비표시)
+    return total === 0
+      ? `<span class="pg-info">표시할 종목이 없습니다</span>`
+      : `<span class="pg-info">전체 ${total}개</span>`;
+  }
+  const cur = CURRENT_PAGE;
+  const pages = pagerWindow(cur, totalPages);
+  const start = (cur - 1) * PAGE_SIZE + 1;
+  const end = Math.min(cur * PAGE_SIZE, total);
+  let html = '';
+  html += `<button class="pg-btn" data-page="${cur - 1}" ${cur === 1 ? 'disabled' : ''} aria-label="이전">‹</button>`;
+  for (const p of pages) {
+    if (p === '...') {
+      html += `<span class="pg-ellipsis">…</span>`;
+    } else {
+      html += `<button class="pg-btn ${p === cur ? 'active' : ''}" data-page="${p}" aria-label="${p}페이지">${p}</button>`;
+    }
+  }
+  html += `<button class="pg-btn" data-page="${cur + 1}" ${cur === totalPages ? 'disabled' : ''} aria-label="다음">›</button>`;
+  html += `<span class="pg-info">${start}–${end} / ${total}</span>`;
+  return html;
+}
+function pagerWindow(cur, total) {
+  // 모바일 친화: 양옆 1개씩 + 처음/끝 + ellipsis
+  if (total <= 7) return Array.from({length: total}, (_, i) => i + 1);
+  const out = [1];
+  const left = Math.max(2, cur - 1);
+  const right = Math.min(total - 1, cur + 1);
+  if (left > 2) out.push('...');
+  for (let i = left; i <= right; i++) out.push(i);
+  if (right < total - 1) out.push('...');
+  out.push(total);
+  return out;
+}
+function goToPage(p) {
+  CURRENT_PAGE = p;
+  render();
+  // 카드 영역으로 스크롤 (헤더만큼 여백)
+  const cards = document.getElementById('cards');
+  if (cards) {
+    const y = cards.getBoundingClientRect().top + window.pageYOffset - 80;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
 }
 
 // ========== Hidden stocks 복원 모달 ==========
@@ -847,6 +915,7 @@ document.addEventListener('click', (e) => {
   const tab = e.target.closest('.filter-tab');
   if (tab) {
     document.querySelectorAll('.filter-tab').forEach(t => t.classList.toggle('active', t === tab));
+    resetPage();
     render();
     return;
   }
@@ -961,6 +1030,14 @@ async function load() {
 }
 
 ['searchInput','opinionFilter','sortBy'].forEach(id =>
-  document.getElementById(id).addEventListener('input', render));
+  document.getElementById(id).addEventListener('input', () => { resetPage(); render(); }));
+
+// pager 클릭 위임
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('.pager .pg-btn[data-page]');
+  if (!btn || btn.disabled) return;
+  const p = parseInt(btn.dataset.page, 10);
+  if (!isNaN(p)) goToPage(p);
+});
 
 load();
