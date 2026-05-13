@@ -340,7 +340,7 @@ function renderRow(s) {
     </td>
     <td><span class="opinion ${opCls}">${s.opinion}</span></td>
     <td style="max-width:360px;font-size:12px;color:var(--text-dim)">${s.thesis||''}</td>
-    <td class="row-actions" onclick="event.stopPropagation()">
+    <td class="row-actions">
       <button class="row-act-btn card-cmp-btn" data-action="cmp" title="비교 바스켓에 추가/제외" aria-label="비교">☐</button>
       <button class="row-act-btn ${watching?'active-watch':''}" data-action="watch" title="${watching?'워치리스트에서 제거':'워치리스트에 추가'}" aria-label="워치">${watching?'⭐':'☆'}</button>
       <button class="row-act-btn ${pos.qty>0?'active-trade':''}" data-action="trade" title="매매 기록${pos.qty>0?` (보유 ${pos.qty}주)`:''}" aria-label="매매">📒${trades.length?`<small>${trades.length}</small>`:''}</button>
@@ -983,9 +983,9 @@ document.addEventListener('click', (e) => {
     if (stock) openChartModal(stock);
     return;
   }
-  // Table row click (desktop view)
+  // Table row click (desktop view) — 액션 버튼 클릭은 제외
   const row = e.target.closest('tr.stock-row');
-  if (row && !e.target.closest('a, button, input')) {
+  if (row && !e.target.closest('a, button, input, .row-actions')) {
     const idx = Number(row.dataset.idx);
     const stock = STATE.stocks[idx];
     if (stock) openChartModal(stock);
