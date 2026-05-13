@@ -392,7 +392,31 @@
       "div_percentile": 95.9,
       "krx_dividend_yield": 6.49,
       "krx_close": 46200.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "audit_passed": {
+        "date": "2026-05-13",
+        "agent": "codex (gpt-5)",
+        "verdict": "PASS_WITH_WARNINGS",
+        "verified": [
+          "매출",
+          "영업이익",
+          "순이익",
+          "자산",
+          "부채",
+          "자본",
+          "부채비율",
+          "CFO",
+          "FCF",
+          "ROE",
+          "배당수익률"
+        ],
+        "warnings": [
+          "주가 -1.3%(45,600 vs 5/12 종가 46,200)",
+          "PER 검산 5.77 vs 카드 5.60",
+          "PBR 검산 0.95 vs 카드 0.85"
+        ],
+        "note": "재무제표 11항목 전부 DART 일관. 가격·멀티플 미세오차는 분석기준일/검증기준일 1일차+산식차이로 펀더멘털 영향 없음."
+      }
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
