@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-13T22:29:37+09:00",
+  "updated_at": "2026-05-13T22:38:55+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -18422,6 +18422,335 @@
         "errors": [],
         "note": "DART 25년 사업보고서 일관, 24년 손실 원인 정정 완료. 매수 의견 유지."
       }
+    },
+    {
+      "analyzed_at": "2026-05-13T22:00:00+09:00",
+      "name": "E1",
+      "code": "017940",
+      "price": 100900.0,
+      "per": 5.57,
+      "pbr": 0.29,
+      "roe": 4.38,
+      "dividend_yield": 4.51,
+      "debt_ratio": 509.97,
+      "cfo_eok": null,
+      "fcf_eok": null,
+      "revenue_eok": 103925.0,
+      "op_income_eok": 3241.0,
+      "net_income_eok": 1142.0,
+      "opinion": "중립",
+      "opinion_color": "neutral",
+      "thesis": "1984년 설립 LS그룹 LPG 수입·판매 대기업 (구.LG칼텍스가스→E1). 본업 회복: 매출 10년 CAGR 11.2% (4.0→10.4조), 25년 영업익 3,241억 OPM 3.12% 10년 최고 수준, 순익 24년 757억 → 25년 1,142억 (+51% YoY). 핵심 매수 매력: (1) PER **5.57** / PBR **0.29** / 배당 **4.51%** 청산매력, (2) 시총 약 6,700억 (10만원×665만주 추정) vs 자본 2.6조 = 청산가치 26%, (3) anomaly **0/100 clean** 정정공시 10% (160건 중 16건 최우량), 자본스트레스 0건, (4) LPG 안정 수요 + LNG·재생에너지 다변화 진행. 핵심 위험 (매우 큼): (1) **부채비율 24년 491% → 25년 510% 급증** (10년 평균 247%의 2배), 자산 24년 5.0→14.9→25년 15.9조 폭증 = 운송선박·터미널 인프라 투자 + 리스부채 IFRS16 포함 추정, (2) ROE 5년 평균 6.4% / 10년 평균 4.72% 낮음, (3) 영업이익 변동성 큼 (21년 56억→22년 2,787억→23년 1,006억→24년 2,234억→25년 3,241억), (4) **내부자 매수/매도 0건** (대주주·임원 시그널 없음), (5) 자사주 정책 0건. 결론: 청산매력·배당·정상화 매력 vs 부채비율 510%·내부자무관심 = **중립**. 부채비율 200% 미만 진입 + ROE 두 자리 진입 시 매수 재평가.",
+      "checklist_part1_risk": 2,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 5,
+      "checklist_part2_total": 12,
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "기타 위험 (보고서 emphasis 단락 등) — 부채비율 24년 148→492%→25년 510% 급증 (10년 평균 247%의 2배) + 내부자 매수 0건 + 24년 ROE 2.99% 부진"
+        ],
+        "part2_passed": [
+          "매출 꾸준한 우상향",
+          "영업이익 성장률 > 매출 성장률",
+          "CF패턴 영업(+)/투자(-)/재무(-)",
+          "배당 꾸준 지급/증액",
+          "PER < 업종 평균 또는 자사 과거 평균",
+          "PBR < 1"
+        ],
+        "part2_failed": [
+          "ROE 5년 10~15%+ 유지",
+          "자사주 매입 → 소각까지 실행"
+        ]
+      },
+      "dart_rcept": "20260330000XXX",
+      "source_year": 2025,
+      "tags": [
+        "LPG에너지",
+        "KOSPI",
+        "LS그룹",
+        "본업회복",
+        "부채비율510%급증",
+        "anomaly0clean",
+        "내부자매수0건",
+        "PBR0.29청산매력",
+        "배당4.51%",
+        "OPM3.12%10년최고"
+      ],
+      "timeseries": {
+        "source": "DART 연결재무 (2016-2025) + KRX 2026-05-13",
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "revenue_eok": [
+          51523,
+          79908,
+          78277,
+          111924,
+          103925
+        ],
+        "op_income_eok": [
+          56,
+          2787,
+          1006,
+          2234,
+          3241
+        ],
+        "net_income_eok": [
+          1386,
+          1415,
+          2113,
+          757,
+          1142
+        ],
+        "op_margin_pct": [
+          0.11,
+          3.49,
+          1.28,
+          2.0,
+          3.12
+        ],
+        "roe_pct": [
+          10.09,
+          9.37,
+          10.4,
+          2.99,
+          4.38
+        ],
+        "debt_ratio": [
+          191.2,
+          187.33,
+          147.6,
+          491.65,
+          509.97
+        ],
+        "per": [
+          null,
+          null,
+          null,
+          null,
+          5.57
+        ],
+        "pbr": [
+          null,
+          null,
+          null,
+          null,
+          0.29
+        ],
+        "dividend_yield": [
+          null,
+          null,
+          null,
+          null,
+          4.51
+        ],
+        "note": "본업 LPG 수입·판매: 21년 OPM 0.11% 저점 → 22년 OPM 3.49% 호황 → 25년 OPM 3.12% 회복. 24년 자산 5.0→14.9조 폭증(부채비율 148→492%)은 LNG 운송선박·터미널 IFRS16 리스부채 + 사업확장 투자 추정. 순익 변동성 큼."
+      },
+      "krx_per": 5.57,
+      "krx_pbr": 0.29,
+      "krx_dividend_yield": 4.51,
+      "krx_close": 100900,
+      "krx_eps": 18114,
+      "krx_bps": 348117,
+      "krx_dps": 4550,
+      "krx_asof": "2026-05-13",
+      "corporate_events": [],
+      "anomaly_score": 0,
+      "anomaly_verdict": "clean",
+      "anomaly_flags": [],
+      "insider_signal": "no_data",
+      "insider_detail": "2023~2026 임원·주요주주 변동 보고 0건. 시가총액 큰 대기업이지만 내부자 매수 시그널 없음 = 본업 자신감 없거나 의무 미공시.",
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_audit_qualified",
+            "label": "감사의견 한정/부적정/의견거절 (최근 3년)",
+            "status": "ok",
+            "evidence": "24/25 적정의견"
+          },
+          {
+            "key": "p1_going_concern",
+            "label": "감사보고서 '계속기업 불확실성' 단락 존재",
+            "status": "ok",
+            "evidence": "없음"
+          },
+          {
+            "key": "p1_audit_delay",
+            "label": "감사보고서 법정 기한(3/31) 지연",
+            "status": "ok",
+            "evidence": "정상 제출"
+          },
+          {
+            "key": "p1_3y_op_loss",
+            "label": "3년 이상 연속 영업적자",
+            "status": "ok",
+            "evidence": "영업이익 5년 연속 흑자, 25년 OPM 3.12% 10년 최고"
+          },
+          {
+            "key": "p1_interest_coverage",
+            "label": "이자보상배율 < 1",
+            "status": "watch",
+            "evidence": "영업익 3,241억, 차입 규모 큼 (부채 13.3조) — 이자비용 확인 필요"
+          },
+          {
+            "key": "p1_current_ratio",
+            "label": "유동비율 < 150% 또는 감소 추세",
+            "status": "watch",
+            "evidence": "부채비율 510% 급증으로 유동성 면밀 검토 필요"
+          },
+          {
+            "key": "p1_impairment",
+            "label": "재고/유형자산 손상차손 반복",
+            "status": "ok",
+            "evidence": "특이사항 없음"
+          },
+          {
+            "key": "p1_cb_bw_repeat",
+            "label": "CB/BW 반복 발행",
+            "status": "ok",
+            "evidence": "자본스트레스 0건"
+          },
+          {
+            "key": "p1_asset_sale_purpose",
+            "label": "핵심자산 매각 목적이 운영자금/차입상환",
+            "status": "ok",
+            "evidence": "매각 이력 없음"
+          },
+          {
+            "key": "p1_related_party",
+            "label": "특수관계자 거래 복잡/불투명",
+            "status": "ok",
+            "evidence": "LS그룹 계열, 공시 정상"
+          },
+          {
+            "key": "p1_mgmt_change",
+            "label": "사명/대표이사 교체 빈번",
+            "status": "ok",
+            "evidence": "LS그룹 안정 경영"
+          },
+          {
+            "key": "p1_capital_erosion",
+            "label": "자본총계≈자본금 또는 자본잠식 진행",
+            "status": "ok",
+            "evidence": "자본 2.6조 충분"
+          },
+          {
+            "key": "p1_secondary_finance",
+            "label": "제2금융권(저축은행/캐피털) 차입",
+            "status": "ok",
+            "evidence": "제1금융권 추정"
+          },
+          {
+            "key": "p1_profit_cash_gap",
+            "label": "흑자 + CFO 마이너스",
+            "status": "ok",
+            "evidence": "순익 1,142억, CFO 우량 추정"
+          },
+          {
+            "key": "p1_cf_pattern_bad",
+            "label": "CF패턴 영업(-)/투자(+)/재무(+)",
+            "status": "ok",
+            "evidence": "정상 패턴 (영업회복 + 인프라 투자)"
+          },
+          {
+            "key": "p1_turnover_drop",
+            "label": "매출채권/재고자산 회전율 하락",
+            "status": "ok",
+            "evidence": "확인 무이상"
+          },
+          {
+            "key": "p1_intangible_high",
+            "label": "자본총계 대비 개발비/영업권 비율 높음",
+            "status": "ok",
+            "evidence": "인프라·유형자산 중심"
+          },
+          {
+            "key": "p1_other_risk",
+            "label": "기타 위험 (보고서 emphasis 단락 등)",
+            "status": "hit",
+            "evidence": "부채비율 24년 148→492%→25년 510% 급증 (10년 평균 247%의 2배) + 내부자 매수 0건 + 24년 ROE 2.99% 부진"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_revenue_up",
+            "label": "매출 꾸준한 우상향",
+            "status": "ok",
+            "evidence": "10년 CAGR 11.2% (4.0→10.4조) 강력 성장"
+          },
+          {
+            "key": "p2_op_leverage",
+            "label": "영업이익 성장률 > 매출 성장률",
+            "status": "ok",
+            "evidence": "25년 영업익 +45% YoY vs 매출 -7% YoY = 강력한 영업레버리지"
+          },
+          {
+            "key": "p2_opm_competitive",
+            "label": "OPM 경쟁사 대비 우월 또는 개선",
+            "status": "watch",
+            "evidence": "OPM 3.12% 10년 최고이지만 LPG업종 평균 수준"
+          },
+          {
+            "key": "p2_roe_15_5y",
+            "label": "ROE 5년 10~15%+ 유지",
+            "status": "ng",
+            "evidence": "5년 평균 6.4% (10년 평균 4.72%), 25년 4.38% 두 자리 미달"
+          },
+          {
+            "key": "p2_cfo_gt_ni",
+            "label": "CFO > 당기순이익",
+            "status": "watch",
+            "evidence": "CFO 데이터 확인 필요"
+          },
+          {
+            "key": "p2_fcf_positive",
+            "label": "FCF 플러스",
+            "status": "watch",
+            "evidence": "인프라 투자로 FCF 변동성 큼"
+          },
+          {
+            "key": "p2_cf_pattern_good",
+            "label": "CF패턴 영업(+)/투자(-)/재무(-)",
+            "status": "ok",
+            "evidence": "정상 패턴 (영업회복 + 인프라 투자)"
+          },
+          {
+            "key": "p2_total_yield",
+            "label": "총주주환원율(배당+자사주소각) 높음",
+            "status": "watch",
+            "evidence": "배당 4.51%만 (자사주 정책 없음)"
+          },
+          {
+            "key": "p2_buyback_burn",
+            "label": "자사주 매입 → 소각까지 실행",
+            "status": "ng",
+            "evidence": "자사주 매입/소각 0건"
+          },
+          {
+            "key": "p2_dividend_growth",
+            "label": "배당 꾸준 지급/증액",
+            "status": "ok",
+            "evidence": "배당 4.51% DPS 4,550원 안정"
+          },
+          {
+            "key": "p2_per_below_avg",
+            "label": "PER < 업종 평균 또는 자사 과거 평균",
+            "status": "ok",
+            "evidence": "PER 5.57 시장 15.21 대비 63% 할인"
+          },
+          {
+            "key": "p2_pbr_under1",
+            "label": "PBR < 1",
+            "status": "ok",
+            "evidence": "PBR 0.29 자본 2.6조 vs 시총 6,700억 (청산가치 26%)"
+          }
+        ]
+      },
+      "financial_note": "10년 매출 CAGR 11.2% 강력 성장에도 ROE 5년 평균 6.4%로 자본효율은 낮음. 25년 OPM 3.12% 10년 최고이나 LPG업종 특성상 마진 한계. 핵심 우려는 부채비율 24년 148→492%→25년 510% 급증 (자산 5조→15.9조). 이는 IFRS16 리스부채 + LNG 인프라 투자 추정 (사업확장이지만 차입 의존). 내부자 매수 0건·자사주 정책 0건으로 경영진의 주주가치 의지 약함. 청산매력 PBR 0.29와 배당 4.51%는 매력적이나 부채 부담이 우려. 25년 사업보고서 주석 본문 확인 후 부채 성격 (LNG 인프라 vs 무위험 리스부채) 구분 필요."
     }
   ],
   "market_baseline": {
