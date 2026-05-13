@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>📈 안박사 주식 재무제표 분석 대시보드</title>
-<link rel="stylesheet" href="css/style.css?v=21">
+<link rel="stylesheet" href="css/style.css?v=22">
 </head>
 <body>
 <header>
@@ -418,9 +418,12 @@
           <th class="num" title="실시간 — Yahoo Finance v8 chart API · GitHub Actions가 15분마다 갱신">실시간</th>
           <th class="num" title="실시간 ÷ 분석일가 − 1 — 분석 이후 변동률">변동</th>
           <th class="num" title="PER = 주가 ÷ 주당순이익(EPS) · 이익 1원 사기 위해 주가 몇 배 내는가 · 10↓ 저평가 / 20↑ 고평가">PER</th>
+          <th class="num krx-col" title="🅺 KRX 선행 PER = 주가 ÷ 차기 예상 EPS · 애널리스트 컨센서스 기준 · 컨센서스 있는 종목만 표시">Fwd PER<small class="krx-mark">🅺</small></th>
           <th class="num" title="PBR = 주가 ÷ 주당순자산(BPS) · 청산가치 대비 주가 · 1배↓ 장부가 이하 · 자산 부실 시 함정 주의">PBR</th>
+          <th class="num krx-col" title="🅺 KRX 주당순자산(BPS) · 1주가 회사 순자산을 얼마나 대표하는가 · PBR = 주가/BPS">BPS<small class="krx-mark">🅺</small></th>
           <th class="num" title="ROE = 당기순이익 ÷ 자기자본 · 주주 돈으로 얼마 벌었나 · 15%+ 5년 유지 = 우량 (버핏 핵심지표)">ROE</th>
           <th class="num" title="배당수익률 = 주당배당금 ÷ 주가 · 5%+ 매력 · 배당성향 80%+ 무리한 배당은 지속 불가능">배당</th>
+          <th class="num krx-col" title="🅺 KRX 주당배당금(DPS) · 1주당 실제 받는 배당액 · 0이면 무배당">DPS<small class="krx-mark">🅺</small></th>
           <th class="num" title="CFO = 영업현금흐름 · 본업으로 실제 들어온 현금 · 순익보다 일관되게 커야 정상 · 마이너스면 분식 의심">CFO(억)</th>
           <th class="num" title="FCF = CFO − CAPEX · 주주에게 돌려줄 수 있는 현금 · 꾸준히 (+)여야 진짜 우량">FCF(억)</th>
           <th title="Part 1 위험(/18): 회피 신호 · Part 2 우량(/12): 매수 신호 · 위험 3↑ 회피 / 우량 9↑ 매수 후보">체크리스트</th>
@@ -504,7 +507,7 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script src="js/journal-sync.js?v=1"></script>
 <script src="js/journal-ui.js?v=2"></script>
-<script src="js/render.js?v=21"></script>
+<script src="js/render.js?v=22"></script>
 <script src="js/compare.js?v=3"></script>
 <script>window.addEventListener('load', () => window.initNoteSync && window.initNoteSync());</script>
 </body>

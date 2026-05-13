@@ -329,9 +329,12 @@ function renderRow(s) {
     <td class="num" title="실시간 (Yahoo Finance)">${liveCellHTML}</td>
     <td class="num" title="분석일 대비">${vsCellHTML}</td>
     <td class="num">${fmtX(s.per)}</td>
+    <td class="num krx-cell" title="${s.krx_fwd_eps?`선행 EPS ${Math.round(s.krx_fwd_eps).toLocaleString()}원`:'컨센서스 없음'}">${s.krx_fwd_per?s.krx_fwd_per.toFixed(2):'<span style="color:var(--text-dim)">-</span>'}</td>
     <td class="num">${fmtX(s.pbr)}</td>
+    <td class="num krx-cell">${s.krx_bps?Math.round(s.krx_bps).toLocaleString():'<span style="color:var(--text-dim)">-</span>'}</td>
     <td class="num">${fmtPct(s.roe)}</td>
     <td class="num">${fmtPct(s.dividend_yield)}</td>
+    <td class="num krx-cell">${s.krx_dps!=null?(s.krx_dps>0?Math.round(s.krx_dps).toLocaleString():'<span style="color:var(--text-dim)">0</span>'):'<span style="color:var(--text-dim)">-</span>'}</td>
     <td class="num">${fmt(s.cfo_eok)}</td>
     <td class="num">${fmt(s.fcf_eok)}</td>
     <td class="chk-cell">

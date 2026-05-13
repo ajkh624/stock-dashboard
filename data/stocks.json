@@ -392,7 +392,12 @@
       "div_percentile": 95.9,
       "krx_dividend_yield": 6.49,
       "krx_close": 46200.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 8072.0,
+      "krx_fwd_eps": 9072.0,
+      "krx_fwd_per": 5.09,
+      "krx_bps": 48011.0,
+      "krx_dps": 3000.0
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
@@ -750,7 +755,12 @@
       "div_percentile": 94.7,
       "krx_dividend_yield": 6.07,
       "krx_close": 8570.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 801.0,
+      "krx_fwd_eps": 1055.0,
+      "krx_fwd_per": 8.12,
+      "krx_bps": 5322.0,
+      "krx_dps": 520.0
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
@@ -1112,7 +1122,12 @@
       "div_percentile": 60.4,
       "krx_dividend_yield": 2.09,
       "krx_close": 479000.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 8697.0,
+      "krx_fwd_eps": 26194.0,
+      "krx_fwd_per": 18.29,
+      "krx_bps": 736969.0,
+      "krx_dps": 10000.0
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
@@ -1457,7 +1472,12 @@
       "div_percentile": 87.1,
       "krx_dividend_yield": 4.44,
       "krx_close": 25700.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 3619.0,
+      "krx_fwd_eps": 4069.0,
+      "krx_fwd_per": 6.32,
+      "krx_bps": 31738.0,
+      "krx_dps": 1140.0
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
@@ -1817,7 +1837,10 @@
       "div_percentile": 84.4,
       "krx_dividend_yield": 4.07,
       "krx_close": 44250.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 11707.0,
+      "krx_bps": 79869.0,
+      "krx_dps": 1800.0
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
@@ -2183,7 +2206,10 @@
       "div_percentile": 27.4,
       "krx_dividend_yield": 0.0,
       "krx_close": 5140.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 65.0,
+      "krx_bps": 2170.0,
+      "krx_dps": 0.0
     },
     {
       "analyzed_at": "2026-05-12T07:22:39+09:00",
@@ -2359,7 +2385,12 @@
       "div_percentile": 87.5,
       "krx_dividend_yield": 4.49,
       "krx_close": 6680.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 1394.0,
+      "krx_fwd_eps": 1647.0,
+      "krx_fwd_per": 4.05,
+      "krx_bps": 21234.0,
+      "krx_dps": 300.0
     },
     {
       "analyzed_at": "2026-05-12T15:16:46+09:00",
@@ -2745,7 +2776,12 @@
       "div_percentile": 36.1,
       "krx_dividend_yield": 0.55,
       "krx_close": 1284000.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 28530.0,
+      "krx_fwd_eps": 45505.0,
+      "krx_fwd_per": 28.22,
+      "krx_bps": 188244.0,
+      "krx_dps": 7000.0
     },
     {
       "analyzed_at": "2026-05-12T16:25:56+09:00",
@@ -3074,7 +3110,12 @@
       "div_percentile": 65.9,
       "krx_dividend_yield": 2.49,
       "krx_close": 28100.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 7226.0,
+      "krx_fwd_eps": 8405.0,
+      "krx_fwd_per": 3.34,
+      "krx_bps": 57671.0,
+      "krx_dps": 700.0
     },
     {
       "analyzed_at": "2026-05-12T16:25:56+09:00",
@@ -3400,7 +3441,12 @@
       "div_percentile": 92.9,
       "krx_dividend_yield": 5.7,
       "krx_close": 10530.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 1798.0,
+      "krx_fwd_eps": 2176.0,
+      "krx_fwd_per": 4.84,
+      "krx_bps": 18729.0,
+      "krx_dps": 600.0
     },
     {
       "analyzed_at": "2026-05-12T16:45:53+09:00",
@@ -3729,7 +3775,12 @@
       "div_percentile": 31.9,
       "krx_dividend_yield": 0.34,
       "krx_close": 879000.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 11604.0,
+      "krx_fwd_eps": 19333.0,
+      "krx_fwd_per": 45.47,
+      "krx_bps": 65465.0,
+      "krx_dps": 2950.0
     },
     {
       "analyzed_at": "2026-05-12T16:45:53+09:00",
@@ -4057,7 +4108,12 @@
       "div_percentile": 30.5,
       "krx_dividend_yield": 0.28,
       "krx_close": 215000.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 7055.0,
+      "krx_fwd_eps": 9613.0,
+      "krx_fwd_per": 22.36,
+      "krx_bps": 28211.0,
+      "krx_dps": 600.0
     },
     {
       "analyzed_at": "2026-05-13T00:19:48+09:00",
@@ -4384,7 +4440,12 @@
       "div_percentile": 95.7,
       "krx_dividend_yield": 6.41,
       "krx_close": 52700.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 9556.0,
+      "krx_fwd_eps": 8492.0,
+      "krx_fwd_per": 6.21,
+      "krx_bps": 43822.0,
+      "krx_dps": 3380.0
     },
     {
       "name": "SJG세종",
@@ -4740,7 +4801,12 @@
       "div_percentile": 67.7,
       "krx_dividend_yield": 2.59,
       "krx_close": 7720.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 2541.0,
+      "krx_fwd_eps": 2649.0,
+      "krx_fwd_per": 2.91,
+      "krx_bps": 19312.0,
+      "krx_dps": 200.0
     },
     {
       "name": "SK텔레콤",
@@ -5104,7 +5170,12 @@
       "div_percentile": 54.2,
       "krx_dividend_yield": 1.61,
       "krx_close": 103400.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 1825.0,
+      "krx_fwd_eps": 5882.0,
+      "krx_fwd_per": 17.58,
+      "krx_bps": 60395.0,
+      "krx_dps": 1660.0
     },
     {
       "name": "이마트",
@@ -5470,7 +5541,12 @@
       "div_percentile": 64.1,
       "krx_dividend_yield": 2.33,
       "krx_close": 107100.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 5084.0,
+      "krx_fwd_eps": 10172.0,
+      "krx_fwd_per": 10.53,
+      "krx_bps": 410591.0,
+      "krx_dps": 2500.0
     },
     {
       "analyzed_at": "2026-05-13T02:41:14+09:00",
@@ -5801,7 +5877,10 @@
       "div_percentile": 77.3,
       "krx_dividend_yield": 3.32,
       "krx_close": 30100.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 26160.0,
+      "krx_bps": 199651.0,
+      "krx_dps": 1000.0
     },
     {
       "analyzed_at": "2026-05-13T02:41:14+09:00",
@@ -6131,7 +6210,10 @@
       "div_percentile": 45.1,
       "krx_dividend_yield": 1.08,
       "krx_close": 13890.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 5174.0,
+      "krx_bps": 72296.0,
+      "krx_dps": 150.0
     },
     {
       "analyzed_at": "2026-05-13T02:41:14+09:00",
@@ -6461,7 +6543,10 @@
       "div_percentile": 86.7,
       "krx_dividend_yield": 4.41,
       "krx_close": 3405.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 522.0,
+      "krx_bps": 16721.0,
+      "krx_dps": 150.0
     },
     {
       "name": "비비안",
@@ -6819,7 +6904,9 @@
       "krx_pbr": 0.18,
       "krx_dividend_yield": 0.0,
       "krx_close": 10000.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_bps": 54750.0,
+      "krx_dps": 0.0
     },
     {
       "name": "아이스크림에듀",
@@ -7121,7 +7208,9 @@
       "krx_pbr": 0.51,
       "krx_dividend_yield": 0.0,
       "krx_close": 1550.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_bps": 3052.0,
+      "krx_dps": 0.0
     },
     {
       "name": "에이전트AI",
@@ -7430,7 +7519,9 @@
       "krx_pbr": 0.57,
       "krx_dividend_yield": 0.0,
       "krx_close": 5400.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_bps": 9460.0,
+      "krx_dps": 0.0
     },
     {
       "name": "앤로보틱스",
@@ -7732,7 +7823,10 @@
       "krx_pbr": 3.11,
       "krx_dividend_yield": 0.0,
       "krx_close": 3450.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 136.0,
+      "krx_bps": 1110.0,
+      "krx_dps": 0.0
     },
     {
       "name": "아시아종묘",
@@ -8029,7 +8123,9 @@
       "krx_pbr": 0.95,
       "krx_dividend_yield": 0.0,
       "krx_close": 1895.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_bps": 1998.0,
+      "krx_dps": 0.0
     },
     {
       "name": "한탑",
@@ -8334,7 +8430,10 @@
       "krx_pbr": 0.41,
       "krx_dividend_yield": 0.0,
       "krx_close": 632.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 67.0,
+      "krx_bps": 1533.0,
+      "krx_dps": 0.0
     },
     {
       "name": "아즈텍WB",
@@ -8634,7 +8733,10 @@
       "krx_pbr": 0.23,
       "krx_dividend_yield": 0.0,
       "krx_close": 1191.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 44.0,
+      "krx_bps": 5109.0,
+      "krx_dps": 0.0
     },
     {
       "name": "골드앤에스",
@@ -8936,7 +9038,9 @@
       "krx_pbr": 1.58,
       "krx_dividend_yield": 0.0,
       "krx_close": 761.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_bps": 483.0,
+      "krx_dps": 0.0
     },
     {
       "name": "우리엔터프라이즈",
@@ -9237,7 +9341,9 @@
       "krx_pbr": 0.18,
       "krx_dividend_yield": 2.02,
       "krx_close": 992.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_bps": 5603.0,
+      "krx_dps": 20.0
     },
     {
       "name": "이노진",
@@ -9545,7 +9651,10 @@
       "krx_pbr": 1.13,
       "krx_dividend_yield": 6.21,
       "krx_close": 1449.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 26.0,
+      "krx_bps": 1288.0,
+      "krx_dps": 90.0
     },
     {
       "name": "디모아",
@@ -9901,7 +10010,10 @@
       "krx_pbr": 0.33,
       "krx_dividend_yield": 0.0,
       "krx_close": 3695.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 1986.0,
+      "krx_bps": 11343.0,
+      "krx_dps": 0.0
     },
     {
       "name": "S&K폴리텍",
@@ -10256,7 +10368,10 @@
       "krx_pbr": 0.29,
       "krx_dividend_yield": 0.0,
       "krx_close": 2530.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 295.0,
+      "krx_bps": 8631.0,
+      "krx_dps": 0.0
     },
     {
       "name": "패션플랫폼",
@@ -10603,7 +10718,10 @@
       "krx_pbr": 0.31,
       "krx_dividend_yield": 0.0,
       "krx_close": 950.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 107.0,
+      "krx_bps": 3026.0,
+      "krx_dps": 0.0
     },
     {
       "name": "뉴보텍",
@@ -10915,7 +11033,10 @@
       "krx_pbr": 0.78,
       "krx_dividend_yield": 0.75,
       "krx_close": 1330.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 141.0,
+      "krx_bps": 1710.0,
+      "krx_dps": 10.0
     },
     {
       "name": "지란지교시큐리티",
@@ -11223,7 +11344,10 @@
       "krx_pbr": 0.49,
       "krx_dividend_yield": 0.0,
       "krx_close": 3150.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 234.0,
+      "krx_bps": 6382.0,
+      "krx_dps": 0.0
     },
     {
       "name": "웹스",
@@ -11532,7 +11656,10 @@
       "krx_pbr": 0.61,
       "krx_dividend_yield": 0.0,
       "krx_close": 1721.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 286.0,
+      "krx_bps": 2809.0,
+      "krx_dps": 0.0
     },
     {
       "name": "대한방직",
@@ -11886,7 +12013,9 @@
       "krx_pbr": 0.15,
       "krx_dividend_yield": 0.0,
       "krx_close": 6440.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_bps": 43130.0,
+      "krx_dps": 0.0
     },
     {
       "name": "동원수산",
@@ -12198,7 +12327,10 @@
       "krx_pbr": 0.56,
       "krx_dividend_yield": 0.0,
       "krx_close": 6810.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 1664.0,
+      "krx_bps": 12115.0,
+      "krx_dps": 0.0
     },
     {
       "name": "ES큐브",
@@ -12515,7 +12647,9 @@
       "krx_pbr": 0.42,
       "krx_dividend_yield": 0.0,
       "krx_close": 2835.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_bps": 6819.0,
+      "krx_dps": 0.0
     },
     {
       "analyzed_at": "2026-05-13T04:21:35+09:00",
@@ -12819,7 +12953,9 @@
       "krx_pbr": 0.31,
       "krx_dividend_yield": 0.0,
       "krx_close": 1488.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_bps": 4835.0,
+      "krx_dps": 0.0
     },
     {
       "analyzed_at": "2026-05-13T04:57:06+09:00",
@@ -13121,7 +13257,9 @@
       "krx_pbr": 4.88,
       "krx_dividend_yield": 0.0,
       "krx_close": 13760.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_bps": 2819.0,
+      "krx_dps": 0.0
     },
     {
       "analyzed_at": "2026-05-13T07:18:28+09:00",
@@ -13345,7 +13483,9 @@
       "krx_pbr": 1.28,
       "krx_dividend_yield": 0.0,
       "krx_close": 672.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_bps": 525.0,
+      "krx_dps": 0.0
     },
     {
       "analyzed_at": "2026-05-13T07:23:32+09:00",
@@ -13538,7 +13678,9 @@
       "krx_pbr": 0.99,
       "krx_dividend_yield": 0.0,
       "krx_close": 1758.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_bps": 1780.0,
+      "krx_dps": 0.0
     },
     {
       "analyzed_at": "2026-05-13T07:28:38+09:00",
@@ -13741,7 +13883,10 @@
       "krx_pbr": 1.16,
       "krx_dividend_yield": 0.0,
       "krx_close": 1552.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 143.0,
+      "krx_bps": 1339.0,
+      "krx_dps": 0.0
     },
     {
       "analyzed_at": "2026-05-13T07:35:19+09:00",
@@ -13936,7 +14081,10 @@
       "krx_pbr": 2.53,
       "krx_dividend_yield": 0.0,
       "krx_close": 1506.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_eps": 3.0,
+      "krx_bps": 596.0,
+      "krx_dps": 0.0
     },
     {
       "analyzed_at": "2026-05-13T09:52:59+09:00",
@@ -14145,7 +14293,9 @@
       "krx_pbr": 1.6,
       "krx_dividend_yield": 0.0,
       "krx_close": 2105.0,
-      "krx_asof": "2026-05-13"
+      "krx_asof": "2026-05-13",
+      "krx_bps": 1314.0,
+      "krx_dps": 0.0
     }
   ],
   "market_baseline": {
