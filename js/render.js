@@ -185,12 +185,20 @@ function renderCard(s) {
   const opCls = opinionClassMap[s.opinion] || 'neutral';
   const tags = (s.tags||[]).map(t=>`<span class="tag">${t}</span>`).join('');
   const hasTs = !!(s.timeseries && s.timeseries.years && s.timeseries.years.length);
+  const watching = window.Journal ? Journal.isWatching(s.code) : false;
+  const pos = window.Journal ? Journal.getPosition(s.code) : { qty: 0 };
+  const alertN = window.Journal ? Journal.getAlerts(s.code).length : 0;
+  const trades = window.Journal ? Journal.getTrades(s.code) : [];
   return `
-  <article class="card${hasTs?' has-ts':''}" data-code="${s.code}" data-idx="${s._idx}" role="button" tabindex="0">
+  <article class="card${hasTs?' has-ts':''}${watching?' watching':''}${pos.qty>0?' holding':''}" data-code="${s.code}" data-idx="${s._idx}" role="button" tabindex="0">
     <div class="card-actions">
+      <button class="card-watch-btn ${watching?'active':''}" data-action="watch" title="${watching?'워치리스트에서 제거':'워치리스트에 추가'}" aria-label="워치">${watching?'⭐':'☆'}</button>
+      <button class="card-trade-btn ${pos.qty>0?'active':''}" data-action="trade" title="매매 기록${pos.qty>0?` (보유 ${pos.qty}주)`:''}" aria-label="매매">📒${trades.length?`<small>${trades.length}</small>`:''}</button>
+      <button class="card-alert-btn ${alertN>0?'active':''}" data-action="alert" title="가격 알림${alertN>0?` (${alertN}개 활성)`:''}" aria-label="알림">🔔${alertN?`<small>${alertN}</small>`:''}</button>
       <button class="card-note-btn" data-action="note" title="메모 추가/편집" aria-label="메모">📝</button>
       <button class="card-delete" data-action="delete" title="이 카드 숨기기" aria-label="삭제">✕</button>
     </div>
+    ${renderHoldingBadge(s, pos)}
     <div class="card-head">
       <div>
         <span class="card-name">${s.name}</span>
@@ -281,6 +289,16 @@ function editNote(code, name) {
   render();
 }
 
+function renderHoldingBadge(s, pos) {
+  if (!pos || pos.qty <= 0) return '';
+  const live = STATE.livePrices?.[s.code]?.price;
+  const pnl = (live && pos.avgCost) ? ((live - pos.avgCost) / pos.avgCost * 100) : null;
+  const pnlHTML = pnl != null
+    ? `<span class="${pnl > 0 ? 'up' : pnl < 0 ? 'down' : 'flat'}">${pnl > 0 ? '+' : ''}${pnl.toFixed(2)}%</span>`
+    : '';
+  return `<div class="holding-bar">📦 보유 ${pos.qty.toLocaleString()}주 · 평단 ${Math.round(pos.avgCost).toLocaleString()}원 ${pnlHTML}</div>`;
+}
+
 function renderRow(s) {
   const opCls = opinionClassMap[s.opinion] || 'neutral';
   const live = STATE.livePrices[s.code];
@@ -319,11 +337,14 @@ function applyFilters(list) {
   const q = document.getElementById('searchInput').value.trim().toLowerCase();
   const op = document.getElementById('opinionFilter').value;
   const sort = document.getElementById('sortBy').value;
+  const tab = (document.querySelector('.filter-tab.active')?.dataset.tab) || 'all';
   const hidden = loadHidden();
 
   let out = list.filter(s => {
     if (hidden.has(stockKey(s))) return false;
     if (op && s.opinion !== op) return false;
+    if (tab === 'watch' && !(window.Journal && Journal.isWatching(s.code))) return false;
+    if (tab === 'holding' && !(window.Journal && Journal.getPosition(s.code).qty > 0)) return false;
     if (!q) return true;
     const hay = [s.name, s.code, ...(s.tags||[])].join(' ').toLowerCase();
     return hay.includes(q);
@@ -519,7 +540,7 @@ function renderCharts() {
       <h3><span>${sp.label}</span><span class="latest">최근 ${fmtVal(latest, sp.unit)}</span></h3>
       <div class="chart-canvas-wrap"><canvas id="chart_${i}"></canvas></div>
     </div>`;
-  }).join('')}</div>`;
+  }).join('')}</div>${renderTradeTimeline(CURRENT_STOCK)}`;
 
   const chartFontColor = '#9099a8';
   const gridColor = 'rgba(255,255,255,0.06)';
@@ -589,6 +610,29 @@ function updateToggleAvailability() {
   toggle.querySelector('[data-period="quarterly"]').disabled = !hasQuarterly;
 }
 
+function renderTradeTimeline(stock) {
+  if (!window.Journal) return '';
+  const trades = Journal.getTrades(stock.code);
+  if (!trades.length) return '';
+  const pos = Journal.getPosition(stock.code);
+  const live = STATE.livePrices?.[stock.code]?.price;
+  const pnl = (pos.qty > 0 && live && pos.avgCost) ? ((live - pos.avgCost) / pos.avgCost * 100) : null;
+  const rows = trades.slice().reverse().map(t => {
+    const ico = { buy: '🟢', sell: '🔴', memo: '📝' }[t.type] || '•';
+    const lbl = t.type === 'buy' ? '매수' : t.type === 'sell' ? '매도' : '메모';
+    const amt = (t.price && t.qty) ? ` · ${Number(t.price).toLocaleString()}원 × ${t.qty}` : (t.price ? ` · ${Number(t.price).toLocaleString()}원` : '');
+    return `<li><span>${ico} <b>${t.date}</b> ${lbl}${amt}</span>${t.reason ? `<small>${escapeHtml(t.reason)}</small>` : ''}</li>`;
+  }).join('');
+  const posHTML = pos.qty > 0
+    ? `<div class="trade-pos">📦 보유 ${pos.qty.toLocaleString()}주 · 평단 ${Math.round(pos.avgCost).toLocaleString()}원${pnl != null ? ` · <span class="${pnl > 0 ? 'up' : pnl < 0 ? 'down' : ''}">${pnl > 0 ? '+' : ''}${pnl.toFixed(2)}%</span>` : ''}</div>`
+    : '<div class="trade-pos">💤 청산 완료</div>';
+  return `<section class="modal-trade">
+    <h3>📒 매매 기록 (${trades.length})</h3>
+    ${posHTML}
+    <ul class="modal-trade-list">${rows}</ul>
+  </section>`;
+}
+
 function setPeriod(period) {
   CURRENT_PERIOD = period;
   document.querySelectorAll('#modalToggle .seg').forEach(b => {
@@ -652,6 +696,49 @@ document.addEventListener('click', (e) => {
       const stock = STATE.stocks[idx];
       if (stock) editNote(stock.code, stock.name);
     }
+    return;
+  }
+  // Watch toggle
+  const watchBtn = e.target.closest('[data-action="watch"]');
+  if (watchBtn) {
+    e.stopPropagation();
+    const host = watchBtn.closest('.card');
+    if (host && window.Journal) {
+      const idx = Number(host.dataset.idx);
+      const stock = STATE.stocks[idx];
+      if (stock) { Journal.toggleWatch(stock.code); render(); }
+    }
+    return;
+  }
+  // Trade journal
+  const tradeBtn = e.target.closest('[data-action="trade"]');
+  if (tradeBtn) {
+    e.stopPropagation();
+    const host = tradeBtn.closest('.card');
+    if (host) {
+      const idx = Number(host.dataset.idx);
+      const stock = STATE.stocks[idx];
+      if (stock && window.openTradeModal) openTradeModal(stock.code, stock.name);
+    }
+    return;
+  }
+  // Alert
+  const alertBtn = e.target.closest('[data-action="alert"]');
+  if (alertBtn) {
+    e.stopPropagation();
+    const host = alertBtn.closest('.card');
+    if (host) {
+      const idx = Number(host.dataset.idx);
+      const stock = STATE.stocks[idx];
+      if (stock && window.openAlertModal) openAlertModal(stock.code, stock.name);
+    }
+    return;
+  }
+  // Filter tab
+  const tab = e.target.closest('.filter-tab');
+  if (tab) {
+    document.querySelectorAll('.filter-tab').forEach(t => t.classList.toggle('active', t === tab));
+    render();
     return;
   }
   // Existing note pill (click to edit)

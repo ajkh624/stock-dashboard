@@ -20,6 +20,16 @@ jobs:
         run: pip install --quiet pykrx==1.0.51
       - name: Fetch KRX prices
         run: python scripts/fetch_prices.py
+      - name: Check alerts (Gist → Telegram)
+        env:
+          GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+          GIST_ID: ${{ secrets.GIST_ID }}
+          GIST_FILE: ${{ secrets.GIST_FILE }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+          TG_THREAD_ID: ${{ secrets.TG_THREAD_ID }}
+        continue-on-error: true
+        run: python scripts/check_alerts.py
       - name: Commit if changed
         run: |
           git config user.email "actions@github.com"
