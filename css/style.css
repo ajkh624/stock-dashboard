@@ -59,8 +59,9 @@ header h1 { margin: 0 0 4px; font-size: 20px; }
   .card-note-btn, .card-delete { opacity: 0.7; }
 }
 
-/* Mobile: actions를 별도 행으로 분리해 의견 배지·차트 라벨과 겹침 방지 */
-@media (max-width: 540px) {
+/* Mobile/Tablet: actions를 별도 행으로 분리해 의견 배지·차트 라벨과 겹침 방지 */
+/* 768px 이하 모든 화면 + 데스크탑에서도 카드 폭이 좁을 때(테이블 숨김 전) 대비 */
+@media (max-width: 1023px) {
   .card { padding-top: 12px; }
   .card-actions {
     position: static;
