@@ -1,5 +1,6 @@
 // Stock dashboard renderer
 let STATE = { stocks: [], updated_at: null, livePrices: {}, liveUpdatedAt: null };
+window.STATE = STATE;
 
 // ========== Hidden stocks (localStorage) ==========
 const HIDDEN_KEY = 'stockDashboard.hiddenStocks';
