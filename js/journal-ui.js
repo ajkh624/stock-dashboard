@@ -31,6 +31,8 @@
         ${unrealized != null ? `<span class="${unrealized > 0 ? 'up' : unrealized < 0 ? 'down' : ''}">평가손익 ${unrealized > 0 ? '+' : ''}${unrealized.toFixed(2)}%</span>` : ''}
       </div>` : (pos.totalTrades > 0 ? '<div class="pos-summary">💤 청산 완료</div>' : '');
 
+    const planHTML = renderStopLossPanel(code, name, pos, livePrice);
+
     const today = new Date().toISOString().slice(0, 10);
     const defaultPrice = livePrice || '';
     const html = `
@@ -43,6 +45,7 @@
             ${posHTML}
           </div></header>
           <div class="modal-body">
+            ${planHTML}
             <form id="tradeForm" class="trade-form">
               <div class="tf-row">
                 <select name="type" required>
@@ -87,7 +90,135 @@
       close();
       openTradeModal(code, name);
     }));
+    bindStopLossPanel(code, name, pos, livePrice, () => { close(); openTradeModal(code, name); });
   };
+
+  // ============= STOP-LOSS / PLAN PANEL =============
+  // 평단가 기반 손절선 자동 표시 + 1-click 알림 등록
+  // 분할매수 플랜 (1차/2차/3차 가격 미리 설정) — 도달 시 알림 자동 점화
+  function renderStopLossPanel(code, name, pos, livePrice) {
+    const hasPos = pos.qty > 0;
+    const avg = hasPos ? pos.avgCost : null;
+    const planStr = localStorage.getItem('sd_plan_' + code);
+    let plan = null;
+    try { plan = planStr ? JSON.parse(planStr) : null; } catch (e) {}
+    const existingAlerts = Journal.getAlerts(code);
+    const hasAlertNear = (px) => existingAlerts.some(a =>
+      (a.type === 'price_below' || a.type === 'price_above') &&
+      Math.abs(Number(a.value) - px) < px * 0.005
+    );
+
+    // 손절 단계 — 보유 종목만
+    const stops = hasPos ? [
+      { pct: -10, label: '경고선', color: 'warn' },
+      { pct: -15, label: '주의선', color: 'warn' },
+      { pct: -25, label: '손절선', color: 'danger' },
+    ].map(s => {
+      const px = Math.round(avg * (1 + s.pct / 100));
+      const armed = hasAlertNear(px);
+      const reached = livePrice && livePrice <= px;
+      return { ...s, px, armed, reached };
+    }) : [];
+
+    const stopsHTML = hasPos ? `
+      <div class="plan-section">
+        <div class="plan-h">🎯 손절선 자동 추적
+          <span class="plan-sub">평단 ${Math.round(avg).toLocaleString()}원 기준</span>
+        </div>
+        <div class="stop-grid">
+          ${stops.map(s => `
+            <div class="stop-row ${s.color}${s.reached ? ' reached' : ''}">
+              <span class="stop-pct">${s.pct}%</span>
+              <span class="stop-label">${s.label}</span>
+              <span class="stop-px">${s.px.toLocaleString()}원${s.reached ? ' 🚨' : ''}</span>
+              <button type="button" class="stop-arm ${s.armed ? 'armed' : ''}"
+                data-arm-px="${s.px}" data-arm-label="${s.label} (${s.pct}%)" data-arm-type="price_below"
+                title="${s.armed ? '이미 알림 등록됨' : '클릭해 알림 등록'}">${s.armed ? '✓ 알림 ON' : '🔔 알림 걸기'}</button>
+            </div>`).join('')}
+        </div>
+      </div>` : '';
+
+    // 분할매수 플랜
+    const planSlots = plan?.slots || [
+      { tier: 1, price: livePrice || '', qty: '', done: false },
+      { tier: 2, price: '', qty: '', done: false },
+      { tier: 3, price: '', qty: '', done: false },
+    ];
+    const planHTML = `
+      <div class="plan-section">
+        <div class="plan-h">📐 분할매수 플랜
+          <span class="plan-sub">단계별 가격·수량 미리 설정 → 도달 시 알림</span>
+        </div>
+        <div class="plan-grid" id="planGrid">
+          ${planSlots.map((s, i) => {
+            const armed = s.price && hasAlertNear(Number(s.price));
+            return `
+              <div class="plan-row${s.done ? ' done' : ''}">
+                <span class="plan-tier">${s.tier}차</span>
+                <input type="number" class="plan-price" data-tier="${s.tier}" placeholder="가격" value="${s.price || ''}" step="1" min="0">
+                <input type="number" class="plan-qty"   data-tier="${s.tier}" placeholder="수량" value="${s.qty || ''}" step="1" min="0">
+                <button type="button" class="stop-arm ${armed ? 'armed' : ''}"
+                  data-plan-arm-tier="${s.tier}"
+                  title="${armed ? '이미 알림 등록됨' : '이 가격에 알림 걸기'}">${armed ? '✓' : '🔔'}</button>
+              </div>`;
+          }).join('')}
+        </div>
+        <div class="plan-foot">
+          <button type="button" class="btn-plan-save" id="planSaveBtn">💾 플랜 저장</button>
+          ${plan ? `<button type="button" class="btn-plan-clear" id="planClearBtn">🗑️ 플랜 삭제</button>` : ''}
+          <small class="plan-hint">알림은 매일 18:00 KST 종가 기준 발송</small>
+        </div>
+      </div>`;
+
+    return `<div class="trade-plan-wrap">${stopsHTML}${planHTML}</div>`;
+  }
+
+  function bindStopLossPanel(code, name, pos, livePrice, refresh) {
+    // 1-click 손절 알림 등록
+    document.querySelectorAll('#tradeModal .stop-arm[data-arm-px]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const px = Number(btn.dataset.armPx);
+        const label = btn.dataset.armLabel;
+        const type = btn.dataset.armType;
+        if (btn.classList.contains('armed')) {
+          if (!confirm(`${label} ${px.toLocaleString()}원 알림이 이미 등록돼 있습니다. 다시 추가할까요?`)) return;
+        }
+        Journal.addAlert(code, { type, value: px, note: label });
+        refresh();
+      });
+    });
+    // 분할매수 — 각 차수별 1-click 알림 (price_below)
+    document.querySelectorAll('#tradeModal [data-plan-arm-tier]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tier = btn.dataset.planArmTier;
+        const priceEl = document.querySelector(`#tradeModal .plan-price[data-tier="${tier}"]`);
+        const px = Number(priceEl?.value || 0);
+        if (!px) { alert(`${tier}차 가격을 먼저 입력하세요.`); return; }
+        Journal.addAlert(code, { type: 'price_below', value: px, note: `분할매수 ${tier}차` });
+        savePlanFromForm(code);
+        refresh();
+      });
+    });
+    // 플랜 저장 / 삭제
+    document.getElementById('planSaveBtn')?.addEventListener('click', () => {
+      savePlanFromForm(code);
+      alert('✅ 분할매수 플랜 저장 완료');
+    });
+    document.getElementById('planClearBtn')?.addEventListener('click', () => {
+      if (!confirm('이 종목의 분할매수 플랜을 삭제할까요?')) return;
+      localStorage.removeItem('sd_plan_' + code);
+      refresh();
+    });
+  }
+
+  function savePlanFromForm(code) {
+    const slots = [1, 2, 3].map(tier => {
+      const price = document.querySelector(`#tradeModal .plan-price[data-tier="${tier}"]`)?.value;
+      const qty   = document.querySelector(`#tradeModal .plan-qty[data-tier="${tier}"]`)?.value;
+      return { tier, price: price ? Number(price) : '', qty: qty ? Number(qty) : '', done: false };
+    });
+    localStorage.setItem('sd_plan_' + code, JSON.stringify({ slots, saved_at: new Date().toISOString() }));
+  }
 
   // ============= ALERTS =============
   window.openAlertModal = function (code, name) {
