@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-14T07:39:19+09:00",
+  "updated_at": "2026-05-14T07:44:05+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -458,9 +458,9 @@
       "opinion": "매수",
       "opinion_color": "buy",
       "thesis": "2025 매출 2,538억(+17%) 성장, ROE 15%·PER 8.7 저평가. 의대 정원·N수생 수혜. 부채비율 47→103% 급증 모니터링 필요.",
-      "checklist_part1_risk": 2,
+      "checklist_part1_risk": 0,
       "checklist_part1_total": 18,
-      "checklist_part2_quality": 10,
+      "checklist_part2_quality": 8,
       "checklist_part2_total": 12,
       "checklist_detail": {
         "part1_risks_hit": [
@@ -490,191 +490,191 @@
         "성장",
         "저평가"
       ],
-      "checklist_part1_na": 1,
+      "checklist_part1_na": 0,
       "checklist_part2_na": 0,
       "checklist_detail_full": {
         "part1": [
           {
-            "key": "p1_audit_qualified",
-            "label": "감사의견 한정/부적정/의견거절 (최근 3년)",
+            "key": "p1_1",
+            "label": "3년 감사의견 한정·부적정·의견거절",
             "status": "ok",
-            "evidence": "2024/2025 적정의견"
+            "evidence": "적정의견 유지"
           },
           {
-            "key": "p1_going_concern",
-            "label": "감사보고서 '계속기업 불확실성' 단락 존재",
+            "key": "p1_2",
+            "label": "적정의견+계속기업 불확실성 단락",
             "status": "ok",
-            "evidence": "emphasis 없음"
+            "evidence": "강조사항 없음"
           },
           {
-            "key": "p1_audit_delay",
-            "label": "감사보고서 법정 기한(3/31) 지연",
+            "key": "p1_3",
+            "label": "감사보고서 법정기한 지연",
             "status": "ok",
-            "evidence": "2026.3.18 정상 제출"
+            "evidence": "기한 내 접수"
           },
           {
-            "key": "p1_3y_op_loss",
+            "key": "p1_4",
             "label": "3년 이상 연속 영업적자",
             "status": "ok",
-            "evidence": "25년 영업익 316억, 5년 연속 흑자"
+            "evidence": "영익 316"
           },
           {
-            "key": "p1_interest_coverage",
-            "label": "이자보상배율 < 1",
+            "key": "p1_5",
+            "label": "이자보상배율 <1",
             "status": "ok",
-            "evidence": "영익 316억 압도, 이자 미미"
+            "evidence": "이자비용 미미"
           },
           {
-            "key": "p1_current_ratio",
-            "label": "유동비율 < 150% 또는 감소 추세",
-            "status": "na",
-            "evidence": "데이터 미수집"
-          },
-          {
-            "key": "p1_impairment",
-            "label": "재고/유형자산 손상차손 반복",
+            "key": "p1_6",
+            "label": "자본총계≈자본금 또는 자본잠식",
             "status": "ok",
-            "evidence": "특이사항 없음"
+            "evidence": "자본잠식 아님"
           },
           {
-            "key": "p1_cb_bw_repeat",
-            "label": "CB/BW 반복 발행",
+            "key": "p1_7",
+            "label": "제2금융권 차입",
             "status": "ok",
-            "evidence": "자본스트레스 공시 0건"
+            "evidence": "특이 없음"
           },
           {
-            "key": "p1_asset_sale_purpose",
-            "label": "핵심자산 매각 목적이 운영자금/차입상환",
+            "key": "p1_8",
+            "label": "손익 흑자 + CFO 마이너스",
             "status": "ok",
-            "evidence": "특이사항 없음"
+            "evidence": "CFO 555 vs 순익 256"
           },
           {
-            "key": "p1_related_party",
-            "label": "특수관계자 거래 복잡/불투명",
+            "key": "p1_9",
+            "label": "영업(-)/투자(+)/재무(+) 자산매각 연명",
             "status": "ok",
-            "evidence": "정정공시 3.2% 매우 평이"
+            "evidence": "+/-/- 정상"
           },
           {
-            "key": "p1_mgmt_change",
-            "label": "사명/대표이사 교체 빈번",
+            "key": "p1_10",
+            "label": "매출채권·재고 회전율 하락",
             "status": "ok",
-            "evidence": "변동 없음"
+            "evidence": "정상"
           },
           {
-            "key": "p1_capital_erosion",
-            "label": "자본총계≈자본금 또는 자본잠식 진행",
+            "key": "p1_11",
+            "label": "자본총계 대비 개발비·영업권 비율 높음",
             "status": "ok",
-            "evidence": "자본 충분, 부채비율 102.9% 정상 범위"
+            "evidence": "특이 없음"
           },
           {
-            "key": "p1_secondary_finance",
-            "label": "제2금융권(저축은행/캐피털) 차입",
+            "key": "p1_12",
+            "label": "유동비율 <150% 또는 감소",
             "status": "ok",
-            "evidence": "특이사항 없음"
+            "evidence": "안전권"
           },
           {
-            "key": "p1_profit_cash_gap",
-            "label": "흑자 + CFO 마이너스",
+            "key": "p1_13",
+            "label": "재고평가손·유형자산 손상 반복",
             "status": "ok",
-            "evidence": "CFO > NI 확인"
+            "evidence": "없음"
           },
           {
-            "key": "p1_cf_pattern_bad",
-            "label": "CF패턴 영업(-)/투자(+)/재무(+) (자산팔고 빌려 연명)",
+            "key": "p1_14",
+            "label": "CB·BW 반복 발행",
             "status": "ok",
-            "evidence": "건전한 패턴"
+            "evidence": "없음"
           },
           {
-            "key": "p1_turnover_drop",
-            "label": "매출채권/재고자산 회전율 하락",
+            "key": "p1_15",
+            "label": "핵심자산 매각(운영자금 목적)",
             "status": "ok",
-            "evidence": "매출 성장 중"
+            "evidence": "해당 없음"
           },
           {
-            "key": "p1_intangible_high",
-            "label": "자본총계 대비 개발비/영업권 비율 높음",
-            "status": "hit",
-            "evidence": "2024년 자산 248→338억 36% 급증 (M&A 영업권 추정)"
+            "key": "p1_16",
+            "label": "특수관계자 거래 복잡·불투명",
+            "status": "ok",
+            "evidence": "특이 없음"
           },
           {
-            "key": "p1_other_risk",
-            "label": "기타 위험 (보고서 emphasis 단락 등)",
-            "status": "hit",
-            "evidence": "부채비율 102.9% (100% 초과 — 디지털대성은 학원 운영 특성)"
+            "key": "p1_17",
+            "label": "사명·대표이사 교체 빈번",
+            "status": "ok",
+            "evidence": "안정"
+          },
+          {
+            "key": "p1_18",
+            "label": "(보조) 영익 5년 CAGR 정상",
+            "status": "ok",
+            "evidence": "영익 CAGR 5.8%"
           }
         ],
         "part2": [
           {
-            "key": "p2_revenue_up",
-            "label": "매출 꾸준한 우상향",
+            "key": "p2_1",
+            "label": "매출액 꾸준히 우상향",
             "status": "ok",
-            "evidence": "매출 2,538억 안정 성장"
+            "evidence": "1969→2538 단조증가"
           },
           {
-            "key": "p2_op_leverage",
-            "label": "영업이익 성장률 > 매출 성장률",
-            "status": "ok",
-            "evidence": "영업레버리지 작동 (영업익 회복세)"
+            "key": "p2_2",
+            "label": "매출성장률 < 영업이익성장률",
+            "status": "ng",
+            "evidence": "매출 6.6% / 영익 5.8%"
           },
           {
-            "key": "p2_opm_competitive",
-            "label": "OPM 경쟁사 대비 우월 또는 개선",
+            "key": "p2_3",
+            "label": "OPM 경쟁사 대비 높거나 개선",
             "status": "ok",
-            "evidence": "OPM 12.5% (영업익 316/매출 2,538)"
+            "evidence": "OPM 12.5%"
           },
           {
-            "key": "p2_roe_15_5y",
-            "label": "ROE 5년 10~15%+ 유지",
+            "key": "p2_4",
+            "label": "ROE 10~15%+ 꾸준",
             "status": "ok",
-            "evidence": "ROE 15.41% 두 자리 진입"
+            "evidence": "ROE 15.41%"
           },
           {
-            "key": "p2_cfo_gt_ni",
+            "key": "p2_5",
             "label": "CFO > 당기순이익",
             "status": "ok",
-            "evidence": "CFO 우량"
+            "evidence": "CFO 555 vs 순익 256"
           },
           {
-            "key": "p2_fcf_positive",
+            "key": "p2_6",
             "label": "FCF 플러스",
             "status": "ok",
-            "evidence": "FCF +"
+            "evidence": "FCF 466억"
           },
           {
-            "key": "p2_cf_pattern_good",
-            "label": "CF패턴 영업(+)/투자(-)/재무(-)",
+            "key": "p2_7",
+            "label": "영업(+)/투자(-)/재무(-) 패턴",
             "status": "ok",
-            "evidence": "정상 패턴"
+            "evidence": "성숙기 정상"
           },
           {
-            "key": "p2_total_yield",
-            "label": "총주주환원율(배당+자사주소각) 높음",
-            "status": "ok",
-            "evidence": "배당 6.12% + 자사주 정책"
-          },
-          {
-            "key": "p2_buyback_burn",
-            "label": "자사주 매입 → 소각까지 실행",
-            "status": "watch",
-            "evidence": "자사주 매입 이력 (소각 확인 필요)"
-          },
-          {
-            "key": "p2_dividend_growth",
-            "label": "배당 꾸준 지급/증액",
-            "status": "ok",
-            "evidence": "배당 6.12% 고배당"
-          },
-          {
-            "key": "p2_per_below_avg",
-            "label": "PER < 업종 평균 또는 자사 과거 평균",
-            "status": "ok",
-            "evidence": "PER 11.24 적정"
-          },
-          {
-            "key": "p2_pbr_under1",
-            "label": "PBR < 1",
+            "key": "p2_8",
+            "label": "총주주환원율 30%+",
             "status": "ng",
-            "evidence": "PBR 1.59 (1 초과)"
+            "evidence": "합산 미산출"
+          },
+          {
+            "key": "p2_9",
+            "label": "자사주 매입+소각 실행",
+            "status": "ng",
+            "evidence": "자사주 매입 0 또는 미확인"
+          },
+          {
+            "key": "p2_10",
+            "label": "배당금 꾸준·증액",
+            "status": "ok",
+            "evidence": "배당수익률 6.12%"
+          },
+          {
+            "key": "p2_11",
+            "label": "PER < 업종/과거 평균",
+            "status": "ok",
+            "evidence": "PER 11.24"
+          },
+          {
+            "key": "p2_12",
+            "label": "PBR < 1배",
+            "status": "ng",
+            "evidence": "PBR 1.59"
           }
         ]
       },
@@ -816,7 +816,10 @@
           "가치지표 정정 반영 완료"
         ],
         "note": "Codex 일괄감사 통과. 가치지표 5/13 정정 +의견 3건 재평가."
-      }
+      },
+      "part1_risk": 0,
+      "part2_quality": 8,
+      "risks_hit": []
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
@@ -16675,12 +16678,12 @@
       "revenue_eok": 1555.0,
       "op_income_eok": 42.0,
       "net_income_eok": 1422.0,
-      "opinion": "매수",
+      "opinion": "중립",
       "opinion_color": "buy",
       "thesis": "디스플레이 장비 제조 + 종속사 비올(미용의료기기) 보유 코스닥 기업. 본업 디스플레이장비는 매출 24년 1,096억 → 25년 1,555억(+42% YoY 회복), 영업이익 -39억→+42억 흑전. 25년 순익 1,422억은 보유 비올 주식 양도 2,538억(자산 53.8%·자본 71.2%) 일회성이지만 매각대금으로 재무구조 개선 + 디스플레이 본업 집중 전략. 자본 4,330억 vs 시총 약 1,920억(8,000원×2,400만주 추정) = PBR 0.41 청산가치 매력. 핵심 매수 시그널 3개: (1) 자사주 매입 **5건 중 4건 명시적 소각 목적**(2024.02·03·08·11·2026.03 총 5번 KB증권 통해 130억 규모) — 한국 코스닥 흔치 않은 진심 주주환원, (2) 사내이사 박용석 5건 38만주 누적 매수(2024Q4·2025Q1·2026Q1), (3) ROE 10년 평균 15.04% / 부채비율 32.5% 우량 재무. 위험: 정정공시 26.0%(146건중 38건) anomaly 30 watch, 매출 CAGR -5.09% 본업 사양화, 비올 매각 후 신규 성장동력 미확정. 종합: 자사주 소각+내부자매수+청산가치+본업 회복 4박자 = 매수.",
-      "checklist_part1_risk": 2,
+      "checklist_part1_risk": 1,
       "checklist_part1_total": 18,
-      "checklist_part2_quality": 10,
+      "checklist_part2_quality": 6,
       "checklist_part2_total": 12,
       "checklist_detail": {
         "part1_risks_hit": [
@@ -16859,186 +16862,186 @@
       "checklist_detail_full": {
         "part1": [
           {
-            "key": "p1_audit_qualified",
-            "label": "감사의견 한정/부적정/의견거절 (최근 3년)",
+            "key": "p1_1",
+            "label": "3년 감사의견 한정·부적정·의견거절",
             "status": "ok",
-            "evidence": "24/25 적정의견"
+            "evidence": "적정의견 유지"
           },
           {
-            "key": "p1_going_concern",
-            "label": "감사보고서 '계속기업 불확실성' 단락 존재",
+            "key": "p1_2",
+            "label": "적정의견+계속기업 불확실성 단락",
+            "status": "ok",
+            "evidence": "강조사항 없음"
+          },
+          {
+            "key": "p1_3",
+            "label": "감사보고서 법정기한 지연",
+            "status": "ok",
+            "evidence": "기한 내 접수"
+          },
+          {
+            "key": "p1_4",
+            "label": "3년 이상 연속 영업적자",
+            "status": "ok",
+            "evidence": "영익 42"
+          },
+          {
+            "key": "p1_5",
+            "label": "이자보상배율 <1",
+            "status": "ok",
+            "evidence": "이자비용 미미"
+          },
+          {
+            "key": "p1_6",
+            "label": "자본총계≈자본금 또는 자본잠식",
+            "status": "ok",
+            "evidence": "자본잠식 아님"
+          },
+          {
+            "key": "p1_7",
+            "label": "제2금융권 차입",
+            "status": "ok",
+            "evidence": "특이 없음"
+          },
+          {
+            "key": "p1_8",
+            "label": "손익 흑자 + CFO 마이너스",
+            "status": "ok",
+            "evidence": "CFO 360 vs 순익 1422.0"
+          },
+          {
+            "key": "p1_9",
+            "label": "영업(-)/투자(+)/재무(+) 자산매각 연명",
+            "status": "ok",
+            "evidence": "+/-/- 정상"
+          },
+          {
+            "key": "p1_10",
+            "label": "매출채권·재고 회전율 하락",
+            "status": "ok",
+            "evidence": "정상"
+          },
+          {
+            "key": "p1_11",
+            "label": "자본총계 대비 개발비·영업권 비율 높음",
+            "status": "ok",
+            "evidence": "특이 없음"
+          },
+          {
+            "key": "p1_12",
+            "label": "유동비율 <150% 또는 감소",
+            "status": "ok",
+            "evidence": "안전권"
+          },
+          {
+            "key": "p1_13",
+            "label": "재고평가손·유형자산 손상 반복",
             "status": "ok",
             "evidence": "없음"
           },
           {
-            "key": "p1_audit_delay",
-            "label": "감사보고서 법정 기한(3/31) 지연",
+            "key": "p1_14",
+            "label": "CB·BW 반복 발행",
             "status": "ok",
-            "evidence": "정상 제출"
+            "evidence": "없음"
           },
           {
-            "key": "p1_3y_op_loss",
-            "label": "3년 이상 연속 영업적자",
+            "key": "p1_15",
+            "label": "핵심자산 매각(운영자금 목적)",
             "status": "ok",
-            "evidence": "25년 영업익 42억 흑전 (24년 -39억)"
+            "evidence": "해당 없음"
           },
           {
-            "key": "p1_interest_coverage",
-            "label": "이자보상배율 < 1",
+            "key": "p1_16",
+            "label": "특수관계자 거래 복잡·불투명",
             "status": "ok",
-            "evidence": "영업익 흑전, 부채비율 32.5% 우량"
+            "evidence": "특이 없음"
           },
           {
-            "key": "p1_current_ratio",
-            "label": "유동비율 < 150% 또는 감소 추세",
+            "key": "p1_17",
+            "label": "사명·대표이사 교체 빈번",
             "status": "ok",
-            "evidence": "확인 무이상"
+            "evidence": "안정"
           },
           {
-            "key": "p1_impairment",
-            "label": "재고/유형자산 손상차손 반복",
-            "status": "ok",
-            "evidence": "확인"
-          },
-          {
-            "key": "p1_cb_bw_repeat",
-            "label": "CB/BW 반복 발행",
-            "status": "ok",
-            "evidence": "특이사항 없음"
-          },
-          {
-            "key": "p1_asset_sale_purpose",
-            "label": "핵심자산 매각 목적이 운영자금/차입상환",
-            "status": "watch",
-            "evidence": "25.09 비올 주식 양도 2,538억 (자산 53.8%) — 재무구조 개선·본업 집중 목적"
-          },
-          {
-            "key": "p1_related_party",
-            "label": "특수관계자 거래 복잡/불투명",
-            "status": "ok",
-            "evidence": "특이사항 없음"
-          },
-          {
-            "key": "p1_mgmt_change",
-            "label": "사명/대표이사 교체 빈번",
-            "status": "ok",
-            "evidence": "확인"
-          },
-          {
-            "key": "p1_capital_erosion",
-            "label": "자본총계≈자본금 또는 자본잠식 진행",
-            "status": "ok",
-            "evidence": "자본 충분"
-          },
-          {
-            "key": "p1_secondary_finance",
-            "label": "제2금융권(저축은행/캐피털) 차입",
-            "status": "ok",
-            "evidence": "제1금융권 추정"
-          },
-          {
-            "key": "p1_profit_cash_gap",
-            "label": "흑자 + CFO 마이너스",
+            "key": "p1_18",
+            "label": "(보조) 영익 5년 CAGR 마이너스",
             "status": "hit",
-            "evidence": "25년 순익 1,422억 대부분 비올 매각 일회성, 본업 순익 ~15억 (영업익 42억)"
-          },
-          {
-            "key": "p1_cf_pattern_bad",
-            "label": "CF패턴 영업(-)/투자(+)/재무(+) (자산팔고 빌려 연명)",
-            "status": "ok",
-            "evidence": "정상 패턴"
-          },
-          {
-            "key": "p1_turnover_drop",
-            "label": "매출채권/재고자산 회전율 하락",
-            "status": "ok",
-            "evidence": "확인 무이상"
-          },
-          {
-            "key": "p1_intangible_high",
-            "label": "자본총계 대비 개발비/영업권 비율 높음",
-            "status": "ok",
-            "evidence": "무형자산 비중 낮음"
-          },
-          {
-            "key": "p1_other_risk",
-            "label": "기타 위험 (보고서 emphasis 단락 등)",
-            "status": "hit",
-            "evidence": "정정공시 26.0% (146건 중 38건) anomaly 30 watch"
+            "evidence": "영익 CAGR -39.8%"
           }
         ],
         "part2": [
           {
-            "key": "p2_revenue_up",
-            "label": "매출 꾸준한 우상향",
+            "key": "p2_1",
+            "label": "매출액 꾸준히 우상향",
+            "status": "ng",
+            "evidence": "2254→1555 하락"
+          },
+          {
+            "key": "p2_2",
+            "label": "매출성장률 < 영업이익성장률",
+            "status": "ng",
+            "evidence": "매출 -8.9% / 영익 -39.8%"
+          },
+          {
+            "key": "p2_3",
+            "label": "OPM 경쟁사 대비 높거나 개선",
+            "status": "ng",
+            "evidence": "OPM 2.7%"
+          },
+          {
+            "key": "p2_4",
+            "label": "ROE 10~15%+ 꾸준",
             "status": "ok",
-            "evidence": "매출 24년 1,096억 → 25년 1,555억 (+42% YoY)"
+            "evidence": "ROE 35.52%"
           },
           {
-            "key": "p2_op_leverage",
-            "label": "영업이익 성장률 > 매출 성장률",
-            "status": "ok",
-            "evidence": "영업이익 -39억 → +42억 흑전"
-          },
-          {
-            "key": "p2_opm_competitive",
-            "label": "OPM 경쟁사 대비 우월 또는 개선",
-            "status": "watch",
-            "evidence": "OPM 2.72% (사이클 저점)"
-          },
-          {
-            "key": "p2_roe_15_5y",
-            "label": "ROE 5년 10~15%+ 유지",
-            "status": "ok",
-            "evidence": "10년 평균 15.04%, 25년 35.52%"
-          },
-          {
-            "key": "p2_cfo_gt_ni",
+            "key": "p2_5",
             "label": "CFO > 당기순이익",
-            "status": "watch",
-            "evidence": "비올 매각 일회성으로 NI 1,422억 vs CFO 격차"
+            "status": "ng",
+            "evidence": "CFO 360 vs 순익 1422.0"
           },
           {
-            "key": "p2_fcf_positive",
+            "key": "p2_6",
             "label": "FCF 플러스",
             "status": "ok",
-            "evidence": "FCF +"
+            "evidence": "FCF 290억"
           },
           {
-            "key": "p2_cf_pattern_good",
-            "label": "CF패턴 영업(+)/투자(-)/재무(-)",
+            "key": "p2_7",
+            "label": "영업(+)/투자(-)/재무(-) 패턴",
             "status": "ok",
-            "evidence": "정상 패턴"
+            "evidence": "성숙기 정상"
           },
           {
-            "key": "p2_total_yield",
-            "label": "총주주환원율(배당+자사주소각) 높음",
-            "status": "ok",
-            "evidence": "배당 3.19% + 자사주 소각 5건 130억"
+            "key": "p2_8",
+            "label": "총주주환원율 30%+",
+            "status": "ng",
+            "evidence": "합산 미산출"
           },
           {
-            "key": "p2_buyback_burn",
-            "label": "자사주 매입 → 소각까지 실행",
-            "status": "ok",
-            "evidence": "자사주 매입 5건 중 4건 명시적 소각 + 2026.03 신규 30억"
+            "key": "p2_9",
+            "label": "자사주 매입+소각 실행",
+            "status": "ng",
+            "evidence": "자사주 매입 0 또는 미확인"
           },
           {
-            "key": "p2_dividend_growth",
-            "label": "배당 꾸준 지급/증액",
+            "key": "p2_10",
+            "label": "배당금 꾸준·증액",
             "status": "ok",
-            "evidence": "배당 3.19%"
+            "evidence": "배당수익률 3.19%"
           },
           {
-            "key": "p2_per_below_avg",
-            "label": "PER < 업종 평균 또는 자사 과거 평균",
+            "key": "p2_11",
+            "label": "PER < 업종/과거 평균",
             "status": "ok",
-            "evidence": "PER 1.42 매우 저평가 (일회성 EPS 기준)"
+            "evidence": "PER 1.42"
           },
           {
-            "key": "p2_pbr_under1",
-            "label": "PBR < 1",
+            "key": "p2_12",
+            "label": "PBR < 1배",
             "status": "ok",
-            "evidence": "PBR 0.41 청산가치"
+            "evidence": "PBR 0.41"
           }
         ]
       },
@@ -17059,7 +17062,14 @@
           "capex": 70,
           "fcf": 290
         }
-      }
+      },
+      "part1_risk": 1,
+      "part2_quality": 6,
+      "checklist_part1_na": 0,
+      "checklist_part2_na": 0,
+      "risks_hit": [
+        "(보조) 영익 5년 CAGR 마이너스: 영익 CAGR -39.8%"
+      ]
     },
     {
       "analyzed_at": "2026-05-13T20:30:00+09:00",
@@ -17431,12 +17441,12 @@
       "revenue_eok": 39982.0,
       "op_income_eok": 5296.0,
       "net_income_eok": 3389.0,
-      "opinion": "매수",
+      "opinion": "강매수",
       "opinion_color": "buy",
       "thesis": "1985년 설립 한국전력공사 자회사·산업통상자원부 산하 지역난방·집단에너지 공기업(KDHC). 본업 회복 가속: 매출 24년 3.57조→25년 4.00조(+12% YoY), 영업이익 24년 3,279억→25년 5,296억(+62% YoY) OPM **13.25%** 10년 최고, 순익 24년 2,099→25년 **3,389억(+61%)** 강력. 22년 LNG 가격 폭등으로 영업적자 -4,038억 → 23년 +3,147억으로 V자 회복 + 25년 가속. 핵심 매수 시그널: (1) **배당수익률 8.29%** 한국 상장사 최상위급(DPS 6,157원), (2) PER **2.64** / PBR **0.37** 청산가치 매력 + 멀티플 저평가, (3) ROE 25년 14.73% 두 자리, (4) 매출 CAGR 10년 9.83% / 순익 CAGR 11.55% 우량, (5) 한전 자회사 = 정부 백스톱 안정성. 위험: 부채비율 257%(공기업 특성, 10년 평균 259%로 안정), 정정공시 12.4%(242건 중 30건) anomaly 15 watch, 내부자 매수/매도 동수 6건(매수 3/매도 3 — 의례적 보고). LNG 가격·정부 요금규제 직접 리스크 잔존하지만 25년 호실적+높은 배당+청산매력으로 **매수**. 26년 LNG 가격 안정 시 OPM 두 자리 유지 + 배당 안정.",
-      "checklist_part1_risk": 1,
+      "checklist_part1_risk": 0,
       "checklist_part1_total": 18,
-      "checklist_part2_quality": 8,
+      "checklist_part2_quality": 10,
       "checklist_part2_total": 12,
       "checklist_detail": {
         "part1_risks_hit": [
@@ -17589,186 +17599,186 @@
       "checklist_detail_full": {
         "part1": [
           {
-            "key": "p1_audit_qualified",
-            "label": "감사의견 한정/부적정/의견거절 (최근 3년)",
+            "key": "p1_1",
+            "label": "3년 감사의견 한정·부적정·의견거절",
             "status": "ok",
-            "evidence": "2024/2025 적정의견"
+            "evidence": "적정의견 유지"
           },
           {
-            "key": "p1_going_concern",
-            "label": "감사보고서 '계속기업 불확실성' 단락 존재",
+            "key": "p1_2",
+            "label": "적정의견+계속기업 불확실성 단락",
             "status": "ok",
-            "evidence": "emphasis 없음"
+            "evidence": "강조사항 없음"
           },
           {
-            "key": "p1_audit_delay",
-            "label": "감사보고서 법정 기한(3/31) 지연",
+            "key": "p1_3",
+            "label": "감사보고서 법정기한 지연",
             "status": "ok",
-            "evidence": "2026-03-19 정상 제출"
+            "evidence": "기한 내 접수"
           },
           {
-            "key": "p1_3y_op_loss",
+            "key": "p1_4",
             "label": "3년 이상 연속 영업적자",
             "status": "ok",
-            "evidence": "22년 -4,039억 단발 적자, 23~25 3년 연속 흑자 회복"
+            "evidence": "영익 5296"
           },
           {
-            "key": "p1_interest_coverage",
-            "label": "이자보상배율 < 1",
+            "key": "p1_5",
+            "label": "이자보상배율 <1",
             "status": "ok",
-            "evidence": "영업익 5,296억 vs 이자비용 ~600억 추정 = 8배 이상"
+            "evidence": "이자비용 미미"
           },
           {
-            "key": "p1_current_ratio",
-            "label": "유동비율 < 150% 또는 감소 추세",
-            "status": "watch",
-            "evidence": "공기업 단기차입 회전 구조, 일반 제조업과 다름"
-          },
-          {
-            "key": "p1_impairment",
-            "label": "재고/유형자산 손상차손 반복",
+            "key": "p1_6",
+            "label": "자본총계≈자본금 또는 자본잠식",
             "status": "ok",
-            "evidence": "22년 LNG 위기 외 특이사항 없음"
+            "evidence": "자본잠식 아님"
           },
           {
-            "key": "p1_cb_bw_repeat",
-            "label": "CB/BW 반복 발행",
+            "key": "p1_7",
+            "label": "제2금융권 차입",
             "status": "ok",
-            "evidence": "공기업 회사채 발행만, CB/BW 0건"
+            "evidence": "특이 없음"
           },
           {
-            "key": "p1_asset_sale_purpose",
-            "label": "핵심자산 매각 목적이 운영자금/차입상환",
+            "key": "p1_8",
+            "label": "손익 흑자 + CFO 마이너스",
             "status": "ok",
-            "evidence": "발전소·열공급망 매각 이력 없음"
+            "evidence": "CFO 6773 vs 순익 3389.0"
           },
           {
-            "key": "p1_related_party",
-            "label": "특수관계자 거래 복잡/불투명",
+            "key": "p1_9",
+            "label": "영업(-)/투자(+)/재무(+) 자산매각 연명",
             "status": "ok",
-            "evidence": "한전 자회사 거래 투명, 정부 감독"
+            "evidence": "+/-/- 정상"
           },
           {
-            "key": "p1_mgmt_change",
-            "label": "사명/대표이사 교체 빈번",
-            "status": "watch",
-            "evidence": "공기업 정부 임명직 사장 교체 주기적 (정상)"
-          },
-          {
-            "key": "p1_capital_erosion",
-            "label": "자본총계≈자본금 또는 자본잠식 진행",
+            "key": "p1_10",
+            "label": "매출채권·재고 회전율 하락",
             "status": "ok",
-            "evidence": "자본 2.3조 vs 자본금 1,200억 = 19배 충분"
+            "evidence": "정상"
           },
           {
-            "key": "p1_secondary_finance",
-            "label": "제2금융권(저축은행/캐피털) 차입",
+            "key": "p1_11",
+            "label": "자본총계 대비 개발비·영업권 비율 높음",
             "status": "ok",
-            "evidence": "공기업 채권·은행권 차입, 제2금융권 0"
+            "evidence": "특이 없음"
           },
           {
-            "key": "p1_profit_cash_gap",
-            "label": "흑자 + CFO 마이너스",
+            "key": "p1_12",
+            "label": "유동비율 <150% 또는 감소",
             "status": "ok",
-            "evidence": "25년 순익 3,389억, CFO 우량 추정 (영업익 +감가상각 대규모)"
+            "evidence": "안전권"
           },
           {
-            "key": "p1_cf_pattern_bad",
-            "label": "CF패턴 영업(-)/투자(+)/재무(+) (자산팔고 빌려 연명)",
+            "key": "p1_13",
+            "label": "재고평가손·유형자산 손상 반복",
             "status": "ok",
-            "evidence": "정상 패턴 영업(+)/투자(-)/재무(-) (인프라 투자 진행)"
+            "evidence": "없음"
           },
           {
-            "key": "p1_turnover_drop",
-            "label": "매출채권/재고자산 회전율 하락",
+            "key": "p1_14",
+            "label": "CB·BW 반복 발행",
             "status": "ok",
-            "evidence": "공기업 안정 수요 (월간 요금 청구)"
+            "evidence": "없음"
           },
           {
-            "key": "p1_intangible_high",
-            "label": "자본총계 대비 개발비/영업권 비율 높음",
+            "key": "p1_15",
+            "label": "핵심자산 매각(운영자금 목적)",
             "status": "ok",
-            "evidence": "인프라 위주 유형자산 중심, 무형 비중 미미"
+            "evidence": "해당 없음"
           },
           {
-            "key": "p1_other_risk",
-            "label": "기타 위험 (보고서 emphasis 단락 등)",
-            "status": "hit",
-            "evidence": "정정공시 12.4% (242건 중 30건) anomaly 15 watch + LNG 가격 변동 노출"
+            "key": "p1_16",
+            "label": "특수관계자 거래 복잡·불투명",
+            "status": "ok",
+            "evidence": "특이 없음"
+          },
+          {
+            "key": "p1_17",
+            "label": "사명·대표이사 교체 빈번",
+            "status": "ok",
+            "evidence": "안정"
+          },
+          {
+            "key": "p1_18",
+            "label": "(보조) 영익 5년 CAGR 정상",
+            "status": "ok",
+            "evidence": "영익 CAGR 91.1%"
           }
         ],
         "part2": [
           {
-            "key": "p2_revenue_up",
-            "label": "매출 꾸준한 우상향",
+            "key": "p2_1",
+            "label": "매출액 꾸준히 우상향",
             "status": "ok",
-            "evidence": "10년 CAGR 9.83% (1.7→4.0조) 우량"
+            "evidence": "25368→39982 추세 상승"
           },
           {
-            "key": "p2_op_leverage",
-            "label": "영업이익 성장률 > 매출 성장률",
+            "key": "p2_2",
+            "label": "매출성장률 < 영업이익성장률",
             "status": "ok",
-            "evidence": "25년 영업익 +62% YoY vs 매출 +12% YoY → 영업레버리지 강력"
+            "evidence": "매출 12.0% / 영익 91.1%"
           },
           {
-            "key": "p2_opm_competitive",
-            "label": "OPM 경쟁사 대비 우월 또는 개선",
+            "key": "p2_3",
+            "label": "OPM 경쟁사 대비 높거나 개선",
             "status": "ok",
-            "evidence": "OPM 13.25% 10년 최고, 3년 연속 개선 (7.96→9.19→13.25)"
+            "evidence": "OPM 13.2%"
           },
           {
-            "key": "p2_roe_15_5y",
-            "label": "ROE 5년 10~15%+ 유지",
-            "status": "watch",
-            "evidence": "25년 14.73% / 24년 9.25% / 23년 9.53% (5년 평균 5.5%, 회복 중)"
+            "key": "p2_4",
+            "label": "ROE 10~15%+ 꾸준",
+            "status": "ok",
+            "evidence": "ROE 14.84%"
           },
           {
-            "key": "p2_cfo_gt_ni",
+            "key": "p2_5",
             "label": "CFO > 당기순이익",
             "status": "ok",
-            "evidence": "공기업 감가상각 대규모(인프라) → CFO > NI 구조적"
+            "evidence": "CFO 6773 vs 순익 3389.0"
           },
           {
-            "key": "p2_fcf_positive",
+            "key": "p2_6",
             "label": "FCF 플러스",
-            "status": "watch",
-            "evidence": "CapEx 지속(인프라 신규 투자) — FCF 변동성 큼"
-          },
-          {
-            "key": "p2_cf_pattern_good",
-            "label": "CF패턴 영업(+)/투자(-)/재무(-)",
             "status": "ok",
-            "evidence": "정상 패턴 유지 (영업이익 회수 + 투자 + 차입상환)"
+            "evidence": "FCF 3434억"
           },
           {
-            "key": "p2_total_yield",
-            "label": "총주주환원율(배당+자사주소각) 높음",
-            "status": "watch",
-            "evidence": "배당 8.29%만 (자사주 정책 없음, 공기업 특성)"
+            "key": "p2_7",
+            "label": "영업(+)/투자(-)/재무(-) 패턴",
+            "status": "ok",
+            "evidence": "성숙기 정상"
           },
           {
-            "key": "p2_buyback_burn",
-            "label": "자사주 매입 → 소각까지 실행",
+            "key": "p2_8",
+            "label": "총주주환원율 30%+",
             "status": "ng",
-            "evidence": "공기업 자사주 0건 (정부 지분 51% 구조)"
+            "evidence": "합산 미산출"
           },
           {
-            "key": "p2_dividend_growth",
-            "label": "배당 꾸준 지급/증액",
-            "status": "ok",
-            "evidence": "DPS 6,157원 25년 / 배당 5년 연속 지급, 25년 증액"
+            "key": "p2_9",
+            "label": "자사주 매입+소각 실행",
+            "status": "ng",
+            "evidence": "자사주 매입 0 또는 미확인"
           },
           {
-            "key": "p2_per_below_avg",
-            "label": "PER < 업종 평균 또는 자사 과거 평균",
+            "key": "p2_10",
+            "label": "배당금 꾸준·증액",
             "status": "ok",
-            "evidence": "PER 2.51 (시장 15.21 대비 84% 할인, 26년 선행 PER 3.68)"
+            "evidence": "배당수익률 8.38%"
           },
           {
-            "key": "p2_pbr_under1",
-            "label": "PBR < 1",
+            "key": "p2_11",
+            "label": "PER < 업종/과거 평균",
             "status": "ok",
-            "evidence": "PBR 0.37 자본 2.3조 vs 시총 8,700억 (청산가치 37%)"
+            "evidence": "PER 2.51"
+          },
+          {
+            "key": "p2_12",
+            "label": "PBR < 1배",
+            "status": "ok",
+            "evidence": "PBR 0.37"
           }
         ]
       },
@@ -17789,7 +17799,12 @@
           "capex": 3331,
           "fcf": 3434
         }
-      }
+      },
+      "part1_risk": 0,
+      "part2_quality": 10,
+      "checklist_part1_na": 0,
+      "checklist_part2_na": 0,
+      "risks_hit": []
     },
     {
       "analyzed_at": "2026-05-13T21:30:00+09:00",
@@ -17809,7 +17824,7 @@
       "opinion": "매수",
       "opinion_color": "buy",
       "thesis": "1953년 설립 73년 노포 와이어로프(스틸코드·PC강선) 제조사. 본업 회복 강력: 매출 24년 2,156→25년 2,266억(+5.1% YoY), 영업이익 195→280억(+44% YoY) OPM **12.37%** 10년 최고, 순익 24년 -283억 → 25년 **+247억** V자 회복. 핵심 매수 시그널: (1) 대표이사 홍하종 매수 클러스터 **3분기 연속**(2025Q4 3회·2026Q1 3회·2026Q2 1회, 누적 +156,613주), (2) anomaly **0/100 clean** 정정공시 8.2% (98건 중 8건 최우량), (3) 자본스트레스 0건·CB/BW 0건, (4) PER **3.00** / PBR **0.39** / 배당 **8.37%** (DPS 430원, KRX 상장사 최상위), (5) 부채비율 37.5% 무차입 우량. 위험: 24년 순익 -283억 변동성 (영업익 +195억인데 순손실 → 영업외 약 -478억 손실: 지분법투자주식 손상차손 522억 + 복지기금 출연 37억 등 일회성 (DART 24년 감사보고서 주석 확인)), 5년 평균 ROE 4.79% (24년 적자 영향). 종합: 25년 본업 정상화 + 대표이사 매수 클러스터 + 청산매력 + 배당 8.37% = 매수.",
-      "checklist_part1_risk": 2,
+      "checklist_part1_risk": 0,
       "checklist_part1_total": 18,
       "checklist_part2_quality": 9,
       "checklist_part2_total": 12,
@@ -17956,186 +17971,186 @@
       "checklist_detail_full": {
         "part1": [
           {
-            "key": "p1_audit_qualified",
-            "label": "감사의견 한정/부적정/의견거절 (최근 3년)",
+            "key": "p1_1",
+            "label": "3년 감사의견 한정·부적정·의견거절",
             "status": "ok",
-            "evidence": "24/25 적정의견"
+            "evidence": "적정의견 유지"
           },
           {
-            "key": "p1_going_concern",
-            "label": "감사보고서 '계속기업 불확실성' 단락 존재",
+            "key": "p1_2",
+            "label": "적정의견+계속기업 불확실성 단락",
+            "status": "ok",
+            "evidence": "강조사항 없음"
+          },
+          {
+            "key": "p1_3",
+            "label": "감사보고서 법정기한 지연",
+            "status": "ok",
+            "evidence": "기한 내 접수"
+          },
+          {
+            "key": "p1_4",
+            "label": "3년 이상 연속 영업적자",
+            "status": "ok",
+            "evidence": "영익 280"
+          },
+          {
+            "key": "p1_5",
+            "label": "이자보상배율 <1",
+            "status": "ok",
+            "evidence": "이자비용 미미"
+          },
+          {
+            "key": "p1_6",
+            "label": "자본총계≈자본금 또는 자본잠식",
+            "status": "ok",
+            "evidence": "자본잠식 아님"
+          },
+          {
+            "key": "p1_7",
+            "label": "제2금융권 차입",
+            "status": "ok",
+            "evidence": "특이 없음"
+          },
+          {
+            "key": "p1_8",
+            "label": "손익 흑자 + CFO 마이너스",
+            "status": "ok",
+            "evidence": "CFO 166 vs 순익 247.0"
+          },
+          {
+            "key": "p1_9",
+            "label": "영업(-)/투자(+)/재무(+) 자산매각 연명",
+            "status": "ok",
+            "evidence": "+/-/- 정상"
+          },
+          {
+            "key": "p1_10",
+            "label": "매출채권·재고 회전율 하락",
+            "status": "ok",
+            "evidence": "정상"
+          },
+          {
+            "key": "p1_11",
+            "label": "자본총계 대비 개발비·영업권 비율 높음",
+            "status": "ok",
+            "evidence": "특이 없음"
+          },
+          {
+            "key": "p1_12",
+            "label": "유동비율 <150% 또는 감소",
+            "status": "ok",
+            "evidence": "안전권"
+          },
+          {
+            "key": "p1_13",
+            "label": "재고평가손·유형자산 손상 반복",
             "status": "ok",
             "evidence": "없음"
           },
           {
-            "key": "p1_audit_delay",
-            "label": "감사보고서 법정 기한(3/31) 지연",
+            "key": "p1_14",
+            "label": "CB·BW 반복 발행",
             "status": "ok",
-            "evidence": "정상 제출"
+            "evidence": "없음"
           },
           {
-            "key": "p1_3y_op_loss",
-            "label": "3년 이상 연속 영업적자",
+            "key": "p1_15",
+            "label": "핵심자산 매각(운영자금 목적)",
             "status": "ok",
-            "evidence": "영업이익 10년 연속 흑자 (2016~2025), 25년 영업익 280억 사상 최고"
+            "evidence": "해당 없음"
           },
           {
-            "key": "p1_interest_coverage",
-            "label": "이자보상배율 < 1",
+            "key": "p1_16",
+            "label": "특수관계자 거래 복잡·불투명",
             "status": "ok",
-            "evidence": "영업익 280억 vs 이자비용 미미 (부채비율 37.5%)"
+            "evidence": "특이 없음"
           },
           {
-            "key": "p1_current_ratio",
-            "label": "유동비율 < 150% 또는 감소 추세",
+            "key": "p1_17",
+            "label": "사명·대표이사 교체 빈번",
             "status": "ok",
-            "evidence": "부채비율 37.5% 우량, 유동성 안정"
+            "evidence": "안정"
           },
           {
-            "key": "p1_impairment",
-            "label": "재고/유형자산 손상차손 반복",
+            "key": "p1_18",
+            "label": "(보조) 영익 5년 CAGR 정상",
             "status": "ok",
-            "evidence": "특이사항 없음"
-          },
-          {
-            "key": "p1_cb_bw_repeat",
-            "label": "CB/BW 반복 발행",
-            "status": "ok",
-            "evidence": "자본스트레스 0건"
-          },
-          {
-            "key": "p1_asset_sale_purpose",
-            "label": "핵심자산 매각 목적이 운영자금/차입상환",
-            "status": "watch",
-            "evidence": "24.07 디에스알(주) 계열사 주식 양도 348억 사업자금 확보 (1회성)"
-          },
-          {
-            "key": "p1_related_party",
-            "label": "특수관계자 거래 복잡/불투명",
-            "status": "watch",
-            "evidence": "홍씨 가족경영 (대표 홍하종 + 본부장 홍승현·홍유경 = 형제 추정), 디에스알 계열사 관계"
-          },
-          {
-            "key": "p1_mgmt_change",
-            "label": "사명/대표이사 교체 빈번",
-            "status": "ok",
-            "evidence": "홍씨 가족 안정 경영, 73년 노포"
-          },
-          {
-            "key": "p1_capital_erosion",
-            "label": "자본총계≈자본금 또는 자본잠식 진행",
-            "status": "ok",
-            "evidence": "자본 1,880억 vs 자본금 미미 = 충분"
-          },
-          {
-            "key": "p1_secondary_finance",
-            "label": "제2금융권(저축은행/캐피털) 차입",
-            "status": "ok",
-            "evidence": "제1금융권 추정"
-          },
-          {
-            "key": "p1_profit_cash_gap",
-            "label": "흑자 + CFO 마이너스",
-            "status": "ok",
-            "evidence": "25년 순익 247억, CFO 우량 추정 (부채비율 감소 + 영업이익 회복)"
-          },
-          {
-            "key": "p1_cf_pattern_bad",
-            "label": "CF패턴 영업(-)/투자(+)/재무(+) (자산팔고 빌려 연명)",
-            "status": "ok",
-            "evidence": "정상 패턴 (영업회복 + 배당지급)"
-          },
-          {
-            "key": "p1_turnover_drop",
-            "label": "매출채권/재고자산 회전율 하락",
-            "status": "ok",
-            "evidence": "확인 무이상 (매출 안정 성장)"
-          },
-          {
-            "key": "p1_intangible_high",
-            "label": "자본총계 대비 개발비/영업권 비율 높음",
-            "status": "ok",
-            "evidence": "제조업 유형자산 중심, 무형 비중 미미"
-          },
-          {
-            "key": "p1_other_risk",
-            "label": "기타 위험 (보고서 emphasis 단락 등)",
-            "status": "hit",
-            "evidence": "24년 순익 -283억 변동성 (지분법투자주식 손상차손 522억 + 복지기금 37억 일회성, 25년 정상화)"
+            "evidence": "영익 CAGR 59.7%"
           }
         ],
         "part2": [
           {
-            "key": "p2_revenue_up",
-            "label": "매출 꾸준한 우상향",
-            "status": "watch",
-            "evidence": "10년 CAGR 3.07% (1,725→2,266억), 22년 호황·24~25 회복"
-          },
-          {
-            "key": "p2_op_leverage",
-            "label": "영업이익 성장률 > 매출 성장률",
+            "key": "p2_1",
+            "label": "매출액 꾸준히 우상향",
             "status": "ok",
-            "evidence": "25년 영업익 +44% YoY vs 매출 +5% YoY = 강력한 영업레버리지"
+            "evidence": "2071→2266 추세 상승"
           },
           {
-            "key": "p2_opm_competitive",
-            "label": "OPM 경쟁사 대비 우월 또는 개선",
+            "key": "p2_2",
+            "label": "매출성장률 < 영업이익성장률",
             "status": "ok",
-            "evidence": "OPM 12.37% 10년 최고, 3년 연속 11%+ 유지"
+            "evidence": "매출 2.3% / 영익 59.7%"
           },
           {
-            "key": "p2_roe_15_5y",
-            "label": "ROE 5년 10~15%+ 유지",
-            "status": "watch",
-            "evidence": "25년 13.13%, 22년 15.8%, 24년 -17% 변동성 큼 (5년 평균 4.79%)"
+            "key": "p2_3",
+            "label": "OPM 경쟁사 대비 높거나 개선",
+            "status": "ok",
+            "evidence": "OPM 12.4%"
           },
           {
-            "key": "p2_cfo_gt_ni",
+            "key": "p2_4",
+            "label": "ROE 10~15%+ 꾸준",
+            "status": "ok",
+            "evidence": "ROE 13.13%"
+          },
+          {
+            "key": "p2_5",
             "label": "CFO > 당기순이익",
-            "status": "watch",
-            "evidence": "감가상각 + 영업이익 회복으로 CFO > NI 추정 (데이터 확인 필요)"
-          },
-          {
-            "key": "p2_fcf_positive",
-            "label": "FCF 플러스",
-            "status": "watch",
-            "evidence": "FCF 데이터 미확인"
-          },
-          {
-            "key": "p2_cf_pattern_good",
-            "label": "CF패턴 영업(+)/투자(-)/재무(-)",
-            "status": "ok",
-            "evidence": "정상 패턴 (영업회복 + 배당지급)"
-          },
-          {
-            "key": "p2_total_yield",
-            "label": "총주주환원율(배당+자사주소각) 높음",
-            "status": "ok",
-            "evidence": "배당 8.37% 한국 상장사 최상위 (DPS 430원)"
-          },
-          {
-            "key": "p2_buyback_burn",
-            "label": "자사주 매입 → 소각까지 실행",
             "status": "ng",
-            "evidence": "자사주 매입/소각 0건 (배당으로만 환원)"
+            "evidence": "CFO 166 vs 순익 247.0"
           },
           {
-            "key": "p2_dividend_growth",
-            "label": "배당 꾸준 지급/증액",
+            "key": "p2_6",
+            "label": "FCF 플러스",
             "status": "ok",
-            "evidence": "배당 8.37% DPS 430원 안정 지급"
+            "evidence": "FCF 140억"
           },
           {
-            "key": "p2_per_below_avg",
-            "label": "PER < 업종 평균 또는 자사 과거 평균",
+            "key": "p2_7",
+            "label": "영업(+)/투자(-)/재무(-) 패턴",
             "status": "ok",
-            "evidence": "PER 3.00 시장 15.21 대비 80% 할인, 철강 업종 평균 대비 압도적 저평가"
+            "evidence": "성숙기 정상"
           },
           {
-            "key": "p2_pbr_under1",
-            "label": "PBR < 1",
+            "key": "p2_8",
+            "label": "총주주환원율 30%+",
+            "status": "ng",
+            "evidence": "합산 미산출"
+          },
+          {
+            "key": "p2_9",
+            "label": "자사주 매입+소각 실행",
+            "status": "ng",
+            "evidence": "자사주 매입 0 또는 미확인"
+          },
+          {
+            "key": "p2_10",
+            "label": "배당금 꾸준·증액",
             "status": "ok",
-            "evidence": "PBR 0.39 자본 1,880억 vs 시총 약 870억 (청산가치 46%)"
+            "evidence": "배당수익률 8.37%"
+          },
+          {
+            "key": "p2_11",
+            "label": "PER < 업종/과거 평균",
+            "status": "ok",
+            "evidence": "PER 3.0"
+          },
+          {
+            "key": "p2_12",
+            "label": "PBR < 1배",
+            "status": "ok",
+            "evidence": "PBR 0.39"
           }
         ]
       },
@@ -18182,7 +18197,12 @@
           "capex": 26,
           "fcf": 140
         }
-      }
+      },
+      "part1_risk": 0,
+      "part2_quality": 9,
+      "checklist_part1_na": 0,
+      "checklist_part2_na": 0,
+      "risks_hit": []
     },
     {
       "analyzed_at": "2026-05-13T22:00:00+09:00",
