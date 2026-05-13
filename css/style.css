@@ -1139,3 +1139,11 @@ th .hdr-aux {
   color: #f87171;
   background: rgba(239,68,68,0.15);
 }
+
+/* 관리 컬럼 컴팩트 */
+.row-actions { gap: 2px !important; }
+.row-act-btn, .row-delete { width: 22px !important; height: 22px !important; font-size: 11px !important; }
+.row-act-btn small { font-size: 8px !important; padding: 0 3px !important; }
+
+/* 표 horizontal scroll 허용 (안전망) */
+.table-wrap { overflow-x: auto; }

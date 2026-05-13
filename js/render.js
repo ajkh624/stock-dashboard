@@ -365,7 +365,7 @@ function renderRow(s) {
       <span class="chk-badge quality">⭐${s.checklist_part2_quality??'-'}/${s.checklist_part2_total||12}</span>
     </td>
     <td><span class="opinion ${opCls}">${s.opinion}</span></td>
-    <td style="max-width:360px;font-size:12px;color:var(--text-dim)">${s.thesis||''}</td>
+    <td style="max-width:240px;font-size:12px;color:var(--text-dim);white-space:normal;line-height:1.4;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical">${s.thesis||''}</td>
     <td class="row-actions">
       <button class="row-act-btn card-cmp-btn" data-action="cmp" title="비교 바스켓에 추가/제외" aria-label="비교">☐</button>
       <button class="row-act-btn ${watching?'active-watch':''}" data-action="watch" title="${watching?'워치리스트에서 제거':'워치리스트에 추가'}" aria-label="워치">${watching?'⭐':'☆'}</button>
