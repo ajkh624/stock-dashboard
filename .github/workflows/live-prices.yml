@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install pykrx
-        run: pip install --quiet pykrx==1.0.51
+        run: pip install --quiet setuptools pykrx==1.0.51 requests
       - name: Fetch KRX prices
         run: python scripts/fetch_prices.py
       - name: Check alerts (Gist → Telegram)
