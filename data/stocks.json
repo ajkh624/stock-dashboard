@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-13T19:03:08+09:00",
+  "updated_at": "2026-05-13T19:10:45+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -15743,30 +15743,26 @@
       "opinion": "매수",
       "opinion_color": "buy",
       "thesis": "1985년 설립 한국전력공사 자회사·산업통상자원부 산하 지역난방·집단에너지 공기업(KDHC). 본업 회복 가속: 매출 24년 3.57조→25년 4.00조(+12% YoY), 영업이익 24년 3,279억→25년 5,296억(+62% YoY) OPM **13.25%** 10년 최고, 순익 24년 2,099→25년 **3,389억(+61%)** 강력. 22년 LNG 가격 폭등으로 영업적자 -4,038억 → 23년 +3,147억으로 V자 회복 + 25년 가속. 핵심 매수 시그널: (1) **배당수익률 8.29%** 한국 상장사 최상위급(DPS 6,157원), (2) PER **2.64** / PBR **0.37** 청산가치 매력 + 멀티플 저평가, (3) ROE 25년 14.73% 두 자리, (4) 매출 CAGR 10년 9.83% / 순익 CAGR 11.55% 우량, (5) 한전 자회사 = 정부 백스톱 안정성. 위험: 부채비율 257%(공기업 특성, 10년 평균 259%로 안정), 정정공시 12.4%(242건 중 30건) anomaly 15 watch, 내부자 매수/매도 동수 6건(매수 3/매도 3 — 의례적 보고). LNG 가격·정부 요금규제 직접 리스크 잔존하지만 25년 호실적+높은 배당+청산매력으로 **매수**. 26년 LNG 가격 안정 시 OPM 두 자리 유지 + 배당 안정.",
-      "checklist_part1_risk": 2,
+      "checklist_part1_risk": 1,
       "checklist_part1_total": 18,
-      "checklist_part2_quality": 9,
+      "checklist_part2_quality": 8,
       "checklist_part2_total": 12,
       "checklist_detail": {
         "part1_risks_hit": [
-          "부채비율257%(공기업특성,10년평균259%)",
-          "정정공시12.4%(242건중30건)anomaly15watch"
+          "기타 위험 (보고서 emphasis 단락 등) — 정정공시 12.4% (242건 중 30건) anomaly 15 watch + LNG 가격 변동 노출"
         ],
         "part2_passed": [
-          "PER2.64",
-          "PBR0.37청산가치",
-          "배당8.29%한국상장사최상위급",
-          "ROE25년14.73%두자리",
-          "매출CAGR10년9.83%",
-          "순익CAGR10년11.55%",
-          "OPM13.25%10년최고",
-          "본업3년연속회복(7.96→9.19→13.25%)",
-          "감사적정·한전자회사정부백스톱"
+          "매출 꾸준한 우상향",
+          "영업이익 성장률 > 매출 성장률",
+          "OPM 경쟁사 대비 우월 또는 개선",
+          "CFO > 당기순이익",
+          "CF패턴 영업(+)/투자(-)/재무(-)",
+          "배당 꾸준 지급/증액",
+          "PER < 업종 평균 또는 자사 과거 평균",
+          "PBR < 1"
         ],
         "part2_failed": [
-          "ROE10년평균1.99%(과거변동성큼)",
-          "자사주0건(공기업특성)",
-          "CB/BW0건(공기업특성정상)"
+          "자사주 매입 → 소각까지 실행"
         ]
       },
       "dart_rcept": "20260319000XXX",
@@ -15898,6 +15894,192 @@
           "가치지표 정정 반영 완료"
         ],
         "note": "Codex 일괄감사 통과. 가치지표 5/13 정정 +의견 3건 재평가."
+      },
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_audit_qualified",
+            "label": "감사의견 한정/부적정/의견거절 (최근 3년)",
+            "status": "ok",
+            "evidence": "2024/2025 적정의견"
+          },
+          {
+            "key": "p1_going_concern",
+            "label": "감사보고서 '계속기업 불확실성' 단락 존재",
+            "status": "ok",
+            "evidence": "emphasis 없음"
+          },
+          {
+            "key": "p1_audit_delay",
+            "label": "감사보고서 법정 기한(3/31) 지연",
+            "status": "ok",
+            "evidence": "2026-03-19 정상 제출"
+          },
+          {
+            "key": "p1_3y_op_loss",
+            "label": "3년 이상 연속 영업적자",
+            "status": "ok",
+            "evidence": "22년 -4,039억 단발 적자, 23~25 3년 연속 흑자 회복"
+          },
+          {
+            "key": "p1_interest_coverage",
+            "label": "이자보상배율 < 1",
+            "status": "ok",
+            "evidence": "영업익 5,296억 vs 이자비용 ~600억 추정 = 8배 이상"
+          },
+          {
+            "key": "p1_current_ratio",
+            "label": "유동비율 < 150% 또는 감소 추세",
+            "status": "watch",
+            "evidence": "공기업 단기차입 회전 구조, 일반 제조업과 다름"
+          },
+          {
+            "key": "p1_impairment",
+            "label": "재고/유형자산 손상차손 반복",
+            "status": "ok",
+            "evidence": "22년 LNG 위기 외 특이사항 없음"
+          },
+          {
+            "key": "p1_cb_bw_repeat",
+            "label": "CB/BW 반복 발행",
+            "status": "ok",
+            "evidence": "공기업 회사채 발행만, CB/BW 0건"
+          },
+          {
+            "key": "p1_asset_sale_purpose",
+            "label": "핵심자산 매각 목적이 운영자금/차입상환",
+            "status": "ok",
+            "evidence": "발전소·열공급망 매각 이력 없음"
+          },
+          {
+            "key": "p1_related_party",
+            "label": "특수관계자 거래 복잡/불투명",
+            "status": "ok",
+            "evidence": "한전 자회사 거래 투명, 정부 감독"
+          },
+          {
+            "key": "p1_mgmt_change",
+            "label": "사명/대표이사 교체 빈번",
+            "status": "watch",
+            "evidence": "공기업 정부 임명직 사장 교체 주기적 (정상)"
+          },
+          {
+            "key": "p1_capital_erosion",
+            "label": "자본총계≈자본금 또는 자본잠식 진행",
+            "status": "ok",
+            "evidence": "자본 2.3조 vs 자본금 1,200억 = 19배 충분"
+          },
+          {
+            "key": "p1_secondary_finance",
+            "label": "제2금융권(저축은행/캐피털) 차입",
+            "status": "ok",
+            "evidence": "공기업 채권·은행권 차입, 제2금융권 0"
+          },
+          {
+            "key": "p1_profit_cash_gap",
+            "label": "흑자 + CFO 마이너스",
+            "status": "ok",
+            "evidence": "25년 순익 3,389억, CFO 우량 추정 (영업익 +감가상각 대규모)"
+          },
+          {
+            "key": "p1_cf_pattern_bad",
+            "label": "CF패턴 영업(-)/투자(+)/재무(+) (자산팔고 빌려 연명)",
+            "status": "ok",
+            "evidence": "정상 패턴 영업(+)/투자(-)/재무(-) (인프라 투자 진행)"
+          },
+          {
+            "key": "p1_turnover_drop",
+            "label": "매출채권/재고자산 회전율 하락",
+            "status": "ok",
+            "evidence": "공기업 안정 수요 (월간 요금 청구)"
+          },
+          {
+            "key": "p1_intangible_high",
+            "label": "자본총계 대비 개발비/영업권 비율 높음",
+            "status": "ok",
+            "evidence": "인프라 위주 유형자산 중심, 무형 비중 미미"
+          },
+          {
+            "key": "p1_other_risk",
+            "label": "기타 위험 (보고서 emphasis 단락 등)",
+            "status": "hit",
+            "evidence": "정정공시 12.4% (242건 중 30건) anomaly 15 watch + LNG 가격 변동 노출"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_revenue_up",
+            "label": "매출 꾸준한 우상향",
+            "status": "ok",
+            "evidence": "10년 CAGR 9.83% (1.7→4.0조) 우량"
+          },
+          {
+            "key": "p2_op_leverage",
+            "label": "영업이익 성장률 > 매출 성장률",
+            "status": "ok",
+            "evidence": "25년 영업익 +62% YoY vs 매출 +12% YoY → 영업레버리지 강력"
+          },
+          {
+            "key": "p2_opm_competitive",
+            "label": "OPM 경쟁사 대비 우월 또는 개선",
+            "status": "ok",
+            "evidence": "OPM 13.25% 10년 최고, 3년 연속 개선 (7.96→9.19→13.25)"
+          },
+          {
+            "key": "p2_roe_15_5y",
+            "label": "ROE 5년 10~15%+ 유지",
+            "status": "watch",
+            "evidence": "25년 14.73% / 24년 9.25% / 23년 9.53% (5년 평균 5.5%, 회복 중)"
+          },
+          {
+            "key": "p2_cfo_gt_ni",
+            "label": "CFO > 당기순이익",
+            "status": "ok",
+            "evidence": "공기업 감가상각 대규모(인프라) → CFO > NI 구조적"
+          },
+          {
+            "key": "p2_fcf_positive",
+            "label": "FCF 플러스",
+            "status": "watch",
+            "evidence": "CapEx 지속(인프라 신규 투자) — FCF 변동성 큼"
+          },
+          {
+            "key": "p2_cf_pattern_good",
+            "label": "CF패턴 영업(+)/투자(-)/재무(-)",
+            "status": "ok",
+            "evidence": "정상 패턴 유지 (영업이익 회수 + 투자 + 차입상환)"
+          },
+          {
+            "key": "p2_total_yield",
+            "label": "총주주환원율(배당+자사주소각) 높음",
+            "status": "watch",
+            "evidence": "배당 8.29%만 (자사주 정책 없음, 공기업 특성)"
+          },
+          {
+            "key": "p2_buyback_burn",
+            "label": "자사주 매입 → 소각까지 실행",
+            "status": "ng",
+            "evidence": "공기업 자사주 0건 (정부 지분 51% 구조)"
+          },
+          {
+            "key": "p2_dividend_growth",
+            "label": "배당 꾸준 지급/증액",
+            "status": "ok",
+            "evidence": "DPS 6,157원 25년 / 배당 5년 연속 지급, 25년 증액"
+          },
+          {
+            "key": "p2_per_below_avg",
+            "label": "PER < 업종 평균 또는 자사 과거 평균",
+            "status": "ok",
+            "evidence": "PER 2.51 (시장 15.21 대비 84% 할인, 26년 선행 PER 3.68)"
+          },
+          {
+            "key": "p2_pbr_under1",
+            "label": "PBR < 1",
+            "status": "ok",
+            "evidence": "PBR 0.37 자본 2.3조 vs 시총 8,700억 (청산가치 37%)"
+          }
+        ]
       }
     }
   ],
