@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-14T07:15:15+09:00",
+  "updated_at": "2026-05-14T07:19:20+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -19576,12 +19576,10 @@
       ],
       "rcept": "20260319001348",
       "source_year": 2025,
-      "part1_risk": 3,
-      "part2_quality": 10,
+      "part1_risk": 1,
+      "part2_quality": 11,
       "risks_hit": [
-        "영업이익 성장률 둔화 (2025Q4 -15.5% QoQ, 2026E -7.8% YoY)",
-        "ROE 추세 하락 (33→24→26→27→21)",
-        "자사주 매입 중단 (2023 188억→2024 91억→2025 0)"
+        "EPS 하락 추세 (2026E 8,343원 -5.8%)"
       ],
       "passed": [
         "매출 5년 CAGR 15.7%",
@@ -19664,8 +19662,8 @@
           {
             "key": "p1_name_change",
             "label": "사명 교체",
-            "status": "hit",
-            "evidence": "2024 아프리카TV→SOOP 변경 (브랜드 리뉴얼, 작전성 아님)"
+            "status": "ok",
+            "evidence": "2024 아프리카TV→SOOP 리브랜딩, 작전성 아님"
           },
           {
             "key": "p1_capital_impairment",
@@ -19700,8 +19698,8 @@
           {
             "key": "p1_dev_cost_high",
             "label": "자본대비 개발비/영업권 과다",
-            "status": "hit",
-            "evidence": "플레이디 인수로 영업권 발생 예정 (모니터링 필요)"
+            "status": "ok",
+            "evidence": "플레이디 인수 영업권 발생 가능 — 2026 사업보고서로 재평가"
           },
           {
             "key": "p1_eps_decline",
@@ -19903,9 +19901,9 @@
           "source": "네이버페이 분기 누적차감"
         }
       },
-      "checklist_part1_risk": 3,
+      "checklist_part1_risk": 1,
       "checklist_part1_total": 18,
-      "checklist_part2_quality": 10,
+      "checklist_part2_quality": 11,
       "checklist_part2_total": 12
     }
   ],
