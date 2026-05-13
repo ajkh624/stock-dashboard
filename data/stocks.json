@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-14T07:54:54+09:00",
+  "updated_at": "2026-05-14T08:08:27+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -19519,363 +19519,6 @@
       ]
     },
     {
-      "analyzed_at": "2026-05-13T23:29:39+09:00",
-      "name": "아이로보틱스",
-      "code": "066430",
-      "market": "코스닥",
-      "price": null,
-      "per": null,
-      "pbr": null,
-      "roe": 3.86,
-      "dividend_yield": 0,
-      "debt_ratio": 15.88,
-      "cfo_eok": 14,
-      "fcf_eok": -30,
-      "revenue_eok": 364,
-      "op_income_eok": 2,
-      "net_income_eok": 17,
-      "opinion": "매도",
-      "opinion_color": "#7f1d1d",
-      "thesis": "(주)아이로보틱스(코스닥, 김해, 도매업 분류). 평균 ROE -34.87%·표준편차 61.29 측정 불능 변동성. 🚨 CF 위기: 3년 연속 FCF 적자 누적 -145억 (CFO -7→2→14억 vs CapEx 44~57억). 본업이 자기 설비투자도 못 감당 → 유증 9건의 진짜 원인. DART anomaly 40 warning - 정정공시 32%(65/203건, 업계평균 6배), 유상증자 9건+1건 철회(26.2.25). 제3자배정 유증 → 일반주주 희석 + 특정인 지분확보. 최대주주 김영규 본인 0.81%(317,968주), 특수관계인 합계 10.49% → 초저지분 마이크로캡, 5% 매집만으로 경영권 흔들리는 구조. 25Q1 전 대표 염현규 -2,000,000주 매도, 매수 0건. 2023.7 부산 공장 89억 매각='현금 유동성 확보'. 기말 현금 1.6억까지 급감(전년 5.4억). 감사의견은 24·25 적정이나 본업 영업력 부재+자본스트레스+작전성=매도.",
-      "checklist_part1_risk": 7,
-      "checklist_part1_total": 18,
-      "checklist_part2_quality": 2,
-      "checklist_part2_total": 12,
-      "checklist_part1_na": 4,
-      "checklist_part2_na": 1,
-      "checklist_detail_full": {
-        "part1": [
-          {
-            "key": "p1_audit_qualified",
-            "label": "감사의견 한정/부적정/의견거절 (최근 3년)",
-            "status": "ok",
-            "evidence": "2024/2025 적정의견"
-          },
-          {
-            "key": "p1_going_concern",
-            "label": "감사보고서 '계속기업 불확실성' 단락 존재",
-            "status": "watch",
-            "evidence": "emphasis 미확인, 유증 9건 누적 자본스트레스"
-          },
-          {
-            "key": "p1_audit_delay",
-            "label": "감사보고서 법정 기한(3/31) 지연",
-            "status": "ok",
-            "evidence": "정상 제출"
-          },
-          {
-            "key": "p1_3y_op_loss",
-            "label": "3년 이상 연속 영업적자",
-            "status": "ok",
-            "evidence": "영업이익은 흑자 유지(0~13억 박스권)"
-          },
-          {
-            "key": "p1_interest_coverage",
-            "label": "이자보상배율 < 1",
-            "status": "watch",
-            "evidence": "영익 2~9억 수준, 이자비용 데이터 미확보"
-          },
-          {
-            "key": "p1_current_ratio",
-            "label": "유동비율 < 150% 또는 감소 추세",
-            "status": "na",
-            "evidence": "데이터 미수집"
-          },
-          {
-            "key": "p1_impairment",
-            "label": "재고/유형자산 손상차손 반복",
-            "status": "hit",
-            "evidence": "2023.7 부산 강서구 토지·건물 89억 매각 (현금 유동성 확보 명목)"
-          },
-          {
-            "key": "p1_cb_bw_repeat",
-            "label": "CB/BW 반복 발행",
-            "status": "ok",
-            "evidence": "CB/BW 0건 (대신 유증 9건)"
-          },
-          {
-            "key": "p1_asset_sale_purpose",
-            "label": "핵심자산 매각 목적이 운영자금/차입상환",
-            "status": "hit",
-            "evidence": "2023 부산 공장 매각 사유='현금 유동성 확보'"
-          },
-          {
-            "key": "p1_related_party",
-            "label": "특수관계자 거래 복잡/불투명",
-            "status": "hit",
-            "evidence": "정정공시 32% (65/203건) - 업계 평균 6배"
-          },
-          {
-            "key": "p1_mgmt_change",
-            "label": "사명/대표이사 교체 빈번",
-            "status": "hit",
-            "evidence": "전 대표 염현규 -2,000,000주 매도(25Q1), 현 대표 김형모, 최대주주 김영규 신규진입"
-          },
-          {
-            "key": "p1_capital_erosion",
-            "label": "자본총계≈자본금 또는 자본잠식 진행",
-            "status": "watch",
-            "evidence": "2025 자본 441억, 과거 자본잠식 이력(2016~2019 누적적자 -413억)"
-          },
-          {
-            "key": "p1_secondary_finance",
-            "label": "제2금융권 차입",
-            "status": "na",
-            "evidence": "데이터 미수집"
-          },
-          {
-            "key": "p1_profit_cash_gap",
-            "label": "흑자 + CFO 마이너스",
-            "status": "hit",
-            "evidence": "2025 순익 +17억이지만 CFO 14억으로 거의 일치. 단, FCF -30억으로 본업이 자기 투자도 못 감당"
-          },
-          {
-            "key": "p1_cf_pattern_bad",
-            "label": "CF패턴 영업(-)/투자(+)/재무(+)",
-            "status": "hit",
-            "evidence": "3년 FCF 누적 -145억(2023:-64, 2024:-51, 2025:-30). 자산매각+금융상품처분+유증으로 연명. 영업(미약)/투자(-)/재무(유증) 패턴"
-          },
-          {
-            "key": "p1_turnover_drop",
-            "label": "매출채권/재고자산 회전율 하락",
-            "status": "na",
-            "evidence": "데이터 미수집"
-          },
-          {
-            "key": "p1_intangible_high",
-            "label": "자본 대비 무형자산 비율 높음",
-            "status": "na",
-            "evidence": "데이터 미수집"
-          },
-          {
-            "key": "p1_other_risk",
-            "label": "기타 위험 (DART warning, 작전성 등)",
-            "status": "hit",
-            "evidence": "DART anomaly 40 warning, 최대주주 0.81%·합계 10.49% 극단 저지분, 유증 9건+1건 철회"
-          }
-        ],
-        "part2": [
-          {
-            "key": "p2_revenue_up",
-            "label": "매출 꾸준한 우상향",
-            "status": "ng",
-            "evidence": "23~25 358→361→364억 정체 (CAGR 10년 10.71% but 5년 0%)"
-          },
-          {
-            "key": "p2_op_leverage",
-            "label": "영업이익 성장률 > 매출 성장률",
-            "status": "ng",
-            "evidence": "영익 0~9억 박스권, 일관성 없음"
-          },
-          {
-            "key": "p2_opm_competitive",
-            "label": "OPM 경쟁사 대비 우수",
-            "status": "ng",
-            "evidence": "OPM 0.47%, 사실상 손익분기"
-          },
-          {
-            "key": "p2_roe_15",
-            "label": "ROE ≥ 15% 지속",
-            "status": "ng",
-            "evidence": "10년 평균 ROE -34.87%, 표준편차 61.29"
-          },
-          {
-            "key": "p2_low_debt",
-            "label": "부채비율 ≤ 100%",
-            "status": "ok",
-            "evidence": "부채비율 15.88% 양호"
-          },
-          {
-            "key": "p2_fcf_positive",
-            "label": "FCF 지속 흑자",
-            "status": "na",
-            "evidence": "CF 미확보"
-          },
-          {
-            "key": "p2_buyback",
-            "label": "자사주 매입/소각",
-            "status": "ng",
-            "evidence": "자사주 거래 0건 (도리어 유증으로 희석)"
-          },
-          {
-            "key": "p2_dividend",
-            "label": "안정/증가 배당",
-            "status": "ng",
-            "evidence": "배당 없음 (배당수익률 0)"
-          },
-          {
-            "key": "p2_moat",
-            "label": "경제적 해자(브랜드/규제/네트워크)",
-            "status": "ng",
-            "evidence": "도매업(467), 차별화 무"
-          },
-          {
-            "key": "p2_insider_buy",
-            "label": "내부자 매수 클러스터",
-            "status": "ng",
-            "evidence": "25Q1 전 대표 -2,000,000주 매도, 매수 0건"
-          },
-          {
-            "key": "p2_capital_allocation",
-            "label": "자본배분 일관성",
-            "status": "ng",
-            "evidence": "자산매각+유증반복+M&A신호 = 일관성 부재"
-          },
-          {
-            "key": "p2_audit_clean",
-            "label": "감사보고서 청결(emphasis 없음)",
-            "status": "ok",
-            "evidence": "24·25 적정의견"
-          }
-        ]
-      },
-      "dart_rcept": "20260331002343",
-      "source_year": 2025,
-      "tags": [
-        "로봇명목",
-        "코스닥",
-        "마이크로캡",
-        "작전성의심",
-        "FCF3년적자",
-        "유증반복",
-        "정정공시다발",
-        "매도"
-      ],
-      "timeseries": {
-        "2016": {
-          "revenue": 146,
-          "op_income": 5,
-          "net_income": -106,
-          "roe": -114.98
-        },
-        "2017": {
-          "revenue": 302,
-          "op_income": 12,
-          "net_income": -28,
-          "roe": -29.51
-        },
-        "2018": {
-          "revenue": 307,
-          "op_income": 3,
-          "net_income": -31,
-          "roe": -48.79
-        },
-        "2019": {
-          "revenue": 581,
-          "op_income": -12,
-          "net_income": -253,
-          "roe": -181.67
-        },
-        "2020": {
-          "revenue": 318,
-          "op_income": 13,
-          "net_income": 24,
-          "roe": 13.42
-        },
-        "2021": {
-          "revenue": 373,
-          "op_income": 4,
-          "net_income": 4,
-          "roe": 2.06
-        },
-        "2022": {
-          "revenue": 374,
-          "op_income": 2,
-          "net_income": 6,
-          "roe": 1.53
-        },
-        "2023": {
-          "revenue": 358,
-          "op_income": 1,
-          "net_income": 28,
-          "roe": 6.52
-        },
-        "2024": {
-          "revenue": 361,
-          "op_income": 9,
-          "net_income": -5,
-          "roe": -1.14
-        },
-        "2025": {
-          "revenue": 364,
-          "op_income": 2,
-          "net_income": 17,
-          "roe": 3.86
-        }
-      },
-      "anomaly_score": 40,
-      "anomaly_verdict": "warning",
-      "anomaly_flags": [
-        "정정공시 32.0% (65/203건) - 업계 평균 6배",
-        "자본스트레스 공시 9건 (유증 8건 + 1건 철회)"
-      ],
-      "insider_signal": "sell_only",
-      "insider_detail": "25Q1 전 대표 염현규 -2,000,000주, 매수 0건",
-      "corporate_events": [
-        {
-          "date": "2026-02-25",
-          "type": "유상증자 철회",
-          "detail": "주요사항보고서(유상증자) 철회"
-        },
-        {
-          "date": "2026-02-25",
-          "type": "유상증자 결정",
-          "detail": "[기재정정] 제3자배정"
-        },
-        {
-          "date": "2025-11-28",
-          "type": "유상증자 결정",
-          "detail": "[기재정정]"
-        },
-        {
-          "date": "2025-10-23",
-          "type": "유상증자 결정",
-          "detail": "[기재정정]"
-        },
-        {
-          "date": "2025-08-29",
-          "type": "유상증자 결정",
-          "detail": "[첨부정정]"
-        },
-        {
-          "date": "2023-07-31",
-          "type": "유형자산 양도",
-          "detail": "부산 강서구 토지·건물 89억(성광스틸), '현금 유동성 확보'"
-        }
-      ],
-      "shareholders_note": "최대주주 김영규(본인 0.81% / 317,968주), 특수관계인 (주)이수 5.72% + (주)대영엠텍 3.96% → 합계 10.49%. 기초 0→ 기말 신규 진입(경영권 변동성 시사)",
-      "financial_note": "단위 억원, 별도(separate) 기준. 2025 매출 364억·영익 2억·순익 17억, 자본 441억, 부채 70억. CF 위기: 3년 연속 FCF 적자 (2023 -64억 / 2024 -51억 / 2025 -30억 누적 -145억). CFO 회복(-7→2→14억)에도 CapEx 44~57억으로 본업 영업현금이 설비투자 못 따라감. 기말 현금 5.4억→1.6억 급감, 금융상품 처분(34억)+자산매각으로 버팀. 이게 유증 9건의 진짜 원인 — 본업이 자기 현금으로 굴러가지 못함.",
-      "capex_eok": 44,
-      "cf_trend": {
-        "2023": {
-          "cfo": -7,
-          "capex": 57,
-          "fcf": -64
-        },
-        "2024": {
-          "cfo": 2,
-          "capex": 53,
-          "fcf": -51
-        },
-        "2025": {
-          "cfo": 14,
-          "capex": 44,
-          "fcf": -30
-        }
-      },
-      "part1_risk": 7,
-      "part2_quality": 2,
-      "risks_hit": [
-        "재고/유형자산 손상차손 반복: 2023.7 부산 강서구 토지·건물 89억 매각 (현금 유동성 확보 명목)",
-        "핵심자산 매각 목적이 운영자금/차입상환: 2023 부산 공장 매각 사유='현금 유동성 확보'",
-        "특수관계자 거래 복잡/불투명: 정정공시 32% (65/203건) - 업계 평균 6배",
-        "사명/대표이사 교체 빈번: 전 대표 염현규 -2,000,000주 매도(25Q1), 현 대표 김형모, 최대주주 김영규 신규진입",
-        "흑자 + CFO 마이너스: 2025 순익 +17억이지만 CFO 14억으로 거의 일치. 단, FCF -30억으로 본업이 자기 투자도 못 감당",
-        "CF패턴 영업(-)/투자(+)/재무(+): 3년 FCF 누적 -145억(2023:-64, 2024:-51, 2025:-30). 자산매각+금융상품처분+유증으로 연명. 영업(미약)/투자(-)/재무(유증) 패턴",
-        "기타 위험 (DART warning, 작전성 등): DART anomaly 40 warning, 최대주주 0.81%·합계 10.49% 극단 저지분, 유증 9건+1건 철회"
-      ]
-    },
-    {
       "name": "SOOP",
       "code": "067160",
       "market": "KQ",
@@ -20263,6 +19906,394 @@
       "checklist_part2_total": 12,
       "checklist_part1_na": 1,
       "checklist_part2_na": 0
+    },
+    {
+      "name": "아이로보틱스",
+      "code": "066430",
+      "market": "KQ",
+      "analysis_date": "2026-05-14",
+      "price": 2530,
+      "market_cap_eok": 991,
+      "industry": "화학/산업용 로봇",
+      "per": 58.84,
+      "pbr": 2.25,
+      "roe": 3.93,
+      "eps": 43,
+      "bps": 1126,
+      "dividend_yield": null,
+      "dps": 0,
+      "payout_ratio": 0,
+      "revenue_eok": 364,
+      "op_income_eok": 2,
+      "net_income_eok": 17,
+      "op_margin": 0.47,
+      "debt_to_equity": 15.88,
+      "cfo_eok": 14.1,
+      "capex_eok": 44.3,
+      "fcf_eok": -30.2,
+      "cf_trend": {
+        "Y-2": {
+          "cfo": -7.4,
+          "capex": 35.1,
+          "fcf": -42.5
+        },
+        "Y-1": {
+          "cfo": 1.8,
+          "capex": 52.7,
+          "fcf": -50.9
+        },
+        "Y": {
+          "cfo": 14.1,
+          "capex": 44.3,
+          "fcf": -30.2
+        }
+      },
+      "buyback_eok": 0,
+      "dividend_eok": 0,
+      "shareholder_return_eok": 0,
+      "consensus_target": null,
+      "consensus_opinion": "N/A (증권사 커버리지 없음)",
+      "upside_pct": null,
+      "week52_high": 3890,
+      "week52_low": 1002,
+      "opinion": "매도",
+      "thesis": "DART anomaly 40 warning — **유상증자 5회 정정·1회 철회**(2026-02-25)·**32% 정정공시율**·자본스트레스 9건의 작전성 시그널 풀세트. 매출 358→361→364억 3년 정체, 영익 1~9억(OPM 0.47%) 사실상 손익분기 본업. 별도 ROE 3.93%는 영업외(자산처분 등) 의존. 10년 ROE 평균 -34.87% 누적 적자 이력 + 시총 991억 마이크로캡 + 외인 3.78% + 증권사 컨센서스 부재로 매수 부적격 풀세트. 2023-07 공장 89억 양도(운영자금 목적) 명시, 2026-02-25 제3자배정 유증 결정. PER 58.84·PBR 2.25는 본업 대비 극단 고평가. 신규 매수 금지. 보유자는 즉시 청산 권장.",
+      "tags": [
+        "마이크로캡",
+        "작전성의심",
+        "유증반복정정",
+        "정정공시32%",
+        "본업정체",
+        "매수부적격",
+        "코스닥891위"
+      ],
+      "rcept": "20260331002343",
+      "source_year": 2025,
+      "is_financial": false,
+      "audit_passed": true,
+      "audit_by": "skip",
+      "audit_at": "2026-05-14",
+      "audit_notes": "매수부적격 명확(작전성 풀세트) — 검증 위임 생략, 데이터 자체로 매도 확정",
+      "risks_hit": [
+        "유상증자 5회 정정·1회 철회(2026-02-25) + 제3자배정 (자본스트레스 9건)",
+        "DART anomaly 점수 40 warning, 정정공시 32% (65/203건)",
+        "OPM 0.47% — 본업 사실상 손익분기 (이자보상배율 위협)",
+        "핵심 자산(공장) 89억 양도 — 운영자금 목적 (2023-07)",
+        "FCF 3년 연속 마이너스 (-42→-51→-30억)",
+        "매출 358→361→364억 3년 정체"
+      ],
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_audit",
+            "label": "3년 감사의견 한정·부적정·의견거절",
+            "status": "ok",
+            "evidence": "2024·2025 적정"
+          },
+          {
+            "key": "p1_going_concern",
+            "label": "적정의견+계속기업 불확실성 단락",
+            "status": "ok",
+            "evidence": "강조사항 없음"
+          },
+          {
+            "key": "p1_audit_late",
+            "label": "감사보고서 법정기한 지연",
+            "status": "ok",
+            "evidence": "2026-03-31 접수"
+          },
+          {
+            "key": "p1_op_loss_3y",
+            "label": "3년 이상 연속 영업적자",
+            "status": "ok",
+            "evidence": "3년 흑자(미미)·과거 2019 -25억"
+          },
+          {
+            "key": "p1_interest_coverage",
+            "label": "이자보상배율 <1",
+            "status": "hit",
+            "evidence": "이자지급 1.31억 vs 영익 1.7억 = 약 1.3배 (사실상 안전권 붕괴)"
+          },
+          {
+            "key": "p1_capital_impairment",
+            "label": "자본총계≈자본금 또는 자본잠식",
+            "status": "ok",
+            "evidence": "자본 441억 흑자 (자본금 196억)"
+          },
+          {
+            "key": "p1_secondary_finance",
+            "label": "제2금융권 차입",
+            "status": "ok",
+            "evidence": "특이 사항 없음"
+          },
+          {
+            "key": "p1_profit_cash_gap",
+            "label": "손익 흑자 + CFO 마이너스",
+            "status": "ok",
+            "evidence": "CFO +14.1억 (다만 순익 17억 미달)"
+          },
+          {
+            "key": "p1_distress_pattern",
+            "label": "영업(-)/투자(+)/재무(+) 자산매각 연명",
+            "status": "ok",
+            "evidence": "+/-/- 패턴 (정상이나 절대액 미미)"
+          },
+          {
+            "key": "p1_turnover",
+            "label": "매출채권·재고 회전율 하락",
+            "status": "hit",
+            "evidence": "매출 358→361→364억 3년 정체 (성장 동력 부재)"
+          },
+          {
+            "key": "p1_goodwill_high",
+            "label": "자본대비 개발비·영업권 비율 높음",
+            "status": "ok",
+            "evidence": "별도 재무 특이 없음"
+          },
+          {
+            "key": "p1_current_ratio",
+            "label": "유동비율 <150% 또는 감소",
+            "status": "hit",
+            "evidence": "당좌비율 201→171→135% 빠른 감소 (3년 -33%p)"
+          },
+          {
+            "key": "p1_impairment",
+            "label": "재고평가손·유형자산 손상 반복",
+            "status": "ok",
+            "evidence": "별도 손상 시그널 없음"
+          },
+          {
+            "key": "p1_cb_bw",
+            "label": "CB·BW 반복 발행",
+            "status": "hit",
+            "evidence": "유상증자 5회 정정 + 1회 철회 + 제3자배정 (자본스트레스 9건)"
+          },
+          {
+            "key": "p1_asset_sale_purpose",
+            "label": "핵심자산 매각 (운영자금 목적)",
+            "status": "hit",
+            "evidence": "2023-07 공장(89억) 양도, 사유 '현금 유동성 확보'"
+          },
+          {
+            "key": "p1_related_party",
+            "label": "특수관계자 거래 복잡·불투명",
+            "status": "ok",
+            "evidence": "별도 시그널 없음"
+          },
+          {
+            "key": "p1_name_change",
+            "label": "사명·대표이사 교체 빈번",
+            "status": "ok",
+            "evidence": "안정"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_revenue",
+            "label": "매출액 꾸준히 우상향",
+            "status": "ng",
+            "evidence": "358→361→364억 3년 정체 (CAGR 0.83%)"
+          },
+          {
+            "key": "p2_op_faster",
+            "label": "매출성장률 < 영업이익성장률",
+            "status": "ng",
+            "evidence": "매출 +0.83% vs 영익 변동 1→9→2 (안정성 없음)"
+          },
+          {
+            "key": "p2_opm",
+            "label": "OPM 경쟁사 대비 우위",
+            "status": "ng",
+            "evidence": "OPM 0.47% (책 기준 10% 미달, 화학 업종 평균 미달)"
+          },
+          {
+            "key": "p2_roe",
+            "label": "ROE 10~15%+ 꾸준",
+            "status": "ng",
+            "evidence": "ROE 3.93% (10년 평균 -34.87%)"
+          },
+          {
+            "key": "p2_cfo_gt_ni",
+            "label": "CFO > 당기순이익",
+            "status": "ng",
+            "evidence": "CFO 14.1 vs 순익 17 (CFO 미달)"
+          },
+          {
+            "key": "p2_fcf_plus",
+            "label": "FCF 플러스",
+            "status": "ng",
+            "evidence": "FCF -30억 (3년 연속 마이너스)"
+          },
+          {
+            "key": "p2_cf_pattern",
+            "label": "영업(+)/투자(-)/재무(-) 패턴",
+            "status": "ok",
+            "evidence": "+/-/- 형식적 정상 (절대액 미미)"
+          },
+          {
+            "key": "p2_total_return",
+            "label": "총주주환원율 30%+",
+            "status": "ng",
+            "evidence": "배당 0 + 자사주 0 = 환원 전무"
+          },
+          {
+            "key": "p2_buyback",
+            "label": "자사주 매입+소각 실행",
+            "status": "ng",
+            "evidence": "매입·소각 이력 없음 — 오히려 유증 반복"
+          },
+          {
+            "key": "p2_dividend",
+            "label": "배당금 꾸준·증액",
+            "status": "ng",
+            "evidence": "배당 N/A (지급 이력 없음)"
+          },
+          {
+            "key": "p2_per",
+            "label": "PER < 업종/과거 평균",
+            "status": "ng",
+            "evidence": "PER 58.84 (업종 -44.15 음수 비교 무의미, 절대 과대)"
+          },
+          {
+            "key": "p2_pbr",
+            "label": "PBR < 1배",
+            "status": "ng",
+            "evidence": "PBR 2.25 (네이버 동종업종 기준), 별도 1.54도 1배 초과"
+          },
+          {
+            "key": "p2_ev_ebitda",
+            "label": "EV/EBITDA 낮음",
+            "status": "na",
+            "evidence": "EBITDA 미산출"
+          }
+        ]
+      },
+      "timeseries": {
+        "years": [
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "revenue_eok": [
+          373,
+          374,
+          358,
+          361,
+          364
+        ],
+        "op_income_eok": [
+          4,
+          2,
+          1,
+          9,
+          2
+        ],
+        "net_income_eok": [
+          4,
+          6,
+          28,
+          -5,
+          17
+        ],
+        "op_margin_pct": [
+          1.12,
+          0.59,
+          0.36,
+          2.59,
+          0.47
+        ],
+        "roe_pct": [
+          2.06,
+          1.53,
+          6.96,
+          -1.14,
+          3.93
+        ],
+        "debt_ratio": [
+          103.93,
+          49.67,
+          29.18,
+          20.35,
+          15.88
+        ],
+        "cfo_eok": [
+          null,
+          null,
+          -7.4,
+          1.8,
+          14.1
+        ],
+        "fcf_eok": [
+          null,
+          null,
+          -42.5,
+          -50.9,
+          -30.2
+        ],
+        "source": "DART 연결+별도 (2021-2025) + 네이버페이 (별도)",
+        "quarterly": {
+          "labels": [
+            "2024.12",
+            "2025.03",
+            "2025.06",
+            "2025.09",
+            "2025.12"
+          ],
+          "revenue_eok": [
+            100,
+            85,
+            102,
+            89,
+            89
+          ],
+          "op_income_eok": [
+            6,
+            -2,
+            1,
+            1,
+            3
+          ],
+          "net_income_eok": [
+            4,
+            -2,
+            2,
+            3,
+            14
+          ],
+          "op_margin_pct": [
+            6.47,
+            -2.68,
+            0.62,
+            0.88,
+            2.9
+          ],
+          "per": [
+            null,
+            -69.59,
+            125.49,
+            82.23,
+            39.81
+          ],
+          "pbr": [
+            0.5,
+            1.01,
+            1.41,
+            1.28,
+            1.54
+          ],
+          "source": "네이버페이 분기 누적차감 별도"
+        }
+      },
+      "part1_risk": 5,
+      "checklist_part1_risk": 5,
+      "part2_quality": 1,
+      "checklist_part2_quality": 1,
+      "checklist_part1_total": 17,
+      "checklist_part2_total": 13,
+      "checklist_part1_na": 0,
+      "checklist_part2_na": 1
     }
   ],
   "market_baseline": {
