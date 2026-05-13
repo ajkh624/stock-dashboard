@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-14T08:14:45+09:00",
+  "updated_at": "2026-05-14T08:21:47+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -20685,6 +20685,400 @@
       "checklist_part1_risk": 1,
       "part2_quality": 8,
       "checklist_part2_quality": 8,
+      "checklist_part1_total": 17,
+      "checklist_part2_total": 13,
+      "checklist_part1_na": 0,
+      "checklist_part2_na": 1
+    },
+    {
+      "name": "LG생활건강",
+      "code": "051900",
+      "market": "KS",
+      "analysis_date": "2026-05-14",
+      "price": 256500,
+      "market_cap_eok": 39250,
+      "industry": "화장품/생활용품/음료",
+      "per": null,
+      "per_estimated": 24.46,
+      "pbr": 0.79,
+      "roe": -1.82,
+      "eps": -5688,
+      "eps_estimated": 10485,
+      "bps": 325224,
+      "dividend_yield": 0.78,
+      "dps": 2000,
+      "dps_prev": 3500,
+      "payout_ratio": -33.58,
+      "revenue_eok": 63555,
+      "op_income_eok": 1707,
+      "net_income_eok": -858,
+      "op_margin": 2.69,
+      "debt_to_equity": 23.32,
+      "cfo_eok": 4464,
+      "capex_eok": 947,
+      "fcf_eok": 3517,
+      "cf_trend": {
+        "Y-2": {
+          "cfo": 6591,
+          "capex": 1635,
+          "fcf": 4956
+        },
+        "Y-1": {
+          "cfo": 5276,
+          "capex": 1473,
+          "fcf": 3803
+        },
+        "Y": {
+          "cfo": 4464,
+          "capex": 947,
+          "fcf": 3517
+        }
+      },
+      "buyback_eok": 0,
+      "dividend_eok": 975,
+      "shareholder_return_eok": 975,
+      "consensus_target": 275400,
+      "consensus_opinion": "3.09 중립",
+      "upside_pct": 7.4,
+      "week52_high": 355500,
+      "week52_low": 225000,
+      "opinion": "회피",
+      "opinion_caveat": "룰상 위험 1·우량 5(norm 5)로 중립이지만 매출 9년 CAGR 0.47% 무성장 + 4년 연속 ROE 추락(22→-1.8) + 영업권 손상 3년 반복 + DPS -43% 삭감 4중고로 사실상 회피급. 보유자는 부분 트리밍 권장.",
+      "thesis": "**4중고 가치함정**: ① 매출 8.1→6.4조 5년 -21% 감소·9년 CAGR 0.47%, ② ROE 22→-1.82% 4년 연속 추락 + 2025 순익 적자전환 (-858억), ③ 영업권·무형자산 총자산 26% (1.8조) + **3년 연속 손상차손 1,122→934→1,798억** Avon/CNP 인수 잠재 추가손상 리스크, ④ DPS 3,500→2,000 **-43% 삭감** + 자사주 매입 0 (배당귀족 지위 상실). PBR 0.79 < 1배·CFO 4,464억·부채비율 23%·당좌 189%로 재무 안정성은 양호하나 **딥밸류 함정 패턴**. DART anomaly 0/100 clean·감사 적정. 2026E 영익 +90% 컨센(중국 면세 회복 가정)은 신뢰도 검증 필요. 신규 매수 회피. 보유자는 50% 분할 매도 + 잔여분은 2026 1H 실적(중국 면세 + Avon 손상 추가 여부) 확인 후 결정. 컨센 목표 275,400원(+7.4%)는 상승 여력 부족.",
+      "tags": [
+        "화장품",
+        "딥밸류함정",
+        "ROE추락",
+        "매출무성장",
+        "영업권손상반복",
+        "배당삭감",
+        "PBR0.79",
+        "코스피149위"
+      ],
+      "rcept": "20260316000985",
+      "source_year": 2025,
+      "audit_passed": true,
+      "audit_by": "claude",
+      "audit_at": "2026-05-14",
+      "audit_notes": "추정PER 24.46×EPS 10,485=256,464 ≈ 현재가 256,500 컨센 정합성 ✓. 무형자산 손상 1,798억은 BS 잔액(1.7988조)과 동일 숫자 혼동 가능 — 실제 P/L 손상은 약 1,654억(잔액 감소). 배당 삭감은 적자 대응 자연스러운 조치. 룰상 중립이나 4중고로 회피 등급 권고 채택.",
+      "risks_hit": [
+        "무형자산 손상차손 3년 연속 반복 (1,122→934→1,798억) — 영업권 비중 26% 잠재 추가손상"
+      ],
+      "valuation_warnings": [
+        "매출 9년 CAGR 0.47% — 사실상 무성장",
+        "ROE 22→-1.82% 4년 연속 추락, 2025 순익 적자전환 -858억",
+        "DPS 3,500→2,000 -43% 삭감 (배당귀족 지위 상실)",
+        "OPM 2.69% (책 10% 미달의 1/4), ROE -1.82% (책 10% 미달)",
+        "영업권·무형자산 총자산 26.2% (1.80조) Avon/CNP 손상 누적"
+      ],
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_audit",
+            "label": "3년 감사의견 한정·부적정·의견거절",
+            "status": "ok",
+            "evidence": "2024·2025 적정의견"
+          },
+          {
+            "key": "p1_going_concern",
+            "label": "적정의견+계속기업 불확실성 단락",
+            "status": "ok",
+            "evidence": "강조사항 없음"
+          },
+          {
+            "key": "p1_audit_late",
+            "label": "감사보고서 법정기한 지연",
+            "status": "ok",
+            "evidence": "2026-03-16 정기 접수"
+          },
+          {
+            "key": "p1_op_loss_3y",
+            "label": "3년 이상 연속 영업적자",
+            "status": "ok",
+            "evidence": "영업이익 1,707억 흑자 (다만 -65% YoY)"
+          },
+          {
+            "key": "p1_interest_coverage",
+            "label": "이자보상배율 <1",
+            "status": "ok",
+            "evidence": "이자 200억 vs 영익 1,707억 = 8.5배"
+          },
+          {
+            "key": "p1_capital_impairment",
+            "label": "자본총계≈자본금 또는 자본잠식",
+            "status": "ok",
+            "evidence": "자본 5.57조 / 자본금 884억"
+          },
+          {
+            "key": "p1_secondary_finance",
+            "label": "제2금융권 차입",
+            "status": "ok",
+            "evidence": "우량 차입 구조"
+          },
+          {
+            "key": "p1_profit_cash_gap",
+            "label": "손익 흑자 + CFO 마이너스",
+            "status": "ok",
+            "evidence": "순익 -858 vs CFO 4,464 (CFO 양호, 다만 순익 적자)"
+          },
+          {
+            "key": "p1_distress_pattern",
+            "label": "영업(-)/투자(+)/재무(+) 자산매각 연명",
+            "status": "ok",
+            "evidence": "+4,464/-1,711/-4,430 성숙기 +/-/-"
+          },
+          {
+            "key": "p1_turnover",
+            "label": "매출채권·재고 회전율 하락",
+            "status": "ok",
+            "evidence": "매출채권·재고 양호 (감소 추세)"
+          },
+          {
+            "key": "p1_goodwill_high",
+            "label": "자본대비 개발비·영업권 비율 높음",
+            "status": "ok",
+            "evidence": "무형자산 1.80조/자본 5.57조 = 32.3% (책 30% 임계 근접, 다만 hit 미만)"
+          },
+          {
+            "key": "p1_current_ratio",
+            "label": "유동비율 <150% 또는 감소",
+            "status": "ok",
+            "evidence": "당좌비율 189.17% (5년 추세 142→149→189 개선)"
+          },
+          {
+            "key": "p1_impairment_repeat",
+            "label": "재고평가손·유형자산 손상 반복",
+            "status": "hit",
+            "evidence": "무형자산 손상 3년 연속 반복 1,122→934→1,798억 (Avon/CNP 영업권 누적 손상)"
+          },
+          {
+            "key": "p1_cb_bw",
+            "label": "CB·BW 반복 발행",
+            "status": "ok",
+            "evidence": "자본스트레스 1건만 (사소, anomaly clean)"
+          },
+          {
+            "key": "p1_asset_sale_purpose",
+            "label": "핵심자산 매각 (운영자금 목적)",
+            "status": "ok",
+            "evidence": "해당 없음"
+          },
+          {
+            "key": "p1_related_party",
+            "label": "특수관계자 거래 복잡·불투명",
+            "status": "ok",
+            "evidence": "LG그룹 정상 거래"
+          },
+          {
+            "key": "p1_name_change",
+            "label": "사명·대표이사 교체 빈번",
+            "status": "ok",
+            "evidence": "이정애 대표 안정 (2023~)"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_revenue_up",
+            "label": "매출액 꾸준히 우상향",
+            "status": "ng",
+            "evidence": "8.1조(2021)→6.4조(2025) 5년 -21% 감소, 9년 CAGR 0.47% 무성장"
+          },
+          {
+            "key": "p2_op_faster_than_rev",
+            "label": "매출성장률 < 영업이익성장률",
+            "status": "ng",
+            "evidence": "매출 5년 -21% / 영익 5년 -87% (영익이 더 큰 감소)"
+          },
+          {
+            "key": "p2_opm",
+            "label": "OPM 경쟁사 대비 우위",
+            "status": "ng",
+            "evidence": "OPM 2.69% — 한국콜마 7.3%·아모레 4.5% 미달, 책 10% 기준 1/4"
+          },
+          {
+            "key": "p2_roe",
+            "label": "ROE 10~15%+ 꾸준",
+            "status": "ng",
+            "evidence": "ROE -1.82% (2025), 5년 평균 12.22% / 4년 연속 추락 (22→-1.5)"
+          },
+          {
+            "key": "p2_cfo_gt_ni",
+            "label": "CFO > 당기순이익",
+            "status": "ok",
+            "evidence": "CFO 4,464 > 순익 -858 (적자 상태에서 +CFO 유지, 본업 현금창출은 양호)"
+          },
+          {
+            "key": "p2_fcf_plus",
+            "label": "FCF 플러스",
+            "status": "ok",
+            "evidence": "FCF 3,517억 (3년 연속 +)"
+          },
+          {
+            "key": "p2_cf_mature_pattern",
+            "label": "영업(+)/투자(-)/재무(-) 패턴",
+            "status": "ok",
+            "evidence": "+/-/- 성숙기 정상"
+          },
+          {
+            "key": "p2_total_return",
+            "label": "총주주환원율 30%+",
+            "status": "ng",
+            "evidence": "배당 975억(+자사주 0) / 적자라 비율 산식 부적합. 자사주 매입 0"
+          },
+          {
+            "key": "p2_buyback_cancel",
+            "label": "자사주 매입+소각 실행",
+            "status": "ng",
+            "evidence": "자사주 매입 0건, 소각 이력 없음"
+          },
+          {
+            "key": "p2_dividend_growth",
+            "label": "배당금 꾸준·증액",
+            "status": "ng",
+            "evidence": "DPS 3,500→3,500→**2,000 -43% 삭감** (배당귀족 지위 상실), 배당수익률 0.77%"
+          },
+          {
+            "key": "p2_per_low",
+            "label": "PER < 업종/과거 평균",
+            "status": "ok",
+            "evidence": "PER N/A(적자), 추정 PER 24.46 < 업종 43.90 (소폭 우위)"
+          },
+          {
+            "key": "p2_pbr_lt_1",
+            "label": "PBR < 1배",
+            "status": "ok",
+            "evidence": "PBR 0.79 (책 1배 미만 충족, 다만 BPS 자체가 영업권 손상 추가 시 하향)"
+          },
+          {
+            "key": "p2_ev_ebitda",
+            "label": "EV/EBITDA 낮음",
+            "status": "na",
+            "evidence": "미산출"
+          }
+        ]
+      },
+      "timeseries": {
+        "years": [
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "revenue_eok": [
+          80915,
+          71858,
+          68048,
+          68119,
+          63555
+        ],
+        "op_income_eok": [
+          12896,
+          7111,
+          4870,
+          4590,
+          1707
+        ],
+        "net_income_eok": [
+          8611,
+          2583,
+          1635,
+          2039,
+          -858
+        ],
+        "op_margin_pct": [
+          15.94,
+          9.9,
+          7.16,
+          6.74,
+          2.69
+        ],
+        "roe_pct": [
+          15.66,
+          4.72,
+          2.95,
+          3.59,
+          -1.54
+        ],
+        "debt_ratio": [
+          37.42,
+          33.54,
+          30.12,
+          30.25,
+          23.32
+        ],
+        "cfo_eok": [
+          null,
+          null,
+          6591,
+          5276,
+          4464
+        ],
+        "fcf_eok": [
+          null,
+          null,
+          4956,
+          3803,
+          3517
+        ],
+        "source": "DART 연결 (2021-2025) + 네이버페이",
+        "quarterly": {
+          "labels": [
+            "2024.12",
+            "2025.03",
+            "2025.06",
+            "2025.09",
+            "2025.12"
+          ],
+          "revenue_eok": [
+            16099,
+            16979,
+            16049,
+            15800,
+            14728
+          ],
+          "op_income_eok": [
+            434,
+            1424,
+            548,
+            462,
+            -727
+          ],
+          "net_income_eok": [
+            -899,
+            1035,
+            386,
+            234,
+            -2512
+          ],
+          "op_margin_pct": [
+            2.7,
+            8.38,
+            3.42,
+            2.92,
+            -4.94
+          ],
+          "per": [
+            28.57,
+            30.62,
+            48.98,
+            76.6,
+            null
+          ],
+          "pbr": [
+            0.92,
+            0.93,
+            0.95,
+            0.85,
+            0.79
+          ],
+          "source": "네이버페이 분기 누적차감"
+        }
+      },
+      "part1_risk": 1,
+      "checklist_part1_risk": 1,
+      "part2_quality": 5,
+      "checklist_part2_quality": 5,
       "checklist_part1_total": 17,
       "checklist_part2_total": 13,
       "checklist_part1_na": 0,
