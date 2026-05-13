@@ -81,8 +81,8 @@ function cmpCell(navVal, krxVal, kind='x') {
   if (navVal == null || navVal === 0) {
     return `<span style="color:#93c5fd">${fmtV(krxVal)}</span><br><small class="krx-aux">KRX</small>`;
   }
-  // 둘 다 있음: 차이 계산
-  const diffPct = ((krxVal - navVal) / Math.abs(navVal)) * 100;
+  // 둘 다 있음: 차이 계산 (네이버 기준 = (네이버 - KRX) / KRX)
+  const diffPct = ((navVal - krxVal) / Math.abs(krxVal)) * 100;
   const absDiff = Math.abs(diffPct);
   // 차이 미미하면 KRX 생략
   if (absDiff < 0.5) {
