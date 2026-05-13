@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-13T18:05:24+09:00",
+  "updated_at": "2026-05-13T18:21:57+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -5494,337 +5494,6 @@
       "div_percentile": 64.1,
       "krx_dividend_yield": 2.33,
       "krx_close": 107100.0,
-      "krx_asof": "2026-05-13"
-    },
-    {
-      "analyzed_at": "2026-05-13T02:41:14+09:00",
-      "name": "전방",
-      "code": "000950",
-      "price": 30100,
-      "per": 1.15,
-      "pbr": 0.15,
-      "roe": 13.1,
-      "dividend_yield": 3.32,
-      "debt_ratio": 4.34,
-      "cfo_eok": -85,
-      "fcf_eok": -85,
-      "revenue_eok": 408,
-      "op_income_eok": -73,
-      "net_income_eok": 298,
-      "opinion": "회피",
-      "opinion_color": "avoid",
-      "thesis": "전형적인 '청산 모드 가치주 함정'. 1953년 설립 방직업, 5년 매출 1,337→408억 (-70%) 비즈니스 소멸. 4년 연속 영업적자 (22:-350 / 23:-326 / 24:-85 / 25:-73억). 25년 PER 1.15·순익 +298억은 단기금융상품 1,450억 매각·대여금 808억 회수·토지 28억 처분 등 일회성 자산처분이익이 만든 착시. 본업 EPS는 음수. 부채비율 4.34%는 자산을 다 팔아 빚을 갚은 결과(자산 3,833→2,374억). CFO -85억, 정정공시 20.6% (DART 30/100 워치). 배당 1,000원은 자본 환원이 아닌 청산 분배 성격. PER·PBR 둘 다 가장 낮지만 매수가 아니라 매도 후보. 본업이 사라진 회사 = 다음은 자본잠식 또는 자진 청산. 절대 회피.",
-      "checklist_part1_risk": 7,
-      "checklist_part1_total": 18,
-      "checklist_part2_quality": 1,
-      "checklist_part2_total": 12,
-      "checklist_part1_na": 0,
-      "checklist_part2_na": 0,
-      "checklist_detail": {
-        "part1_risks_hit": [
-          "4년 연속 영업적자 ⚠️⚠️",
-          "유동비율 매우 낮음 (부채 4.34% = 자산매각 끝남)",
-          "재고/유형자산 손상 반복 (방직설비 폐기)",
-          "핵심자산 매각 → 운영자금 (방직사업 청산 자금)",
-          "흑자 + CFO 마이너스 (순익 +298 vs CFO -85) ⚠️",
-          "CF패턴 영업(-)/투자(+)/재무(-) — 본업 적자 + 자산팔아 빚갚기",
-          "정정공시 20.6% (DART anomaly 30/100)"
-        ],
-        "part2_passed": [
-          "부채비율 4.34% (자산매각 결과 — 함정 신호)"
-        ],
-        "part2_failed": [
-          "매출 우상향 (-70% 감소)",
-          "영업이익 성장",
-          "OPM (-17.94%)",
-          "ROE 15%+ (변동성 극심)",
-          "CFO > 순이익",
-          "FCF (+)",
-          "정상 CF 패턴",
-          "주주환원율 (배당 일회성)",
-          "자사주 소각",
-          "배당 안정",
-          "PBR < 1 (의미 없음 — 자산 부실)"
-        ]
-      },
-      "checklist_detail_full": {
-        "part1": [
-          {
-            "key": "p1_audit_qualified",
-            "label": "감사의견 한정/부적정/의견거절 (최근 3년)",
-            "status": "ok",
-            "evidence": "2024/2025 적정의견"
-          },
-          {
-            "key": "p1_going_concern",
-            "label": "감사보고서 '계속기업 불확실성' 단락 존재",
-            "status": "ok",
-            "evidence": "emphasis 없음 — 다만 본업 적자 누적 시 향후 발생 가능"
-          },
-          {
-            "key": "p1_audit_delay",
-            "label": "감사보고서 법정 기한(3/31) 지연",
-            "status": "ok",
-            "evidence": "2026.3.19 정상 제출"
-          },
-          {
-            "key": "p1_3y_op_loss",
-            "label": "3년 이상 연속 영업적자",
-            "status": "hit",
-            "evidence": "⚠️ 4년 연속: 22:-350 / 23:-326 / 24:-85 / 25:-73억"
-          },
-          {
-            "key": "p1_interest_coverage",
-            "label": "이자보상배율 < 1",
-            "status": "hit",
-            "evidence": "⚠️ 영익 음수 — 이자보상배율 산정 불가, 본업으로 이자도 못 갚음"
-          },
-          {
-            "key": "p1_current_ratio",
-            "label": "유동비율 < 150% 또는 감소 추세",
-            "status": "hit",
-            "evidence": "부채비율 4.34% — 자산을 팔아 빚을 다 갚은 청산 모드 신호"
-          },
-          {
-            "key": "p1_impairment",
-            "label": "재고/유형자산 손상차손 반복",
-            "status": "hit",
-            "evidence": "방직 설비 폐기, 자산 5년 3,833→2,374억 (-38%)"
-          },
-          {
-            "key": "p1_cb_bw_repeat",
-            "label": "CB/BW 반복 발행",
-            "status": "ok",
-            "evidence": "CB/BW 발행 없음"
-          },
-          {
-            "key": "p1_asset_sale_purpose",
-            "label": "핵심자산 매각 목적이 운영자금/차입상환",
-            "status": "hit",
-            "evidence": "⚠️ 토지·기계장치 매각, 단기금융상품 +1,450억 처분 → 운영자금/배당으로 사용"
-          },
-          {
-            "key": "p1_related_party",
-            "label": "특수관계자 거래 복잡/불투명",
-            "status": "ok",
-            "evidence": "특이사항 없음"
-          },
-          {
-            "key": "p1_mgmt_change",
-            "label": "사명/대표이사 교체 빈번",
-            "status": "ok",
-            "evidence": "안정"
-          },
-          {
-            "key": "p1_capital_erosion",
-            "label": "자본총계≈자본금 또는 자본잠식 진행",
-            "status": "ok",
-            "evidence": "자본 2,275억 / 자본금 추정 100억 (현재는 잠식 X, but 적자 지속 시 위험)"
-          },
-          {
-            "key": "p1_secondary_finance",
-            "label": "제2금융권(저축은행/캐피털) 차입",
-            "status": "ok",
-            "evidence": "단기차입 거의 없음"
-          },
-          {
-            "key": "p1_profit_cash_gap",
-            "label": "흑자 + CFO 마이너스",
-            "status": "hit",
-            "evidence": "⚠️ 25년 순익 +298억 / CFO -85억 — 일회성 처분이익이 만든 가짜 흑자"
-          },
-          {
-            "key": "p1_cf_pattern_bad",
-            "label": "CF패턴 영업(-)/투자(+)/재무(+) (자산팔고 빌려 연명)",
-            "status": "hit",
-            "evidence": "⚠️ 영업(-85)/투자(+305)/재무(-243) — 본업 적자 + 자산 매각 + 부채 상환 = 청산 모드"
-          },
-          {
-            "key": "p1_turnover_drop",
-            "label": "매출채권/재고자산 회전율 하락",
-            "status": "hit",
-            "evidence": "매출 -70% 폭락으로 회전율 자체가 의미 없는 상태"
-          },
-          {
-            "key": "p1_intangible_high",
-            "label": "자본총계 대비 개발비/영업권 비율 높음",
-            "status": "ok",
-            "evidence": "무형자산 미미"
-          },
-          {
-            "key": "p1_other_risk",
-            "label": "기타 위험 (정정공시, 자본스트레스 등)",
-            "status": "hit",
-            "evidence": "⚠️ 정정공시 13/63 = 20.6% (DART anomaly 30/100 — 최고 워치)"
-          }
-        ],
-        "part2": [
-          {
-            "key": "p2_revenue_up",
-            "label": "매출 꾸준한 우상향",
-            "status": "ng",
-            "evidence": "⚠️ 1,337→1,249→948→572→408억 (CAGR -25.69%) — 비즈니스 소멸"
-          },
-          {
-            "key": "p2_op_leverage",
-            "label": "영업이익 성장률 > 매출 성장률",
-            "status": "ng",
-            "evidence": "영익 5년 모두 적자 또는 0 근방"
-          },
-          {
-            "key": "p2_opm_competitive",
-            "label": "OPM 두 자릿수",
-            "status": "ng",
-            "evidence": "OPM -17.94% (5년 평균 -17.93%)"
-          },
-          {
-            "key": "p2_roe_15plus",
-            "label": "ROE 15%+ 5년 지속",
-            "status": "ng",
-            "evidence": "0.11/32.02/-10.11/4.49/13.10% — σ 14.18 변동성 극심, 일회성 이익으로 들쭉날쭉"
-          },
-          {
-            "key": "p2_cfo_gt_ni",
-            "label": "CFO > 순이익",
-            "status": "ng",
-            "evidence": "⚠️ CFO -85억 vs 순익 +298억 — 분식 의심 수준의 괴리"
-          },
-          {
-            "key": "p2_fcf_positive",
-            "label": "FCF 5년 연속 (+)",
-            "status": "ng",
-            "evidence": "CFO -85억 — FCF 음수"
-          },
-          {
-            "key": "p2_cf_pattern_good",
-            "label": "CF패턴 영업(+)/투자(-)/재무(-) 정상",
-            "status": "ng",
-            "evidence": "⚠️ 영업(-)/투자(+)/재무(-) — 청산 모드 패턴"
-          },
-          {
-            "key": "p2_shareholder_return",
-            "label": "주주환원율 30%+ (배당+자사주)",
-            "status": "ng",
-            "evidence": "배당성향 3.82% (24년 12.8%에서 하락) — 주주환원 아닌 자본 회수"
-          },
-          {
-            "key": "p2_treasury_burn",
-            "label": "자사주 매입 후 소각",
-            "status": "ng",
-            "evidence": "자사주 매입·소각 없음"
-          },
-          {
-            "key": "p2_dividend_stable",
-            "label": "배당 5년 안정/증가",
-            "status": "ng",
-            "evidence": "23년 무배당 → 24년 1,000원 → 25년 1,000원 (일회성 자산매각 자금으로 배당)"
-          },
-          {
-            "key": "p2_per_attractive",
-            "label": "PER 동종업종 이하 또는 절대 저평가",
-            "status": "ok",
-            "evidence": "⚠️ PER 1.15 (KRX). 그러나 일회성 처분이익 기반이므로 trailing PER이 가짜"
-          },
-          {
-            "key": "p2_pbr_attractive",
-            "label": "PBR < 1 또는 업종 대비 디스카운트",
-            "status": "ng",
-            "evidence": "⚠️ PBR 0.15 — 자산이 부실(노후 방직설비, 매각 잔여)이라 청산가치 불확실"
-          }
-        ]
-      },
-      "dart_rcept": "20260319000974",
-      "source_year": 2025,
-      "tags": [
-        "방직업청산",
-        "가치주함정",
-        "일회성이익",
-        "본업소멸",
-        "회피"
-      ],
-      "timeseries": {
-        "source": "DART 연결재무 (5년)",
-        "years": [
-          2021,
-          2022,
-          2023,
-          2024,
-          2025
-        ],
-        "revenue_eok": [
-          1337,
-          1249,
-          948,
-          572,
-          408
-        ],
-        "op_income_eok": [
-          74,
-          -350,
-          -325,
-          -85,
-          -73
-        ],
-        "net_income_eok": [
-          2,
-          675,
-          -192,
-          89,
-          298
-        ],
-        "op_margin_pct": [
-          5.5,
-          -28.06,
-          -34.34,
-          -14.82,
-          -17.94
-        ],
-        "roe_pct": [
-          0.11,
-          32.02,
-          -10.11,
-          4.49,
-          13.1
-        ],
-        "debt_ratio": [
-          166.14,
-          44.68,
-          24.84,
-          16.76,
-          4.34
-        ],
-        "per": [
-          null,
-          null,
-          null,
-          null,
-          1.15
-        ],
-        "pbr": [
-          null,
-          null,
-          null,
-          null,
-          0.15
-        ],
-        "dividend_yield": [
-          null,
-          5.42,
-          null,
-          5.42,
-          3.32
-        ]
-      },
-      "market": "KS",
-      "analysis_date": "2026-05-13",
-      "krx_per": 1.15,
-      "krx_pbr": 0.15,
-      "krx_div_yield": 3.32,
-      "per_percentile": 0.4,
-      "pbr_percentile": 0.1,
-      "div_percentile": 77.3,
-      "krx_dividend_yield": 3.32,
-      "krx_close": 30100.0,
       "krx_asof": "2026-05-13"
     },
     {
@@ -14858,6 +14527,179 @@
         ]
       },
       "financial_note": "25년 순익 341억 = 투자부동산 699억 + 유형자산 243억 + 금융자산 550억 등 약 1,500억 자산처분 일회성. 본업(농약) 영업적자 -81억. CFO 5년 중 4년 마이너스 = 본업 현금창출력 없음. 부동산 자산가치주 잠재력은 있지만 우량주 기준 미달. 본업 PER 정상화 시 ~50배 이상."
+    },
+    {
+      "analyzed_at": "2026-05-13T19:00:00+09:00",
+      "name": "전방",
+      "code": "000950",
+      "price": 30100.0,
+      "per": 1.15,
+      "pbr": 0.15,
+      "roe": 13.1,
+      "dividend_yield": 3.32,
+      "debt_ratio": 4.34,
+      "cfo_eok": -85.2,
+      "fcf_eok": -91.4,
+      "revenue_eok": 408.0,
+      "op_income_eok": -73.0,
+      "net_income_eok": 298.0,
+      "opinion": "회피",
+      "opinion_color": "avoid",
+      "thesis": "1948년 설립 78년 노포 면방직(원사·원단). 표면 PER 1.15·PBR 0.15·배당 3.32%는 극단적 저평가처럼 보이지만 본업은 10년 중 9년 영업적자(16~19,22~25). 매출 10년 CAGR -16.23%(2,008→408억 80% 폭락) — 면방산업 사양화 직격탄. 25년 순익 298억은 단기금융상품 운용수익(예수금이자+처분차익)과 종업원퇴직급여부채 환입 등 영업외 일회성. 영업현금흐름 5년 중 4년 마이너스(25년 CFO -85억 vs 순익 +298억 = 명백한 괴리). 자본 2,275억(대부분 단기금융상품 1,453억 = 자본의 64%) vs 시총 약 343억 = 청산가치 15%. 부채비율 4.34% 무차입(공장 매각·인력 감축으로 다운사이징). 자본스트레스 0건이지만 정정공시 비율 20.6%(63건 중 13건) 관찰 신호. 사업 축소·자산성 회사 전환 중 — 자산가치주 잠재력은 압도적이지만 본업 의지 없는 '청산형' 함정. 추가 본사·공장 부동산 매각 모멘텀 노린다면 소수 의견 가능, 신규 매수 비추.",
+      "checklist_part1_risk": 6,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 4,
+      "checklist_part2_total": 12,
+      "checklist_detail": {
+        "part1_risks_hit": [
+          "10년중9년영업적자(OPM-17.94%)",
+          "매출CAGR-16.23%사양화",
+          "자산처분/금융자산운용반복",
+          "흑자298억+CFO-85억(현금흐름트랩)",
+          "CF패턴영업-투자+재무-",
+          "정정공시20.6%(63건중13건)"
+        ],
+        "part2_passed": [
+          "PER1.15",
+          "PBR0.15",
+          "자본스트레스0건",
+          "감사적정"
+        ],
+        "part2_failed": [
+          "매출CAGR-16.23%",
+          "영업적자10년중9년",
+          "OPM-17.94%",
+          "ROE음수다발",
+          "CFO>순익위반",
+          "FCF음수",
+          "자사주소각0",
+          "배당주환원율낮음"
+        ]
+      },
+      "dart_rcept": "20260319000974",
+      "source_year": 2025,
+      "tags": [
+        "면방직",
+        "KOSPI",
+        "자산가치주",
+        "사업축소중",
+        "현금흐름트랩",
+        "본업영업적자10년중9년",
+        "사양산업",
+        "청산가치15%",
+        "1948노포",
+        "정정공시20.6%"
+      ],
+      "timeseries": {
+        "source": "DART 연결재무 (2016-2025) + KRX 2026-05-13",
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "revenue_eok": [
+          1337,
+          1249,
+          948,
+          572,
+          408
+        ],
+        "op_income_eok": [
+          74,
+          -350,
+          -325,
+          -85,
+          -73
+        ],
+        "net_income_eok": [
+          2,
+          675,
+          -192,
+          89,
+          298
+        ],
+        "op_margin_pct": [
+          5.5,
+          -28.06,
+          -34.34,
+          -14.82,
+          -17.94
+        ],
+        "roe_pct": [
+          0.11,
+          32.02,
+          -10.11,
+          4.49,
+          13.1
+        ],
+        "debt_ratio": [
+          166.14,
+          44.68,
+          24.84,
+          16.76,
+          4.34
+        ],
+        "per": [
+          null,
+          null,
+          null,
+          null,
+          1.15
+        ],
+        "pbr": [
+          null,
+          null,
+          null,
+          null,
+          0.15
+        ],
+        "dividend_yield": [
+          null,
+          null,
+          null,
+          null,
+          3.32
+        ],
+        "note": "10년 매출 CAGR -16.23%, 영업이익 10년 중 9년 적자. 25년 순익 298억은 단기금융상품 운용·종업원퇴직급여 환입 등 영업외 일회성. CFO 5년 중 4년 음수. 부채비율 22년 차입금 대거 상환(166→44%) → 25년 4.34% 무차입."
+      },
+      "krx_per": 1.15,
+      "krx_pbr": 0.15,
+      "krx_dividend_yield": 3.32,
+      "krx_close": 30100,
+      "krx_eps": 26160,
+      "krx_bps": 199651,
+      "krx_dps": 1000,
+      "krx_asof": "2026-05-13",
+      "corporate_events": [
+        {
+          "date": "2025-12-31",
+          "type": "단기금융상품처분",
+          "label": "단기금융상품 처분 +1,450억"
+        },
+        {
+          "date": "2025-12-31",
+          "type": "대여금감소",
+          "label": "대여금 회수 +808억"
+        },
+        {
+          "date": "2022-12-31",
+          "type": "장기차입상환",
+          "label": "차입금 대거 상환 (부채비율 166→45%)"
+        },
+        {
+          "date": "2022-12-31",
+          "type": "구조조정",
+          "label": "면방 사업 다운사이징 시작"
+        }
+      ],
+      "anomaly_score": 30,
+      "anomaly_verdict": "watch",
+      "anomaly_flags": [
+        "정정공시 20.6% (63건 중 13건)"
+      ],
+      "financial_note": "25년 순익 298억은 영업외(단기금융상품 운용·임원퇴직급여부채 환입 등) 일회성. 본업 면방직 매출 10년 80% 폭락(2,008→408억), 영업이익 10년 중 9년 적자. 자본 2,275억 = 단기금융상품 1,453억(64%)으로 사실상 머니마켓펀드化. 시총 343억 vs 청산가치 15% — 가장 극단적 자산가치주지만 본업 의지 없는 '청산형' 함정. 만약 청산하면 주당 가치 20만원(BPS 199,651) vs 현재가 3.01만원이지만 청산 결정은 오너 의지 사항."
     }
   ],
   "market_baseline": {
