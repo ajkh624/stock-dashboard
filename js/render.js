@@ -118,8 +118,8 @@ function renderIncome(s) {
 }
 
 function renderChecklist(s) {
-  const p1 = s.checklist_part1_risk, p1t = s.checklist_part1_total || 18;
-  const p2 = s.checklist_part2_quality, p2t = s.checklist_part2_total || 12;
+  const p1 = s.checklist_part1_risk, p1t = s.checklist_part1_total || 17;
+  const p2 = s.checklist_part2_quality, p2t = s.checklist_part2_total || 13;
   if (p1 == null && p2 == null) return '';
   const p1na = s.checklist_part1_na || 0, p2na = s.checklist_part2_na || 0;
   const full = s.checklist_detail_full;
@@ -361,8 +361,8 @@ function renderRow(s) {
     <td class="num">${fmt(s.cfo_eok)}</td>
     <td class="num">${fmt(s.fcf_eok)}</td>
     <td class="chk-cell">
-      <span class="chk-badge risk">⚠️${s.checklist_part1_risk??'-'}/${s.checklist_part1_total||18}</span>
-      <span class="chk-badge quality">⭐${s.checklist_part2_quality??'-'}/${s.checklist_part2_total||12}</span>
+      <span class="chk-badge risk">⚠️${s.checklist_part1_risk??'-'}/${s.checklist_part1_total||17}</span>
+      <span class="chk-badge quality">⭐${s.checklist_part2_quality??'-'}/${s.checklist_part2_total||13}</span>
     </td>
     <td><span class="opinion ${opCls}">${s.opinion}</span></td>
     <td style="max-width:240px;font-size:12px;color:var(--text-dim);white-space:normal;line-height:1.4;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical">${s.thesis||''}</td>
@@ -564,8 +564,8 @@ function getPeriodData(stock, period) {
 }
 
 function renderModalChecklist(stock) {
-  const p1 = stock.checklist_part1_risk, p1t = stock.checklist_part1_total || 18;
-  const p2 = stock.checklist_part2_quality, p2t = stock.checklist_part2_total || 12;
+  const p1 = stock.checklist_part1_risk, p1t = stock.checklist_part1_total || 17;
+  const p2 = stock.checklist_part2_quality, p2t = stock.checklist_part2_total || 13;
   if (p1 == null && p2 == null) return '';
   const p1na = stock.checklist_part1_na || 0, p2na = stock.checklist_part2_na || 0;
   const opCls = opinionClassMap[stock.opinion] || 'neutral';
