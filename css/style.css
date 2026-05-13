@@ -1111,17 +1111,20 @@ th .hdr-aux {
   margin-top: 1px;
   letter-spacing: 0.3px;
 }
-.cmp-cell { white-space: nowrap; }
+.cmp-cell {
+  white-space: nowrap;
+  line-height: 1.35;
+  padding: 8px 6px !important;
+}
 .cmp-cell .krx-aux {
   color: #93c5fd;
-  font-size: 11px;
-  margin-left: 1px;
+  font-size: 10px;
 }
 .cmp-cell .cmp-diff {
   font-size: 10px;
-  margin-left: 2px;
-  padding: 1px 4px;
-  border-radius: 4px;
+  margin-left: 3px;
+  padding: 0 4px;
+  border-radius: 3px;
   font-weight: 600;
 }
 .cmp-cell .cmp-diff.diff-small {

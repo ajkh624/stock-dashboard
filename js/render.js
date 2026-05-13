@@ -69,25 +69,30 @@ const fmt = (n, suffix='') => (n == null ? '-' : Number(n).toLocaleString() + su
 const fmtPct = (n) => (n == null ? '-' : Number(n).toFixed(1) + '%');
 const fmtX = (n) => (n == null ? '-' : Number(n).toFixed(2));
 
-// 네이버 vs KRX 비교 셀: "네이버 / KRX (Δ%)"
+// 네이버 vs KRX 비교 셀: 메인 값 + 2번째 줄 KRX 보조
 // kind: 'x' = 배수(PER/PBR), 'pct' = 퍼센트(배당)
 function cmpCell(navVal, krxVal, kind='x') {
-  const navStr = navVal == null
-    ? '<span style="color:var(--text-dim)">-</span>'
-    : (kind === 'pct' ? fmtPct(navVal) : fmtX(navVal));
-  if (krxVal == null) return navStr;
-  const krxStr = kind === 'pct' ? fmtPct(krxVal) : fmtX(krxVal);
+  const fmtV = (v) => kind === 'pct' ? fmtPct(v) : fmtX(v);
+  // 둘 다 없으면 -
+  if (navVal == null && krxVal == null) return '<span style="color:var(--text-dim)">-</span>';
+  // 네이버만 있음 → 그냥 표시
+  if (krxVal == null) return fmtV(navVal);
+  // 네이버 없음 → KRX값 회색으로 메인 표시
   if (navVal == null || navVal === 0) {
-    return `${navStr} <small class="krx-aux">/${krxStr}</small>`;
+    return `<span style="color:#93c5fd">${fmtV(krxVal)}</span><br><small class="krx-aux">KRX</small>`;
   }
+  // 둘 다 있음: 차이 계산
   const diffPct = ((krxVal - navVal) / Math.abs(navVal)) * 100;
   const absDiff = Math.abs(diffPct);
+  // 차이 미미하면 KRX 생략
+  if (absDiff < 0.5) {
+    return `${fmtV(navVal)}<br><small class="krx-aux">≈KRX</small>`;
+  }
   let diffCls = 'diff-small';
   if (absDiff >= 20) diffCls = 'diff-large';
   else if (absDiff >= 10) diffCls = 'diff-mid';
   const sign = diffPct > 0 ? '+' : '';
-  const diffStr = absDiff < 0.5 ? '≈' : `${sign}${diffPct.toFixed(1)}%`;
-  return `${navStr} <small class="krx-aux">/${krxStr}</small> <small class="cmp-diff ${diffCls}">(${diffStr})</small>`;
+  return `${fmtV(navVal)}<br><small class="krx-aux">${fmtV(krxVal)}</small> <small class="cmp-diff ${diffCls}">${sign}${diffPct.toFixed(0)}%</small>`;
 }
 
 function shortDate(iso) {
