@@ -17701,8 +17701,8 @@
       "roe": 14.84,
       "dividend_yield": 8.38,
       "debt_ratio": 257.56,
-      "cfo_eok": null,
-      "fcf_eok": null,
+      "cfo_eok": 6773,
+      "fcf_eok": 3434,
       "revenue_eok": 39982.0,
       "op_income_eok": 5296.0,
       "net_income_eok": 3389.0,
@@ -18046,6 +18046,24 @@
             "evidence": "PBR 0.37 자본 2.3조 vs 시총 8,700억 (청산가치 37%)"
           }
         ]
+      },
+      "capex_eok": 3331,
+      "cf_trend": {
+        "2023": {
+          "cfo": -1418,
+          "capex": 6404,
+          "fcf": -7822
+        },
+        "2024": {
+          "cfo": 4167,
+          "capex": 6491,
+          "fcf": -2323
+        },
+        "2025": {
+          "cfo": 6773,
+          "capex": 3331,
+          "fcf": 3434
+        }
       }
     },
     {
