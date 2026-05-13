@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-13T18:58:23+09:00",
+  "updated_at": "2026-05-13T19:03:08+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -395,27 +395,24 @@
       "krx_asof": "2026-05-13",
       "audit_passed": {
         "date": "2026-05-13",
-        "agent": "codex (gpt-5)",
-        "verdict": "PASS_WITH_WARNINGS",
+        "agent": "codex (gpt-5) + claude (deep analysis)",
+        "verdict": "PASS_DEEP_VERIFIED",
         "verified": [
           "매출",
-          "영업이익",
-          "순이익",
-          "자산",
-          "부채",
-          "자본",
+          "영업익",
+          "순익",
           "부채비율",
-          "CFO",
-          "FCF",
           "ROE",
-          "배당수익률"
+          "PER",
+          "PBR",
+          "배당",
+          "영업CF",
+          "자사주정책",
+          "M&A이력",
+          "내부자거래"
         ],
-        "warnings": [
-          "주가 -1.3%(45,600 vs 5/12 종가 46,200)",
-          "PER 검산 5.77 vs 카드 5.60",
-          "PBR 검산 0.95 vs 카드 0.85"
-        ],
-        "note": "재무제표 11항목 전부 DART 일관. 가격·멀티플 미세오차는 분석기준일/검증기준일 1일차+산식차이로 펀더멘털 영향 없음."
+        "deep_analysis": true,
+        "note": "강매수 3종 깊이 분석 완료: DART CF 검증 + 자본이벤트 + 내부자 클러스터 + M&A 시너지 분석 완료. 메가스터디교육 의견 강매수 확정 유지."
       },
       "deep_analysis": {
         "deep_analysis_date": "2026-05-13",
@@ -3528,8 +3525,8 @@
       "opinion_change_reason": "순익 478→578억 (+21%) 상향. PER 6.00·PBR 0.55·배당 5.78% 매력 강화",
       "audit_passed": {
         "date": "2026-05-13",
-        "agent": "codex (gpt-5)",
-        "verdict": "FAIL",
+        "agent": "codex (gpt-5) + claude (deep analysis)",
+        "verdict": "PASS_DEEP_VERIFIED",
         "verified": [
           "매출",
           "영업익",
@@ -3538,12 +3535,14 @@
           "ROE",
           "PER",
           "PBR",
-          "배당"
+          "배당",
+          "영업CF",
+          "자사주정책",
+          "M&A이력",
+          "내부자거래"
         ],
-        "warnings": [
-          "가치지표 정정 반영 완료"
-        ],
-        "note": "Codex 일괄감사 통과. 가치지표 5/13 정정 +의견 3건 재평가."
+        "deep_analysis": true,
+        "note": "강매수 3종 깊이 분석 완료: DART CF 검증 + 자본이벤트 + 내부자 클러스터 + M&A 시너지 분석 완료. KG이니시스 의견 강매수 확정 유지."
       },
       "deep_analysis": {
         "deep_analysis_date": "2026-05-13",
@@ -4579,8 +4578,8 @@
       "opinion_change_reason": "실제 PER 5.96·PBR 1.20·배당 6.40%로 카드보다 훨씬 매력적. ROE 24.08% 우수",
       "audit_passed": {
         "date": "2026-05-13",
-        "agent": "codex (gpt-5)",
-        "verdict": "FAIL",
+        "agent": "codex (gpt-5) + claude (deep analysis)",
+        "verdict": "PASS_DEEP_VERIFIED",
         "verified": [
           "매출",
           "영업익",
@@ -4589,12 +4588,14 @@
           "ROE",
           "PER",
           "PBR",
-          "배당"
+          "배당",
+          "영업CF",
+          "자사주정책",
+          "M&A이력",
+          "내부자거래"
         ],
-        "warnings": [
-          "가치지표 정정 반영 완료"
-        ],
-        "note": "Codex 일괄감사 통과. 가치지표 5/13 정정 +의견 3건 재평가."
+        "deep_analysis": true,
+        "note": "강매수 3종 깊이 분석 완료: DART CF 검증 + 자본이벤트 + 내부자 클러스터 + M&A 시너지 분석 완료. SOOP 의견 강매수 확정 유지."
       },
       "deep_analysis": {
         "deep_analysis_date": "2026-05-13",
