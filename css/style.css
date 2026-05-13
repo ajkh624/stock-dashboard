@@ -76,9 +76,9 @@ header h1 { margin: 0 0 4px; font-size: 20px; }
     opacity: 1 !important;
     display: inline-flex; align-items: center; justify-content: center;
   }
+  /* 차트 라벨: 모바일에서는 숨김 (카드 클릭 시 차트 모달 자동 오픈) */
   .card.has-ts::after {
-    top: auto; right: 12px; bottom: 12px;
-    font-size: 9px;
+    display: none;
   }
 }
 
