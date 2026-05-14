@@ -249,7 +249,7 @@ function renderCard(s) {
     <div class="card-cf">
       <div${tip('CFO')}>CFO <strong>${fmt(s.cfo_eok)}억</strong></div>
       <div${tip('FCF')}>FCF <strong>${fmt(s.fcf_eok)}억</strong></div>
-      <div class="card-date"${tip('분석일시')}>${shortDate(s.analyzed_at)}${s.source_year?` · ${s.source_year} 사업보고서`:''}</div>
+      <div class="card-date"${tip('분석일시')}>${shortDate(s.analyzed_at || s.analysis_date)}${s.source_year?` · ${s.source_year} 사업보고서`:''}</div>
     </div>
     ${renderIncome(s)}
     ${renderChecklist(s)}
