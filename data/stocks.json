@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-14T17:29:18+09:00",
+  "updated_at": "2026-05-14T17:38:09+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -20690,7 +20690,11 @@
         "pbr": 1.2,
         "dps": 3380.0,
         "dividend_yield": 6.41
-      }
+      },
+      "ebitda_eok": 1548,
+      "ev_eok": 10129,
+      "net_debt_eok": 4060,
+      "ev_ebitda": 6.54
     },
     {
       "name": "아이로보틱스",
@@ -20948,8 +20952,8 @@
           {
             "key": "p2_ev_ebitda",
             "label": "EV/EBITDA 낮음",
-            "status": "na",
-            "evidence": "EBITDA 미산출"
+            "status": "ng",
+            "evidence": "EV/EBITDA 91.91배 (책 10 미만 미달)"
           }
         ]
       },
@@ -21078,7 +21082,7 @@
       "checklist_part1_total": 17,
       "checklist_part2_total": 13,
       "checklist_part1_na": 0,
-      "checklist_part2_na": 1,
+      "checklist_part2_na": 0,
       "analyzed_at": "2026-05-14T18:00:00+09:00",
       "krx": {
         "date": "2026-05-13",
@@ -21093,7 +21097,11 @@
         "pbr": 2.35,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "ebitda_eok": 11,
+      "ev_eok": 1011,
+      "net_debt_eok": 20,
+      "ev_ebitda": 91.91
     },
     {
       "name": "SK하이닉스",
@@ -21767,8 +21775,8 @@
           {
             "key": "p2_ev_ebitda",
             "label": "EV/EBITDA 낮음",
-            "status": "na",
-            "evidence": "미산출"
+            "status": "ng",
+            "evidence": "EV/EBITDA 10.07배 (책 10 미만 미달)"
           }
         ]
       },
@@ -21897,7 +21905,7 @@
       "checklist_part1_total": 17,
       "checklist_part2_total": 13,
       "checklist_part1_na": 0,
-      "checklist_part2_na": 1,
+      "checklist_part2_na": 0,
       "analyzed_at": "2026-05-14T18:00:00+09:00",
       "krx": {
         "date": "2026-05-13",
@@ -21912,7 +21920,11 @@
         "pbr": 0.81,
         "dps": 2000.0,
         "dividend_yield": 0.76
-      }
+      },
+      "ebitda_eok": 4107,
+      "ev_eok": 41378,
+      "net_debt_eok": 2128,
+      "ev_ebitda": 10.07
     },
     {
       "name": "한국전력",
@@ -22190,8 +22202,8 @@
           {
             "key": "p2_ev_ebitda",
             "label": "EV/EBITDA 낮음",
-            "status": "na",
-            "evidence": "미산출"
+            "status": "ok",
+            "evidence": "EV/EBITDA 8.39배 (책 10 미만 기준 충족)"
           }
         ]
       },
@@ -22315,12 +22327,16 @@
       },
       "part1_risk": 1,
       "checklist_part1_risk": 1,
-      "part2_quality": 10,
-      "checklist_part2_quality": 10,
+      "part2_quality": 11,
+      "checklist_part2_quality": 11,
       "checklist_part1_total": 17,
       "checklist_part2_total": 13,
       "checklist_part1_na": 0,
-      "checklist_part2_na": 1
+      "checklist_part2_na": 0,
+      "ebitda_eok": 272794,
+      "ev_eok": 2288175,
+      "net_debt_eok": 2033637,
+      "ev_ebitda": 8.39
     }
   ],
   "market_baseline": {
