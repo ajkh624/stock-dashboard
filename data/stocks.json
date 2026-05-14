@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-14T09:45:55+09:00",
+  "updated_at": "2026-05-14T09:51:38+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -432,7 +432,21 @@
       },
       "part1_risk": 0,
       "part2_quality": 10,
-      "risks_hit": []
+      "risks_hit": [],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 46200.0,
+        "change": 750.0,
+        "change_pct": 1.65,
+        "eps": 8072.0,
+        "per": 5.72,
+        "forward_eps": 9072.0,
+        "forward_per": 5.09,
+        "bps": 48011.0,
+        "pbr": 0.96,
+        "dps": 3000.0,
+        "dividend_yield": 6.49
+      }
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
@@ -807,7 +821,21 @@
       },
       "part1_risk": 0,
       "part2_quality": 8,
-      "risks_hit": []
+      "risks_hit": [],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 8570.0,
+        "change": -190.0,
+        "change_pct": -2.17,
+        "eps": 801.0,
+        "per": 10.7,
+        "forward_eps": 1055.0,
+        "forward_per": 8.12,
+        "bps": 5322.0,
+        "pbr": 1.61,
+        "dps": 520.0,
+        "dividend_yield": 6.07
+      }
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
@@ -1176,7 +1204,21 @@
         "재고/유형자산 손상차손 반복: 2차전지/리튬 관련 손상 누적",
         "매출채권/재고자산 회전율 하락: 철강 수요 둔화, 재고 회전 악화",
         "기타 위험 (보고서 emphasis 단락 등): 철강 사이클 침체 + 중국 공급과잉"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 479000.0,
+        "change": -33000.0,
+        "change_pct": -6.45,
+        "eps": 8697.0,
+        "per": 55.08,
+        "forward_eps": 26194.0,
+        "forward_per": 18.29,
+        "bps": 736969.0,
+        "pbr": 0.65,
+        "dps": 10000.0,
+        "dividend_yield": 2.09
+      }
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
@@ -1556,7 +1598,21 @@
       },
       "part1_risk": 0,
       "part2_quality": 7,
-      "risks_hit": []
+      "risks_hit": [],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 25700.0,
+        "change": -400.0,
+        "change_pct": -1.53,
+        "eps": 3619.0,
+        "per": 7.1,
+        "forward_eps": 4069.0,
+        "forward_per": 6.32,
+        "bps": 31738.0,
+        "pbr": 0.81,
+        "dps": 1140.0,
+        "dividend_yield": 4.44
+      }
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
@@ -1954,7 +2010,21 @@
       },
       "part1_risk": 0,
       "part2_quality": 6,
-      "risks_hit": []
+      "risks_hit": [],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 44250.0,
+        "change": -3300.0,
+        "change_pct": -6.94,
+        "eps": 11707.0,
+        "per": 3.78,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 79869.0,
+        "pbr": 0.55,
+        "dps": 1800.0,
+        "dividend_yield": 4.07
+      }
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
@@ -2331,7 +2401,21 @@
         "매출채권/재고자산 회전율 하락: 매출 정체 (CAGR 0.82%), 매출채권 회전 의심",
         "자본총계 대비 개발비/영업권 비율 높음: SI 업종, 무형자산 자본화 가능성 높음",
         "기타 위험 (보고서 emphasis 단락 등): FCF -44억, 트랩 시그널 모두 ON"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 5140.0,
+        "change": -80.0,
+        "change_pct": -1.53,
+        "eps": 65.0,
+        "per": 79.08,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 2170.0,
+        "pbr": 2.37,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "analyzed_at": "2026-05-12T07:22:39+09:00",
@@ -2692,7 +2776,21 @@
       "checklist_part2_na": 0,
       "risks_hit": [
         "기타 위험 (보고서 emphasis 단락 등): 정정공시 (anomaly 0) / 일회성 이익 의존"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 6680.0,
+        "change": -70.0,
+        "change_pct": -1.04,
+        "eps": 1394.0,
+        "per": 4.79,
+        "forward_eps": 1647.0,
+        "forward_per": 4.05,
+        "bps": 21234.0,
+        "pbr": 0.31,
+        "dps": 300.0,
+        "dividend_yield": 4.49
+      }
     },
     {
       "analyzed_at": "2026-05-12T15:16:46+09:00",
@@ -3108,7 +3206,21 @@
         "특수관계자 거래 복잡/불투명: 한화그룹 지배구조 복잡, 종속회사 유상증자 公시 34건",
         "CF패턴 영업(-)/투자(+)/재무(+) (자산팔고 빌려 연명): 영업(+4조)/투자(-4조)/재무(+4.7조) — 정상 패턴이나 재무(+) 큰 비중은 유상증자 영향",
         "기타 위험 (정정공시, 자본스트레스 등): PBR 6.83 모멘텀 가속 (밸류에이션 부담)"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 1284000.0,
+        "change": -31000.0,
+        "change_pct": -2.36,
+        "eps": 28530.0,
+        "per": 45.01,
+        "forward_eps": 45505.0,
+        "forward_per": 28.22,
+        "bps": 188244.0,
+        "pbr": 6.82,
+        "dps": 7000.0,
+        "dividend_yield": 0.55
+      }
     },
     {
       "analyzed_at": "2026-05-12T16:25:56+09:00",
@@ -3446,7 +3558,21 @@
         "CF패턴 영업(−)/투자(+)/재무(+) (자산팔고 빌려 연명): 영업(−2,946)/투자(−889)/재무(+2,939) — 빌려 운전자본 메꾸는 패턴",
         "매출채권/재고자산 회전율 하락: 운전자본 −4조 폭주 = 매출채권 또는 재고 급증, 회전율 악화",
         "기타 위험 (정정공시, 자본스트레스 등): 24년 배당 700원 → 25년 배당 미정 (정책 후퇴 우려), 정정 3.7%는 양호"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 28100.0,
+        "change": -250.0,
+        "change_pct": -0.88,
+        "eps": 7226.0,
+        "per": 3.89,
+        "forward_eps": 8405.0,
+        "forward_per": 3.34,
+        "bps": 57671.0,
+        "pbr": 0.49,
+        "dps": 700.0,
+        "dividend_yield": 2.49
+      }
     },
     {
       "analyzed_at": "2026-05-12T16:25:56+09:00",
@@ -3815,7 +3941,21 @@
       },
       "part1_risk": 0,
       "part2_quality": 8,
-      "risks_hit": []
+      "risks_hit": [],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 10530.0,
+        "change": -310.0,
+        "change_pct": -2.86,
+        "eps": 1798.0,
+        "per": 5.86,
+        "forward_eps": 2176.0,
+        "forward_per": 4.84,
+        "bps": 18729.0,
+        "pbr": 0.56,
+        "dps": 600.0,
+        "dividend_yield": 5.7
+      }
     },
     {
       "analyzed_at": "2026-05-12T16:45:53+09:00",
@@ -4153,7 +4293,21 @@
         "CF패턴 영업(−)/투자(+)/재무(+) (자산팔고 빌려 연명): 영업(−5,843)/투자(−2,759)/재무(+4,391) — 빌려서 운전자본 메꾸는 위험",
         "매출채권/재고자산 회전율 하락: 운전자본 -11,054억 폭주 = 매출채권/재고 급증 (수주 폭증 동반 자연 증가지만 회수 리스크)",
         "기타 위험 (정정공시, 자본스트레스 등): ⚠️ 정정공시 46/316 = 14.6% (DART anomaly 15/100 워치), 자본스트레스 공시 1건"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 879000.0,
+        "change": 4000.0,
+        "change_pct": 0.46,
+        "eps": 11604.0,
+        "per": 75.75,
+        "forward_eps": 19333.0,
+        "forward_per": 45.47,
+        "bps": 65465.0,
+        "pbr": 13.43,
+        "dps": 2950.0,
+        "dividend_yield": 0.34
+      }
     },
     {
       "analyzed_at": "2026-05-12T16:45:53+09:00",
@@ -4508,7 +4662,21 @@
       "risks_hit": [
         "유동비율 < 150% 또는 감소 추세: 부채비율 206% (개선 추세 25년 163→206), 방산·플랜트 선급금 부채 특성",
         "기타 위험 (정정공시, 자본스트레스 등): ⚠️ 정정공시 36/256 = 14.1% (DART anomaly 15/100 워치)"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 215000.0,
+        "change": -4500.0,
+        "change_pct": -2.05,
+        "eps": 7055.0,
+        "per": 30.47,
+        "forward_eps": 9613.0,
+        "forward_per": 22.36,
+        "bps": 28211.0,
+        "pbr": 7.62,
+        "dps": 600.0,
+        "dividend_yield": 0.28
+      }
     },
     {
       "name": "SJG세종",
@@ -4892,7 +5060,21 @@
       "part2_quality": 6,
       "risks_hit": [
         "유동비율 < 100% / 당좌비율 < 50%: 당좌비율 71.66% (100% 미만 yellow), 부채비율 150.88% 여전히 높음"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 7720.0,
+        "change": -450.0,
+        "change_pct": -5.51,
+        "eps": 2541.0,
+        "per": 3.04,
+        "forward_eps": 2649.0,
+        "forward_per": 2.91,
+        "bps": 19312.0,
+        "pbr": 0.4,
+        "dps": 200.0,
+        "dividend_yield": 2.59
+      }
     },
     {
       "name": "SK텔레콤",
@@ -5261,7 +5443,21 @@
       "part2_quality": 4,
       "risks_hit": [
         "기타 위험: ⚠️ 2025 SIM해킹 사태 + 과징금 → 영익 -41%, 순익 -73% 직격탄"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 103400.0,
+        "change": 5200.0,
+        "change_pct": 5.3,
+        "eps": 1825.0,
+        "per": 56.66,
+        "forward_eps": 5882.0,
+        "forward_per": 17.58,
+        "bps": 60395.0,
+        "pbr": 1.71,
+        "dps": 1660.0,
+        "dividend_yield": 1.61
+      }
     },
     {
       "name": "이마트",
@@ -5634,7 +5830,21 @@
         "이자보상배율 < 1: 영익 3,225 / 이자지급 5,117 = 0.63배 ❌ 본업으로 이자 못 갚음",
         "유동/당좌비율 < 100/50%: 당좌비율 38.39% (50% 미만), 부채비율 144.61% 높음",
         "기타 위험: ⚠️ 2025.4Q 영익 -99억 재적자, 순익 -1,163억 — 시즌·일회성 변수"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 107100.0,
+        "change": -5800.0,
+        "change_pct": -5.14,
+        "eps": 5084.0,
+        "per": 21.07,
+        "forward_eps": 10172.0,
+        "forward_per": 10.53,
+        "bps": 410591.0,
+        "pbr": 0.26,
+        "dps": 2500.0,
+        "dividend_yield": 2.33
+      }
     },
     {
       "analyzed_at": "2026-05-13T02:41:14+09:00",
@@ -5973,7 +6183,21 @@
         "CF패턴 영업(-)/투자(+)/재무(+) (자산팔고 빌려 연명): ⚠️ 영업(+224)/투자(-511)/재무(+362) — 빌려 투자하는 패턴 (PF 사업 자금)",
         "매출채권/재고자산 회전율 하락: ⚠️ 매출 -23% 급감 + 매입채무 -1,335억 지급 = 운전자본 압박 -763억",
         "기타 위험 (정정공시, 자본스트레스 등): ⚠️⚠️ 정정공시 88/212 = 41.5% (DART anomaly 30/100 최고 워치) + 일회성 이익(종속기업처분 195억, 지분법이익 350억)"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 13890.0,
+        "change": -870.0,
+        "change_pct": -5.89,
+        "eps": 5174.0,
+        "per": 2.68,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 72296.0,
+        "pbr": 0.19,
+        "dps": 150.0,
+        "dividend_yield": 1.08
+      }
     },
     {
       "analyzed_at": "2026-05-13T02:41:14+09:00",
@@ -6312,7 +6536,21 @@
         "CF패턴 영업(-)/투자(+)/재무(+) (자산팔고 빌려 연명): ⚠️ 영업(-506)/투자(-107)/재무(+1,266) — 빌려서 대출 키우는 구조",
         "매출채권/재고 회전율 하락: 매출 5년 -5.8% 감소 + 대출잔액 증가 = 회수 둔화",
         "기타 위험 (정정공시, 자본스트레스 등): ⚠️ 정정공시 34/173 = 19.7% (DART 15/100 워치) + 23년 영업적자 이력 + 법정 최고금리 인하 리스크"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 3405.0,
+        "change": -120.0,
+        "change_pct": -3.4,
+        "eps": 522.0,
+        "per": 6.52,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 16721.0,
+        "pbr": 0.2,
+        "dps": 150.0,
+        "dividend_yield": 4.41
+      }
     },
     {
       "name": "비비안",
@@ -6680,7 +6918,21 @@
         "CB·BW 발행: ⚠️ CB 247억 발행 (시총 240억 대비 100%+, 잠재 희석)",
         "CF패턴 위험형: ⚠️ 영(+86)/투(-247)/재(+327) — 차입·CB 의존형 (위험)",
         "기타 위험: ⚠️ DART anomaly 40/100 warning: 정정공시 23.0%(31/135), 자본스트레스 36건. 52주 14,000/345 40배 변동성, 외인 0.45%, 컨센 N/A"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 10000.0,
+        "change": -660.0,
+        "change_pct": -6.19,
+        "eps": null,
+        "per": null,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 54750.0,
+        "pbr": 0.18,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "name": "아이스크림에듀",
@@ -6989,7 +7241,21 @@
         "손상차손: ⚠️ 2023 -167억 영익 적자 시 손상 의심, 자산 91→67억 감소",
         "CB·BW 발행: ⚠️ CB 4건 (2025.04·07·10 + 2025.04 발행결정) 자본 보강",
         "기타 위험: ⚠️ 5년 연속 순익 적자, 매출 CAGR -8.13% 역성장, ROE 평균 -16.19% (에듀테크 본업 침체)"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 1550.0,
+        "change": 12.0,
+        "change_pct": 0.78,
+        "eps": null,
+        "per": null,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 3052.0,
+        "pbr": 0.51,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "name": "에이전트AI",
@@ -7310,7 +7576,21 @@
         "사명교체: ⚠️ 에이전트AI로 사명 변경 (AI 테마 편승 의심)",
         "CF패턴: ⚠️ CB·유증 발행 의존형",
         "기타 위험: ⚠️ DART anomaly warning 40/100, 정정공시 32.3%(63/195), 자본스트레스 42건. 52주 22,303/5,160 4.3배 변동, 외인 0%, 컨센 N/A"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 5400.0,
+        "change": -370.0,
+        "change_pct": -6.41,
+        "eps": null,
+        "per": null,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 9460.0,
+        "pbr": 0.57,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "name": "앤로보틱스",
@@ -7619,7 +7899,21 @@
         "CB·BW: ⚠️ 자본스트레스 30건 (유증 빈발, 2025.12·2026.02·03·04 4건)",
         "사명교체: ⚠️ 앤로보틱스로 사명 변경 (로보틱스 테마)",
         "기타: ⚠️ 투자경고 종목 지정, DART anomaly warning 40/100, 정정공시 24.0%, 유증 30건, 52주 4,590/664 7배 변동성"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 3450.0,
+        "change": -120.0,
+        "change_pct": -3.36,
+        "eps": 136.0,
+        "per": 25.37,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 1110.0,
+        "pbr": 3.11,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "name": "아시아종묘",
@@ -7946,7 +8240,21 @@
       "risks_hit": [
         "영업적자: ⚠️ 2025.12 결산 3개월 단기에 영익 -10억 (결산기 9월→12월 변경)",
         "기타: ⚠️ 결산기 9월→12월 변경 (회계 비교 어려움), 매출 -38% CAGR은 결산기 단축 영향"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 1895.0,
+        "change": -29.0,
+        "change_pct": -1.51,
+        "eps": null,
+        "per": null,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 1998.0,
+        "pbr": 0.95,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "name": "한탑",
@@ -8260,7 +8568,21 @@
         "CB·BW: ⚠️ CB·유증 5건 자본스트레스",
         "사명교체: ⚠️ 영풍제지→한탑 사명교체 이력",
         "기타: ⚠️ DART anomaly warning 40/100, 정정공시 28.3%(26/92), 5년 4년 순익 적자(누적 -232억), ROE 평균 -9.64%"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 632.0,
+        "change": -17.0,
+        "change_pct": -2.62,
+        "eps": 67.0,
+        "per": 9.43,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 1533.0,
+        "pbr": 0.41,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "name": "아즈텍WB",
@@ -8566,7 +8888,21 @@
       "risks_hit": [
         "CB·BW: ⚠️ CB 4건 (2023~2024 만기전 취득)",
         "기타: ⚠️ 순익 CAGR -46.74% 급감, 5년 4년 적자(누적 -39억). DART anomaly watch 25"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 1191.0,
+        "change": -98.0,
+        "change_pct": -7.6,
+        "eps": 44.0,
+        "per": 27.07,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 5109.0,
+        "pbr": 0.23,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "name": "골드앤에스",
@@ -8877,7 +9213,21 @@
         "손상차손: ⚠️ 5년 누적 적자 -98억, 자기자본 152→115억 잠식 진행",
         "CB·BW: ⚠️ 자본스트레스 7건 (유증·CB 클러스터, 2024 유증 정정 다수)",
         "기타: ⚠️ DART anomaly watch 25, 5년 평균 ROE -14.89% (2022 -42.98 최악), 정정공시 15.5%(16/103)"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 761.0,
+        "change": 25.0,
+        "change_pct": 3.4,
+        "eps": null,
+        "per": null,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 483.0,
+        "pbr": 1.58,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "name": "우리엔터프라이즈",
@@ -9185,7 +9535,21 @@
         "이자보상<1: ⚠️ 영익 11 vs 부채 5,273억 — 이자부담 큼",
         "유동성: ⚠️ 부채비율 108→159% 급증, 자기자본 3,311억 vs 부채 5,273억",
         "기타: ⚠️ DART anomaly watch 15, 매출 15,679→10,652억 (-32%) 5년 우하향, 2025 순익 -102억 첫 적자, ROE 21.94→-3.09% 추세 악화"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 992.0,
+        "change": -11.0,
+        "change_pct": -1.1,
+        "eps": null,
+        "per": null,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 5603.0,
+        "pbr": 0.18,
+        "dps": 20.0,
+        "dividend_yield": 2.02
+      }
     },
     {
       "name": "이노진",
@@ -9498,7 +9862,21 @@
       "part2_quality": 2,
       "risks_hit": [
         "기타: ⚠️ 영익 24→0.04억 -99% 급락, 순익 -40% CAGR 추세 악화. ROE 41.77→2.04% 5년 연속 하락"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 1449.0,
+        "change": -21.0,
+        "change_pct": -1.43,
+        "eps": 26.0,
+        "per": 55.73,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 1288.0,
+        "pbr": 1.13,
+        "dps": 90.0,
+        "dividend_yield": 6.21
+      }
     },
     {
       "name": "디모아",
@@ -9862,7 +10240,21 @@
         "CB/BW 반복 발행: 자본스트레스 57건 (CB·BW·제3자배정 유증 반복, 2026.03 자기CB만기전취득)",
         "핵심자산매각=운영자금/차입상환: 2022 매각예정자산 처분 88.7억(과거), 2024 단기금융자산 처분 85억",
         "반복 유상증자(희석): 2024 유증 90억 / 2026.04 신규 유증결정 / 2026.02·03 [기재정정]유증결정 반복. 자본스트레스 57건의 핵심"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 3695.0,
+        "change": -85.0,
+        "change_pct": -2.25,
+        "eps": 1986.0,
+        "per": 1.86,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 11343.0,
+        "pbr": 0.33,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "name": "S&K폴리텍",
@@ -10245,7 +10637,21 @@
       "part2_quality": 7,
       "risks_hit": [
         "이익↔CFO 괴리: ⚠️ 순익 115 vs CFO 74 (CFO 약함, 2024 219→74 -66% 감소 — 운전자본 묶임. V턴 회복기 특성이나 모니터링 필요)"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 2530.0,
+        "change": 0.0,
+        "change_pct": 0.0,
+        "eps": 295.0,
+        "per": 8.58,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 8631.0,
+        "pbr": 0.29,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "name": "패션플랫폼",
@@ -10597,7 +11003,21 @@
       "part2_quality": 7,
       "risks_hit": [
         "정정공시 비율 과다: DART anomaly score 30 watch: 15/56건 26.8% (high_amendment_ratio flag)"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 950.0,
+        "change": 0.0,
+        "change_pct": 0.0,
+        "eps": 107.0,
+        "per": 8.88,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 3026.0,
+        "pbr": 0.31,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "name": "뉴보텍",
@@ -10917,7 +11337,21 @@
         "유동성: ⚠️ 부채비율 143.83%, 자기자본 228억 vs 부채 328억",
         "CB·BW: ⚠️ 자본스트레스 15건 (2024.09 유증·2025.11 CB 정정 등)",
         "기타: ⚠️ anomaly watch 25, 5년 평균 ROE -22.85% (분석 7종 중 최악, 2021 -64.08%), 매출 -1.91% 정체"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 1330.0,
+        "change": -19.0,
+        "change_pct": -1.41,
+        "eps": 141.0,
+        "per": 9.43,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 1710.0,
+        "pbr": 0.78,
+        "dps": 10.0,
+        "dividend_yield": 0.75
+      }
     },
     {
       "name": "지란지교시큐리티",
@@ -11230,7 +11664,21 @@
       "part2_quality": 3,
       "risks_hit": [
         "기타: 매출 573→389억 -32% 5년 우하향(-9.23% CAGR), 5년 평균 ROE 1.9% 저조"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 3150.0,
+        "change": -90.0,
+        "change_pct": -2.78,
+        "eps": 234.0,
+        "per": 13.46,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 6382.0,
+        "pbr": 0.49,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "name": "웹스",
@@ -11555,7 +12003,21 @@
       "part2_quality": 4,
       "risks_hit": [
         "기타: ⚠️ 2022 ROE -25.33% 한 차례 손실 이력. 정정공시 14.6%(watch 15)"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 1721.0,
+        "change": -99.0,
+        "change_pct": -5.44,
+        "eps": 286.0,
+        "per": 6.02,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 2809.0,
+        "pbr": 0.61,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "name": "대한방직",
@@ -11917,7 +12379,21 @@
         "유동비율<150% 또는 하락: 당좌비율 2024 89%→2025 106%, 150% 미달",
         "재고/유형자산 손상 반복: 재고자산평가손실(환입) 2024 +11.7억 발생(전년 환입에서 손실 전환)",
         "매출채권·재고 회전율 하락: 매출 1,752→1,339억(-24%) 추세, 회전율 자연 하락. 다만 2025 1,583억 반등"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 6440.0,
+        "change": -60.0,
+        "change_pct": -0.92,
+        "eps": null,
+        "per": null,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 43130.0,
+        "pbr": 0.15,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "name": "동원수산",
@@ -12236,7 +12712,21 @@
         "이자보상<1: ⚠️ 부채 139%, 이자부담 큼",
         "유동성: ⚠️ 부채비율 139.15% (자기자본 564 vs 부채 785억)",
         "손상차손: ⚠️ 2023 영익 -194억·순익 -177억 충격 (어획부진·환손실 추정)"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 6810.0,
+        "change": 20.0,
+        "change_pct": 0.29,
+        "eps": 1664.0,
+        "per": 4.09,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 12115.0,
+        "pbr": 0.56,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "name": "ES큐브",
@@ -12563,7 +13053,21 @@
         "사명/대표 교체 빈번: 2021 자회사 ㈜태일(유류판매) 흡수합병으로 사업 정체성 변경. ES큐브로 사명 유지하나 본업 매출 -89% 폭락",
         "매출채권/재고 회전율 하락: 매출 1,258억→139억 (-89%) 자체가 회전 붕괴",
         "마이크로캡 작전·관리종목 위험: 시총 384억(코스닥 1,433위), 외인 2.73%, 컨센N/A, 배당0, 본업 사실상 소실 — 작전·관리종목 후보 환경"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 2835.0,
+        "change": 5.0,
+        "change_pct": 0.18,
+        "eps": null,
+        "per": null,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 6819.0,
+        "pbr": 0.42,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "analyzed_at": "2026-05-13T04:21:35+09:00",
@@ -12878,7 +13382,21 @@
         "특수관계자 거래 복잡: 미래아이앤지(계열사)·판타지오(계열사) 간 CB 양도, 대여금 거래 등 계열사 중심",
         "매출채권·재고 회전율 하락: 매출채권 +17억 증가하나 매출 +3.5% 회복, 재고 +6억 증가 — 매출 정체 상태에서 운전자본 증가",
         "감자/유증/대규모 자본 이벤트: 2025.03 액면가 500→100원 무상감자 80% (자본금 38.9→7.8억). 2026.05 강남 부동산 415억 인수 결정(총자산 50.76% 규모)"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 1488.0,
+        "change": -158.0,
+        "change_pct": -9.6,
+        "eps": null,
+        "per": null,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 4835.0,
+        "pbr": 0.31,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "analyzed_at": "2026-05-13T04:57:06+09:00",
@@ -13193,7 +13711,21 @@
         "이익↔CFO: ⚠️ 2024 순익+123억 vs 영익 -19억 — 가감조정 -137억 영업외 일회성. CFO -3.8억 (5년 연속 음수)",
         "CF패턴: ⚠️ 영업CF 5년 연속 음수 (2023 -45억, 2024 -3.8억), 투자/재무도 미세, 본업 현금창출 0",
         "기타: ⚠️ DART anomaly score 40 경고, 정정공시 30.4%(31/102), 컨센·외인 부재(1.72%), 52주 7.8배 변동"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 13760.0,
+        "change": -90.0,
+        "change_pct": -0.65,
+        "eps": null,
+        "per": null,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 2819.0,
+        "pbr": 4.88,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "analyzed_at": "2026-05-13T07:18:28+09:00",
@@ -13608,7 +14140,21 @@
         "이자보상배율 < 1: 이자보상배율 1 미만",
         "CB/BW 반복 발행: 메자닌 발행 이력",
         "핵심자산 매각 목적이 운영자금/차입상환: 핵심자산 매각 이력"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 672.0,
+        "change": 0.0,
+        "change_pct": 0.0,
+        "eps": null,
+        "per": null,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 525.0,
+        "pbr": 1.28,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "analyzed_at": "2026-05-13T07:23:32+09:00",
@@ -13982,7 +14528,21 @@
       "part2_quality": 3,
       "checklist_part1_na": 0,
       "checklist_part2_na": 0,
-      "risks_hit": []
+      "risks_hit": [],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 1758.0,
+        "change": -84.0,
+        "change_pct": -4.56,
+        "eps": null,
+        "per": null,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 1780.0,
+        "pbr": 0.99,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "analyzed_at": "2026-05-13T07:28:38+09:00",
@@ -14394,7 +14954,21 @@
       "risks_hit": [
         "유동비율 < 150% 또는 감소 추세: 당좌비율 208→74% 급락 (단기유동성 악화)",
         "기타 위험 (보고서 emphasis 단락 등): 부채비율 48→106% 급등 (M&A 의심) + 순익 변동성 (24년 -4억 → 25년 45억)"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 1552.0,
+        "change": -79.0,
+        "change_pct": -4.84,
+        "eps": 143.0,
+        "per": 10.85,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 1339.0,
+        "pbr": 1.16,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "analyzed_at": "2026-05-13T07:35:19+09:00",
@@ -14772,7 +15346,21 @@
       "checklist_part2_na": 0,
       "risks_hit": [
         "유동비율 < 150% 또는 감소 추세: 유동비율 악화"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 1506.0,
+        "change": -3.0,
+        "change_pct": -0.2,
+        "eps": 3.0,
+        "per": 502.0,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 596.0,
+        "pbr": 2.53,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "analyzed_at": "2026-05-13T09:52:59+09:00",
@@ -15167,7 +15755,21 @@
         "CB/BW 반복 발행: 메자닌 발행 이력",
         "자본총계≈자본금 또는 자본잠식 진행: 자본잠식 위험",
         "기타 위험 (보고서 emphasis 단락 등): 정정공시 (anomaly 0)"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 2105.0,
+        "change": -50.0,
+        "change_pct": -2.32,
+        "eps": null,
+        "per": null,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 1314.0,
+        "pbr": 1.6,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "analyzed_at": "2026-05-13T17:41:37+09:00",
@@ -15505,7 +16107,21 @@
       "checklist_part2_na": 0,
       "risks_hit": [
         "특수관계자 거래 복잡/불투명: 다우키움 그룹 47.4% (다우기술 32.6%+다우데이타 6.2%+키움 2.9%+이머니 2.6%+김익래 3.1%)"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 16050.0,
+        "change": -560.0,
+        "change_pct": -3.37,
+        "eps": 8746.0,
+        "per": 1.84,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 25433.0,
+        "pbr": 0.63,
+        "dps": 700.0,
+        "dividend_yield": 4.36
+      }
     },
     {
       "analyzed_at": "2026-05-13T18:05:24+09:00",
@@ -15873,7 +16489,21 @@
         "핵심자산 매각 (운영자금/차입상환 목적): 25년 투자부동산 699억+유형 243억+금융 550억 = 1,500억 처분 → 차입금 47억 상환 + 금융자산 재투자",
         "흑자 + CFO 음수: 25년 순익 +341억 vs CFO -60억 = 명백한 괴리 (5년 중 4년 CFO 음수)",
         "CF패턴 영업(-)/투자(+)/재무(-): 25년 영업-60/투자+455/재무-328 = 자산처분 의존 일회성 패턴"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 2530.0,
+        "change": -30.0,
+        "change_pct": -1.17,
+        "eps": 1759.0,
+        "per": 1.44,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 7843.0,
+        "pbr": 0.32,
+        "dps": 205.0,
+        "dividend_yield": 8.1
+      }
     },
     {
       "analyzed_at": "2026-05-13T19:00:00+09:00",
@@ -16240,7 +16870,21 @@
         "흑자 + CFO 마이너스: 흑자 vs CFO 음수 괴리",
         "CF패턴 영업(-)/투자(+)/재무(+) (자산팔고 빌려 연명): CF패턴 자산팔고 연명형",
         "기타 위험 (보고서 emphasis 단락 등): 정정공시 (anomaly 30)"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 30100.0,
+        "change": -650.0,
+        "change_pct": -2.11,
+        "eps": 26160.0,
+        "per": 1.15,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 199651.0,
+        "pbr": 0.15,
+        "dps": 1000.0,
+        "dividend_yield": 3.32
+      }
     },
     {
       "analyzed_at": "2026-05-13T19:30:00+09:00",
@@ -16600,7 +17244,21 @@
       "risks_hit": [
         "핵심자산 매각 목적이 운영자금/차입상환: 핵심자산 매각 이력",
         "기타 위험 (보고서 emphasis 단락 등): 정정공시 (anomaly 15) / 일회성 이익 의존"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 2485.0,
+        "change": 125.0,
+        "change_pct": 5.3,
+        "eps": 2775.0,
+        "per": 0.9,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 3224.0,
+        "pbr": 0.77,
+        "dps": 100.0,
+        "dividend_yield": 4.02
+      }
     },
     {
       "analyzed_at": "2026-05-13T20:00:00+09:00",
@@ -16968,7 +17626,21 @@
         "3년 이상 연속 영업적자: 영업적자 추세 (위험 리스트 참조)",
         "CB/BW 반복 발행: 메자닌 발행 이력",
         "기타 위험 (보고서 emphasis 단락 등): 정정공시 (anomaly 40) / 경영권 분쟁 / 일회성 이익 의존"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 1095000.0,
+        "change": -38000.0,
+        "change_pct": -3.35,
+        "eps": 96033.0,
+        "per": 11.4,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 4669556.0,
+        "pbr": 0.23,
+        "dps": 1750.0,
+        "dividend_yield": 0.16
+      }
     },
     {
       "analyzed_at": "2026-05-13T20:15:00+09:00",
@@ -17368,7 +18040,21 @@
       "part2_quality": 6,
       "checklist_part1_na": 0,
       "checklist_part2_na": 0,
-      "risks_hit": []
+      "risks_hit": [],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 7870.0,
+        "change": -180.0,
+        "change_pct": -2.24,
+        "eps": 5910.0,
+        "per": 1.33,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 19235.0,
+        "pbr": 0.41,
+        "dps": 250.0,
+        "dividend_yield": 3.18
+      }
     },
     {
       "analyzed_at": "2026-05-13T20:30:00+09:00",
@@ -17728,7 +18414,21 @@
       "part2_quality": 4,
       "checklist_part1_na": 0,
       "checklist_part2_na": 0,
-      "risks_hit": []
+      "risks_hit": [],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 3940.0,
+        "change": -55.0,
+        "change_pct": -1.38,
+        "eps": 2414.0,
+        "per": 1.63,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 8854.0,
+        "pbr": 0.44,
+        "dps": 150.0,
+        "dividend_yield": 3.81
+      }
     },
     {
       "analyzed_at": "2026-05-13T20:45:00+09:00",
@@ -18102,7 +18802,21 @@
       "part2_quality": 10,
       "checklist_part1_na": 0,
       "checklist_part2_na": 0,
-      "risks_hit": []
+      "risks_hit": [],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 74300.0,
+        "change": 600.0,
+        "change_pct": 0.81,
+        "eps": 28102.0,
+        "per": 2.64,
+        "forward_eps": 20216.0,
+        "forward_per": 3.68,
+        "bps": 198762.0,
+        "pbr": 0.37,
+        "dps": 6157.0,
+        "dividend_yield": 8.29
+      }
     },
     {
       "analyzed_at": "2026-05-13T21:30:00+09:00",
@@ -18494,7 +19208,21 @@
       "part2_quality": 9,
       "checklist_part1_na": 0,
       "checklist_part2_na": 0,
-      "risks_hit": []
+      "risks_hit": [],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 5140.0,
+        "change": -20.0,
+        "change_pct": -0.39,
+        "eps": 1713.0,
+        "per": 3.0,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 13053.0,
+        "pbr": 0.39,
+        "dps": 430.0,
+        "dividend_yield": 8.37
+      }
     },
     {
       "analyzed_at": "2026-05-13T22:00:00+09:00",
@@ -18830,7 +19558,21 @@
       "checklist_part2_na": 0,
       "risks_hit": [
         "기타 위험 (보고서 emphasis 단락 등): 부채비율 24년 148→492%→25년 510% 급증 (10년 평균 247%의 2배) + 내부자 매수 0건 + 24년 ROE 2.99% 부진"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 100900.0,
+        "change": 1000.0,
+        "change_pct": 1.0,
+        "eps": 18124.0,
+        "per": 5.57,
+        "forward_eps": 19932.0,
+        "forward_per": 5.06,
+        "bps": 349725.0,
+        "pbr": 0.29,
+        "dps": 4550.0,
+        "dividend_yield": 4.51
+      }
     },
     {
       "analyzed_at": "2026-05-13T22:30:00+09:00",
@@ -19160,7 +19902,21 @@
       "risks_hit": [
         "매출채권/재고자산 회전율 하락: 매출 2년 누적 -21% 감소, 본업 활성도 저하",
         "기타 위험 (보고서 emphasis 단락 등): 내부자 매도 클러스터 strong_sell (2026Q1 부회장 -120,580주, 25Q3 전무·상무, 누적 -163,245주, 매수 0건) + 영업익 2년 -71% 급감 + 25년 순익 494억 중 약 152억 영업외 일회성"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 2370.0,
+        "change": -80.0,
+        "change_pct": -3.27,
+        "eps": 404.0,
+        "per": 5.87,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 8853.0,
+        "pbr": 0.27,
+        "dps": 150.0,
+        "dividend_yield": 6.33
+      }
     },
     {
       "analyzed_at": "2026-05-13T22:50:00+09:00",
@@ -19516,7 +20272,21 @@
       "risks_hit": [
         "매출채권/재고자산 회전율 하락: 매출 2년 누적 -11% 감소 + 영업익 2년 -53% 급감",
         "기타 위험 (보고서 emphasis 단락 등): 2025Q4 매도 클러스터 KPX홀딩스 -254,348주 + 토요타통상 -48,660주 (분할 직전 정리 가능성) + 25년 순익 516억 중 약 242억 영업외 일회성"
-      ]
+      ],
+      "krx": {
+        "date": "2026-05-13",
+        "close": 52000.0,
+        "change": -1300.0,
+        "change_pct": -2.44,
+        "eps": 10650.0,
+        "per": 4.88,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 158214.0,
+        "pbr": 0.33,
+        "dps": 3750.0,
+        "dividend_yield": 7.21
+      }
     },
     {
       "name": "SOOP",
@@ -19906,7 +20676,21 @@
       "checklist_part2_total": 12,
       "checklist_part1_na": 1,
       "checklist_part2_na": 0,
-      "analyzed_at": "2026-05-13T18:00:00+09:00"
+      "analyzed_at": "2026-05-13T18:00:00+09:00",
+      "krx": {
+        "date": "2026-05-13",
+        "close": 52700.0,
+        "change": -900.0,
+        "change_pct": -1.68,
+        "eps": 9556.0,
+        "per": 5.51,
+        "forward_eps": 8492.0,
+        "forward_per": 6.21,
+        "bps": 43822.0,
+        "pbr": 1.2,
+        "dps": 3380.0,
+        "dividend_yield": 6.41
+      }
     },
     {
       "name": "아이로보틱스",
@@ -20295,7 +21079,21 @@
       "checklist_part2_total": 13,
       "checklist_part1_na": 0,
       "checklist_part2_na": 1,
-      "analyzed_at": "2026-05-14T18:00:00+09:00"
+      "analyzed_at": "2026-05-14T18:00:00+09:00",
+      "krx": {
+        "date": "2026-05-13",
+        "close": 2650.0,
+        "change": 350.0,
+        "change_pct": 15.22,
+        "eps": 43.0,
+        "per": 61.63,
+        "forward_eps": null,
+        "forward_per": null,
+        "bps": 1126.0,
+        "pbr": 2.35,
+        "dps": 0.0,
+        "dividend_yield": 0.0
+      }
     },
     {
       "name": "SK하이닉스",
@@ -20691,7 +21489,21 @@
       "checklist_part2_total": 13,
       "checklist_part1_na": 0,
       "checklist_part2_na": 1,
-      "analyzed_at": "2026-05-14T18:00:00+09:00"
+      "analyzed_at": "2026-05-14T18:00:00+09:00",
+      "krx": {
+        "date": "2026-05-13",
+        "close": 1835000.0,
+        "change": -45000.0,
+        "change_pct": -2.39,
+        "eps": 62044.0,
+        "per": 29.58,
+        "forward_eps": 327655.0,
+        "forward_per": 5.6,
+        "bps": 171751.0,
+        "pbr": 10.68,
+        "dps": 3000.0,
+        "dividend_yield": 0.16
+      }
     },
     {
       "name": "LG생활건강",
@@ -21086,7 +21898,21 @@
       "checklist_part2_total": 13,
       "checklist_part1_na": 0,
       "checklist_part2_na": 1,
-      "analyzed_at": "2026-05-14T18:00:00+09:00"
+      "analyzed_at": "2026-05-14T18:00:00+09:00",
+      "krx": {
+        "date": "2026-05-13",
+        "close": 264000.0,
+        "change": -4500.0,
+        "change_pct": -1.68,
+        "eps": null,
+        "per": null,
+        "forward_eps": 12012.0,
+        "forward_per": 21.98,
+        "bps": 325224.0,
+        "pbr": 0.81,
+        "dps": 2000.0,
+        "dividend_yield": 0.76
+      }
     }
   ],
   "market_baseline": {

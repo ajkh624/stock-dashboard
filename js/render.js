@@ -98,7 +98,9 @@ function cmpCell(navVal, krxVal, kind='x') {
 function shortDate(iso) {
   if (!iso) return '-';
   const d = new Date(iso);
-  return `${d.getMonth()+1}/${d.getDate()} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
+  // 한국시간(KST, UTC+9) 강제
+  const kst = new Date(d.getTime() + (9*60 + d.getTimezoneOffset()) * 60000);
+  return `${kst.getMonth()+1}/${kst.getDate()} ${String(kst.getHours()).padStart(2,'0')}:${String(kst.getMinutes()).padStart(2,'0')} KST`;
 }
 
 function renderIncome(s) {
@@ -240,9 +242,18 @@ function renderCard(s) {
       <span class="opinion ${opCls}">${s.opinion}</span>
     </div>
     ${renderPriceBlock(s)}
+    ${s.krx ? `<div class="card-krx" title="KRX 공식 ${s.krx.date} (data/external/CSV)">
+      <span class="krx-label">KRX</span>
+      <span>종가 <strong>${s.krx.close ? s.krx.close.toLocaleString() : '-'}</strong></span>
+      <span class="${(s.krx.change_pct||0)>0?'pos':(s.krx.change_pct||0)<0?'neg':''}">${(s.krx.change_pct||0)>0?'+':''}${fmtPct(s.krx.change_pct)}</span>
+      <span class="krx-sep">·</span>
+      <span>PER ${fmtX(s.krx.per)}</span>
+      <span>PBR ${fmtX(s.krx.pbr)}</span>
+      <span>배당 ${fmtPct(s.krx.dividend_yield)}</span>
+    </div>` : ''}
     <div class="card-metrics">
-      <div class="metric"${tip('PER (네이버/KRX)')}>${renderPercentileBadge(s.per_percentile,'per')}<span class="metric-label">PER</span><span class="metric-value">${fmtX(s.per)}${s.krx_per?`<small class="krx-tag" title="KRX 공식 2026-05-13">/${s.krx_per.toFixed(2)}</small>`:''}</span></div>
-      <div class="metric"${tip('PBR (네이버/KRX)')}>${renderPercentileBadge(s.pbr_percentile,'pbr')}<span class="metric-label">PBR</span><span class="metric-value">${fmtX(s.pbr)}${s.krx_pbr?`<small class="krx-tag" title="KRX 공식 2026-05-13">/${s.krx_pbr.toFixed(2)}</small>`:''}</span></div>
+      <div class="metric"${tip('PER (네이버/KRX)')}>${renderPercentileBadge(s.per_percentile,'per')}<span class="metric-label">PER</span><span class="metric-value">${fmtX(s.per)}${(s.krx_per||s.krx?.per)?`<small class="krx-tag" title="KRX 공식 ${s.krx?.date||''}">/${(s.krx_per||s.krx.per).toFixed(2)}</small>`:''}</span></div>
+      <div class="metric"${tip('PBR (네이버/KRX)')}>${renderPercentileBadge(s.pbr_percentile,'pbr')}<span class="metric-label">PBR</span><span class="metric-value">${fmtX(s.pbr)}${(s.krx_pbr||s.krx?.pbr)?`<small class="krx-tag" title="KRX 공식 ${s.krx?.date||''}">/${(s.krx_pbr||s.krx.pbr).toFixed(2)}</small>`:''}</span></div>
       <div class="metric"${tip('ROE')}><span class="metric-label">ROE</span><span class="metric-value">${fmtPct(s.roe)}</span></div>
       <div class="metric"${tip('배당')}>${renderPercentileBadge(s.div_percentile,'div')}<span class="metric-label">배당</span><span class="metric-value">${fmtPct(s.dividend_yield)}</span></div>
     </div>
