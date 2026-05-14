@@ -1,295 +1,295 @@
 {
-  "updated_at": "2026-05-14T09:59:40+09:00",
+  "updated_at": "2026-05-14T20:14:43+09:00",
   "source": "KRX (pykrx)",
   "schedule": "일 1회 KST 18:00 (평일)",
   "prices": {
     "215200": {
       "symbol": "215200",
-      "price": 44600,
+      "price": 44550,
       "prev_close": 44300,
-      "change": 300,
-      "change_pct": 0.68,
+      "change": 250,
+      "change_pct": 0.56,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:14+00:00"
+      "fetched_at": "2026-05-14T11:14:15+00:00"
     },
     "068930": {
       "symbol": "068930",
-      "price": 8425,
+      "price": 8540,
       "prev_close": 8370,
-      "change": 55,
-      "change_pct": 0.66,
+      "change": 170,
+      "change_pct": 2.03,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:14+00:00"
+      "fetched_at": "2026-05-14T11:14:15+00:00"
     },
     "005490": {
       "symbol": "005490",
-      "price": 478500,
+      "price": 486500,
       "prev_close": 478500,
-      "change": 0,
-      "change_pct": 0.0,
+      "change": 8000,
+      "change_pct": 1.67,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:15+00:00"
+      "fetched_at": "2026-05-14T11:14:16+00:00"
     },
     "175330": {
       "symbol": "175330",
-      "price": 24700,
+      "price": 25650,
       "prev_close": 24750,
-      "change": -50,
-      "change_pct": -0.2,
+      "change": 900,
+      "change_pct": 3.64,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:16+00:00"
+      "fetched_at": "2026-05-14T11:14:16+00:00"
     },
     "023590": {
       "symbol": "023590",
-      "price": 44150,
+      "price": 44350,
       "prev_close": 43250,
-      "change": 900,
-      "change_pct": 2.08,
+      "change": 1100,
+      "change_pct": 2.54,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:16+00:00"
+      "fetched_at": "2026-05-14T11:14:17+00:00"
     },
     "263800": {
       "symbol": "263800",
-      "price": 5030,
+      "price": 4935,
       "prev_close": 4990,
-      "change": 40,
-      "change_pct": 0.8,
+      "change": -55,
+      "change_pct": -1.1,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:17+00:00"
+      "fetched_at": "2026-05-14T11:14:17+00:00"
     },
     "016380": {
       "symbol": "016380",
-      "price": 6740,
+      "price": 7200,
       "prev_close": 6540,
-      "change": 200,
-      "change_pct": 3.06,
+      "change": 660,
+      "change_pct": 10.09,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:17+00:00"
+      "fetched_at": "2026-05-14T11:14:18+00:00"
     },
     "012450": {
       "symbol": "012450",
-      "price": 1287500,
+      "price": 1306000,
       "prev_close": 1286000,
-      "change": 1500,
-      "change_pct": 0.12,
+      "change": 20000,
+      "change_pct": 1.56,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:18+00:00"
+      "fetched_at": "2026-05-14T11:14:18+00:00"
     },
     "011760": {
       "symbol": "011760",
-      "price": 27850,
+      "price": 28450,
       "prev_close": 27850,
-      "change": 0,
-      "change_pct": 0.0,
+      "change": 600,
+      "change_pct": 2.15,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:18+00:00"
+      "fetched_at": "2026-05-14T11:14:19+00:00"
     },
     "035600": {
       "symbol": "035600",
-      "price": 10330,
+      "price": 10640,
       "prev_close": 10390,
-      "change": -60,
-      "change_pct": -0.58,
+      "change": 250,
+      "change_pct": 2.41,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:19+00:00"
+      "fetched_at": "2026-05-14T11:14:19+00:00"
     },
     "079550": {
       "symbol": "079550",
-      "price": 880000,
+      "price": 878000,
       "prev_close": 873000,
-      "change": 7000,
-      "change_pct": 0.8,
+      "change": 5000,
+      "change_pct": 0.57,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:19+00:00"
+      "fetched_at": "2026-05-14T11:14:20+00:00"
     },
     "064350": {
       "symbol": "064350",
-      "price": 211500,
+      "price": 212500,
       "prev_close": 215000,
-      "change": -3500,
-      "change_pct": -1.63,
+      "change": -2500,
+      "change_pct": -1.16,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:20+00:00"
+      "fetched_at": "2026-05-14T11:14:21+00:00"
     },
     "033530": {
       "symbol": "033530",
-      "price": 7570,
+      "price": 7820,
       "prev_close": 7850,
-      "change": -280,
-      "change_pct": -3.57,
+      "change": -30,
+      "change_pct": -0.38,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:20+00:00"
+      "fetched_at": "2026-05-14T11:14:21+00:00"
     },
     "017670": {
       "symbol": "017670",
-      "price": 102000,
+      "price": 102700,
       "prev_close": 105800,
-      "change": -3800,
-      "change_pct": -3.59,
+      "change": -3100,
+      "change_pct": -2.93,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:21+00:00"
+      "fetched_at": "2026-05-14T11:14:22+00:00"
     },
     "139480": {
       "symbol": "139480",
-      "price": 109500,
+      "price": 118700,
       "prev_close": 106000,
-      "change": 3500,
-      "change_pct": 3.3,
+      "change": 12700,
+      "change_pct": 11.98,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:21+00:00"
+      "fetched_at": "2026-05-14T11:14:22+00:00"
     },
     "004960": {
       "symbol": "004960",
-      "price": 15300,
+      "price": 14700,
       "prev_close": 14690,
-      "change": 610,
-      "change_pct": 4.15,
+      "change": 10,
+      "change_pct": 0.07,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:22+00:00"
+      "fetched_at": "2026-05-14T11:14:22+00:00"
     },
     "012700": {
       "symbol": "012700",
-      "price": 3425,
+      "price": 3460,
       "prev_close": 3425,
-      "change": 0,
-      "change_pct": 0.0,
+      "change": 35,
+      "change_pct": 1.02,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:22+00:00"
+      "fetched_at": "2026-05-14T11:14:23+00:00"
     },
     "002070": {
       "symbol": "002070",
-      "price": 10470,
+      "price": 10790,
       "prev_close": 10120,
-      "change": 350,
-      "change_pct": 3.46,
+      "change": 670,
+      "change_pct": 6.62,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:22+00:00"
+      "fetched_at": "2026-05-14T11:14:23+00:00"
     },
     "289010": {
       "symbol": "289010",
-      "price": 1523,
+      "price": 1555,
       "prev_close": 1556,
-      "change": -33,
-      "change_pct": -2.12,
+      "change": -1,
+      "change_pct": -0.06,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:23+00:00"
+      "fetched_at": "2026-05-14T11:14:24+00:00"
     },
     "060900": {
       "symbol": "060900",
-      "price": 5580,
+      "price": 5620,
       "prev_close": 5580,
-      "change": 0,
-      "change_pct": 0.0,
+      "change": 40,
+      "change_pct": 0.72,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:23+00:00"
+      "fetched_at": "2026-05-14T11:14:24+00:00"
     },
     "138360": {
       "symbol": "138360",
-      "price": 3750,
+      "price": 3915,
       "prev_close": 3655,
-      "change": 95,
-      "change_pct": 2.6,
+      "change": 260,
+      "change_pct": 7.11,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:24+00:00"
+      "fetched_at": "2026-05-14T11:14:25+00:00"
     },
     "154030": {
       "symbol": "154030",
-      "price": 1883,
+      "price": 1884,
       "prev_close": 1890,
-      "change": -7,
-      "change_pct": -0.37,
-      "currency": "KRW",
-      "exchange": "KRX",
-      "source": "krx",
-      "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:24+00:00"
-    },
-    "002680": {
-      "symbol": "002680",
-      "price": 642,
-      "prev_close": 655,
-      "change": -13,
-      "change_pct": -1.98,
-      "currency": "KRW",
-      "exchange": "KRX",
-      "source": "krx",
-      "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:25+00:00"
-    },
-    "032080": {
-      "symbol": "032080",
-      "price": 1230,
-      "prev_close": 1234,
-      "change": -4,
+      "change": -6,
       "change_pct": -0.32,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:25+00:00"
+      "fetched_at": "2026-05-14T11:14:25+00:00"
+    },
+    "002680": {
+      "symbol": "002680",
+      "price": 640,
+      "prev_close": 655,
+      "change": -15,
+      "change_pct": -2.29,
+      "currency": "KRW",
+      "exchange": "KRX",
+      "source": "krx",
+      "trade_date": "2026-05-14",
+      "fetched_at": "2026-05-14T11:14:26+00:00"
+    },
+    "032080": {
+      "symbol": "032080",
+      "price": 1257,
+      "prev_close": 1234,
+      "change": 23,
+      "change_pct": 1.86,
+      "currency": "KRW",
+      "exchange": "KRX",
+      "source": "krx",
+      "trade_date": "2026-05-14",
+      "fetched_at": "2026-05-14T11:14:27+00:00"
     },
     "035290": {
       "symbol": "035290",
@@ -301,55 +301,55 @@
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:26+00:00"
+      "fetched_at": "2026-05-14T11:14:27+00:00"
     },
     "037400": {
       "symbol": "037400",
-      "price": 975,
+      "price": 982,
       "prev_close": 988,
-      "change": -13,
-      "change_pct": -1.32,
+      "change": -6,
+      "change_pct": -0.61,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:26+00:00"
+      "fetched_at": "2026-05-14T11:14:28+00:00"
     },
     "344860": {
       "symbol": "344860",
-      "price": 1421,
+      "price": 1413,
       "prev_close": 1434,
-      "change": -13,
-      "change_pct": -0.91,
+      "change": -21,
+      "change_pct": -1.46,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:27+00:00"
+      "fetched_at": "2026-05-14T11:14:28+00:00"
     },
     "016670": {
       "symbol": "016670",
-      "price": 3755,
+      "price": 3800,
       "prev_close": 3845,
-      "change": -90,
-      "change_pct": -2.34,
+      "change": -45,
+      "change_pct": -1.17,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:27+00:00"
+      "fetched_at": "2026-05-14T11:14:29+00:00"
     },
     "091340": {
       "symbol": "091340",
-      "price": 2495,
+      "price": 2510,
       "prev_close": 2500,
-      "change": -5,
-      "change_pct": -0.2,
+      "change": 10,
+      "change_pct": 0.4,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:28+00:00"
+      "fetched_at": "2026-05-14T11:14:29+00:00"
     },
     "225590": {
       "symbol": "225590",
@@ -361,103 +361,103 @@
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:28+00:00"
+      "fetched_at": "2026-05-14T11:14:30+00:00"
     },
     "060260": {
       "symbol": "060260",
-      "price": 1341,
+      "price": 1345,
       "prev_close": 1330,
-      "change": 11,
-      "change_pct": 0.83,
+      "change": 15,
+      "change_pct": 1.13,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:28+00:00"
+      "fetched_at": "2026-05-14T11:14:30+00:00"
     },
     "208350": {
       "symbol": "208350",
-      "price": 3105,
+      "price": 3205,
       "prev_close": 3055,
-      "change": 50,
-      "change_pct": 1.64,
+      "change": 150,
+      "change_pct": 4.91,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:29+00:00"
+      "fetched_at": "2026-05-14T11:14:31+00:00"
     },
     "196700": {
       "symbol": "196700",
-      "price": 1652,
+      "price": 1800,
       "prev_close": 1659,
-      "change": -7,
-      "change_pct": -0.42,
+      "change": 141,
+      "change_pct": 8.5,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:29+00:00"
+      "fetched_at": "2026-05-14T11:14:31+00:00"
     },
     "001070": {
       "symbol": "001070",
-      "price": 6430,
+      "price": 6650,
       "prev_close": 6250,
-      "change": 180,
-      "change_pct": 2.88,
+      "change": 400,
+      "change_pct": 6.4,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:30+00:00"
+      "fetched_at": "2026-05-14T11:14:32+00:00"
     },
     "030720": {
       "symbol": "030720",
-      "price": 6320,
+      "price": 6400,
       "prev_close": 6470,
-      "change": -150,
-      "change_pct": -2.32,
+      "change": -70,
+      "change_pct": -1.08,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:30+00:00"
+      "fetched_at": "2026-05-14T11:14:32+00:00"
     },
     "050120": {
       "symbol": "050120",
-      "price": 2870,
+      "price": 2835,
       "prev_close": 2830,
-      "change": 40,
-      "change_pct": 1.41,
+      "change": 5,
+      "change_pct": 0.18,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:31+00:00"
+      "fetched_at": "2026-05-14T11:14:32+00:00"
     },
     "083640": {
       "symbol": "083640",
-      "price": 1685,
+      "price": 1664,
       "prev_close": 1537,
-      "change": 148,
-      "change_pct": 9.63,
+      "change": 127,
+      "change_pct": 8.26,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:31+00:00"
+      "fetched_at": "2026-05-14T11:14:33+00:00"
     },
     "331920": {
       "symbol": "331920",
-      "price": 13230,
+      "price": 13240,
       "prev_close": 13330,
-      "change": -100,
-      "change_pct": -0.75,
+      "change": -90,
+      "change_pct": -0.68,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:32+00:00"
+      "fetched_at": "2026-05-14T11:14:33+00:00"
     },
     "049470": {
       "symbol": "049470",
@@ -469,67 +469,67 @@
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:32+00:00"
+      "fetched_at": "2026-05-14T11:14:34+00:00"
     },
     "007120": {
       "symbol": "007120",
-      "price": 1642,
+      "price": 1552,
       "prev_close": 1688,
-      "change": -46,
-      "change_pct": -2.73,
+      "change": -136,
+      "change_pct": -8.06,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:33+00:00"
+      "fetched_at": "2026-05-14T11:14:34+00:00"
     },
     "297570": {
       "symbol": "297570",
-      "price": 1472,
+      "price": 1426,
       "prev_close": 1484,
-      "change": -12,
-      "change_pct": -0.81,
+      "change": -58,
+      "change_pct": -3.91,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:33+00:00"
+      "fetched_at": "2026-05-14T11:14:35+00:00"
     },
     "001000": {
       "symbol": "001000",
-      "price": 1500,
+      "price": 1486,
       "prev_close": 1510,
-      "change": -10,
-      "change_pct": -0.66,
+      "change": -24,
+      "change_pct": -1.59,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:33+00:00"
+      "fetched_at": "2026-05-14T11:14:35+00:00"
     },
     "095910": {
       "symbol": "095910",
-      "price": 2610,
+      "price": 2485,
       "prev_close": 2010,
-      "change": 600,
-      "change_pct": 29.85,
+      "change": 475,
+      "change_pct": 23.63,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:34+00:00"
+      "fetched_at": "2026-05-14T11:14:35+00:00"
     },
     "143240": {
       "symbol": "143240",
-      "price": 16120,
+      "price": 16270,
       "prev_close": 16000,
-      "change": 120,
-      "change_pct": 0.75,
+      "change": 270,
+      "change_pct": 1.69,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:34+00:00"
+      "fetched_at": "2026-05-14T11:14:36+00:00"
     },
     "003080": {
       "symbol": "003080",
@@ -541,175 +541,187 @@
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:35+00:00"
+      "fetched_at": "2026-05-14T11:14:36+00:00"
     },
     "000950": {
       "symbol": "000950",
-      "price": 29450,
+      "price": 29850,
       "prev_close": 29500,
-      "change": -50,
-      "change_pct": -0.17,
+      "change": 350,
+      "change_pct": 1.19,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:35+00:00"
+      "fetched_at": "2026-05-14T11:14:37+00:00"
     },
     "008500": {
       "symbol": "008500",
-      "price": 2375,
+      "price": 2385,
       "prev_close": 2370,
-      "change": 5,
-      "change_pct": 0.21,
+      "change": 15,
+      "change_pct": 0.63,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:35+00:00"
+      "fetched_at": "2026-05-14T11:14:37+00:00"
     },
     "003240": {
       "symbol": "003240",
-      "price": 1028000,
+      "price": 1079000,
       "prev_close": 1058000,
-      "change": -30000,
-      "change_pct": -2.84,
+      "change": 21000,
+      "change_pct": 1.98,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:36+00:00"
+      "fetched_at": "2026-05-14T11:14:37+00:00"
     },
     "068790": {
       "symbol": "068790",
-      "price": 7620,
+      "price": 7570,
       "prev_close": 7680,
-      "change": -60,
-      "change_pct": -0.78,
+      "change": -110,
+      "change_pct": -1.43,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:36+00:00"
+      "fetched_at": "2026-05-14T11:14:38+00:00"
     },
     "010770": {
       "symbol": "010770",
-      "price": 4060,
+      "price": 4090,
       "prev_close": 4110,
-      "change": -50,
-      "change_pct": -1.22,
+      "change": -20,
+      "change_pct": -0.49,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:37+00:00"
+      "fetched_at": "2026-05-14T11:14:38+00:00"
     },
     "071320": {
       "symbol": "071320",
-      "price": 73700,
+      "price": 76800,
       "prev_close": 73500,
-      "change": 200,
-      "change_pct": 0.27,
+      "change": 3300,
+      "change_pct": 4.49,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:37+00:00"
+      "fetched_at": "2026-05-14T11:14:39+00:00"
     },
     "069730": {
       "symbol": "069730",
-      "price": 5130,
+      "price": 5180,
       "prev_close": 5050,
-      "change": 80,
-      "change_pct": 1.58,
+      "change": 130,
+      "change_pct": 2.57,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:37+00:00"
+      "fetched_at": "2026-05-14T11:14:39+00:00"
     },
     "017940": {
       "symbol": "017940",
-      "price": 97000,
+      "price": 100400,
       "prev_close": 98500,
-      "change": -1500,
-      "change_pct": -1.52,
+      "change": 1900,
+      "change_pct": 1.93,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:38+00:00"
+      "fetched_at": "2026-05-14T11:14:40+00:00"
     },
     "123890": {
       "symbol": "123890",
-      "price": 2370,
+      "price": 2405,
       "prev_close": 2375,
-      "change": -5,
-      "change_pct": -0.21,
+      "change": 30,
+      "change_pct": 1.26,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:38+00:00"
+      "fetched_at": "2026-05-14T11:14:40+00:00"
     },
     "025000": {
       "symbol": "025000",
-      "price": 51000,
+      "price": 52000,
       "prev_close": 51200,
-      "change": -200,
-      "change_pct": -0.39,
+      "change": 800,
+      "change_pct": 1.56,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:39+00:00"
+      "fetched_at": "2026-05-14T11:14:41+00:00"
     },
     "067160": {
       "symbol": "067160",
-      "price": 53700,
+      "price": 54700,
       "prev_close": 52800,
-      "change": 900,
-      "change_pct": 1.7,
+      "change": 1900,
+      "change_pct": 3.6,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:39+00:00"
+      "fetched_at": "2026-05-14T11:14:41+00:00"
     },
     "066430": {
       "symbol": "066430",
-      "price": 2360,
+      "price": 2370,
       "prev_close": 2530,
-      "change": -170,
-      "change_pct": -6.72,
+      "change": -160,
+      "change_pct": -6.32,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:39+00:00"
+      "fetched_at": "2026-05-14T11:14:42+00:00"
     },
     "000660": {
       "symbol": "000660",
-      "price": 1989000,
+      "price": 1970000,
       "prev_close": 1976000,
-      "change": 13000,
-      "change_pct": 0.66,
+      "change": -6000,
+      "change_pct": -0.3,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:40+00:00"
+      "fetched_at": "2026-05-14T11:14:42+00:00"
     },
     "051900": {
       "symbol": "051900",
-      "price": 262000,
+      "price": 283000,
       "prev_close": 256500,
-      "change": 5500,
-      "change_pct": 2.14,
+      "change": 26500,
+      "change_pct": 10.33,
       "currency": "KRW",
       "exchange": "KRX",
       "source": "krx",
       "trade_date": "2026-05-14",
-      "fetched_at": "2026-05-14T00:59:40+00:00"
+      "fetched_at": "2026-05-14T11:14:42+00:00"
+    },
+    "015760": {
+      "symbol": "015760",
+      "price": 39650,
+      "prev_close": 40750,
+      "change": -1100,
+      "change_pct": -2.7,
+      "currency": "KRW",
+      "exchange": "KRX",
+      "source": "krx",
+      "trade_date": "2026-05-14",
+      "fetched_at": "2026-05-14T11:14:43+00:00"
     }
   }
 }
