@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-15T15:58:03+09:00",
+  "updated_at": "2026-05-15T16:03:05+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-15T11:44:05+09:00",
@@ -22692,7 +22692,7 @@
       ]
     },
     {
-      "analyzed_at": "2026-05-15T15:58:03+09:00",
+      "analyzed_at": "2026-05-15T16:03:05+09:00",
       "name": "에이피알",
       "code": "278470",
       "price": 404000.0,
@@ -22708,28 +22708,27 @@
       "net_income_eok": 2897.0,
       "opinion": "매수",
       "opinion_color": "buy",
-      "thesis": "2025 연결 매출 1.53조(+111%), 영업이익 3,655억(OPM 23.9%), ROE 65%로 성장성과 수익성이 매우 강합니다. 2026년 1분기 잠정실적도 매출 +123%, 영업이익 +174%로 고성장 지속입니다. 다만 2026-05-15 종가 기준 PER 52.0배/PBR 33.9배라 밸류에이션 부담이 커서 분할·조정 매수 관점입니다.",
+      "thesis": "2025 연결 매출 1.53조(+111%), 영업이익 3,655억(OPM 23.9%), 순이익 2,897억(ROE 65%)으로 성장+수익성 모두 강합니다. 26Q1 잠정실적도 매출 +123%, 영업이익 +174%로 고성장 지속, 총주주환원율 76%로 환원도 적극적입니다. 체크리스트 위험 0/18, 우량 9/12 (norm 9.8). 다만 26-05-15 종가 404,000원 기준 PER 52배·PBR 34배로 멀티플 부담이 커서, 위험은 낮지만 분할·조정 매수가 합리적입니다.",
       "checklist_part1_risk": 0,
       "checklist_part1_total": 18,
-      "checklist_part2_quality": 8,
+      "checklist_part2_quality": 9,
       "checklist_part2_total": 12,
       "checklist_detail": {
         "part1_risks_hit": [],
         "part2_passed": [
-          "고성장",
-          "영업이익률 20%+",
-          "ROE 20%+",
-          "부채비율 100% 이하",
-          "CFO 양호",
-          "FCF 양호",
-          "총주주환원율 30%+",
-          "최대주주 지분 30%+"
+          "매출 꾸준한 우상향",
+          "영업이익 성장률 > 매출 성장률",
+          "OPM 경쟁사 대비 우월 또는 개선",
+          "ROE 5년 10~15%+ 유지",
+          "CFO > 당기순이익",
+          "FCF 플러스",
+          "CF패턴 영업(+)/투자(-)/재무(-)",
+          "총주주환원율(배당+자사주소각) 높음",
+          "자사주 매입 → 소각까지 실행"
         ],
         "part2_failed": [
-          "PER 저평가 아님",
-          "PBR 저평가 아님",
-          "배당수익률 매력 낮음",
-          "상장 후 장기 일관성 검증 기간 짧음"
+          "PER < 업종 평균 또는 자사 과거 평균",
+          "PBR < 1"
         ]
       },
       "dart_rcept": "20260323001257",
@@ -22740,7 +22739,193 @@
         "수출",
         "고성장",
         "고밸류"
-      ]
+      ],
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_audit_qualified",
+            "label": "감사의견 한정/부적정/의견거절 (최근 3년)",
+            "status": "ok",
+            "evidence": "2024/2025 모두 적정의견 (DART disclosure_anomaly score 0)"
+          },
+          {
+            "key": "p1_going_concern",
+            "label": "감사보고서 '계속기업 불확실성' 단락 존재",
+            "status": "ok",
+            "evidence": "이상공시 0건, emphasis 단락 없음"
+          },
+          {
+            "key": "p1_audit_delay",
+            "label": "감사보고서 법정 기한(3/31) 지연",
+            "status": "ok",
+            "evidence": "2025 사업보고서 2026-03-23 제출 (기한 내)"
+          },
+          {
+            "key": "p1_3y_op_loss",
+            "label": "3년 이상 연속 영업적자",
+            "status": "ok",
+            "evidence": "2020년 이후 6년 연속 흑자 (영익 145→143→392→1042→1227→3655억)"
+          },
+          {
+            "key": "p1_interest_coverage",
+            "label": "이자보상배율 < 1",
+            "status": "ok",
+            "evidence": "영익 3,655억 / 이자비용 35억 ≈ 104배"
+          },
+          {
+            "key": "p1_current_ratio",
+            "label": "유동비율 < 150% 또는 감소 추세",
+            "status": "ok",
+            "evidence": "유동자산 5,458억 / 유동부채 2,384억 = 229%"
+          },
+          {
+            "key": "p1_impairment",
+            "label": "재고/유형자산 손상차손 반복",
+            "status": "ok",
+            "evidence": "2025 유형자산손상 1.3억, 재고평가손실 환입 26억 (반복 패턴 아님)"
+          },
+          {
+            "key": "p1_cb_bw_repeat",
+            "label": "CB/BW 반복 발행",
+            "status": "ok",
+            "evidence": "최근 3년 CB/BW/EB 신규 발행 0건, 기존 CB 32억 상환"
+          },
+          {
+            "key": "p1_asset_sale_purpose",
+            "label": "핵심자산 매각 목적이 운영자금/차입상환",
+            "status": "ok",
+            "evidence": "핵심자산 매각 이력 없음"
+          },
+          {
+            "key": "p1_related_party",
+            "label": "특수관계자 거래 복잡/불투명",
+            "status": "watch",
+            "evidence": "주요 종속회사 다수, 별도재무와 연결재무 차이 -0.3%로 작음 (정밀 검토 필요)"
+          },
+          {
+            "key": "p1_mgmt_change",
+            "label": "사명/대표이사 교체 빈번",
+            "status": "ok",
+            "evidence": "대표 김병훈(창업자) 지속, 최대주주 31.94%"
+          },
+          {
+            "key": "p1_capital_erosion",
+            "label": "자본총계≈자본금 또는 자본잠식 진행",
+            "status": "ok",
+            "evidence": "자본총계 4,458억 vs 자본금 39억 (이익잉여금 4,273억)"
+          },
+          {
+            "key": "p1_secondary_finance",
+            "label": "제2금융권(저축은행/캐피털) 차입",
+            "status": "ok",
+            "evidence": "장단기차입금 잔액 미미, 제2금융권 차입 흔적 없음"
+          },
+          {
+            "key": "p1_profit_cash_gap",
+            "label": "흑자 + CFO 마이너스",
+            "status": "ok",
+            "evidence": "CFO 3,410억 > 순이익 2,897억 (현금이 이익보다 큼)"
+          },
+          {
+            "key": "p1_cf_pattern_bad",
+            "label": "CF패턴 영업(-)/투자(+)/재무(+) (자산팔고 빌려 연명)",
+            "status": "ok",
+            "evidence": "영업+3,410 / 투자-945 / 재무-1,817 (정상 우량 패턴)"
+          },
+          {
+            "key": "p1_turnover_drop",
+            "label": "매출채권/재고자산 회전율 하락",
+            "status": "ok",
+            "evidence": "매출 +111% 폭증, 매출채권/재고 동반 증가 (회전율 유지)"
+          },
+          {
+            "key": "p1_intangible_high",
+            "label": "자본총계 대비 개발비/영업권 비율 높음",
+            "status": "ok",
+            "evidence": "비유동자산 2,259억 중 무형자산/영업권 비중 작음 (자본 4,458억 대비 낮음)"
+          },
+          {
+            "key": "p1_other_risk",
+            "label": "기타 위험 (보고서 emphasis 단락 등)",
+            "status": "watch",
+            "evidence": "고밸류(PER 52배) 자체는 위험 아니지만 멀티플 디레이팅 리스크 존재"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_revenue_up",
+            "label": "매출 꾸준한 우상향",
+            "status": "ok",
+            "evidence": "2018 1,026억 → 2025 15,273억 (8년 매출 단조 증가, 2024→25 +111%)"
+          },
+          {
+            "key": "p2_op_leverage",
+            "label": "영업이익 성장률 > 매출 성장률",
+            "status": "ok",
+            "evidence": "2025년 매출 +111% vs 영업이익 +198% (영업레버리지 강함)"
+          },
+          {
+            "key": "p2_opm_competitive",
+            "label": "OPM 경쟁사 대비 우월 또는 개선",
+            "status": "ok",
+            "evidence": "OPM 2024 17.0% → 2025 23.9% (화장품/뷰티 산업 평균 10~15% 대비 우월)"
+          },
+          {
+            "key": "p2_roe_15_5y",
+            "label": "ROE 5년 10~15%+ 유지",
+            "status": "ok",
+            "evidence": "ROE 5년 15.26 / 17.27 / 29.88 / 41.40 / 33.26 / 64.97 (모두 15% 상회)"
+          },
+          {
+            "key": "p2_cfo_gt_ni",
+            "label": "CFO > 당기순이익",
+            "status": "ok",
+            "evidence": "CFO 3,410억 > 순이익 2,897억"
+          },
+          {
+            "key": "p2_fcf_positive",
+            "label": "FCF 플러스",
+            "status": "ok",
+            "evidence": "FCF 3,256억 (CFO 3,410 - CapEx 154)"
+          },
+          {
+            "key": "p2_cf_pattern_good",
+            "label": "CF패턴 영업(+)/투자(-)/재무(-)",
+            "status": "ok",
+            "evidence": "영업+3,410억 / 투자-945억 / 재무-1,817억 (교과서 우량 패턴)"
+          },
+          {
+            "key": "p2_total_yield",
+            "label": "총주주환원율(배당+자사주소각) 높음",
+            "status": "ok",
+            "evidence": "현금배당 1,905억 + 자사주 취득 300억 = 2,205억 / 순이익 2,897억 = 76.1%"
+          },
+          {
+            "key": "p2_buyback_burn",
+            "label": "자사주 매입 → 소각까지 실행",
+            "status": "ok",
+            "evidence": "2025년 자사주 매입 613,400주 + 소각 1,497,735주 실행"
+          },
+          {
+            "key": "p2_dividend_growth",
+            "label": "배당 꾸준 지급/증액",
+            "status": "watch",
+            "evidence": "2025년 첫 현금배당 5,090원/주(배당성향 65.8%) — 신규 배당 정책 지속 여부 검증 필요"
+          },
+          {
+            "key": "p2_per_below_avg",
+            "label": "PER < 업종 평균 또는 자사 과거 평균",
+            "status": "ng",
+            "evidence": "PER 52.0배 (자사 24년 PER 14배 대비 약 3.7배, 화장품 업종 평균 상회)"
+          },
+          {
+            "key": "p2_pbr_under1",
+            "label": "PBR < 1",
+            "status": "ng",
+            "evidence": "PBR 33.9배 (성장 프리미엄, 청산가치 매력 없음)"
+          }
+        ]
+      }
     }
   ],
   "market_baseline": {
