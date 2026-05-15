@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-15T11:45:32+09:00",
+  "updated_at": "2026-05-15T15:58:03+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-15T11:44:05+09:00",
@@ -22689,6 +22689,57 @@
           "type": "treasury_buy",
           "label": "임원 5명 동시 자사주 매수 (대표이사 문혁수 외)"
         }
+      ]
+    },
+    {
+      "analyzed_at": "2026-05-15T15:58:03+09:00",
+      "name": "에이피알",
+      "code": "278470",
+      "price": 404000.0,
+      "per": 52.03,
+      "pbr": 33.92,
+      "roe": 64.97,
+      "dividend_yield": 1.7,
+      "debt_ratio": 73.11,
+      "cfo_eok": 3410.0,
+      "fcf_eok": 3256.0,
+      "revenue_eok": 15273.0,
+      "op_income_eok": 3655.0,
+      "net_income_eok": 2897.0,
+      "opinion": "매수",
+      "opinion_color": "buy",
+      "thesis": "2025 연결 매출 1.53조(+111%), 영업이익 3,655억(OPM 23.9%), ROE 65%로 성장성과 수익성이 매우 강합니다. 2026년 1분기 잠정실적도 매출 +123%, 영업이익 +174%로 고성장 지속입니다. 다만 2026-05-15 종가 기준 PER 52.0배/PBR 33.9배라 밸류에이션 부담이 커서 분할·조정 매수 관점입니다.",
+      "checklist_part1_risk": 0,
+      "checklist_part1_total": 18,
+      "checklist_part2_quality": 8,
+      "checklist_part2_total": 12,
+      "checklist_detail": {
+        "part1_risks_hit": [],
+        "part2_passed": [
+          "고성장",
+          "영업이익률 20%+",
+          "ROE 20%+",
+          "부채비율 100% 이하",
+          "CFO 양호",
+          "FCF 양호",
+          "총주주환원율 30%+",
+          "최대주주 지분 30%+"
+        ],
+        "part2_failed": [
+          "PER 저평가 아님",
+          "PBR 저평가 아님",
+          "배당수익률 매력 낮음",
+          "상장 후 장기 일관성 검증 기간 짧음"
+        ]
+      },
+      "dart_rcept": "20260323001257",
+      "source_year": 2025,
+      "tags": [
+        "뷰티",
+        "디바이스",
+        "수출",
+        "고성장",
+        "고밸류"
       ]
     }
   ],
