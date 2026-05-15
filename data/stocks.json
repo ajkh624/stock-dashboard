@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-14T17:38:09+09:00",
+  "updated_at": "2026-05-15T09:04:25+09:00",
   "stocks": [
     {
       "analyzed_at": "2026-05-12T01:30:00+09:00",
@@ -22337,6 +22337,341 @@
       "ev_eok": 2288175,
       "net_debt_eok": 2033637,
       "ev_ebitda": 8.39
+    },
+    {
+      "analyzed_at": "2026-05-15T09:04:25+09:00",
+      "name": "LG이노텍",
+      "code": "011070",
+      "price": 760000,
+      "per": 52.7,
+      "pbr": 3.12,
+      "roe": 5.92,
+      "dividend_yield": 0.25,
+      "debt_ratio": 94.4,
+      "cfo_eok": 13314,
+      "fcf_eok": 5769,
+      "revenue_eok": 218966,
+      "op_income_eok": 6650,
+      "net_income_eok": 3413,
+      "opinion": "중립",
+      "opinion_color": "neutral",
+      "thesis": "26Q1 어닝서프라이즈로 턴어라운드 진입(매출 +11% / 영익 +136% / 순익 +168%, OPM 2.5→5.3%). 부채비율 107→94.4%로 100% 하향 돌파, 자본구조 개선. 25Q2 대표이사 문혁수 외 임원 5명 동시 자사주 매수 = strong_buy_cluster 시그널. 다만 PER 52배(과거 평균 대비 고평가)·PBR 3.1배·배당수익률 0.25%·총주주환원율 13%로 밸류매력 부족. 단일 고객(애플) 의존, 25년 ROE 5.9%까지 하락 후 회복 초기. 분기 추세 1~2개 더 확인 후 등급 상향 검토.",
+      "checklist_part1_risk": 0,
+      "checklist_part1_total": 17,
+      "checklist_part1_na": 0,
+      "checklist_part2_quality": 5,
+      "checklist_part2_total": 12,
+      "checklist_part2_na": 0,
+      "dart_rcept": "20260514001513",
+      "source_year": 2026,
+      "analysis_date": "2026-05-15",
+      "tags": [
+        "전자부품",
+        "카메라모듈",
+        "애플밴드",
+        "턴어라운드",
+        "내부자매수클러스터"
+      ],
+      "market": "KOSPI",
+      "insider_signal": "strong_buy_cluster",
+      "insider_detail": "25Q2 대표이사 문혁수·전무 조지태/오세진·상무 이동훈/조백수 등 임원 5명 동시 매수(buy_cluster). 전기간 매수16건/매도2건, 순매수 +707만주. 26Q2 국민연금 +237만주 추가. CEO 본인 매수는 강한 격상 시그널이지만 점수 통과 미달로 등급은 중립 유지.",
+      "checklist_detail_full": {
+        "part1": [
+          {
+            "key": "p1_1",
+            "label": "3년 감사의견 한정·부적정·의견거절",
+            "status": "ok",
+            "evidence": "24/25 적정의견 연속"
+          },
+          {
+            "key": "p1_2",
+            "label": "적정의견+계속기업 불확실성 단락",
+            "status": "ok",
+            "evidence": "강조사항 없음"
+          },
+          {
+            "key": "p1_3",
+            "label": "감사보고서 법정기한 지연",
+            "status": "ok",
+            "evidence": "26.03.12 기한 내"
+          },
+          {
+            "key": "p1_4",
+            "label": "3년 이상 연속 영업적자",
+            "status": "ok",
+            "evidence": "영익 6,650억 흑자 유지"
+          },
+          {
+            "key": "p1_5",
+            "label": "이자보상배율 <1",
+            "status": "ok",
+            "evidence": "영익 6,650 / 이자비용 973 = 6.8배"
+          },
+          {
+            "key": "p1_6",
+            "label": "자본총계≈자본금 또는 자본잠식",
+            "status": "ok",
+            "evidence": "자본 5.7조 vs 자본금 1,183억"
+          },
+          {
+            "key": "p1_7",
+            "label": "제2금융권 차입",
+            "status": "ok",
+            "evidence": "시중은행 위주"
+          },
+          {
+            "key": "p1_8",
+            "label": "손익 흑자 + CFO 마이너스",
+            "status": "ok",
+            "evidence": "CFO 1.33조 > 순익 3,413억"
+          },
+          {
+            "key": "p1_9",
+            "label": "영업(-)/투자(+)/재무(+) 자산매각 연명",
+            "status": "ok",
+            "evidence": "영업+/투자-/재무- 정상 패턴"
+          },
+          {
+            "key": "p1_10",
+            "label": "매출채권·재고 회전율 하락",
+            "status": "watch",
+            "evidence": "매출은 증가지만 OPM 3년 연속 하락"
+          },
+          {
+            "key": "p1_11",
+            "label": "자본총계 대비 개발비·영업권 비율 높음",
+            "status": "ok",
+            "evidence": "무형자산 비중 정상"
+          },
+          {
+            "key": "p1_12",
+            "label": "유동비율 <150% 또는 감소",
+            "status": "ok",
+            "evidence": "유동자산 6.7조/유동부채 4.3조 = 156% 안전권"
+          },
+          {
+            "key": "p1_13",
+            "label": "재고평가손·유형자산 손상 반복",
+            "status": "ok",
+            "evidence": "특이 없음"
+          },
+          {
+            "key": "p1_14",
+            "label": "CB·BW 반복 발행",
+            "status": "ok",
+            "evidence": "발행 없음"
+          },
+          {
+            "key": "p1_15",
+            "label": "핵심자산 매각(운영자금 목적)",
+            "status": "ok",
+            "evidence": "해당 없음"
+          },
+          {
+            "key": "p1_16",
+            "label": "특수관계자 거래 복잡·불투명",
+            "status": "watch",
+            "evidence": "LG전자 40.79% 모회사 그룹 거래 多 (정상범위)"
+          },
+          {
+            "key": "p1_17",
+            "label": "사명·대표이사 교체 빈번",
+            "status": "ok",
+            "evidence": "문혁수 체제 안정"
+          }
+        ],
+        "part2": [
+          {
+            "key": "p2_1",
+            "label": "매출액 꾸준히 우상향",
+            "status": "ok",
+            "evidence": "5.7조→21.9조 9년 CAGR 16%"
+          },
+          {
+            "key": "p2_2",
+            "label": "매출성장률 < 영업이익성장률",
+            "status": "ng",
+            "evidence": "최근 3년 매출 +9% vs 영익 -48%"
+          },
+          {
+            "key": "p2_3",
+            "label": "OPM 경쟁사 대비 높거나 개선",
+            "status": "watch",
+            "evidence": "25년 3.0% 바닥 → 26Q1 5.3% 개선 시작"
+          },
+          {
+            "key": "p2_4",
+            "label": "ROE 10~15%+ 꾸준",
+            "status": "ng",
+            "evidence": "10년 평균 10.7% (변동성 σ=7.7), 25년 5.9% 하락"
+          },
+          {
+            "key": "p2_5",
+            "label": "CFO > 당기순이익",
+            "status": "ok",
+            "evidence": "CFO 13,314억 vs 순익 3,413억 (3.9배)"
+          },
+          {
+            "key": "p2_6",
+            "label": "FCF 플러스",
+            "status": "ok",
+            "evidence": "CFO 13,314 - CAPEX 7,545 = +5,769억"
+          },
+          {
+            "key": "p2_7",
+            "label": "영업(+)/투자(-)/재무(-) 패턴",
+            "status": "ok",
+            "evidence": "성숙기 정상 패턴"
+          },
+          {
+            "key": "p2_8",
+            "label": "총주주환원율 30%+",
+            "status": "ng",
+            "evidence": "배당성향 13%, 자사주 매입 0건"
+          },
+          {
+            "key": "p2_9",
+            "label": "자사주 매입+소각 실행",
+            "status": "ng",
+            "evidence": "보유 2,600주(과거 기타취득분) 외 신규 매입/소각 없음"
+          },
+          {
+            "key": "p2_10",
+            "label": "배당금 꾸준·증액",
+            "status": "watch",
+            "evidence": "DPS 2,610(23)→2,090(24)→1,880(25) 감소 추세"
+          },
+          {
+            "key": "p2_11",
+            "label": "PER < 업종/과거 평균",
+            "status": "ng",
+            "evidence": "PER 52.7배 (25년 EPS 기준, 과거 평균 대비 고평가)"
+          },
+          {
+            "key": "p2_12",
+            "label": "PBR < 1배",
+            "status": "ng",
+            "evidence": "PBR 3.12배 (BPS 243,500원)"
+          }
+        ]
+      },
+      "checklist_detail": {
+        "part1_risks_hit": [],
+        "part2_passed": [
+          "매출액 꾸준히 우상향 (9년 CAGR 16%)",
+          "CFO > 순이익 (3.9배)",
+          "FCF +5,769억",
+          "CF패턴 영업+/투자-/재무- 정상",
+          "매출 우상향"
+        ],
+        "part2_failed": [
+          "매출성장률 < 영업이익성장률 (영익 -48%)",
+          "ROE 변동성 큼 (σ=7.7)",
+          "총주주환원율 13% (낮음)",
+          "자사주 매입/소각 없음",
+          "PER 52배 (고평가)",
+          "PBR 3.12배"
+        ]
+      },
+      "timeseries": {
+        "years": [
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "revenue_eok": [
+          57546,
+          76414,
+          79821,
+          83021,
+          95418,
+          149456,
+          195894,
+          206053,
+          212008,
+          218966
+        ],
+        "op_income_eok": [
+          1048,
+          2965,
+          2635,
+          4031,
+          6810,
+          12642,
+          12718,
+          8308,
+          7060,
+          6650
+        ],
+        "net_income_eok": [
+          50,
+          1748,
+          1631,
+          1023,
+          2361,
+          8883,
+          9798,
+          5652,
+          4493,
+          3413
+        ],
+        "roe_pct": [
+          0.28,
+          8.96,
+          7.7,
+          4.64,
+          9.73,
+          26.8,
+          22.97,
+          11.99,
+          8.39,
+          5.92
+        ],
+        "debt_ratio_pct": [
+          143.1,
+          201.3,
+          171.7,
+          161.8,
+          148.7,
+          133.6,
+          129.6,
+          137.7,
+          112.5,
+          107.0
+        ],
+        "quarterly": {
+          "labels": [
+            "25.1Q",
+            "26.1Q"
+          ],
+          "revenue_eok": [
+            49828,
+            55348
+          ],
+          "op_income_eok": [
+            1251,
+            2953
+          ],
+          "net_income_eok": [
+            856,
+            2291
+          ]
+        }
+      },
+      "corporate_events": [
+        {
+          "date": "2025-05-15",
+          "type": "treasury_buy",
+          "label": "임원 5명 동시 자사주 매수 (대표이사 문혁수 외)"
+        }
+      ]
     }
   ],
   "market_baseline": {
