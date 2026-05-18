@@ -449,7 +449,7 @@
         "dps": 3000.0,
         "dividend_yield": 6.49
       },
-      "market_cap_eok": 4784,
+      "market_cap_eok": 4514,
       "latest_quarter_rcept": "20260508900816",
       "latest_quarter_note": "2026년 1분기 잠정실적 공정공시 반영(정식 분기보고서 DART API 데이터는 2026-05-15 11:43 KST 기준 미조회)",
       "shareholder_return": {
@@ -853,7 +853,8 @@
         "pbr": 1.61,
         "dps": 520.0,
         "dividend_yield": 6.07
-      }
+      },
+      "market_cap_eok": 2341
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
@@ -1236,7 +1237,8 @@
         "pbr": 0.65,
         "dps": 10000.0,
         "dividend_yield": 2.09
-      }
+      },
+      "market_cap_eok": 366888
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
@@ -1630,7 +1632,8 @@
         "pbr": 0.81,
         "dps": 1140.0,
         "dividend_yield": 4.44
-      }
+      },
+      "market_cap_eok": 47534
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
@@ -2042,7 +2045,8 @@
         "pbr": 0.55,
         "dps": 1800.0,
         "dividend_yield": 4.07
-      }
+      },
+      "market_cap_eok": 19133
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
@@ -2433,7 +2437,8 @@
         "pbr": 2.37,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 759
     },
     {
       "analyzed_at": "2026-05-12T07:22:39+09:00",
@@ -2808,7 +2813,8 @@
         "pbr": 0.31,
         "dps": 300.0,
         "dividend_yield": 4.49
-      }
+      },
+      "market_cap_eok": 6951
     },
     {
       "analyzed_at": "2026-05-12T15:16:46+09:00",
@@ -3238,7 +3244,8 @@
         "pbr": 6.82,
         "dps": 7000.0,
         "dividend_yield": 0.55
-      }
+      },
+      "market_cap_eok": 632683
     },
     {
       "analyzed_at": "2026-05-12T16:25:56+09:00",
@@ -3590,7 +3597,8 @@
         "pbr": 0.49,
         "dps": 700.0,
         "dividend_yield": 2.49
-      }
+      },
+      "market_cap_eok": 3585
     },
     {
       "analyzed_at": "2026-05-12T16:25:56+09:00",
@@ -3973,7 +3981,8 @@
         "pbr": 0.56,
         "dps": 600.0,
         "dividend_yield": 5.7
-      }
+      },
+      "market_cap_eok": 2893
     },
     {
       "analyzed_at": "2026-05-12T16:45:53+09:00",
@@ -4325,7 +4334,8 @@
         "pbr": 13.43,
         "dps": 2950.0,
         "dividend_yield": 0.34
-      }
+      },
+      "market_cap_eok": 184580
     },
     {
       "analyzed_at": "2026-05-12T16:45:53+09:00",
@@ -4694,7 +4704,8 @@
         "pbr": 7.62,
         "dps": 600.0,
         "dividend_yield": 0.28
-      }
+      },
+      "market_cap_eok": 219376
     },
     {
       "name": "SJG세종",
@@ -5092,7 +5103,8 @@
         "pbr": 0.4,
         "dps": 200.0,
         "dividend_yield": 2.59
-      }
+      },
+      "market_cap_eok": 2343
     },
     {
       "name": "SK텔레콤",
@@ -5475,7 +5487,8 @@
         "pbr": 1.71,
         "dps": 1660.0,
         "dividend_yield": 1.61
-      }
+      },
+      "market_cap_eok": 215864
     },
     {
       "name": "이마트",
@@ -5862,7 +5875,8 @@
         "pbr": 0.26,
         "dps": 2500.0,
         "dividend_yield": 2.33
-      }
+      },
+      "market_cap_eok": 27375
     },
     {
       "analyzed_at": "2026-05-13T02:41:14+09:00",
@@ -6215,7 +6229,8 @@
         "pbr": 0.19,
         "dps": 150.0,
         "dividend_yield": 1.08
-      }
+      },
+      "market_cap_eok": 1570
     },
     {
       "analyzed_at": "2026-05-13T02:41:14+09:00",
@@ -6568,7 +6583,8 @@
         "pbr": 0.2,
         "dps": 150.0,
         "dividend_yield": 4.41
-      }
+      },
+      "market_cap_eok": 881
     },
     {
       "name": "비비안",
@@ -6950,7 +6966,8 @@
         "pbr": 0.18,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 228
     },
     {
       "name": "아이스크림에듀",
@@ -7273,7 +7290,8 @@
         "pbr": 0.51,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 228
     },
     {
       "name": "에이전트AI",
@@ -7608,7 +7626,8 @@
         "pbr": 0.57,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 219
     },
     {
       "name": "앤로보틱스",
@@ -7931,7 +7950,8 @@
         "pbr": 3.11,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 2764
     },
     {
       "name": "아시아종묘",
@@ -8272,7 +8292,8 @@
         "pbr": 0.95,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 227
     },
     {
       "name": "한탑",
@@ -8600,7 +8621,8 @@
         "pbr": 0.41,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 201
     },
     {
       "name": "아즈텍WB",
@@ -8920,7 +8942,8 @@
         "pbr": 0.23,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 261
     },
     {
       "name": "골드앤에스",
@@ -9245,7 +9268,8 @@
         "pbr": 1.58,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 181
     },
     {
       "name": "우리엔터프라이즈",
@@ -9567,7 +9591,8 @@
         "pbr": 0.18,
         "dps": 20.0,
         "dividend_yield": 2.02
-      }
+      },
+      "market_cap_eok": 252
     },
     {
       "name": "이노진",
@@ -9894,7 +9919,8 @@
         "pbr": 1.13,
         "dps": 90.0,
         "dividend_yield": 6.21
-      }
+      },
+      "market_cap_eok": 168
     },
     {
       "name": "디모아",
@@ -10272,7 +10298,8 @@
         "pbr": 0.33,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 392
     },
     {
       "name": "S&K폴리텍",
@@ -10669,7 +10696,8 @@
         "pbr": 0.29,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 298
     },
     {
       "name": "패션플랫폼",
@@ -11035,7 +11063,8 @@
         "pbr": 0.31,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 243
     },
     {
       "name": "뉴보텍",
@@ -11369,7 +11398,8 @@
         "pbr": 0.78,
         "dps": 10.0,
         "dividend_yield": 0.75
-      }
+      },
+      "market_cap_eok": 174
     },
     {
       "name": "지란지교시큐리티",
@@ -11696,7 +11726,8 @@
         "pbr": 0.49,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 253
     },
     {
       "name": "웹스",
@@ -12035,7 +12066,8 @@
         "pbr": 0.61,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 236
     },
     {
       "name": "대한방직",
@@ -12411,7 +12443,8 @@
         "pbr": 0.15,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 336
     },
     {
       "name": "동원수산",
@@ -12744,7 +12777,8 @@
         "pbr": 0.56,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 289
     },
     {
       "name": "ES큐브",
@@ -13085,7 +13119,8 @@
         "pbr": 0.42,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 387
     },
     {
       "analyzed_at": "2026-05-13T04:21:35+09:00",
@@ -13414,7 +13449,8 @@
         "pbr": 0.31,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 236
     },
     {
       "analyzed_at": "2026-05-13T04:57:06+09:00",
@@ -13743,7 +13779,8 @@
         "pbr": 4.88,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 1301
     },
     {
       "analyzed_at": "2026-05-13T07:18:28+09:00",
@@ -14172,7 +14209,8 @@
         "pbr": 1.28,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 487
     },
     {
       "analyzed_at": "2026-05-13T07:23:32+09:00",
@@ -14560,7 +14598,8 @@
         "pbr": 0.99,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 433
     },
     {
       "analyzed_at": "2026-05-13T07:28:38+09:00",
@@ -14986,7 +15025,8 @@
         "pbr": 1.16,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 493
     },
     {
       "analyzed_at": "2026-05-13T07:35:19+09:00",
@@ -15378,7 +15418,8 @@
         "pbr": 2.53,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 353
     },
     {
       "analyzed_at": "2026-05-13T09:52:59+09:00",
@@ -15787,7 +15828,8 @@
         "pbr": 1.6,
         "dps": 0.0,
         "dividend_yield": 0.0
-      }
+      },
+      "market_cap_eok": 813
     },
     {
       "analyzed_at": "2026-05-13T17:41:37+09:00",
@@ -16139,7 +16181,8 @@
         "pbr": 0.63,
         "dps": 700.0,
         "dividend_yield": 4.36
-      }
+      },
+      "market_cap_eok": 1726
     },
     {
       "analyzed_at": "2026-05-13T18:05:24+09:00",
@@ -16521,7 +16564,8 @@
         "pbr": 0.32,
         "dps": 205.0,
         "dividend_yield": 8.1
-      }
+      },
+      "market_cap_eok": 482
     },
     {
       "analyzed_at": "2026-05-13T19:00:00+09:00",
@@ -16902,7 +16946,8 @@
         "pbr": 0.15,
         "dps": 1000.0,
         "dividend_yield": 3.32
-      }
+      },
+      "market_cap_eok": 486
     },
     {
       "analyzed_at": "2026-05-13T19:30:00+09:00",
@@ -17276,7 +17321,8 @@
         "pbr": 0.77,
         "dps": 100.0,
         "dividend_yield": 4.02
-      }
+      },
+      "market_cap_eok": 131
     },
     {
       "analyzed_at": "2026-05-13T20:00:00+09:00",
@@ -17658,7 +17704,8 @@
         "pbr": 0.23,
         "dps": 1750.0,
         "dividend_yield": 0.16
-      }
+      },
+      "market_cap_eok": 11290
     },
     {
       "analyzed_at": "2026-05-13T20:15:00+09:00",
@@ -18072,7 +18119,8 @@
         "pbr": 0.41,
         "dps": 250.0,
         "dividend_yield": 3.18
-      }
+      },
+      "market_cap_eok": 1605
     },
     {
       "analyzed_at": "2026-05-13T20:30:00+09:00",
@@ -18446,7 +18494,8 @@
         "pbr": 0.44,
         "dps": 150.0,
         "dividend_yield": 3.81
-      }
+      },
+      "market_cap_eok": 627
     },
     {
       "analyzed_at": "2026-05-13T20:45:00+09:00",
@@ -18834,7 +18883,8 @@
         "pbr": 0.37,
         "dps": 6157.0,
         "dividend_yield": 8.29
-      }
+      },
+      "market_cap_eok": 8568
     },
     {
       "analyzed_at": "2026-05-13T21:30:00+09:00",
@@ -19240,7 +19290,8 @@
         "pbr": 0.39,
         "dps": 430.0,
         "dividend_yield": 8.37
-      }
+      },
+      "market_cap_eok": 766
     },
     {
       "analyzed_at": "2026-05-13T22:00:00+09:00",
@@ -19590,7 +19641,8 @@
         "pbr": 0.29,
         "dps": 4550.0,
         "dividend_yield": 4.51
-      }
+      },
+      "market_cap_eok": 6517
     },
     {
       "analyzed_at": "2026-05-13T22:30:00+09:00",
@@ -19934,7 +19986,8 @@
         "pbr": 0.27,
         "dps": 150.0,
         "dividend_yield": 6.33
-      }
+      },
+      "market_cap_eok": 2986
     },
     {
       "analyzed_at": "2026-05-13T22:50:00+09:00",
@@ -20304,7 +20357,8 @@
         "pbr": 0.33,
         "dps": 3750.0,
         "dividend_yield": 7.21
-      }
+      },
+      "market_cap_eok": 2303
     },
     {
       "name": "SOOP",
@@ -20312,7 +20366,7 @@
       "market": "KQ",
       "analysis_date": "2026-05-13",
       "price": 52800,
-      "market_cap_eok": 6069,
+      "market_cap_eok": 5862,
       "industry": "양방향미디어와서비스 (라이브스트리밍 플랫폼)",
       "per": 5.96,
       "pbr": 1.2,
@@ -20720,7 +20774,7 @@
       "market": "KQ",
       "analysis_date": "2026-05-14",
       "price": 2530,
-      "market_cap_eok": 991,
+      "market_cap_eok": 1566,
       "industry": "화학/산업용 로봇",
       "per": 58.84,
       "pbr": 2.25,
@@ -21127,7 +21181,7 @@
       "market": "KS",
       "analysis_date": "2026-05-14",
       "price": 1976000,
-      "market_cap_eok": 14082998,
+      "market_cap_eok": 13113724,
       "industry": "반도체와반도체장비 (HBM·DRAM·NAND)",
       "per": 33.52,
       "pbr": 11.32,
@@ -21537,7 +21591,7 @@
       "market": "KS",
       "analysis_date": "2026-05-14",
       "price": 256500,
-      "market_cap_eok": 39250,
+      "market_cap_eok": 39681,
       "industry": "화장품/생활용품/음료",
       "per": null,
       "per_estimated": 24.46,
@@ -21951,7 +22005,7 @@
       "analysis_date": "2026-05-14",
       "analyzed_at": "2026-05-14T18:00:00+09:00",
       "price": 39650,
-      "market_cap_eok": 254538,
+      "market_cap_eok": 241699,
       "industry": "전기유틸리티 (한국 전력 공기업)",
       "per": 2.98,
       "pbr": 0.53,
@@ -22689,7 +22743,8 @@
           "type": "treasury_buy",
           "label": "임원 5명 동시 자사주 매수 (대표이사 문혁수 외)"
         }
-      ]
+      ],
+      "market_cap_eok": 179870
     },
     {
       "analyzed_at": "2026-05-15T16:08:21+09:00",
@@ -23164,7 +23219,8 @@
         "고밸류",
         "자사주매입",
         "첫배당"
-      ]
+      ],
+      "market_cap_eok": 150501
     }
   ],
   "market_baseline": {
