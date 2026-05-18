@@ -3,7 +3,7 @@
   "updated_at": "2026-05-15T16:08:21+09:00",
   "stocks": [
     {
-      "analyzed_at": "2026-05-15T11:44:05+09:00",
+      "analyzed_at": "2026-05-18T23:52:50+09:00",
       "name": "메가스터디교육",
       "code": "215200",
       "price": 46200,
@@ -11,7 +11,7 @@
       "pbr": 0.96,
       "roe": 17.85,
       "dividend_yield": 6.49,
-      "debt_ratio": 72.16,
+      "debt_ratio": 91.1,
       "cfo_eok": 1539,
       "fcf_eok": 1096,
       "revenue_eok": 8849,
@@ -19,7 +19,7 @@
       "net_income_eok": 929,
       "opinion": "강매수",
       "opinion_color": "buy_strong",
-      "thesis": "2026년 1분기 잠정실적까지 반영: 매출은 전년동기 -0.5%로 정체지만 영업이익 260억, 순이익 225억으로 전년 수준을 유지했고, 4Q 대비 이익이 크게 회복됐다. 2025년 연간 ROE 17.9%, OPM 13.7%, 부채비율 72.2%, CFO 1,539억/FCF 1,096억으로 현금창출 품질이 높다. 2025년 배당 310.6억 + 자사주취득 200.0억 기준 총주주환원율 약 59.9%에 자사주 소각까지 실행해 주주환원 항목은 통과. 다만 저출산·사교육 정책 리스크와 2025년 매출 역성장(-6.1%)은 관찰 포인트라, 신규는 강매수 가능하되 26Q2 이후 매출 회복 여부를 확인한다.",
+      "thesis": "2026년 1분기 정식 분기보고서까지 반영: 매출 2,365억(-0.5% YoY)·영업이익 260억(-0.8% YoY)·순이익 225억(+8.1% YoY)으로 이익 안정성 유지, 순이익은 금융손익 효과로 증가. 2025년 연간 ROE 17.9%·OPM 13.7%·부채비율 72.2%·CFO 1,539억/FCF 1,096억 기반 현금창출 강력. 다만 26Q1 부채비율 91.1%로 상승(+18.9%p, 유동부채 84억 증가)은 모니터링 필요. 2025년 배당 310.6억 + 자사주취득 200.0억 → 총주주환원율 약 60%, 자사주 소각 실행. 리스크: 저출산·사교육 정책 + 매출 5분기 연속 정체. 강매수 유지하되 26Q2 매출 회복 및 부채비율 안정화 확인 필요.",
       "checklist_part1_risk": 0,
       "checklist_part1_total": 17,
       "checklist_part2_quality": 11,
@@ -389,7 +389,7 @@
         }
       },
       "market": "KQ",
-      "analysis_date": "2026-05-15",
+      "analysis_date": "2026-05-18",
       "krx_per": 5.72,
       "krx_pbr": 0.96,
       "krx_div_yield": 6.49,
@@ -450,8 +450,8 @@
         "dividend_yield": 6.49
       },
       "market_cap_eok": 4514,
-      "latest_quarter_rcept": "20260508900816",
-      "latest_quarter_note": "2026년 1분기 잠정실적 공정공시 반영(정식 분기보고서 DART API 데이터는 2026-05-15 11:43 KST 기준 미조회)",
+      "latest_quarter_rcept": "20260515002032",
+      "latest_quarter_note": "2026Q1 정식 분기보고서 반영 (2026-05-15 공시) | 매출 2,365억 (-0.5% YoY), 영업이익 260억 (-0.8% YoY), 순이익 225억 (+8.2% YoY), ROE 연환산 17.54%, 부채비율 91.1% (25년말 72.2% → +18.9%p, 유동부채 증가)",
       "shareholder_return": {
         "year": 2025,
         "cash_dividend_eok": 310.6,
@@ -464,7 +464,31 @@
       },
       "audit_by": "codex",
       "audit_at": "2026-05-15",
-      "audit_notes": "PASS_AFTER_FIX: 표시/문구 오류 3건 정정, 핵심 계산 통과"
+      "audit_notes": "PASS_AFTER_FIX: 표시/문구 오류 3건 정정, 핵심 계산 통과",
+      "latest_quarter_data": {
+        "rcept_no": "20260515002032",
+        "report": "2026Q1",
+        "period": "2026.01.01 ~ 2026.03.31",
+        "matrix": "CFS",
+        "revenue_eok_q": 2365,
+        "op_income_eok_q": 260,
+        "net_income_eok_q": 225,
+        "revenue_prev_eok_q": 2377,
+        "op_income_prev_eok_q": 262,
+        "net_income_prev_eok_q": 208,
+        "revenue_yoy_pct": -0.5,
+        "op_income_yoy_pct": -0.76,
+        "net_income_yoy_pct": 8.17,
+        "asset_eok": 9668,
+        "debt_eok": 4609,
+        "equity_eok": 5059,
+        "debt_ratio_pct": 91.1,
+        "asset_prev_eok": 8962,
+        "debt_prev_eok": 3756,
+        "equity_prev_eok": 5206,
+        "debt_ratio_prev_pct": 72.15,
+        "roe_annualized_pct": 17.54
+      }
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
