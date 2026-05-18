@@ -1265,7 +1265,7 @@
       "market_cap_eok": 366888
     },
     {
-      "analyzed_at": "2026-05-12T01:45:40+09:00",
+      "analyzed_at": "2026-05-18T23:56:19+09:00",
       "name": "JB금융지주",
       "code": "175330",
       "price": 26100.0,
@@ -1588,7 +1588,7 @@
         }
       },
       "market": "KS",
-      "analysis_date": "2026-05-12",
+      "analysis_date": "2026-05-18",
       "krx_per": 7.1,
       "krx_pbr": 0.81,
       "krx_div_yield": 4.44,
@@ -1657,7 +1657,28 @@
         "dps": 1140.0,
         "dividend_yield": 4.44
       },
-      "market_cap_eok": 47534
+      "market_cap_eok": 47534,
+      "latest_quarter_rcept": "20260515002210",
+      "latest_quarter_data": {
+        "report": "2026Q1",
+        "period": "2026.01.01 ~ 2026.03.31",
+        "rcept_no": "20260515002210",
+        "is_financial": true,
+        "revenue_eok_q": null,
+        "op_income_eok_q": 2213,
+        "net_income_eok_q": 1723,
+        "revenue_yoy_pct": 8.51,
+        "op_income_yoy_pct": 1.75,
+        "net_income_yoy_pct": 3.24,
+        "asset_eok": 739825,
+        "debt_eok": 677895,
+        "equity_eok": 61929,
+        "debt_ratio_pct": null,
+        "debt_ratio_prev_pct": null,
+        "roe_annualized_pct": 11.14,
+        "net_interest_income_q": 5332
+      },
+      "latest_quarter_note": "2026Q1 정식 분기보고서 반영 (20260515 공시) | 순이자수익 5,332억 (+8.5% YoY), 영업이익 2,213억 (+1.8% YoY), 순이익 1,723억 (+3.2% YoY), 자본 61,929억, ROE 연환산 11.1% (금융업: 부채비율 미적용)"
     },
     {
       "analyzed_at": "2026-05-12T01:45:40+09:00",
@@ -18522,7 +18543,7 @@
       "market_cap_eok": 627
     },
     {
-      "analyzed_at": "2026-05-13T20:45:00+09:00",
+      "analyzed_at": "2026-05-18T23:56:19+09:00",
       "name": "지역난방공사",
       "code": "071320",
       "price": 74300.0,
@@ -18530,7 +18551,7 @@
       "pbr": 0.37,
       "roe": 14.84,
       "dividend_yield": 8.38,
-      "debt_ratio": 257.56,
+      "debt_ratio": 234.26,
       "cfo_eok": 6773,
       "fcf_eok": 3434,
       "revenue_eok": 39982.0,
@@ -18908,10 +18929,32 @@
         "dps": 6157.0,
         "dividend_yield": 8.29
       },
-      "market_cap_eok": 8568
+      "market_cap_eok": 8568,
+      "latest_quarter_rcept": "20260513000363",
+      "analysis_date": "2026-05-18",
+      "latest_quarter_data": {
+        "report": "2026Q1",
+        "period": "2026.01.01 ~ 2026.03.31",
+        "rcept_no": "20260513000363",
+        "is_financial": false,
+        "revenue_eok_q": 14341,
+        "op_income_eok_q": 3202,
+        "net_income_eok_q": 2163,
+        "revenue_yoy_pct": -9.05,
+        "op_income_yoy_pct": -1.11,
+        "net_income_yoy_pct": -7.37,
+        "asset_eok": 81810,
+        "debt_eok": 57335,
+        "equity_eok": 24475,
+        "debt_ratio_pct": 234.26,
+        "debt_ratio_prev_pct": 257.56,
+        "roe_annualized_pct": 36.44,
+        "net_interest_income_q": null
+      },
+      "latest_quarter_note": "2026Q1 정식 분기보고서 반영 (20260513 공시) | 매출 14,341억 (-9.1% YoY), 영업이익 3,202억 (-1.1% YoY), 순이익 2,163억 (-7.4% YoY), ROE 연환산 36.4%, 부채비율 234.3% (25말 257.6%)"
     },
     {
-      "analyzed_at": "2026-05-13T21:30:00+09:00",
+      "analyzed_at": "2026-05-18T23:56:19+09:00",
       "name": "DSR제강",
       "code": "069730",
       "price": 5140.0,
@@ -18919,7 +18962,7 @@
       "pbr": 0.39,
       "roe": 13.13,
       "dividend_yield": 8.37,
-      "debt_ratio": 37.51,
+      "debt_ratio": 36.53,
       "cfo_eok": 166,
       "fcf_eok": 140,
       "revenue_eok": 2266.0,
@@ -19315,7 +19358,29 @@
         "dps": 430.0,
         "dividend_yield": 8.37
       },
-      "market_cap_eok": 766
+      "market_cap_eok": 766,
+      "latest_quarter_rcept": "20260515002184",
+      "analysis_date": "2026-05-18",
+      "latest_quarter_data": {
+        "report": "2026Q1",
+        "period": "2026.01.01 ~ 2026.03.31",
+        "rcept_no": "20260515002184",
+        "is_financial": false,
+        "revenue_eok_q": 567,
+        "op_income_eok_q": 66,
+        "net_income_eok_q": 90,
+        "revenue_yoy_pct": 8.21,
+        "op_income_yoy_pct": 10.0,
+        "net_income_yoy_pct": 47.54,
+        "asset_eok": 2606,
+        "debt_eok": 697,
+        "equity_eok": 1908,
+        "debt_ratio_pct": 36.53,
+        "debt_ratio_prev_pct": 37.5,
+        "roe_annualized_pct": 19.01,
+        "net_interest_income_q": null
+      },
+      "latest_quarter_note": "2026Q1 정식 분기보고서 반영 (20260515 공시) | 매출 567억 (+8.2% YoY), 영업이익 66억 (+10.0% YoY), 순이익 90억 (+47.5% YoY), ROE 연환산 19.0%, 부채비율 36.5% (25말 37.5%)"
     },
     {
       "analyzed_at": "2026-05-13T22:00:00+09:00",
